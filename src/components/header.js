@@ -26,6 +26,25 @@ const HeaderIcon = styled.img `
   margin-right: 1em;
 `
 
+const MainNav = styled.nav`
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+
+  a {
+    margin: 1em 1em 0;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.25em;
+    color: white;
+    transition: color .5s ease;
+  }
+  a:hover {
+    color: orange;
+  }
+`
+
 const Header = ({ siteTitle }) => (
   <HeaderWrapper>
     <HeaderInner>
@@ -41,6 +60,13 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <MainNav>
+        <Link to="/">Home</Link>
+        <Link to="/">About Us</Link>
+        <Link to="/">Our Dogs</Link>
+        <Link to="/">Available Puppies</Link>
+        <Link to="/">Contact Us</Link>
+      </MainNav>
     </HeaderInner>
   </HeaderWrapper>
 )
