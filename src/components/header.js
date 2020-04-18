@@ -50,11 +50,12 @@ const MainNav = styled.nav`
     text-decoration: none;
     font-weight: 700;
     font-size: 1.25em;
-    color: teal;
-    transition: color .5s ease;
+    color: orange;
+    transition: all .5s ease;
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
   }
   a:hover {
-    color: orange;
+    text-decoration: underline;
   }
 `
 
@@ -67,7 +68,7 @@ const HeaderBg = styled(Img)`
     right: 0;
     top: 0;
     bottom: 0;
-    background: linear-gradient(rgba(0,0,0,.01),rgba(0,0,0,0.5));
+    background: linear-gradient(rgba(0,0,0,0.05),rgba(0,0,0,0.5));
   }
 `
 
@@ -76,7 +77,7 @@ const Header = ({ siteTitle }) => {
     query headerBg {
       background: file(relativePath: { eq: "puppy-on-grass.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1600) {
+          fluid(maxWidth: 1600, grayscale: true) {
             ...GatsbyImageSharpFluid
           }
         }
