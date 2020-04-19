@@ -3,6 +3,7 @@ module.exports = {
     title: `Imaginary Dogs`,
     description: `We dream up the best doggos that you can imagine. And, as you can probably guess, they're not real.`,
     author: `Lucas Ogden-Davis`,
+    company: `Imaginary Dog Breeders, LLC`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
