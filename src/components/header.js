@@ -74,7 +74,7 @@ const HeaderBg = styled(Img)`
 
 const Header = ({ siteTitle }) => {
   const data = useStaticQuery(graphql`
-    query headerBg {
+    query headerQuery {
       background: file(relativePath: { eq: "puppy-on-grass.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1600, grayscale: true) {
@@ -82,8 +82,19 @@ const Header = ({ siteTitle }) => {
           }
         }
       }
+      allMarkdownRemark {
+        edges {
+          node {
+            frontmatter {
+              menu
+              slug
+            }
+          }
+        }
+      }
     }
   `)
+
 
   return (
     <HeaderWrapper>
@@ -97,11 +108,13 @@ const Header = ({ siteTitle }) => {
           </Link>
         </h1>
         <MainNav>
-          <Link to="/">Home</Link>
-          <Link to="/">About Us</Link>
-          <Link to="/">Our Dogs</Link>
-          <Link to="/">Available Puppies</Link>
-          <Link to="/">Contact Us</Link>
+          {
+            data.allMarkdownRemark.edges.map(({ node }) => (
+              <Link to={node.frontmatter.slug}>
+                {node.frontmatter.menu}
+              </Link>
+            ))
+          }
         </MainNav>
       </HeaderInner>
       <HeaderBg
