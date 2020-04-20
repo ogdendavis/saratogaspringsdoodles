@@ -113,7 +113,7 @@ const Header = ({ siteTitle }) => {
         <MainNav>
           {
             data.allMarkdownRemark.edges.map(({ node }) => (
-              <Link to={node.frontmatter.slug}>
+              <Link key={`nav-${node.frontmatter.slug}`} to={`/${node.frontmatter.slug}`}>
                 {node.frontmatter.menu}
               </Link>
             ))
