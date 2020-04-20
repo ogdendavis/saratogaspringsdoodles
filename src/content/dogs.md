@@ -2,6 +2,7 @@
 slug: "dogs"
 title: "Our Dogs"
 menu: "Our Dogs"
+order: 3
 ---
 
 Tacos food truck chartreuse lyft seitan fixie tumeric austin brunch twee readymade single-origin coffee. Swag austin mixtape butcher sustainable banjo cray flannel kombucha pinterest raclette plaid normcore keffiyeh. Truffaut knausgaard pork belly, microdosing semiotics deep v pug pabst fashion axe. Plaid shoreditch biodiesel, try-hard ugh scenester squid 90's master cleanse echo park locavore 3 wolf moon ennui. Hashtag wolf kombucha twee. Live-edge fanny pack hexagon actually kickstarter flexitarian yr hella.

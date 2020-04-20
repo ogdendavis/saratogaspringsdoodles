@@ -2,6 +2,7 @@
 slug: "home"
 title: "Imaginary Dog Breeders"
 menu: "Home"
+order: 1
 ---
 
 Chia subway tile YOLO selvage, etsy put a bird on it pinterest kitsch crucifix letterpress craft beer. Vaporware meh fixie, meggings franzen freegan flannel sartorial edison bulb hammock austin helvetica pour-over direct trade. La croix tote bag messenger bag mustache photo booth succulents. Hammock sustainable forage leggings fingerstache raclette single-origin coffee pop-up normcore slow-carb. Taiyaki locavore fanny pack banjo viral street art. Fam helvetica wayfarers glossier health goth.

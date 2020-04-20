@@ -82,7 +82,10 @@ const Header = ({ siteTitle }) => {
           }
         }
       }
-      allMarkdownRemark {
+      allMarkdownRemark(sort: {
+        order: ASC,
+        fields: [frontmatter___order]
+      }) {
         edges {
           node {
             frontmatter {

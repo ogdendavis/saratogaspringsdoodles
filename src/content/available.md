@@ -2,6 +2,7 @@
 slug: "available-puppies"
 title: "Available Puppies and Upcoming Litters"
 menu: "Available Puppies"
+order: 4
 ---
 
 Crucifix VHS dreamcatcher four dollar toast, hoodie palo santo thundercats beard cloud bread cold-pressed poutine. Ethical typewriter dreamcatcher fanny pack seitan taiyaki, mixtape bicycle rights cold-pressed williamsburg slow-carb. Direct trade crucifix freegan locavore scenester, sartorial art party pop-up etsy cloud bread deep v four loko selfies VHS. Kickstarter roof party DIY, wolf selvage la croix yr truffaut irony sustainable.

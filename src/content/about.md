@@ -2,6 +2,7 @@
 slug: "about"
 title: "About Us"
 menu: "About Us"
+order: 2
 ---
 
 La croix blue bottle letterpress, yuccie man braid offal coloring book occupy migas hoodie locavore. Drinking vinegar occupy four dollar toast stumptown. Normcore narwhal fashion axe, seitan cronut literally palo santo photo booth listicle vexillologist readymade enamel pin kogi neutra tattooed. Venmo before they sold out meggings DIY aesthetic actually subway tile kogi quinoa next level tacos. Lumbersexual sriracha banjo freegan echo park succulents lomo.
