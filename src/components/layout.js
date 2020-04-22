@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import styled from 'styled-components'
+import styled from "styled-components"
 
 import Header from "./header"
 import "./layout.css"
@@ -18,9 +18,9 @@ const Foot = styled.footer`
   margin-top: 4em;
   color: #aaa;
   font-size: 0.8em;
-`;
+`
 
-const Layout = ({ children }) => {
+const Layout = ({ children, location }) => {
   const data = useStaticQuery(graphql`
     query SiteMetaQuery {
       site {
@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle={data.site.siteMetadata.title} location={location} />
       <div
         style={{
           margin: `0 auto`,
@@ -44,7 +44,7 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <Foot>
-          © {new Date().getFullYear()}, { data.site.siteMetadata.company }
+          © {new Date().getFullYear()}, {data.site.siteMetadata.company}
         </Foot>
       </div>
     </>
@@ -53,6 +53,7 @@ const Layout = ({ children }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  location: PropTypes.object.isRequired,
 }
 
 export default Layout
