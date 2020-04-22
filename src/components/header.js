@@ -115,12 +115,31 @@ const Header = ({ siteTitle, location }) => {
       font-weight: 700;
       font-size: 1.25em;
       color: ${atHome ? 'orange' : 'white'};
-      transition: all 0.5s ease;
+      transition: all 0.3s ease-in-out;
       text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
+      position: relative;
     }
     a:hover {
-      text-decoration: underline;
       ${atHome ? '' : 'color: orange'}
+    }
+    a::before,
+    a::after {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      width: 0px;
+      height: 3px;
+      margin: 3px 0 0;
+      transition: all 0.3s ease-in-out;
+      transition-duration: 0.75s;
+      opacity: 0;
+      background-color: orange;
+    }
+    a:hover::before,
+    a:hover::after {
+      width: 100%;
+      opacity: 1;
+      left: 0;
     }
   `;
 
