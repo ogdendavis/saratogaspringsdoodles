@@ -1,10 +1,10 @@
 import { Link, useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import styled from 'styled-components'
-import Img from 'gatsby-image'
+import styled from "styled-components"
+import Img from "gatsby-image"
 
-import dog1 from '../images/dog1.png'
+import dog1 from "../images/dog1.png"
 
 const HeaderWrapper = styled.header`
   margin-bottom: 2em;
@@ -34,7 +34,7 @@ const HeaderInner = styled.div`
   }
 `
 
-const HeaderIcon = styled.img `
+const HeaderIcon = styled.img`
   max-height: 2em;
   margin-right: 1em;
 `
@@ -51,8 +51,8 @@ const MainNav = styled.nav`
     font-weight: 700;
     font-size: 1.25em;
     color: orange;
-    transition: all .5s ease;
-    text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+    transition: all 0.5s ease;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
   }
   a:hover {
     text-decoration: underline;
@@ -61,14 +61,14 @@ const MainNav = styled.nav`
 
 const HeaderBg = styled(Img)`
   &::after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    background: linear-gradient(rgba(0,0,0,0.05),rgba(0,0,0,0.5));
+    background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5));
   }
 `
 
@@ -78,14 +78,11 @@ const Header = ({ siteTitle }) => {
       background: file(relativePath: { eq: "puppy-on-grass.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1600, grayscale: true) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
-      allMarkdownRemark(sort: {
-        order: ASC,
-        fields: [frontmatter___order]
-      }) {
+      allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___order] }) {
         edges {
           node {
             frontmatter {
@@ -98,37 +95,46 @@ const Header = ({ siteTitle }) => {
     }
   `)
 
+  // Construct nav -- first get full pages from CMS
+  const navPages = data.allMarkdownRemark.edges.map(({ node }) => (
+    <Link key={`nav${node.frontmatter.slug}`} to={`${node.frontmatter.slug}`}>
+      {node.frontmatter.menu}
+    </Link>
+  ))
+
+  // Now add hard-coded pages
+  navPages.unshift(
+    <Link key={`nav/`} to={`/`}>
+      Home
+    </Link>
+  )
+  navPages.splice(
+    2,
+    0,
+    <Link key={`nav/dogs`} to={`/dogs`}>
+      Our Dogs
+    </Link>
+  )
 
   return (
     <HeaderWrapper>
       <HeaderInner>
         <h1 style={{ margin: 0 }}>
-          <Link
-            to="/"
-          >
+          <Link to="/">
             <HeaderIcon src={dog1} alt="Happy dog" />
             {siteTitle}
           </Link>
         </h1>
-        <MainNav>
-          <Link to="/">Home</Link>
-          {
-            data.allMarkdownRemark.edges.map(({ node }) => (
-              <Link key={`nav${node.frontmatter.slug}`} to={`${node.frontmatter.slug}`}>
-                {node.frontmatter.menu}
-              </Link>
-            ))
-          }
-        </MainNav>
+        <MainNav>{navPages}</MainNav>
       </HeaderInner>
       <HeaderBg
-        fluid = {data.background.childImageSharp.fluid}
-        style = {{
-          position: 'absolute',
+        fluid={data.background.childImageSharp.fluid}
+        style={{
+          position: "absolute",
           top: 0,
           left: 0,
-          width: '100%',
-          height: '100%',
+          width: "100%",
+          height: "100%",
         }}
       />
     </HeaderWrapper>
