@@ -34,10 +34,7 @@ const Layout = ({ children, location }) => {
 
   return (
     <>
-      <Header
-        siteTitle={data.site.siteMetadata.title}
-        atHome={location.pathname === '/'}
-      />
+      <Header siteTitle={data.site.siteMetadata.title} location={location} />
       <div
         style={{
           margin: `0 auto`,

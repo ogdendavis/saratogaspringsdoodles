@@ -92,8 +92,9 @@ const HeaderBg = styled(Img)`
   }
 `;
 
-const Header = ({ siteTitle, atHome }) => {
+const Header = ({ siteTitle, location }) => {
   // Telling the nav links if they were clicked from the home page, for header animation
+  const atHome = location.pathname === '/';
 
   const data = useStaticQuery(graphql`
     query headerQuery {
@@ -119,28 +120,32 @@ const Header = ({ siteTitle, atHome }) => {
 
   // Construct nav -- first get full pages from CMS
   const navPages = data.allMarkdownRemark.edges.map(({ node }) => (
-    <Link key={`nav${node.frontmatter.slug}`} to={`/${node.frontmatter.slug}`}>
+    <Link
+      key={`nav${node.frontmatter.slug}`}
+      to={`/${node.frontmatter.slug}`}
+      state={{ fromHome: atHome }}
+    >
       {node.frontmatter.menu}
     </Link>
   ));
 
   // Now add hard-coded pages
   navPages.unshift(
-    <Link key={`nav/`} to={`/`}>
+    <Link key={`nav/`} to={`/`} state={{ fromHome: atHome }}>
       Home
     </Link>
   );
   navPages.splice(
     2,
     0,
-    <Link key={`nav/dogs`} to={`/dogs`}>
+    <Link key={`nav/dogs`} to={`/dogs`} state={{ fromHome: atHome }}>
       Our Dogs
     </Link>
   );
 
   return (
     <Spring
-      from={{ height: atHome ? '175px' : '500px' }}
+      from={{ height: location.state.fromHome ? '500px' : '175px' }}
       to={{ height: atHome ? '500px' : '175px' }}
     >
       {styles => (
