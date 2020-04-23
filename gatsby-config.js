@@ -19,18 +19,16 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Midwoofery Template 1`,
+        short_name: `Woof`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#008080`,
+        theme_color: `#008080`,
         display: `minimal-ui`,
         icon: `src/images/dog1.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
     `gatsby-plugin-styled-components`,
     // START temp for dummy page content until we hook up back-end
     {
@@ -43,4 +41,4 @@ module.exports = {
     'gatsby-transformer-remark',
     // END temp for dummy page content
   ],
-}
+};
