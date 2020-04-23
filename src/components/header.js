@@ -159,18 +159,24 @@ const Header = ({ siteTitle, location }) => {
             </h1>
             <MainNav>{navPages}</MainNav>
           </HeaderInner>
-          {atHome && (
-            <HeaderBg
-              fluid={data.background.childImageSharp.fluid}
-              style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%',
-              }}
-            />
-          )}
+          <Spring
+            from={{ opacity: location.state.fromHome ? 1 : 0 }}
+            to={{ opacity: atHome ? 1 : 0 }}
+          >
+            {styles => (
+              <HeaderBg
+                fluid={data.background.childImageSharp.fluid}
+                style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  width: '100%',
+                  height: '100%',
+                  ...styles,
+                }}
+              />
+            )}
+          </Spring>
         </HeaderWrapper>
       )}
     </Spring>
