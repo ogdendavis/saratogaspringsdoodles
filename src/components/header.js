@@ -95,9 +95,10 @@ const HeaderBg = styled(Img)`
 const Header = ({ siteTitle, location }) => {
   // Telling the nav links if they were clicked from the home page, for header animation
   const atHome = location.pathname === '/';
-  const fromHome = location.hasOwnProperty('state')
-    ? location.state.fromHome
-    : false;
+  let fromHome = false;
+  if (location.state && location.state.fromHome) {
+    fromHome = location.state.fromHome;
+  }
 
   const data = useStaticQuery(graphql`
     query headerQuery {
