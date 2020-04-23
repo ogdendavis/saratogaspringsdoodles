@@ -34,24 +34,41 @@ const MainNav = styled.nav`
   a:hover {
     color: orange;
   }
-  a::before,
-  a::after {
+  a::before {
     content: '';
     position: absolute;
     bottom: -3px;
     width: 0px;
     height: 3px;
     margin: 3px 0 0;
-    transition: all 0.3s ease-in-out;
-    transition-duration: 0.75s;
+    transition: all 0.4s ease-in-out;
     opacity: 0;
     background-color: orange;
   }
-  a:hover::before,
-  a:hover::after {
+  a:hover::before {
     width: 100%;
     opacity: 1;
     left: 0;
+  }
+
+  a.active-nav-link {
+    color: #a0410a;
+  }
+  a.active-nav-link:hover {
+    color: #a0410a;
+  }
+  a.active-nav-link:hover::before {
+    opacity: 0;
+  }
+
+  a.active-nav-link-home {
+    color: #d56658;
+  }
+  a.active-nav-link-home:hover {
+    color: #d56658;
+  }
+  a.active-nav-link-home:hover::before {
+    opacity: 0;
   }
 `;
 
@@ -128,6 +145,7 @@ const Header = ({ siteTitle, location }) => {
       key={`nav${node.frontmatter.slug}`}
       to={`/${node.frontmatter.slug}`}
       state={{ fromHome: atHome }}
+      activeClassName="active-nav-link"
     >
       {node.frontmatter.menu}
     </Link>
@@ -135,14 +153,24 @@ const Header = ({ siteTitle, location }) => {
 
   // Now add hard-coded pages
   navPages.unshift(
-    <Link key={`nav/`} to={`/`} state={{ fromHome: atHome }}>
+    <Link
+      key={`nav/`}
+      to={`/`}
+      state={{ fromHome: atHome }}
+      activeClassName="active-nav-link-home"
+    >
       Home
     </Link>
   );
   navPages.splice(
     2,
     0,
-    <Link key={`nav/dogs`} to={`/dogs`} state={{ fromHome: atHome }}>
+    <Link
+      key={`nav/dogs`}
+      to={`/dogs`}
+      state={{ fromHome: atHome }}
+      activeClassName="active-nav-link"
+    >
       Our Dogs
     </Link>
   );
