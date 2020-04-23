@@ -1,9 +1,9 @@
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import React, { useEffect } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Img from 'gatsby-image';
-// import { Spring } from "react-spring/renderprops"
+import { Spring } from 'react-spring/renderprops';
 
 import dog1 from '../images/dog1.png';
 
@@ -13,8 +13,6 @@ const HeaderWrapper = styled.header`
   display: flex;
   align-items: flex-end;
   background: teal;
-  height: 175px;
-  transition: height 0.5s ease-in-out;
 `;
 
 const MainNav = styled.nav`
@@ -95,6 +93,8 @@ const HeaderBg = styled(Img)`
 `;
 
 const Header = ({ siteTitle, atHome }) => {
+  // Telling the nav links if they were clicked from the home page, for header animation
+
   const data = useStaticQuery(graphql`
     query headerQuery {
       background: file(relativePath: { eq: "puppy-on-grass.jpg" }) {
@@ -138,34 +138,37 @@ const Header = ({ siteTitle, atHome }) => {
     </Link>
   );
 
-  useEffect(() => {
-    document.querySelector('header').style.height = atHome ? '500px' : '175px';
-  });
-
   return (
-    <HeaderWrapper>
-      <HeaderInner>
-        <h1 style={{ margin: 0 }}>
-          <Link to="/">
-            <HeaderIcon src={dog1} alt="Happy dog" />
-            {siteTitle}
-          </Link>
-        </h1>
-        <MainNav>{navPages}</MainNav>
-      </HeaderInner>
-      {atHome && (
-        <HeaderBg
-          fluid={data.background.childImageSharp.fluid}
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-          }}
-        />
+    <Spring
+      from={{ height: atHome ? '175px' : '500px' }}
+      to={{ height: atHome ? '500px' : '175px' }}
+    >
+      {styles => (
+        <HeaderWrapper style={{ ...styles }}>
+          <HeaderInner>
+            <h1 style={{ margin: 0 }}>
+              <Link to="/">
+                <HeaderIcon src={dog1} alt="Happy dog" />
+                {siteTitle}
+              </Link>
+            </h1>
+            <MainNav>{navPages}</MainNav>
+          </HeaderInner>
+          {atHome && (
+            <HeaderBg
+              fluid={data.background.childImageSharp.fluid}
+              style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+              }}
+            />
+          )}
+        </HeaderWrapper>
       )}
-    </HeaderWrapper>
+    </Spring>
   );
 };
 
