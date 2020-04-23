@@ -177,7 +177,7 @@ Header.propTypes = {
 
 Header.defaultProps = {
   siteTitle: ``,
-  location: `/`,
+  location: {},
 };
 
 export default Header;
