@@ -95,6 +95,9 @@ const HeaderBg = styled(Img)`
 const Header = ({ siteTitle, location }) => {
   // Telling the nav links if they were clicked from the home page, for header animation
   const atHome = location.pathname === '/';
+  const fromHome = location.hasOwnProperty('state')
+    ? location.state.fromHome
+    : false;
 
   const data = useStaticQuery(graphql`
     query headerQuery {
@@ -145,7 +148,7 @@ const Header = ({ siteTitle, location }) => {
 
   return (
     <Spring
-      from={{ height: location.state.fromHome ? '500px' : '175px' }}
+      from={{ height: fromHome ? '500px' : '175px' }}
       to={{ height: atHome ? '500px' : '175px' }}
     >
       {styles => (
@@ -160,7 +163,7 @@ const Header = ({ siteTitle, location }) => {
             <MainNav>{navPages}</MainNav>
           </HeaderInner>
           <Spring
-            from={{ opacity: location.state.fromHome ? 1 : 0 }}
+            from={{ opacity: fromHome ? 1 : 0 }}
             to={{ opacity: atHome ? 1 : 0 }}
           >
             {styles => (
@@ -185,12 +188,12 @@ const Header = ({ siteTitle, location }) => {
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-  atHome: PropTypes.bool.isRequired,
+  location: PropTypes.object.isRequired,
 };
 
 Header.defaultProps = {
   siteTitle: ``,
-  atHome: false,
+  location: {},
 };
 
 export default Header;
