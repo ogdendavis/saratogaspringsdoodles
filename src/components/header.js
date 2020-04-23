@@ -1,13 +1,61 @@
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import Img from 'gatsby-image';
 // import { Spring } from "react-spring/renderprops"
 
 import dog1 from '../images/dog1.png';
 
-// HeaderWrapper and MainNav declared inside main export, to use location prop
+const HeaderWrapper = styled.header`
+  margin-bottom: 2em;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  background: teal;
+  height: 175px;
+  transition: height 0.5s ease-in-out;
+`;
+
+const MainNav = styled.nav`
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+
+  a {
+    margin: 1em 1em 0;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.25em;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
+    position: relative;
+  }
+  a:hover {
+    color: orange;
+  }
+  a::before,
+  a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    width: 0px;
+    height: 3px;
+    margin: 3px 0 0;
+    transition: all 0.3s ease-in-out;
+    transition-duration: 0.75s;
+    opacity: 0;
+    background-color: orange;
+  }
+  a:hover::before,
+  a:hover::after {
+    width: 100%;
+    opacity: 1;
+    left: 0;
+  }
+`;
 
 const HeaderInner = styled.div`
   color: teal;
@@ -46,7 +94,7 @@ const HeaderBg = styled(Img)`
   }
 `;
 
-const Header = ({ siteTitle, location }) => {
+const Header = ({ siteTitle, atHome }) => {
   const data = useStaticQuery(graphql`
     query headerQuery {
       background: file(relativePath: { eq: "puppy-on-grass.jpg" }) {
@@ -90,58 +138,9 @@ const Header = ({ siteTitle, location }) => {
     </Link>
   );
 
-  // Style wrapper & nav based on if we're at home or on sub-page
-  const atHome = location.pathname === '/';
-
-  const HeaderWrapper = styled.header`
-    margin-bottom: 2em;
-    position: relative;
-    overflow: hidden;
-    height: ${atHome ? '30rem' : 'auto'};
-    display: flex;
-    align-items: flex-end;
-    background: teal;
-  `;
-
-  const MainNav = styled.nav`
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
-
-    a {
-      margin: 1em 1em 0;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 1.25em;
-      color: ${atHome ? 'orange' : 'white'};
-      transition: all 0.3s ease-in-out;
-      text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
-      position: relative;
-    }
-    a:hover {
-      ${atHome ? '' : 'color: orange'}
-    }
-    a::before,
-    a::after {
-      content: '';
-      position: absolute;
-      bottom: -3px;
-      width: 0px;
-      height: 3px;
-      margin: 3px 0 0;
-      transition: all 0.3s ease-in-out;
-      transition-duration: 0.75s;
-      opacity: 0;
-      background-color: orange;
-    }
-    a:hover::before,
-    a:hover::after {
-      width: 100%;
-      opacity: 1;
-      left: 0;
-    }
-  `;
+  useEffect(() => {
+    document.querySelector('header').style.height = atHome ? '500px' : '175px';
+  });
 
   return (
     <HeaderWrapper>
@@ -154,7 +153,7 @@ const Header = ({ siteTitle, location }) => {
         </h1>
         <MainNav>{navPages}</MainNav>
       </HeaderInner>
-      {location.pathname === '/' && (
+      {atHome && (
         <HeaderBg
           fluid={data.background.childImageSharp.fluid}
           style={{
@@ -172,12 +171,12 @@ const Header = ({ siteTitle, location }) => {
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-  location: PropTypes.object.isRequired,
+  atHome: PropTypes.bool.isRequired,
 };
 
 Header.defaultProps = {
   siteTitle: ``,
-  location: {},
+  atHome: false,
 };
 
 export default Header;
