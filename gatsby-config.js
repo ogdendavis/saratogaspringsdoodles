@@ -45,6 +45,13 @@ module.exports = {
         path: `${__dirname}/src/cms-content-dogs`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `litters`,
+        path: `${__dirname}/src/cms-content-litters`,
+      },
+    },
     'gatsby-transformer-remark',
     // END temp for dummy page content
   ],

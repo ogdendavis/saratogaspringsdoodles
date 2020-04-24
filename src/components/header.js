@@ -177,6 +177,18 @@ const Header = ({ siteTitle, location }) => {
       Our Dogs
     </Link>
   );
+  navPages.splice(
+    3,
+    0,
+    <Link
+      key={`nav/available-puppies`}
+      to={`/available-puppies`}
+      state={{ fromHome: atHome }}
+      activeClassName="active-nav-link"
+    >
+      Available Puppies
+    </Link>
+  );
 
   return (
     <Spring
