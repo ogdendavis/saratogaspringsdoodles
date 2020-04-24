@@ -12,12 +12,9 @@ const Dog = styled.section`
   border-radius: 5px;
   box-sizing: border-box;
   padding: 1rem;
-
-  &:nth-child(odd) {
-    flex-direction: row-reverse;
-  }
 `;
 
+// Eventually make this a slideshow?
 const DogImageWrapper = styled.div`
   width: 100%;
 
