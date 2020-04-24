@@ -80,7 +80,7 @@ const DogPage = ({ location }) => {
       <SEO title="Our Dogs" />
       <h1>Our Dogs</h1>
       {data.allMarkdownRemark.edges.map(({ node }) => (
-        <Dog key={`dog${node.frontmatter.name}`}>
+        <Dog key={`dog${node.frontmatter.name}`} id={node.frontmatter.name}>
           <DogImageWrapper>
             <DogImage style={{ width: '25%' }} />
           </DogImageWrapper>
