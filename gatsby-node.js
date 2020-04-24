@@ -12,7 +12,9 @@ exports.createPages = ({ graphql, actions }) => {
   const generatePagesFromCMS = async () => {
     await graphql(`
       {
-        allMarkdownRemark {
+        allMarkdownRemark(
+          filter: { fileAbsolutePath: { regex: "/page-content/" } }
+        ) {
           edges {
             node {
               frontmatter {
@@ -22,18 +24,20 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
-    `).then( res => {
-      res.data.allMarkdownRemark.edges.forEach(({node}) => {
-        createPage({
-          path: node.frontmatter.slug,
-          component: path.resolve('./src/components/page.js'),
-          context: {
-            slug: node.frontmatter.slug,
-          },
+    `)
+      .then(res => {
+        res.data.allMarkdownRemark.edges.forEach(({ node }) => {
+          createPage({
+            path: node.frontmatter.slug,
+            component: path.resolve('./src/components/page.js'),
+            context: {
+              slug: node.frontmatter.slug,
+            },
+          });
         });
-      });
-    }).catch( er => console.error('Error in gatsby-node createPages', er));
-  }
+      })
+      .catch(er => console.error('Error in gatsby-node createPages', er));
+  };
 
   return generatePagesFromCMS();
-}
+};

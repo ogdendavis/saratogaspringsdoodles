@@ -126,7 +126,10 @@ const Header = ({ siteTitle, location }) => {
           }
         }
       }
-      allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___order] }) {
+      allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/page-content/" } }
+        sort: { order: ASC, fields: [frontmatter___order] }
+      ) {
         edges {
           node {
             frontmatter {

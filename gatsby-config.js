@@ -35,7 +35,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `content`,
-        path: `${__dirname}/src/content`,
+        path: `${__dirname}/src/page-content`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `dogs`,
+        path: `${__dirname}/src/dogs`,
       },
     },
     'gatsby-transformer-remark',
