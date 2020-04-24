@@ -127,7 +127,7 @@ const Header = ({ siteTitle, location }) => {
         }
       }
       allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/page-content/" } }
+        filter: { fileAbsolutePath: { regex: "/cms-content-pages/" } }
         sort: { order: ASC, fields: [frontmatter___order] }
       ) {
         edges {

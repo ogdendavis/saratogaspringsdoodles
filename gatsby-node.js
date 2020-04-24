@@ -13,7 +13,7 @@ exports.createPages = ({ graphql, actions }) => {
     await graphql(`
       {
         allMarkdownRemark(
-          filter: { fileAbsolutePath: { regex: "/page-content/" } }
+          filter: { fileAbsolutePath: { regex: "/cms-content-pages/" } }
         ) {
           edges {
             node {
