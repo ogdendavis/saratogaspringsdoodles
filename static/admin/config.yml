@@ -32,3 +32,52 @@ collections:
             [{ label: 'Male', value: 'm' }, { label: 'Female', value: 'f' }],
         }
       - { label: 'Bio', name: 'bio', widget: 'text' }
+  - name: 'litters'
+    label: 'Litters'
+    label_singular: 'Litter'
+    folder: 'src/cms/litters'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - {
+          label: 'Title',
+          name: 'title',
+          widget: 'string',
+          comment: 'Litters should have a unique identifying title',
+        }
+      - label: 'Sire'
+        name: 'sire'
+        widget: 'object'
+        fields:
+          - { label: 'Name', name: 'sire_name', widget: 'string' }
+          - {
+              label: 'In house?',
+              name: 'sire_in_house',
+              widget: 'boolean',
+              required: false,
+            }
+      - label: 'Dam'
+        name: 'dam'
+        widget: 'object'
+        fields:
+          - { label: 'Name', name: 'dam_name', widget: 'string' }
+          - {
+              label: 'In house?',
+              name: 'dam_in_house',
+              widget: 'boolean',
+              required: false,
+            }
+      - { label: 'Count', name: 'count', widget: 'number', required: false }
+      - label: 'Size Range'
+        name: 'size'
+        widget: 'object'
+        fields:
+          - { label: 'Min', name: 'min', widget: 'number', required: false }
+          - { label: 'Max', name: 'max', widget: 'number', required: false }
+      - { label: 'Colors', name: 'colors', widget: 'string', required: false }
+      - {
+          label: 'Expected Date',
+          name: 'date',
+          widget: 'datetime',
+          timeFormat: false,
+        }
