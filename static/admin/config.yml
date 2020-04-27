@@ -9,8 +9,21 @@ public_folder: /img
 collections:
   - name: 'dogs'
     label: 'Dogs'
+    label_singular: 'Dog'
     folder: 'src/cms/dogs'
     create: true
     slug: '{{slug}}'
     fields:
-      - { label: 'Name', name: 'name', widget: 'string' }
+      - { label: 'Name', name: 'title', widget: 'string' }
+      - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Breed', name: 'breed', widget: 'string' }
+      - { label: 'Color', name: 'color', widget: 'string' }
+      - { label: 'Birthdate', name: 'birthdate', widget: 'datetime' }
+      - {
+          label: 'Gender',
+          name: 'gender',
+          widget: 'select',
+          options:
+            [{ label: 'Male', value: 'm' }, { label: 'Female', value: 'f' }],
+        }
+      - { label: 'Bio', name: 'bio', widget: 'text' }
