@@ -80,4 +80,5 @@ collections:
           name: 'date',
           widget: 'datetime',
           timeFormat: false,
+          required: false,
         }
