@@ -10,5 +10,9 @@
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
     <!-- Widget to use netlify's auth - allows creation of users without repo access -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <!-- Load custom CSS for preview pane -->
+    <script>
+      CMS.registerPreviewStyle('./preview.css');
+    </script>
   </body>
 </html>
