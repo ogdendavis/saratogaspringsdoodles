@@ -55,7 +55,14 @@ module.exports = {
     `gatsby-transformer-remark`,
     // END temp for dummy page content
     // Netlify CMS to manage content
-    `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`,
+        htmlTitle: `Imaginary Dogs Admin`,
+        htmlFavicon: `${__dirname}/src/images/dog1.png`,
+      },
+    },
     // INSTALL THESE ONCE CMS IS UP AND RUNNING
     // `gatsby-plugin-sitemap`,
     // Keep netlify plugin last
