@@ -1,0 +1,16 @@
+backend:
+  name: git-gateway
+  branch: master
+  repo: ogdendavis/midwoofery-1
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: 'dogs'
+    label: 'Dogs'
+    folder: 'src/cms/dogs'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Name', name: 'name', widget: 'string' }

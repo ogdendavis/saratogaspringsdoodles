@@ -52,7 +52,13 @@ module.exports = {
         path: `${__dirname}/src/cms-content-litters`,
       },
     },
-    'gatsby-transformer-remark',
+    `gatsby-transformer-remark`,
     // END temp for dummy page content
+    // Netlify CMS to manage content
+    `gatsby-plugin-netlify-cms`,
+    // INSTALL THESE ONCE CMS IS UP AND RUNNING
+    // `gatsby-plugin-sitemap`,
+    // Keep netlify plugin last
+    // `gatsby-plugin-netlify`
   ],
 };
