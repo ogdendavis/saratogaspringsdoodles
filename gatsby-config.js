@@ -41,13 +41,6 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `dogs`,
-        path: `${__dirname}/src/cms-content-dogs`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         name: `litters`,
         path: `${__dirname}/src/cms-content-litters`,
       },
@@ -61,6 +54,15 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
         htmlTitle: `Imaginary Dogs Admin`,
         htmlFavicon: `${__dirname}/src/images/dog1.png`,
+      },
+    },
+    // Make gatsby aware of CMS content
+
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `dogs`,
+        path: `${__dirname}/src/cms/dogs`,
       },
     },
     // INSTALL THESE ONCE CMS IS UP AND RUNNING

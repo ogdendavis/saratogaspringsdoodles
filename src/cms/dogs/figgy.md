@@ -1,5 +1,4 @@
 ---
-name: Test
 title: Figgy
 image: /img/img_0026.jpg
 breed: Goldendoodle
