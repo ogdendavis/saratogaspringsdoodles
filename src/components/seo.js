@@ -69,7 +69,7 @@ function SEO({ description, lang, meta, title }) {
         },
       ].concat(meta)}
     >
-      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+      {/* Insert any tags that need to go in global page head (e.g. analytics tags) here */}
     </Helmet>
   );
 }
