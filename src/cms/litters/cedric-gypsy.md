@@ -6,6 +6,7 @@ sire:
   sire_in_house: true
 dam:
   dam_name: Gypsy
+  dam_image: /img/gypsy-clone.jpg
 count: 8
 size:
   min: 30
