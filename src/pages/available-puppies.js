@@ -54,15 +54,25 @@ const ParentContainer = styled.div`
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
-  margin-bottom: 1rem;
   min-width: 50%;
+
+  figure {
+    margin-bottom: 0.5rem;
+  }
+
+  caption {
+    display: block;
+    margin: auto;
+    font-size: 0.75rem;
+    font-style: italic;
+  }
 `;
 
 const ParentImg = styled.img`
   display: block;
   width: 300px;
   max-width: 100%;
-  margin: 5px auto;
+  margin: 5px auto 0;
   border-radius: 5px;
 `;
 
@@ -190,8 +200,14 @@ const PuppyPage = ({ location }) => {
                 {sire} and {dam}
               </h2>
               <ParentContainer>
-                {damImage}
-                {sireImage}
+                <figure>
+                  {damImage}
+                  <caption>{litter.frontmatter.dam.dam_name}</caption>
+                </figure>
+                <figure>
+                  {sireImage}
+                  <caption>{litter.frontmatter.sire.sire_name}</caption>
+                </figure>
               </ParentContainer>
               <LitterInfo>
                 <ul>
