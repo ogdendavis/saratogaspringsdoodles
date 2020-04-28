@@ -73,19 +73,28 @@ const PuppyPage = ({ location }) => {
   const data = useStaticQuery(graphql`
     query puppiesQuery {
       allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/cms-content-litters/" } }
-        sort: { order: ASC, fields: [frontmatter___expected_date] }
+        filter: { fileAbsolutePath: { regex: "/cms/litters/.*.md/" } }
+        sort: { order: ASC, fields: [frontmatter___title] }
       ) {
         edges {
           node {
             frontmatter {
-              sire_name
-              is_sire_inhouse
-              dam_name
+              title
+              date(formatString: "MMMM DD, YYYY")
               count
-              expected_size
-              expected_colors
-              expected_date(formatString: "MMMM DD, YYYY")
+              colors
+              size {
+                min
+                max
+              }
+              dam {
+                dam_name
+                dam_in_house
+              }
+              sire {
+                sire_name
+                sire_in_house
+              }
             }
           }
         }
@@ -103,22 +112,27 @@ const PuppyPage = ({ location }) => {
       </p>
       <div>
         {data.allMarkdownRemark.edges.map(({ node }) => {
-          const sire = node.frontmatter.is_sire_inhouse ? (
-            <Link to={`/dogs#${node.frontmatter.sire}`}>
-              {node.frontmatter.sire}
+          const sire = node.frontmatter.sire.sire_in_house ? (
+            <Link to={`/dogs#${node.frontmatter.sire.sire_name}`}>
+              {node.frontmatter.sire.sire_name}
             </Link>
           ) : (
-            node.frontmatter.sire
+            node.frontmatter.sire.sire_name
           );
+          const dam = node.frontmatter.dam.dam_in_house ? (
+            <Link to={`/dogs#${node.frontmatter.dam.dam_name}`}>
+              {node.frontmatter.dam.dam_name}
+            </Link>
+          ) : (
+            node.frontmatter.dam.dam_name
+          );
+
           return (
             <Litter
-              key={`litter${node.frontmatter.dam}${node.frontmatter.expected_date}`}
+              key={`litter${node.frontmatter.dam.dam_name}${node.frontmatter.date}`}
             >
               <h2>
-                {sire} and{' '}
-                <Link to={`/dogs/#${node.frontmatter.dam}`}>
-                  {node.frontmatter.dam}
-                </Link>
+                {sire} and {dam}
               </h2>
               <ParentContainer>
                 <DogImage />
@@ -127,21 +141,25 @@ const PuppyPage = ({ location }) => {
               <LitterInfo>
                 <ul>
                   <li>
-                    <b>Due date:</b> {node.frontmatter.expected_date}
+                    <b>Due date:</b> {node.frontmatter.date}
                   </li>
-                  <li>
-                    <b>Puppies expected:</b> {node.frontmatter.count}
-                  </li>
-                  <li>
-                    <b>Full-grown size:</b> {node.frontmatter.expected_size[0]}{' '}
-                    to {node.frontmatter.expected_size[1]} pounds
-                  </li>
-                  <li>
-                    <b>Possible colors: </b>
-                    {node.frontmatter.expected_colors
-                      .map(color => color)
-                      .join(', ')}
-                  </li>
+                  {node.frontmatter.count && (
+                    <li>
+                      <b>Puppies expected:</b> {node.frontmatter.count}
+                    </li>
+                  )}
+                  {node.frontmatter.size && (
+                    <li>
+                      <b>Full-grown size:</b> {node.frontmatter.size.min} to{' '}
+                      {node.frontmatter.size.max} pounds
+                    </li>
+                  )}
+                  {node.frontmatter.colors && (
+                    <li>
+                      <b>Possible colors: </b>
+                      {node.frontmatter.colors}
+                    </li>
+                  )}
                 </ul>
                 <p>
                   <Link to="/contact">Contact us</Link> about this litter
