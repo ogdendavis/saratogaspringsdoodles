@@ -38,15 +38,8 @@ module.exports = {
         path: `${__dirname}/src/cms-content-pages`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `littersOLD`,
-        path: `${__dirname}/src/cms-content-litters`,
-      },
-    },
-    `gatsby-transformer-remark`,
     // END temp for dummy page content
+    `gatsby-transformer-remark`,
     // Netlify CMS to manage content
     {
       resolve: `gatsby-plugin-netlify-cms`,
