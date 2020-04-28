@@ -73,7 +73,6 @@ const MainNav = styled.nav`
 `;
 
 const HeaderInner = styled.div`
-  color: teal;
   margin: 0 auto;
   width: 100%;
   max-width: 60em;
@@ -157,8 +156,8 @@ const Header = ({ siteTitle, location }) => {
   // Now add hard-coded pages
   navPages.unshift(
     <Link
-      key={`nav/`}
-      to={`/`}
+      key="nav/"
+      to="/"
       state={{ fromHome: atHome }}
       activeClassName="active-nav-link-home"
     >
@@ -169,8 +168,8 @@ const Header = ({ siteTitle, location }) => {
     2,
     0,
     <Link
-      key={`nav/dogs`}
-      to={`/dogs`}
+      key="nav/dogs"
+      to="/dogs"
       state={{ fromHome: atHome }}
       activeClassName="active-nav-link"
     >
@@ -181,12 +180,22 @@ const Header = ({ siteTitle, location }) => {
     3,
     0,
     <Link
-      key={`nav/available-puppies`}
-      to={`/available-puppies`}
+      key="nav/available-puppies"
+      to="/available-puppies"
       state={{ fromHome: atHome }}
       activeClassName="active-nav-link"
     >
       Available Puppies
+    </Link>
+  );
+  navPages.push(
+    <Link
+      key="nav/contact"
+      to="/contact"
+      state={{ fromHome: atHome }}
+      activeClassName="active-nav-link"
+    >
+      Contact Us
     </Link>
   );
 
