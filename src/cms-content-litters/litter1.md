@@ -1,7 +1,8 @@
 ---
-sire: 'Cedric'
+title: 'Old 1'
+sire_name: 'Cedric'
 is_sire_inhouse: true
-dam: 'Gypsy'
+dam_name: 'Gypsy'
 count: 8
 expected_size: [25, 40]
 expected_colors: ['apricot', 'cream', 'yellow']

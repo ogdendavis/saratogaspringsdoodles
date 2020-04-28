@@ -41,7 +41,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `litters`,
+        name: `littersOLD`,
         path: `${__dirname}/src/cms-content-litters`,
       },
     },
@@ -57,12 +57,18 @@ module.exports = {
       },
     },
     // Make gatsby aware of CMS content
-
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `dogs`,
         path: `${__dirname}/src/cms/dogs`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `litters`,
+        path: `${__dirname}/src/cms/litters`,
       },
     },
     // INSTALL THESE ONCE CMS IS UP AND RUNNING

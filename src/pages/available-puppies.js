@@ -73,15 +73,15 @@ const PuppyPage = ({ location }) => {
   const data = useStaticQuery(graphql`
     query puppiesQuery {
       allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "//cms-content-litters//" } }
-        sort: { order: ASC, fields: [frontmatter___order] }
+        filter: { fileAbsolutePath: { regex: "/cms-content-litters/" } }
+        sort: { order: ASC, fields: [frontmatter___expected_date] }
       ) {
         edges {
           node {
             frontmatter {
-              sire
+              sire_name
               is_sire_inhouse
-              dam
+              dam_name
               count
               expected_size
               expected_colors
