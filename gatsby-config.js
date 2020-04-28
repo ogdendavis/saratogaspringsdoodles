@@ -30,14 +30,6 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-styled-components`,
-    // START temp for dummy page content until we hook up back-end
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `content`,
-        path: `${__dirname}/src/cms-content-pages`,
-      },
-    },
     // END temp for dummy page content
     `gatsby-transformer-remark`,
     // Netlify CMS to manage content
