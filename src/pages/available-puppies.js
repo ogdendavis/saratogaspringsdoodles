@@ -4,7 +4,8 @@ import styled from 'styled-components';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import DogImage from '../components/dogImage';
+
+import dogFace from '../images/dog5.png';
 
 const Litter = styled.section`
   display: flex;
@@ -61,6 +62,14 @@ const ParentContainer = styled.div`
   }
 `;
 
+const ParentImg = styled.img`
+  display: block;
+  width: 300px;
+  max-width: 100%;
+  margin: auto;
+  border-radius: 5px;
+`;
+
 const LitterInfo = styled.div`
   margin: auto;
   ul {
@@ -70,9 +79,10 @@ const LitterInfo = styled.div`
 `;
 
 const PuppyPage = ({ location }) => {
+  // Get all litter data, and image paths for all dogs
   const data = useStaticQuery(graphql`
     query puppiesQuery {
-      allMarkdownRemark(
+      litters: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/cms/litters/.*.md/" } }
         sort: { order: ASC, fields: [frontmatter___title] }
       ) {
@@ -80,7 +90,7 @@ const PuppyPage = ({ location }) => {
           node {
             frontmatter {
               title
-              date(formatString: "MMMM DD, YYYY")
+              date
               count
               colors
               size {
@@ -99,8 +109,26 @@ const PuppyPage = ({ location }) => {
           }
         }
       }
+      dogs: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/cms/dogs/.*.md/" } }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              title
+              image
+            }
+          }
+        }
+      }
     }
   `);
+
+  // Convert dogs from graphql call into more accessible dogs object to easily look up images
+  const dogImagePaths = {};
+  data.dogs.edges.forEach(({ node }) => {
+    dogImagePaths[node.frontmatter.title] = node.frontmatter.image;
+  });
 
   return (
     <Layout location={location}>
@@ -111,53 +139,72 @@ const PuppyPage = ({ location }) => {
         these litters
       </p>
       <div>
-        {data.allMarkdownRemark.edges.map(({ node }) => {
-          const sire = node.frontmatter.sire.sire_in_house ? (
-            <Link to={`/dogs#${node.frontmatter.sire.sire_name}`}>
-              {node.frontmatter.sire.sire_name}
+        {data.litters.edges.map(({ node: litter }) => {
+          // Get link to sire / dam profile, if in-house
+          const sire = litter.frontmatter.sire.sire_in_house ? (
+            <Link to={`/dogs#${litter.frontmatter.sire.sire_name}`}>
+              {litter.frontmatter.sire.sire_name}
             </Link>
           ) : (
-            node.frontmatter.sire.sire_name
+            litter.frontmatter.sire.sire_name
           );
-          const dam = node.frontmatter.dam.dam_in_house ? (
-            <Link to={`/dogs#${node.frontmatter.dam.dam_name}`}>
-              {node.frontmatter.dam.dam_name}
+          const dam = litter.frontmatter.dam.dam_in_house ? (
+            <Link to={`/dogs#${litter.frontmatter.dam.dam_name}`}>
+              {litter.frontmatter.dam.dam_name}
             </Link>
           ) : (
-            node.frontmatter.dam.dam_name
+            litter.frontmatter.dam.dam_name
+          );
+
+          // Get path to sire / dam image, if in-house, or default img
+          const damImage = litter.frontmatter.dam.dam_in_house ? (
+            <ParentImg
+              src={dogImagePaths[litter.frontmatter.dam.dam_name]}
+              alt={litter.frontmatter.dam.dam_name}
+            />
+          ) : (
+            <ParentImg src={dogFace} alt="dog face" />
+          );
+          const sireImage = litter.frontmatter.sire.sire_in_house ? (
+            <ParentImg
+              src={dogImagePaths[litter.frontmatter.sire.sire_name]}
+              alt={litter.frontmatter.sire.sire_name}
+            />
+          ) : (
+            <ParentImg src={dogFace} alt="dog face" />
           );
 
           return (
             <Litter
-              key={`litter${node.frontmatter.dam.dam_name}${node.frontmatter.date}`}
+              key={`litter${litter.frontmatter.dam.dam_name}${litter.frontmatter.date}`}
             >
               <h2>
                 {sire} and {dam}
               </h2>
               <ParentContainer>
-                <DogImage />
-                <DogImage />
+                {damImage}
+                {sireImage}
               </ParentContainer>
               <LitterInfo>
                 <ul>
                   <li>
-                    <b>Due date:</b> {node.frontmatter.date}
+                    <b>Due date:</b> {litter.frontmatter.date}
                   </li>
-                  {node.frontmatter.count && (
+                  {litter.frontmatter.count && (
                     <li>
-                      <b>Puppies expected:</b> {node.frontmatter.count}
+                      <b>Puppies expected:</b> {litter.frontmatter.count}
                     </li>
                   )}
-                  {node.frontmatter.size && (
+                  {litter.frontmatter.size && (
                     <li>
-                      <b>Full-grown size:</b> {node.frontmatter.size.min} to{' '}
-                      {node.frontmatter.size.max} pounds
+                      <b>Full-grown size:</b> {litter.frontmatter.size.min} to{' '}
+                      {litter.frontmatter.size.max} pounds
                     </li>
                   )}
-                  {node.frontmatter.colors && (
+                  {litter.frontmatter.colors && (
                     <li>
                       <b>Possible colors: </b>
-                      {node.frontmatter.colors}
+                      {litter.frontmatter.colors}
                     </li>
                   )}
                 </ul>
