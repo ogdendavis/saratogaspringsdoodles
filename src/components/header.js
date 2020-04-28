@@ -125,79 +125,8 @@ const Header = ({ siteTitle, location }) => {
           }
         }
       }
-      allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/cms-content-pages/" } }
-        sort: { order: ASC, fields: [frontmatter___order] }
-      ) {
-        edges {
-          node {
-            frontmatter {
-              menu
-              slug
-            }
-          }
-        }
-      }
     }
   `);
-
-  // Construct nav -- first get full pages from CMS
-  const navPages = data.allMarkdownRemark.edges.map(({ node }) => (
-    <Link
-      key={`nav${node.frontmatter.slug}`}
-      to={`/${node.frontmatter.slug}`}
-      state={{ fromHome: atHome }}
-      activeClassName="active-nav-link"
-    >
-      {node.frontmatter.menu}
-    </Link>
-  ));
-
-  // Now add hard-coded pages
-  navPages.unshift(
-    <Link
-      key="nav/"
-      to="/"
-      state={{ fromHome: atHome }}
-      activeClassName="active-nav-link-home"
-    >
-      Home
-    </Link>
-  );
-  navPages.splice(
-    2,
-    0,
-    <Link
-      key="nav/dogs"
-      to="/dogs"
-      state={{ fromHome: atHome }}
-      activeClassName="active-nav-link"
-    >
-      Our Dogs
-    </Link>
-  );
-  navPages.splice(
-    3,
-    0,
-    <Link
-      key="nav/available-puppies"
-      to="/available-puppies"
-      state={{ fromHome: atHome }}
-      activeClassName="active-nav-link"
-    >
-      Available Puppies
-    </Link>
-  );
-  navPages.push(
-    <Link
-      key="nav/contact"
-      to="/contact"
-      state={{ fromHome: atHome }}
-      activeClassName="active-nav-link"
-    >
-      Contact Us
-    </Link>
-  );
 
   return (
     <Spring
@@ -213,7 +142,48 @@ const Header = ({ siteTitle, location }) => {
                 {siteTitle}
               </Link>
             </h1>
-            <MainNav>{navPages}</MainNav>
+            <MainNav>
+              <Link
+                key="nav/"
+                to="/"
+                state={{ fromHome: atHome }}
+                activeClassName="active-nav-link-home"
+              >
+                Home
+              </Link>
+              <Link
+                key="nav/about"
+                to="/about"
+                state={{ fromHome: atHome }}
+                activeClassName="active-nav-link-home"
+              >
+                About Us
+              </Link>
+              <Link
+                key="nav/dogs"
+                to="/dogs"
+                state={{ fromHome: atHome }}
+                activeClassName="active-nav-link"
+              >
+                Our Dogs
+              </Link>
+              <Link
+                key="nav/available-puppies"
+                to="/available-puppies"
+                state={{ fromHome: atHome }}
+                activeClassName="active-nav-link"
+              >
+                Available Puppies
+              </Link>
+              <Link
+                key="nav/contact"
+                to="/contact"
+                state={{ fromHome: atHome }}
+                activeClassName="active-nav-link"
+              >
+                Contact Us
+              </Link>
+            </MainNav>
           </HeaderInner>
           <Spring
             from={{ opacity: fromHome ? 1 : 0 }}
