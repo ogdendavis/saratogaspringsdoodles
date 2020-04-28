@@ -56,6 +56,12 @@ collections:
               widget: 'boolean',
               required: false,
             }
+          - {
+              label: 'Photo',
+              name: 'sire_image',
+              widget: 'image',
+              required: false,
+            }
       - label: 'Dam'
         name: 'dam'
         widget: 'object'
@@ -65,6 +71,12 @@ collections:
               label: 'In house?',
               name: 'dam_in_house',
               widget: 'boolean',
+              required: false,
+            }
+          - {
+              label: 'Photo',
+              name: 'dam_image',
+              widget: 'image',
               required: false,
             }
       - { label: 'Count', name: 'count', widget: 'number', required: false }

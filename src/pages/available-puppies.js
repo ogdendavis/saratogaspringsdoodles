@@ -55,18 +55,14 @@ const ParentContainer = styled.div`
   flex-flow: column nowrap;
   justify-content: space-around;
   margin-bottom: 1rem;
-
-  div {
-    width: 400px;
-    min-width: 50%;
-  }
+  min-width: 50%;
 `;
 
 const ParentImg = styled.img`
   display: block;
   width: 300px;
   max-width: 100%;
-  margin: auto;
+  margin: 5px auto;
   border-radius: 5px;
 `;
 
@@ -90,7 +86,7 @@ const PuppyPage = ({ location }) => {
           node {
             frontmatter {
               title
-              date
+              date(formatString: "MMMM YYYY")
               count
               colors
               size {
@@ -100,10 +96,12 @@ const PuppyPage = ({ location }) => {
               dam {
                 dam_name
                 dam_in_house
+                dam_image
               }
               sire {
                 sire_name
                 sire_in_house
+                sire_image
               }
             }
           }
@@ -156,8 +154,13 @@ const PuppyPage = ({ location }) => {
             litter.frontmatter.dam.dam_name
           );
 
-          // Get path to sire / dam image, if in-house, or default img
-          const damImage = litter.frontmatter.dam.dam_in_house ? (
+          // Get path to sire / dam image: attached to litter, attached to in-house dog, or default img
+          const damImage = litter.frontmatter.dam.dam_image ? (
+            <ParentImg
+              src={litter.frontmatter.dam.dam_image}
+              alt={litter.frontmatter.dam.dam_name}
+            />
+          ) : litter.frontmatter.dam.dam_in_house ? (
             <ParentImg
               src={dogImagePaths[litter.frontmatter.dam.dam_name]}
               alt={litter.frontmatter.dam.dam_name}
@@ -165,7 +168,12 @@ const PuppyPage = ({ location }) => {
           ) : (
             <ParentImg src={dogFace} alt="dog face" />
           );
-          const sireImage = litter.frontmatter.sire.sire_in_house ? (
+          const sireImage = litter.frontmatter.sire.sire_image ? (
+            <ParentImg
+              src={litter.frontmatter.sire.sire_image}
+              alt={litter.frontmatter.dam.dam_name}
+            />
+          ) : litter.frontmatter.sire.sire_in_house ? (
             <ParentImg
               src={dogImagePaths[litter.frontmatter.sire.sire_name]}
               alt={litter.frontmatter.sire.sire_name}
@@ -188,11 +196,11 @@ const PuppyPage = ({ location }) => {
               <LitterInfo>
                 <ul>
                   <li>
-                    <b>Due date:</b> {litter.frontmatter.date}
+                    <b>Expected:</b> {litter.frontmatter.date}
                   </li>
                   {litter.frontmatter.count && (
                     <li>
-                      <b>Puppies expected:</b> {litter.frontmatter.count}
+                      <b>Puppy count:</b> {litter.frontmatter.count}
                     </li>
                   )}
                   {litter.frontmatter.size && (
