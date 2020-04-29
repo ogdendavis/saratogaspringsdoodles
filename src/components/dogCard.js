@@ -53,18 +53,15 @@ const DogInfo = styled.div`
     li {
       display: inline-block;
       margin: 0 1rem;
+      font-style: italic;
     }
-  }
-
-  p {
-    font-style: italic;
   }
 `;
 
 const DogCard = ({ dog }) => {
   // Calculate age from birthday
   const now = new Date();
-  const bday = new Date(dog.birthdate);
+  const bday = new Date(dog.frontmatter.birthdate);
   const ms = Math.floor(now - bday);
   // 31557600000 milliseconds in a year
   const years = Math.floor(ms / 31557600000);
@@ -76,19 +73,19 @@ const DogCard = ({ dog }) => {
       : `${months} month${months > 1 ? 's' : ''}`;
 
   return (
-    <DogContainer id={dog.title}>
+    <DogContainer id={dog.frontmatter.title}>
       <DogImageWrapper>
-        <img src={dog.image} alt={dog.title} />
+        <img src={dog.frontmatter.image} alt={dog.frontmatter.title} />
       </DogImageWrapper>
       <DogInfo>
-        <h2>{dog.title}</h2>
+        <h2>{dog.frontmatter.title}</h2>
         <ul>
-          <li>{dog.breed}</li>
-          <li>{dog.color}</li>
-          <li>{dog.sex === 'M' ? 'Male' : 'Female'}</li>
+          <li>{dog.frontmatter.breed}</li>
+          <li>{dog.frontmatter.color}</li>
+          <li>{dog.frontmatter.sex === 'M' ? 'Male' : 'Female'}</li>
           <li>{dog.displayAge}</li>
         </ul>
-        <p>{dog.bio}</p>
+        <div dangerouslySetInnerHTML={{ __html: dog.html }} />
       </DogInfo>
     </DogContainer>
   );

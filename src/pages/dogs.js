@@ -21,8 +21,8 @@ const DogPage = ({ location }) => {
               color
               birthdate
               gender
-              bio
             }
+            html
           }
         }
       }
@@ -40,7 +40,7 @@ const DogPage = ({ location }) => {
       <h1>Our Dogs</h1>
       <p>{data.pageIntro.childGeneralJson.dogs_parents}</p>
       {data.allMarkdownRemark.edges.map(({ node }) => (
-        <DogCard dog={node.frontmatter} key={node.frontmatter.title} />
+        <DogCard dog={node} key={node.frontmatter.title} />
       ))}
     </Layout>
   );

@@ -31,7 +31,7 @@ collections:
           options:
             [{ label: 'Male', value: 'm' }, { label: 'Female', value: 'f' }],
         }
-      - { label: 'Bio', name: 'bio', widget: 'markdown' }
+      - { label: 'Bio', name: 'body', widget: 'markdown' }
   - name: 'litters'
     label: 'Litters'
     label_singular: 'Litter'
