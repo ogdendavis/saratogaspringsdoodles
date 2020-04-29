@@ -59,6 +59,6 @@ module.exports = {
     },
     `gatsby-plugin-sitemap`,
     // Keep netlify plugin last
-    // `gatsby-plugin-netlify`
+    `gatsby-plugin-netlify`,
   ],
 };
