@@ -31,8 +31,8 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-styled-components`,
-    // END temp for dummy page content
     `gatsby-transformer-remark`,
+    `gatsby-transformer-json`,
     // Netlify CMS to manage content
     {
       resolve: `gatsby-plugin-netlify-cms`,
@@ -55,6 +55,13 @@ module.exports = {
       options: {
         name: `litters`,
         path: `${__dirname}/src/cms/litters`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `general`,
+        path: `${__dirname}/src/cms/general`,
       },
     },
     `gatsby-plugin-sitemap`,
