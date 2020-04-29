@@ -1,0 +1,1 @@
+Our sires and dams have passed all health clearances, including bone-density levels (important when considering adopting a moon dog to live on Earth). They're pets, and live with us or guardian families in the home. They go on walks, have play dates, and live their best lives with their human and moonfolk families!

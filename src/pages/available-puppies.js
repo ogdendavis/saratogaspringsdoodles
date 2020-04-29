@@ -51,10 +51,10 @@ const PuppyPage = ({ location }) => {
           }
         }
       }
-      pageIntro: file(absolutePath: { regex: "//cms/general/dogs.json/" }) {
-        childGeneralJson {
-          dogs_litters
-        }
+      pageIntro: markdownRemark(
+        fileAbsolutePath: { regex: "//cms/general/litters.md/" }
+      ) {
+        html
       }
     }
   `);
@@ -69,7 +69,7 @@ const PuppyPage = ({ location }) => {
     <Layout location={location}>
       <SEO title="Puppies and upcoming litters" />
       <h1>Our Upcoming Litters</h1>
-      <p>{data.pageIntro.childGeneralJson.dogs_litters}</p>
+      <div dangerouslySetInnerHTML={{ __html: data.pageIntro.html }} />
       <p>
         <Link to="/contact">Contact us</Link> to inquire about availability for
         these litters

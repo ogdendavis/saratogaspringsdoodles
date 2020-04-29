@@ -101,7 +101,7 @@ collections:
     files:
       - name: 'about_breeder'
         label: 'About You'
-        file: 'src/cms/general/breeder.json'
+        file: 'src/cms/general/breeder.md'
         fields:
           - { label: 'Your Name', name: 'title', widget: 'string' }
           - {
@@ -110,10 +110,10 @@ collections:
               widget: 'image',
               required: false,
             }
-          - { label: 'Your Bio', name: 'breeder_bio', widget: 'markdown' }
+          - { label: 'Your Bio', name: 'body', widget: 'markdown' }
       - name: 'about_business'
         label: 'About Your Business'
-        file: 'src/cms/general/business.json'
+        file: 'src/cms/general/business.md'
         fields:
           - { label: 'Business Name', name: 'title', widget: 'string' }
           - {
@@ -128,42 +128,42 @@ collections:
               widget: 'image',
               required: false,
             }
-          - {
-              label: 'About Your Business',
-              name: 'business_about',
-              widget: 'markdown',
-            }
+          - { label: 'About Your Business', name: 'body', widget: 'markdown' }
       - name: 'about_dogs'
-        label: 'About Your Dogs & Litters'
-        file: 'src/cms/general/dogs.json'
+        label: 'About Your Sires & Dams'
+        file: 'src/cms/general/dogs.md'
         fields:
           - {
               label: 'General Info on Sires & Dams',
-              name: 'dogs_parents',
+              name: 'body',
               widget: 'markdown',
             }
+      - name: 'about_litters'
+        label: 'About Your Litters'
+        file: 'src/cms/general/litters.md'
+        fields:
           - {
               label: 'General Info on Litters',
-              name: 'dogs_litters',
+              name: 'body',
               widget: 'markdown',
             }
       - name: 'about_welcome'
         label: 'Welcome messages'
-        file: 'src/cms/general/welcome.json'
+        file: 'src/cms/general/welcome.md'
         fields:
           - {
               label: 'Welcome to the website',
-              name: 'welcome_site',
+              name: 'body',
               widget: 'markdown',
             }
           - {
-              label: 'Contact us welcome',
+              label: 'Contact us text (1 paragraph)',
               name: 'welcome_contact',
-              widget: 'markdown',
+              widget: 'text',
             }
       - name: 'about_contact'
         label: 'Contact Info'
-        file: 'src/cms/general/contact.json'
+        file: 'src/cms/general/contact.md'
         fields:
           - { label: 'Phone', name: 'phone', widget: 'string' }
           - { label: 'Email', name: 'email', widget: 'string' }

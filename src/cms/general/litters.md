@@ -1,0 +1,1 @@
+Our newborn moon pups are given the best veterinary care possible from their initial checks to the final vaccinations and sign-off before they go home to their families. They're socialized with moon cats and livestock, and exposed to a variety of environments, such as craters, dusty plains, and vast expanses of endless, airless, lifeless space.

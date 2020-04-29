@@ -26,10 +26,10 @@ const DogPage = ({ location }) => {
           }
         }
       }
-      pageIntro: file(absolutePath: { regex: "//cms/general/dogs.json/" }) {
-        childGeneralJson {
-          dogs_parents
-        }
+      pageIntro: markdownRemark(
+        fileAbsolutePath: { regex: "//cms/general/dogs.md/" }
+      ) {
+        html
       }
     }
   `);
@@ -38,7 +38,7 @@ const DogPage = ({ location }) => {
     <Layout location={location}>
       <SEO title="Our Dogs" />
       <h1>Our Dogs</h1>
-      <p>{data.pageIntro.childGeneralJson.dogs_parents}</p>
+      <div dangerouslySetInnerHTML={{ __html: data.pageIntro.html }} />
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <DogCard dog={node} key={node.frontmatter.title} />
       ))}

@@ -52,8 +52,10 @@ const FormContainer = styled.form`
 const ContactPage = ({ location }) => {
   const data = useStaticQuery(graphql`
     query contactQuery {
-      pageIntro: file(absolutePath: { regex: "//cms/general/welcome.json/" }) {
-        childGeneralJson {
+      pageIntro: markdownRemark(
+        fileAbsolutePath: { regex: "//cms/general/welcome.md/" }
+      ) {
+        frontmatter {
           welcome_contact
         }
       }
@@ -64,7 +66,7 @@ const ContactPage = ({ location }) => {
     <Layout location={location}>
       <SEO title="Contact Us" />
       <h1>Get In Touch</h1>
-      <p>{data.pageIntro.childGeneralJson.welcome_contact}</p>
+      <p>{data.pageIntro.frontmatter.welcome_contact}</p>
       <FormContainer method="post" action="#">
         <div className="senderInfo">
           <input type="text" name="name" placeholder="Your Name *" required />

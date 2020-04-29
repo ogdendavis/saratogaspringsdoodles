@@ -32,7 +32,6 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-remark`,
-    `gatsby-transformer-json`,
     // Netlify CMS to manage content
     {
       resolve: `gatsby-plugin-netlify-cms`,

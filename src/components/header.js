@@ -115,8 +115,10 @@ const Header = ({ siteTitle, location }) => {
           }
         }
       }
-      info: file(absolutePath: { regex: "//cms/general/business.json/" }) {
-        childGeneralJson {
+      info: markdownRemark(
+        fileAbsolutePath: { regex: "//cms/general/business.md/" }
+      ) {
+        frontmatter {
           title
           business_logo
         }
@@ -136,11 +138,11 @@ const Header = ({ siteTitle, location }) => {
               <Link to="/">
                 <HeaderIcon>
                   <DogImage
-                    file={data.info.childGeneralJson.business_logo}
+                    file={data.info.frontmatter.business_logo}
                     alt="Happy dog"
                   />
                 </HeaderIcon>
-                {data.info.childGeneralJson.title}
+                {data.info.frontmatter.title}
               </Link>
             </h1>
             <MainNav>
