@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Imaginary Dogs`,
-    description: `We dream up the best doggos that you can imagine. And, as you can probably guess, they're not real.`,
+    title: `Moon Dogs`,
+    description: `We make the best dogs ever. On the moon.`,
     author: `Lucas Ogden-Davis`,
-    company: `Imaginary Dog Breeders, LLC`,
+    company: `Moon Dogs, LLC`,
     siteUrl: `https://hungry-archimedes-85647a.netlify.app/`,
   },
   plugins: [
@@ -26,7 +26,7 @@ module.exports = {
         background_color: `#008080`,
         theme_color: `#008080`,
         display: `minimal-ui`,
-        icon: `src/images/dog1.png`, // This path is relative to the root of the site.
+        icon: `src/cms/general/img/dog5.png`,
       },
     },
     `gatsby-plugin-offline`,
