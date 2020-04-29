@@ -4,6 +4,7 @@ module.exports = {
     description: `We dream up the best doggos that you can imagine. And, as you can probably guess, they're not real.`,
     author: `Lucas Ogden-Davis`,
     company: `Imaginary Dog Breeders, LLC`,
+    siteUrl: `https://hungry-archimedes-85647a.netlify.app/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -56,8 +57,7 @@ module.exports = {
         path: `${__dirname}/src/cms/litters`,
       },
     },
-    // INSTALL THESE ONCE CMS IS UP AND RUNNING
-    // `gatsby-plugin-sitemap`,
+    `gatsby-plugin-sitemap`,
     // Keep netlify plugin last
     // `gatsby-plugin-netlify`
   ],
