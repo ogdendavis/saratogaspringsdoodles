@@ -35,6 +35,7 @@ const PuppyPage = ({ location }) => {
                 sire_image
               }
             }
+            html
           }
         }
       }
@@ -76,7 +77,7 @@ const PuppyPage = ({ location }) => {
       <div>
         {data.litters.edges.map(({ node }) => (
           <LitterCard
-            litter={node.frontmatter}
+            litter={node}
             dogImagePaths={dogImagePaths}
             key={`litter${node.frontmatter.dam.dam_name}${node.frontmatter.date}`}
           />

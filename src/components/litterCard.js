@@ -14,7 +14,6 @@ const LitterContainer = styled.section`
   box-shadow: 0px 2px 10px rgba(0, 128, 128, 0.2);
   border-radius: 5px;
   box-sizing: border-box;
-  font-size: 1.25em;
 
   h2 {
     width: 100%;
@@ -48,7 +47,7 @@ const LitterContainer = styled.section`
 `;
 
 const ParentContainer = styled.div`
-  width: 25%;
+  width: 30%;
   min-width: 250px;
 
   caption {
@@ -63,7 +62,7 @@ const ParentImg = styled.img`
   display: block;
   width: 100%;
   min-height: 40%;
-  max-height: 200px;
+  max-height: 60%;
   object-fit: cover;
 
   /* Border for 2nd image */
@@ -76,43 +75,61 @@ const ParentImg = styled.img`
 `;
 
 const LitterInfo = styled.div`
+  box-size: border-box;
   margin: auto;
+  padding: 1rem;
+  width: 70%;
+
   ul {
     list-style: none;
     margin: 0 0 2em;
+  }
+
+  li {
+    margin: 0;
   }
 `;
 
 const LitterCard = ({ litter, dogImagePaths }) => {
   // Get link to sire / dam profile, if in-house
-  const sire = litter.sire.sire_in_house ? (
-    <Link to={`/dogs#${litter.sire.sire_name}`}>{litter.sire.sire_name}</Link>
+  const sire = litter.frontmatter.sire.sire_in_house ? (
+    <Link to={`/dogs#${litter.frontmatter.sire.sire_name}`}>
+      {litter.frontmatter.sire.sire_name}
+    </Link>
   ) : (
-    litter.sire.sire_name
+    litter.frontmatter.sire.sire_name
   );
-  const dam = litter.dam.dam_in_house ? (
-    <Link to={`/dogs#${litter.dam.dam_name}`}>{litter.dam.dam_name}</Link>
+  const dam = litter.frontmatter.dam.dam_in_house ? (
+    <Link to={`/dogs#${litter.frontmatter.dam.dam_name}`}>
+      {litter.frontmatter.dam.dam_name}
+    </Link>
   ) : (
-    litter.dam.dam_name
+    litter.frontmatter.dam.dam_name
   );
 
   // Get path to sire / dam image: attached to litter, attached to in-house dog, or default img
-  const damImage = litter.dam.dam_image ? (
-    <ParentImg src={litter.dam.dam_image} alt={litter.dam.dam_name} />
-  ) : litter.dam.dam_in_house ? (
+  const damImage = litter.frontmatter.dam.dam_image ? (
     <ParentImg
-      src={dogImagePaths[litter.dam.dam_name]}
-      alt={litter.dam.dam_name}
+      src={litter.frontmatter.dam.dam_image}
+      alt={litter.frontmatter.dam.dam_name}
+    />
+  ) : litter.frontmatter.dam.dam_in_house ? (
+    <ParentImg
+      src={dogImagePaths[litter.frontmatter.dam.dam_name]}
+      alt={litter.frontmatter.dam.dam_name}
     />
   ) : (
     <ParentImg src={dogFace} alt="dog face" />
   );
-  const sireImage = litter.sire.sire_image ? (
-    <ParentImg src={litter.sire.sire_image} alt={litter.dam.dam_name} />
-  ) : litter.sire.sire_in_house ? (
+  const sireImage = litter.frontmatter.sire.sire_image ? (
     <ParentImg
-      src={dogImagePaths[litter.sire.sire_name]}
-      alt={litter.sire.sire_name}
+      src={litter.frontmatter.sire.sire_image}
+      alt={litter.frontmatter.dam.dam_name}
+    />
+  ) : litter.frontmatter.sire.sire_in_house ? (
+    <ParentImg
+      src={dogImagePaths[litter.frontmatter.sire.sire_name]}
+      alt={litter.frontmatter.sire.sire_name}
     />
   ) : (
     <ParentImg src={dogFace} alt="dog face" />
@@ -130,26 +147,27 @@ const LitterCard = ({ litter, dogImagePaths }) => {
         </h2>
         <ul>
           <li>
-            <b>Expected:</b> {litter.date}
+            <b>Expected:</b> {litter.frontmatter.date}
           </li>
-          {litter.count && (
+          {litter.frontmatter.count && (
             <li>
-              <b>Puppy count:</b> {litter.count}
+              <b>Puppy count:</b> {litter.frontmatter.count}
             </li>
           )}
-          {litter.size && (
+          {litter.frontmatter.size && (
             <li>
-              <b>Full-grown size:</b> {litter.size.min} to {litter.size.max}{' '}
-              pounds
+              <b>Full-grown size:</b> {litter.frontmatter.size.min} to{' '}
+              {litter.frontmatter.size.max} pounds
             </li>
           )}
-          {litter.colors && (
+          {litter.frontmatter.colors && (
             <li>
               <b>Possible colors: </b>
-              {litter.colors}
+              {litter.frontmatter.colors}
             </li>
           )}
         </ul>
+        <div dangerouslySetInnerHTML={{ __html: litter.html }} />
         <p>
           <Link to="/contact">Contact us</Link> about this litter
         </p>
