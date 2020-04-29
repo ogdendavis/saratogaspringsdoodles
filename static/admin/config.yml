@@ -31,7 +31,7 @@ collections:
           options:
             [{ label: 'Male', value: 'm' }, { label: 'Female', value: 'f' }],
         }
-      - { label: 'Bio', name: 'bio', widget: 'text' }
+      - { label: 'Bio', name: 'bio', widget: 'markdown' }
   - name: 'litters'
     label: 'Litters'
     label_singular: 'Litter'
@@ -94,6 +94,7 @@ collections:
           timeFormat: false,
           required: false,
         }
+      - { label: 'Info', name: 'body', widget: 'markdown', required: false }
   - name: 'site_copy'
     label: 'General Info'
     media_folder: 'img'
@@ -109,7 +110,7 @@ collections:
               widget: 'image',
               required: false,
             }
-          - { label: 'Your Bio', name: 'breeder_bio', widget: 'text' }
+          - { label: 'Your Bio', name: 'breeder_bio', widget: 'markdown' }
       - name: 'about_business'
         label: 'About Your Business'
         file: 'src/cms/general/business.json'
@@ -130,7 +131,7 @@ collections:
           - {
               label: 'About Your Business',
               name: 'business_about',
-              widget: 'text',
+              widget: 'markdown',
             }
       - name: 'about_dogs'
         label: 'About Your Dogs & Litters'
@@ -139,12 +140,12 @@ collections:
           - {
               label: 'General Info on Sires & Dams',
               name: 'dogs_parents',
-              widget: 'text',
+              widget: 'markdown',
             }
           - {
               label: 'General Info on Litters',
               name: 'dogs_litters',
-              widget: 'text',
+              widget: 'markdown',
             }
       - name: 'about_welcome'
         label: 'Welcome messages'
@@ -153,12 +154,12 @@ collections:
           - {
               label: 'Welcome to the website',
               name: 'welcome_site',
-              widget: 'text',
+              widget: 'markdown',
             }
           - {
               label: 'Contact us welcome',
               name: 'welcome_contact',
-              widget: 'text',
+              widget: 'markdown',
             }
       - name: 'about_contact'
         label: 'Contact Info'
