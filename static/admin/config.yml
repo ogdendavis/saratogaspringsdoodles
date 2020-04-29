@@ -94,3 +94,125 @@ collections:
           timeFormat: false,
           required: false,
         }
+  - name: 'site_copy'
+    label: 'General Info'
+    media_folder: 'img'
+    files:
+      - name: 'about_breeder'
+        label: 'About You'
+        file: 'src/cms/general/breeder.json'
+        fields:
+          - { label: 'Your Name', name: 'title', widget: 'string' }
+          - {
+              label: 'Photo',
+              name: 'breeder_photo',
+              widget: 'image',
+              required: false,
+            }
+          - { label: 'Your Bio', name: 'breeder_bio', widget: 'text' }
+      - name: 'about_business'
+        label: 'About Your Business'
+        file: 'src/cms/general/business.json'
+        fields:
+          - { label: 'Business Name', name: 'title', widget: 'string' }
+          - {
+              label: 'Logo',
+              name: 'business_logo',
+              widget: 'image',
+              required: false,
+            }
+          - {
+              label: 'Photo',
+              name: 'business_photo',
+              widget: 'image',
+              required: false,
+            }
+          - {
+              label: 'About Your Business',
+              name: 'business_about',
+              widget: 'text',
+            }
+      - name: 'about_dogs'
+        label: 'About Your Dogs & Litters'
+        file: 'src/cms/general/dogs.json'
+        fields:
+          - {
+              label: 'General Info on Sires & Dams',
+              name: 'dogs_parents',
+              widget: 'text',
+            }
+          - {
+              label: 'General Info on Litters',
+              name: 'dogs_litters',
+              widget: 'text',
+            }
+      - name: 'about_welcome'
+        label: 'Welcome messages'
+        file: 'src/cms/general/welcome.json'
+        fields:
+          - {
+              label: 'Welcome to the website',
+              name: 'welcome_site',
+              widget: 'text',
+            }
+          - {
+              label: 'Contact us welcome',
+              name: 'welcome_contact',
+              widget: 'text',
+            }
+      - name: 'about_contact'
+        label: 'Contact Info'
+        file: 'src/cms/general/contact.json'
+        fields:
+          - { label: 'Phone', name: 'phone', widget: 'string' }
+          - { label: 'Email', name: 'email', widget: 'string' }
+          - label: 'Social Media'
+            name: 'social'
+            widget: 'object'
+            fields:
+              - {
+                  label: 'Facebook Profile',
+                  name: 'facebook',
+                  widget: 'string',
+                  required: false,
+                }
+              - {
+                  label: 'Instagram Profile',
+                  name: 'instagram',
+                  widget: 'string',
+                  required: false,
+                }
+              - {
+                  label: 'Twitter Profile',
+                  name: 'twitter',
+                  widget: 'string',
+                  required: false,
+                }
+          - label: 'Address'
+            name: 'address'
+            widget: 'object'
+            fields:
+              - {
+                  label: 'Street',
+                  name: 'street',
+                  widget: 'string',
+                  required: false,
+                }
+              - {
+                  label: 'City',
+                  name: 'city',
+                  widget: 'string',
+                  required: false,
+                }
+              - {
+                  label: 'State',
+                  name: 'state',
+                  widget: 'string',
+                  required: false,
+                }
+              - {
+                  label: 'Zip Code',
+                  name: 'zip',
+                  widget: 'string',
+                  required: false,
+                }
