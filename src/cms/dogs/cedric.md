@@ -1,6 +1,6 @@
 ---
 title: Cedric
-image: static/img/dogs/dog4.png
+image: /img/img_6135.jpg
 breed: Goldendoodle
 color: Apricot
 birthdate: 2020-02-25T16:01:16.838Z
