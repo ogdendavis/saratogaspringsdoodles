@@ -13,7 +13,7 @@ import Img from 'gatsby-image';
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const DogImage = ({ file, alt = 'no file found' }) => {
+const DogImage = ({ file, alt = 'dogImage' }) => {
   const data = useStaticQuery(graphql`
     query imgQuery {
       images: allFile(filter: { extension: { in: ["jpg", "jpeg", "png"] } }) {
@@ -32,8 +32,13 @@ const DogImage = ({ file, alt = 'no file found' }) => {
     }
   `);
 
+  if (!file) {
+    return null;
+  }
+  const searchFor = file.slice(1);
+
   const image = data.images.edges.find(n => {
-    return n.node.relativePath.includes(file);
+    return n.node.relativePath.includes(searchFor);
   });
 
   return image ? (
