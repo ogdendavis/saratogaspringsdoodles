@@ -52,22 +52,12 @@ const MainNav = styled.nav`
   }
 
   a.active-nav-link {
-    color: #a0410a;
+    color: #d56658;
   }
   a.active-nav-link:hover {
-    color: #a0410a;
+    color: #d56658;
   }
   a.active-nav-link:hover::before {
-    opacity: 0;
-  }
-
-  a.active-nav-link-home {
-    color: #d56658;
-  }
-  a.active-nav-link-home:hover {
-    color: #d56658;
-  }
-  a.active-nav-link-home:hover::before {
     opacity: 0;
   }
 `;
@@ -158,7 +148,7 @@ const Header = ({ siteTitle, location }) => {
                 key="nav/"
                 to="/"
                 state={{ fromHome: atHome }}
-                activeClassName="active-nav-link-home"
+                activeClassName="active-nav-link"
               >
                 Home
               </Link>
@@ -166,7 +156,7 @@ const Header = ({ siteTitle, location }) => {
                 key="nav/about"
                 to="/about"
                 state={{ fromHome: atHome }}
-                activeClassName="active-nav-link-home"
+                activeClassName="active-nav-link"
               >
                 About Us
               </Link>
@@ -196,31 +186,24 @@ const Header = ({ siteTitle, location }) => {
               </Link>
             </MainNav>
           </HeaderInner>
-          <Spring
-            from={{ opacity: fromHome ? 1 : 0 }}
-            to={{ opacity: atHome ? 1 : 0 }}
-          >
-            {styles => (
-              <HeaderBg
-                fluid={data.background.childImageSharp.fluid}
-                objectFit="cover"
-                objectPosition="50% 25%"
-                alt="Dog on moon"
-                imgStyle={{
-                  objectFit: 'cover',
-                  objectPosition: '50% 25%',
-                }}
-                style={{
-                  position: 'absolute',
-                  top: 0,
-                  left: 0,
-                  width: '100%',
-                  height: '100%',
-                  ...styles,
-                }}
-              />
-            )}
-          </Spring>
+          <HeaderBg
+            fluid={data.background.childImageSharp.fluid}
+            objectFit="cover"
+            objectPosition="50% 25%"
+            alt="Dog on moon"
+            imgStyle={{
+              objectFit: 'cover',
+              objectPosition: '50% 25%',
+            }}
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              ...styles,
+            }}
+          />
         </HeaderWrapper>
       )}
     </Spring>
