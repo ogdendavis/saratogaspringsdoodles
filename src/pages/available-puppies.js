@@ -50,6 +50,11 @@ const PuppyPage = ({ location }) => {
           }
         }
       }
+      pageIntro: file(absolutePath: { regex: "//cms/general/dogs.json/" }) {
+        childGeneralJson {
+          dogs_litters
+        }
+      }
     }
   `);
 
@@ -63,6 +68,7 @@ const PuppyPage = ({ location }) => {
     <Layout location={location}>
       <SEO title="Puppies and upcoming litters" />
       <h1>Our Upcoming Litters</h1>
+      <p>{data.pageIntro.childGeneralJson.dogs_litters}</p>
       <p>
         <Link to="/contact">Contact us</Link> to inquire about availability for
         these litters
