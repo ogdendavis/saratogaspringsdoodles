@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import Img from 'gatsby-image';
 import { Spring } from 'react-spring/renderprops';
 
-import dog1 from '../images/dog1.png';
+import DogImage from '../components/dogImage';
 
 const HeaderWrapper = styled.header`
   margin-bottom: 2em;
@@ -90,8 +90,8 @@ const HeaderInner = styled.div`
   }
 `;
 
-const HeaderIcon = styled.img`
-  max-height: 2em;
+const HeaderIcon = styled.div`
+  width: 2em;
   margin-right: 1em;
 `;
 
@@ -118,11 +118,17 @@ const Header = ({ siteTitle, location }) => {
 
   const data = useStaticQuery(graphql`
     query headerQuery {
-      background: file(relativePath: { eq: "puppy-on-grass.jpg" }) {
+      background: file(relativePath: { eq: "desert-dog-md.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1600, grayscale: true) {
             ...GatsbyImageSharpFluid_withWebp
           }
+        }
+      }
+      info: file(absolutePath: { regex: "//cms/general/business.json/" }) {
+        childGeneralJson {
+          title
+          business_logo
         }
       }
     }
@@ -138,8 +144,13 @@ const Header = ({ siteTitle, location }) => {
           <HeaderInner>
             <h1 style={{ margin: 0 }}>
               <Link to="/">
-                <HeaderIcon src={dog1} alt="Happy dog" />
-                {siteTitle}
+                <HeaderIcon>
+                  <DogImage
+                    file={data.info.childGeneralJson.business_logo}
+                    alt="Happy dog"
+                  />
+                </HeaderIcon>
+                {data.info.childGeneralJson.title}
               </Link>
             </h1>
             <MainNav>
@@ -192,6 +203,13 @@ const Header = ({ siteTitle, location }) => {
             {styles => (
               <HeaderBg
                 fluid={data.background.childImageSharp.fluid}
+                objectFit="cover"
+                objectPosition="50% 25%"
+                alt="Dog on moon"
+                imgStyle={{
+                  objectFit: 'cover',
+                  objectPosition: '50% 25%',
+                }}
                 style={{
                   position: 'absolute',
                   top: 0,
