@@ -13,20 +13,32 @@ import Img from 'gatsby-image';
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const DogImage = () => {
+const DogImage = ({ file, alt = 'no file found' }) => {
   const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "dog5.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
+    query imgQuery {
+      images: allFile(filter: { extension: { in: ["jpg", "jpeg", "png"] } }) {
+        edges {
+          node {
+            relativePath
+            name
+            childImageSharp {
+              fluid(maxWidth: 600) {
+                ...GatsbyImageSharpFluid
+              }
+            }
           }
         }
       }
     }
   `);
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />;
+  const image = data.images.edges.find(n => {
+    return n.node.relativePath.includes(file);
+  });
+
+  return image ? (
+    <Img alt={alt} fluid={image.node.childImageSharp.fluid} />
+  ) : null;
 };
 
 export default DogImage;
