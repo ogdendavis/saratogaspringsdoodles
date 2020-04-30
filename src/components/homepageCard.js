@@ -68,7 +68,7 @@ const HomeCard = ({
       }}
     >
       {external ? (
-        <a href={to} target="_blank">
+        <a href={to} target="_blank" rel="noopener noreferrer">
           <CardHeader>{title}</CardHeader>
           <CardCopy>{copy}</CardCopy>
           <CardButton>{button}</CardButton>

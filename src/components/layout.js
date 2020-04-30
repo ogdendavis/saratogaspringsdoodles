@@ -31,6 +31,25 @@ const Layout = ({ children, location }) => {
           }
         }
       }
+      contact: markdownRemark(
+        fileAbsolutePath: { regex: "//cms/general/contact.md/" }
+      ) {
+        frontmatter {
+          phone
+          email
+          social {
+            facebook
+            instagram
+            twitter
+          }
+          address {
+            street
+            city
+            state
+            zip
+          }
+        }
+      }
     }
   `);
 
@@ -50,8 +69,11 @@ const Layout = ({ children, location }) => {
         }}
       >
         <main>{children}</main>
-        <Footer company={data.site.frontmatter.title} />
       </div>
+      <Footer
+        company={data.site.frontmatter.title}
+        contact={data.contact.frontmatter}
+      />
     </>
   );
 };
