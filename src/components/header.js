@@ -1,4 +1,4 @@
-import { Link, useStaticQuery, graphql } from 'gatsby';
+import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
@@ -98,33 +98,13 @@ const HeaderBg = styled(Img)`
   }
 `;
 
-const Header = ({ siteTitle, location }) => {
+const Header = ({ siteTitle, location, logo, background }) => {
   // Telling the nav links if they were clicked from the home page, for header animation
   const atHome = location.pathname === '/';
   let fromHome = false;
   if (location.state && location.state.fromHome) {
     fromHome = location.state.fromHome;
   }
-
-  const data = useStaticQuery(graphql`
-    query headerQuery {
-      background: file(relativePath: { eq: "desert-dog-md.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1600, grayscale: true) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      info: markdownRemark(
-        fileAbsolutePath: { regex: "//cms/general/business.md/" }
-      ) {
-        frontmatter {
-          title
-          business_logo
-        }
-      }
-    }
-  `);
 
   return (
     <Spring
@@ -137,12 +117,9 @@ const Header = ({ siteTitle, location }) => {
             <h1 style={{ margin: 0 }}>
               <Link to="/">
                 <HeaderIcon>
-                  <DogImage
-                    file={data.info.frontmatter.business_logo}
-                    alt="Happy dog"
-                  />
+                  <DogImage file={logo} alt="Happy dog" />
                 </HeaderIcon>
-                {data.info.frontmatter.title}
+                {siteTitle}
               </Link>
             </h1>
             <MainNav>
@@ -189,7 +166,7 @@ const Header = ({ siteTitle, location }) => {
             </MainNav>
           </HeaderInner>
           <HeaderBg
-            fluid={data.background.childImageSharp.fluid}
+            fluid={background}
             objectFit="cover"
             objectPosition="50% 25%"
             alt="Dog on moon"
