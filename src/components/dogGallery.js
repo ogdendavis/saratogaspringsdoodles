@@ -60,24 +60,30 @@ const DogGallery = ({ height = 300 }) => {
   `);
 
   useEffect(() => {
-    window.setTimeout(autoScroll, 8000);
+    window.setTimeout(autoScroll, 4000);
   });
 
-  const allImages = data.images.edges.map(({ node }) => (
-    <Img
-      key={`gal-${node.name}`}
-      alt={node.name}
-      fluid={node.childImageSharp.fluid}
-      style={{
-        width: '33.3%',
-        flex: '0 0 33.3%',
-        scrollSnapAlign: 'start',
-      }}
-      imgStyle={{
-        objectFit: 'cover',
-      }}
-    />
-  ));
+  // indicator for if mobile view is needed
+  const m = typeof window !== 'undefined' ? window.innerWidth < 650 : false;
+
+  const allImages = data.images.edges.map(({ node }) => {
+    const w = m ? '50%' : '33.3%';
+    return (
+      <Img
+        key={`gal-${node.name}`}
+        alt={node.name}
+        fluid={node.childImageSharp.fluid}
+        style={{
+          width: w,
+          flex: `0 0 ${w}`,
+          scrollSnapAlign: 'start',
+        }}
+        imgStyle={{
+          objectFit: 'cover',
+        }}
+      />
+    );
+  });
 
   return (
     <Gallery style={{ height }} className="dogGallery">
