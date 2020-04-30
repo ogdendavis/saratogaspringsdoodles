@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
 
-const Gallery = styled.section`
+const Carousel = styled.section`
   width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
@@ -17,7 +17,7 @@ const Gallery = styled.section`
 `;
 
 const autoScroll = () => {
-  const g = document.querySelector('.dogGallery');
+  const g = document.querySelector('.dogCarousel');
   if (!g) return;
 
   const max = g.scrollLeftMax;
@@ -35,10 +35,10 @@ const oneStep = (target, step, max) => {
   target.scroll(goTo, 0);
 };
 
-const DogGallery = ({ height = 300 }) => {
+const DogCarousel = ({ height = 300 }) => {
   // query only grabs files that are uploaded as attached to a dog or litter, since they're the only ones that end up in the static folder
   const data = useStaticQuery(graphql`
-    query galleryQuery {
+    query carouselQuery {
       images: allFile(
         filter: {
           absolutePath: { regex: "/static/" }
@@ -86,10 +86,10 @@ const DogGallery = ({ height = 300 }) => {
   });
 
   return (
-    <Gallery style={{ height }} className="dogGallery">
+    <Carousel style={{ height }} className="dogCarousel">
       {allImages}
-    </Gallery>
+    </Carousel>
   );
 };
 
-export default DogGallery;
+export default DogCarousel;
