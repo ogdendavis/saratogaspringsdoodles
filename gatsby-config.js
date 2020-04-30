@@ -37,8 +37,8 @@ module.exports = {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
-        htmlTitle: `Imaginary Dogs Admin`,
-        htmlFavicon: `${__dirname}/src/images/dog1.png`,
+        htmlTitle: `Admin: Moon Dogs`,
+        htmlFavicon: `${__dirname}/src/images/dog5.png`,
       },
     },
     // Make gatsby aware of CMS content
