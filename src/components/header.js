@@ -51,11 +51,9 @@ const MainNav = styled.nav`
     left: 0;
   }
 
-  a.active-nav-link {
-    color: #d56658;
-  }
+  a.active-nav-link,
   a.active-nav-link:hover {
-    color: #d56658;
+    color: #987;
   }
   a.active-nav-link:hover::before {
     opacity: 0;
