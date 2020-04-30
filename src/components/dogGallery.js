@@ -3,21 +3,14 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
 
-const Carousel = styled.section`
-  width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-snap-points-x: repeat(100%);
-  scroll-snap-type: x mandatory;
-  flex: 1;
+const Gallery = styled.section`
   display: flex;
-  align-items: stretch;
-  -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth;
+  flex-flow: row wrap;
+  padding: 1rem 2rem;
 `;
 
 const autoScroll = () => {
-  const g = document.querySelector('.dogCarousel');
+  const g = document.querySelector('.dogGallery');
   if (!g) return;
 
   const max = g.scrollLeftMax;
@@ -35,10 +28,10 @@ const oneStep = (target, step, max) => {
   target.scroll(goTo, 0);
 };
 
-const DogCarousel = ({ height = 300 }) => {
+const DogGallery = ({ height = 300 }) => {
   // query only grabs files that are uploaded as attached to a dog or litter, since they're the only ones that end up in the static folder
   const data = useStaticQuery(graphql`
-    query carouselQuery {
+    query galleryQuery {
       images: allFile(
         filter: {
           absolutePath: { regex: "/static/" }
@@ -59,24 +52,14 @@ const DogCarousel = ({ height = 300 }) => {
     }
   `);
 
-  useEffect(() => {
-    window.setTimeout(autoScroll, 4000);
-  });
-
-  // indicator for if mobile view is needed
-  const m = typeof window !== 'undefined' ? window.innerWidth < 650 : false;
-
   const allImages = data.images.edges.map(({ node }) => {
-    const w = m ? '50%' : '33.3%';
     return (
       <Img
-        key={`car-${node.name}`}
+        key={`gal-${node.name}`}
         alt={node.name}
         fluid={node.childImageSharp.fluid}
         style={{
-          width: w,
-          flex: `0 0 ${w}`,
-          scrollSnapAlign: 'start',
+          width: '25%',
         }}
         imgStyle={{
           objectFit: 'cover',
@@ -86,10 +69,10 @@ const DogCarousel = ({ height = 300 }) => {
   });
 
   return (
-    <Carousel style={{ height }} className="dogCarousel">
+    <Gallery style={{ height }} className="dogGallery">
       {allImages}
-    </Carousel>
+    </Gallery>
   );
 };
 
-export default DogCarousel;
+export default DogGallery;

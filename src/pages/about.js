@@ -115,7 +115,7 @@ const AboutPage = ({ location }) => {
         <Link to="/contact">Contact us</Link> for waitlist and reservation
         information.
       </CallToAction>
-      <AboutSection>
+      <AboutSection id="breeder">
         <h2>Meet the Breeder</h2>
         <h3>{breeder.frontmatter.title}</h3>
         <DogImage

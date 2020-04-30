@@ -39,7 +39,7 @@ const Layout = ({ children, location }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: location.pathname === '/' ? '100vw' : '960px',
+          maxWidth: location.pathname === '/' ? '90vw' : '960px',
           padding: location.pathname === '/' ? '0' : `0 1.0875rem 1.45rem`,
         }}
       >
