@@ -13,7 +13,8 @@ import Img from 'gatsby-image';
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const DogImage = ({ file, alt = 'dogImage' }) => {
+const DogImage = ({ file, alt = 'dogImage', style = {}, imgStyle = {} }) => {
+  // style and imgStyle props are passed into Gatsby Img as the props of the same name in their docs
   const data = useStaticQuery(graphql`
     query imgQuery {
       images: allFile(filter: { extension: { in: ["jpg", "jpeg", "png"] } }) {
@@ -32,9 +33,11 @@ const DogImage = ({ file, alt = 'dogImage' }) => {
     }
   `);
 
+  // Early return if no file
   if (!file) {
     return null;
   }
+  // Remove leading slash from nested file names
   const searchFor = file.slice(1);
 
   const image = data.images.edges.find(n => {
@@ -42,7 +45,12 @@ const DogImage = ({ file, alt = 'dogImage' }) => {
   });
 
   return image ? (
-    <Img alt={alt} fluid={image.node.childImageSharp.fluid} />
+    <Img
+      alt={alt}
+      fluid={image.node.childImageSharp.fluid}
+      style={style}
+      imgStyle={imgStyle}
+    />
   ) : null;
 };
 
