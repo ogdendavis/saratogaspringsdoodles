@@ -13,12 +13,7 @@ import styled from 'styled-components';
 
 import Header from './header';
 import './layout.css';
-
-const Foot = styled.footer`
-  margin-top: 4em;
-  color: #aaa;
-  font-size: 0.8em;
-`;
+import Footer from './footer';
 
 const Layout = ({ children, location }) => {
   const data = useStaticQuery(graphql`
@@ -44,9 +39,7 @@ const Layout = ({ children, location }) => {
         }}
       >
         <main>{children}</main>
-        <Foot>
-          © {new Date().getFullYear()}, {data.site.siteMetadata.company}
-        </Foot>
+        <Footer company={data.site.siteMetadata.company} />
       </div>
     </>
   );
