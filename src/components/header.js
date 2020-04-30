@@ -195,7 +195,7 @@ const Header = ({ siteTitle, location }) => {
             alt="Dog on moon"
             imgStyle={{
               objectFit: 'cover',
-              objectPosition: '50% 25%',
+              objectPosition: '75% 25%',
             }}
             style={{
               position: 'absolute',

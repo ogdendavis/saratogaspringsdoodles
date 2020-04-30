@@ -48,7 +48,10 @@ const DogImage = ({ file, alt = 'dogImage', style = {}, imgStyle = {} }) => {
     <Img
       alt={alt}
       fluid={image.node.childImageSharp.fluid}
-      style={style}
+      style={{
+        borderRadius: '5px',
+        ...style,
+      }}
       imgStyle={imgStyle}
     />
   ) : null;

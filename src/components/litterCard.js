@@ -11,9 +11,10 @@ const LitterContainer = styled.section`
   align-items: stretch;
 
   margin: 0 auto 2rem;
-  box-shadow: 0px 2px 10px rgba(0, 128, 128, 0.2);
+  box-shadow: 0px 2px 10px rgba(0, 64, 64, 0.15);
   border-radius: 5px;
   box-sizing: border-box;
+  background: #fff;
 
   h2 {
     width: 100%;

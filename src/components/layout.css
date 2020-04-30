@@ -9,6 +9,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
   scroll-behavior: smooth;
+  background: #f8f8f8;
 }
 article,
 aside,
