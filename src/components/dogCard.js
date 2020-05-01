@@ -12,12 +12,17 @@ const DogContainer = styled.section`
   justify-content: center;
   align-items: stretch;
   background: #fff;
+
+  @media only screen and (max-width: 963px) {
+    padding-top: 1rem;
+  }
 `;
 
 // Eventually make this a slideshow?
 const DogImageWrapper = styled.div`
   width: 33%;
   min-width: 300px;
+  max-height: 65vh;
   img {
     display: block;
     border-radius: 5px;
