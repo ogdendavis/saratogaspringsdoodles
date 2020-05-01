@@ -47,6 +47,18 @@ const FormContainer = styled.form`
       cursor: pointer;
     }
   }
+
+  @media only screen and (max-width: 650px) {
+    display: block;
+
+    .senderInfo input {
+      width: 100%;
+    }
+
+    .message textarea {
+      min-height: 33vh;
+    }
+  }
 `;
 
 const ContactPage = ({ location }) => {
