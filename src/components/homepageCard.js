@@ -59,7 +59,6 @@ const HomeCard = ({
   const bgString =
     'linear-gradient(rgba(0, 64, 64, 0.4),rgba(0, 64, 64, 0.4)), ' +
     (img ? `center / cover no-repeat url(${img})` : '');
-  console.log(to);
   return (
     <CardContainer
       style={{
