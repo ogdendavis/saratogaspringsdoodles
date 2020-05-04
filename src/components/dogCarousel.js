@@ -16,14 +16,27 @@ const Carousel = styled.section`
   scroll-behavior: smooth;
 `;
 
+const isMobile = () => {
+  // If we're in a viewport less than 650px wide, use mobile settings
+  return typeof window !== 'undefined' ? window.innerWidth < 650 : false;
+};
+
 const autoScroll = () => {
   const g = document.querySelector('.dogCarousel');
   if (!g) return;
 
-  const max = g.scrollLeftMax;
+  const m = isMobile();
+
+  // get number of images in Carousel
+  const n = g.children.length;
+
+  // Get the width of one image
   const step = Math.floor(
-    Number(window.getComputedStyle(g).width.slice(0, -2)) / 3
+    Number(window.getComputedStyle(g).width.slice(0, -2)) / (m ? 1 : 3)
   );
+
+  // Get the farthest scroll point to the left
+  const max = step * (n - (m ? 0 : 2));
 
   oneStep(g, step, max);
 
@@ -64,10 +77,10 @@ const DogCarousel = ({ height = 300 }) => {
   });
 
   // indicator for if mobile view is needed
-  const m = typeof window !== 'undefined' ? window.innerWidth < 650 : false;
+  const m = isMobile();
 
   const allImages = data.images.edges.map(({ node }) => {
-    const w = m ? '50%' : '33.3%';
+    const w = m ? '100%' : '33.3%';
     return (
       <Img
         key={`car-${node.name}`}
