@@ -9,10 +9,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import Header from './header';
 import './layout.css';
 import Footer from './footer';
 
+// Header moved to transition component
 const Layout = ({ children, location }) => {
   const data = useStaticQuery(graphql`
     query SiteMetaQuery {
@@ -21,14 +21,6 @@ const Layout = ({ children, location }) => {
       ) {
         frontmatter {
           title
-          business_logo
-        }
-      }
-      background: file(relativePath: { eq: "desert-dog-md.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1600, grayscale: true) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
         }
       }
       contact: markdownRemark(
@@ -55,12 +47,6 @@ const Layout = ({ children, location }) => {
 
   return (
     <>
-      <Header
-        siteTitle={data.site.frontmatter.title}
-        location={location}
-        logo={data.site.frontmatter.business_logo}
-        background={data.background.childImageSharp.fluid}
-      />
       <div
         style={{
           margin: `0 auto`,
