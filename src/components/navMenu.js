@@ -2,14 +2,9 @@ import { Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 
-const Nav = styled.nav`
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-
+const Menu = styled.nav`
   a {
-    margin: 1em 1em 0;
+    margin: 0 1em;
     text-decoration: none;
     font-weight: 700;
     font-size: 1.25em;
@@ -47,9 +42,9 @@ const Nav = styled.nav`
   }
 `;
 
-const MainNav = () => {
+const NavMenu = ({ open }) => {
   return (
-    <Nav>
+    <Menu className={open ? 'open' : ''}>
       <Link key="nav/" to="/" activeClassName="active-nav-link">
         Home
       </Link>
@@ -69,8 +64,8 @@ const MainNav = () => {
       <Link key="nav/contact" to="/contact" activeClassName="active-nav-link">
         Contact Us
       </Link>
-    </Nav>
+    </Menu>
   );
 };
 
-export default MainNav;
+export default NavMenu;

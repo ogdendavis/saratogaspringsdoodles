@@ -5,8 +5,8 @@ import styled from 'styled-components';
 import Img from 'gatsby-image';
 import { Spring } from 'react-spring/renderprops';
 
-import DogImage from '../components/dogImage';
-import MainNav from '../components/mainNav';
+import DogImage from './dogImage';
+import NavBurger from './navBurger';
 
 const HeaderWrapper = styled.header`
   margin-bottom: 2em;
@@ -76,7 +76,7 @@ const Header = ({ siteTitle, location, logo, background }) => {
                 {siteTitle}
               </Link>
             </h1>
-            <MainNav />
+            <NavBurger />
           </HeaderInner>
           <HeaderBg
             fluid={background}
