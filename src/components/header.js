@@ -6,6 +6,7 @@ import Img from 'gatsby-image';
 import { Spring } from 'react-spring/renderprops';
 
 import DogImage from '../components/dogImage';
+import MainNav from '../components/mainNav';
 
 const HeaderWrapper = styled.header`
   margin-bottom: 2em;
@@ -13,51 +14,6 @@ const HeaderWrapper = styled.header`
   display: flex;
   align-items: flex-end;
   background: teal;
-`;
-
-const MainNav = styled.nav`
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-
-  a {
-    margin: 1em 1em 0;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1.25em;
-    color: white;
-    transition: all 0.3s ease-in-out;
-    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
-    position: relative;
-  }
-  a:hover {
-    color: orange;
-  }
-  a::before {
-    content: '';
-    position: absolute;
-    bottom: -3px;
-    width: 0px;
-    height: 3px;
-    margin: 3px 0 0;
-    transition: all 0.4s ease-in-out;
-    opacity: 0;
-    background-color: orange;
-  }
-  a:hover::before {
-    width: 100%;
-    opacity: 1;
-    left: 0;
-  }
-
-  a.active-nav-link,
-  a.active-nav-link:hover {
-    color: #987;
-  }
-  a.active-nav-link:hover::before {
-    opacity: 0;
-  }
 `;
 
 const HeaderInner = styled.div`
@@ -120,48 +76,7 @@ const Header = ({ siteTitle, location, logo, background }) => {
                 {siteTitle}
               </Link>
             </h1>
-            <MainNav>
-              <Link
-                key="nav/"
-                to="/"
-                state={{ fromHome: atHome }}
-                activeClassName="active-nav-link"
-              >
-                Home
-              </Link>
-              <Link
-                key="nav/about"
-                to="/about"
-                state={{ fromHome: atHome }}
-                activeClassName="active-nav-link"
-              >
-                About Us
-              </Link>
-              <Link
-                key="nav/dogs"
-                to="/dogs"
-                state={{ fromHome: atHome }}
-                activeClassName="active-nav-link"
-              >
-                Our Dogs
-              </Link>
-              <Link
-                key="nav/available-puppies"
-                to="/available-puppies"
-                state={{ fromHome: atHome }}
-                activeClassName="active-nav-link"
-              >
-                Available Puppies
-              </Link>
-              <Link
-                key="nav/contact"
-                to="/contact"
-                state={{ fromHome: atHome }}
-                activeClassName="active-nav-link"
-              >
-                Contact Us
-              </Link>
-            </MainNav>
+            <MainNav />
           </HeaderInner>
           <HeaderBg
             fluid={background}
