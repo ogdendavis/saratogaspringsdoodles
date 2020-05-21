@@ -1,8 +1,8 @@
 ---
 title: Cedric
 image: /img/img_6135.jpg
-breed: Superdoodle
-color: Superyellow
+breed: Goldendoodle
+color: Apricot
 birthdate: 2020-02-25T16:01:16.838Z
 gender: m
 bio: Cedric is a small/medium Goldendoodle with a light apricot coat. His mother
