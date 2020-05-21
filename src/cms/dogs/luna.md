@@ -8,7 +8,7 @@ gender: f
 ---
 Things about Luna:
 
-* She is **awesome**
-* She is cream colored
+1. She is **awesome**
+2. She is cream colored
 
 She likes [sports](https://www.mlssoccer.com)
