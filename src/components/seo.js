@@ -52,6 +52,10 @@ function SEO({ description, lang, meta, title }) {
           content: `website`,
         },
         {
+          property: `og:image`,
+          content: `https://hungry-archimedes-85647a.netlify.app/img/img_6135.jpg`,
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
         },
