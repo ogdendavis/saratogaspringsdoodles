@@ -8,4 +8,5 @@ gender: f
 ---
 Luna is **awesome** because:
 
-1. She's [awesome](https://google.com)
+* She's [awesome](https://google.com)
+* This list should display normally
