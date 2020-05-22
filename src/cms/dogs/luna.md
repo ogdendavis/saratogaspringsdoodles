@@ -10,3 +10,4 @@ Luna is **awesome** because:
 
 * She's [awesome](https://google.com)
 * This list should display normally
+* She's testing Netlify's Gatsby incremental builds feature.
