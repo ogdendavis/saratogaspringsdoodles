@@ -65,6 +65,7 @@ const DogInfo = styled.div`
 `;
 
 const DogCard = ({ dog }) => {
+  console.log(dog);
   // Calculate age from birthday
   const now = new Date();
   const bday = new Date(dog.frontmatter.birthdate);
@@ -88,7 +89,7 @@ const DogCard = ({ dog }) => {
         <ul className="dogInfo">
           <li>{dog.frontmatter.breed}</li>
           <li>{dog.frontmatter.color}</li>
-          <li>{dog.frontmatter.sex === 'M' ? 'Male' : 'Female'}</li>
+          <li>{dog.frontmatter.gender === 'm' ? 'Male' : 'Female'}</li>
           <li>{dog.displayAge}</li>
         </ul>
         <div dangerouslySetInnerHTML={{ __html: dog.html }} />
