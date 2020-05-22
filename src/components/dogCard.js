@@ -39,11 +39,11 @@ const DogInfo = styled.div`
     width: 90%;
   }
 
-  h2 {
+  h2.dogTitle {
     text-align: center;
   }
 
-  ul {
+  ul.dogInfo {
     list-style: none;
     margin: 0 0 1rem;
     display: flex;
@@ -84,8 +84,8 @@ const DogCard = ({ dog }) => {
         <img src={dog.frontmatter.image} alt={dog.frontmatter.title} />
       </DogImageWrapper>
       <DogInfo>
-        <h2>{dog.frontmatter.title}</h2>
-        <ul>
+        <h2 className="dogTitle">{dog.frontmatter.title}</h2>
+        <ul className="dogInfo">
           <li>{dog.frontmatter.breed}</li>
           <li>{dog.frontmatter.color}</li>
           <li>{dog.frontmatter.sex === 'M' ? 'Male' : 'Female'}</li>
