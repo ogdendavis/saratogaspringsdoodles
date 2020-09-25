@@ -4,7 +4,7 @@ module.exports = {
     description: `We make the best dogs ever. On the moon.`,
     author: `Lucas Ogden-Davis`,
     company: `Moon Dogs, LLC`,
-    siteUrl: `https://hungry-archimedes-85647a.netlify.app/`,
+    siteUrl: `localhost:8000`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
