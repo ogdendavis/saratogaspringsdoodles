@@ -1,13 +1,13 @@
 ---
-phone: 555-867-5309
-email: info@dogsonthemoon.com
+phone: 801-573-0858
+email: andrea@saratogaspringsdoodles.com
 social:
-  facebook: https://www.facebook.com/WeRateDogs/
-  instagram: https://www.instagram.com/weratedogs/
-  twitter: https://twitter.com/dog_rates
+  facebook: https://www.facebook.com/Saratogaspringsdoodles/
+  instagram: https://www.instagram.com/saratogaspringsdoodles/
+  twitter: ""
 address:
-  street: 1 Imaginary Street
-  city: Moon City
-  state: Moon
-  zip: 10921
+  street: ""
+  city: Saratoga Springs
+  state: Utah
+  zip: "84045"
 ---
