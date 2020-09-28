@@ -26,7 +26,7 @@ module.exports = {
         background_color: `#008080`,
         theme_color: `#008080`,
         display: `minimal-ui`,
-        icon: `src/cms/general/img/saratogaspringsdoodles.webp`,
+        icon: `src/images/saratogaspringsdoodles.webp`,
       },
     },
     `gatsby-plugin-offline`,
@@ -38,7 +38,7 @@ module.exports = {
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
         htmlTitle: `Admin: Saratoga Springs Doodles`,
-        htmlFavicon: `${__dirname}/src/images/saratogaspringsdoodles.webp`,
+        htmlFavicon: `${__dirname}/src/images/saratogaspringsdoodles.png`,
       },
     },
     // Make gatsby aware of CMS content
