@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Moon Dogs`,
-    description: `We make the best dogs ever. On the moon.`,
+    title: `Saratoga Springs Doodles`,
+    description: `Utah's premier breeder of top-quality, genetic health tested bernedoodles.`,
     author: `Lucas Ogden-Davis`,
-    company: `Moon Dogs, LLC`,
+    company: `Saratoga Springs Doodles`,
     siteUrl: `https://brave-payne-8d1469.netlify.app/`,
   },
   plugins: [
@@ -20,13 +20,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Midwoofery Template 1`,
-        short_name: `Woof`,
+        name: `Saratoga Springs Doodles`,
+        short_name: `SSD`,
         start_url: `/`,
         background_color: `#008080`,
         theme_color: `#008080`,
         display: `minimal-ui`,
-        icon: `src/cms/general/img/dog5.png`,
+        icon: `src/cms/general/img/saratogaspringsdoodles.png`,
       },
     },
     `gatsby-plugin-offline`,
@@ -37,8 +37,8 @@ module.exports = {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
-        htmlTitle: `Admin: Moon Dogs`,
-        htmlFavicon: `${__dirname}/src/images/dog5.png`,
+        htmlTitle: `Admin: Saratoga Springs Doodles`,
+        htmlFavicon: `${__dirname}/src/images/saratogaspringsdoodles.png`,
       },
     },
     // Make gatsby aware of CMS content
