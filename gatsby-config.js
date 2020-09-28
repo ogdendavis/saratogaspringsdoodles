@@ -38,7 +38,7 @@ module.exports = {
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
         htmlTitle: `Admin: Saratoga Springs Doodles`,
-        htmlFavicon: `${__dirname}/src/images/saratogaspringsdoodles.png`,
+        htmlFavicon: `${__dirname}/src/images/saratogaspringsdoodles.webp`,
       },
     },
     // Make gatsby aware of CMS content
