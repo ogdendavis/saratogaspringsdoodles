@@ -65,6 +65,28 @@ const FootBottom = styled.div`
   box-sizing: border-box;
   padding: 1rem 2rem;
   text-align: center;
+  a {
+    text-decoration: none;
+    color: orange;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+  }
+  a::before {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    width: 0px;
+    height: 1px;
+    margin: 1px 0 0;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+    background-color: orange;
+  }
+  a:hover::before {
+    width: 100%;
+    opacity: 1;
+    left: 0;
+  }
 `;
 
 const Footer = ({ company = '', contact = {} }) => {
@@ -106,7 +128,27 @@ const Footer = ({ company = '', contact = {} }) => {
         </Social>
       </FootTop>
       <FootBottom>
-        © {new Date().getFullYear()}, {company}
+        <div>
+          Website by{' '}
+          <a
+            href="https://ogdendavis.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Lucas Ogden-Davis
+          </a>{' '}
+          and{' '}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.midwoofery.com/"
+          >
+            Midwoofery
+          </a>
+        </div>
+        <div>
+          © {new Date().getFullYear()}, {company}
+        </div>
       </FootBottom>
     </Foot>
   );

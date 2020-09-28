@@ -1,11 +1,11 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-import DogCard from '../components/dogCard';
+import Layout from '../../components/layout';
+import SEO from '../../components/seo';
+import DogCard from '../../components/dogCard';
 
-const DogPage = ({ location }) => {
+const MamaPage = ({ location }) => {
   const data = useStaticQuery(graphql`
     query dogsQuery {
       allMarkdownRemark(
@@ -36,8 +36,8 @@ const DogPage = ({ location }) => {
 
   return (
     <Layout location={location}>
-      <SEO title="Our Dogs" />
-      <h1>Our Dogs</h1>
+      <SEO title="Meet Our Mama" />
+      <h1>Loli Pop</h1>
       <div dangerouslySetInnerHTML={{ __html: data.pageIntro.html }} />
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <DogCard dog={node} key={node.frontmatter.title} />
@@ -46,4 +46,4 @@ const DogPage = ({ location }) => {
   );
 };
 
-export default DogPage;
+export default MamaPage;

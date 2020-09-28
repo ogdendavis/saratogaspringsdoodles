@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-import LitterCard from '../components/litterCard.js';
+import Layout from '../../components/layout';
+import SEO from '../../components/seo';
+import LitterCard from '../../components/litterCard.js';
 
 const PuppyPage = ({ location }) => {
   // Get all litter data, and image paths for all dogs
@@ -68,7 +68,7 @@ const PuppyPage = ({ location }) => {
   return (
     <Layout location={location}>
       <SEO title="Puppies and upcoming litters" />
-      <h1>Our Upcoming Litters</h1>
+      <h1>Upcoming Litters</h1>
       <div dangerouslySetInnerHTML={{ __html: data.pageIntro.html }} />
       <p>
         <Link to="/contact">Contact us</Link> to inquire about availability for

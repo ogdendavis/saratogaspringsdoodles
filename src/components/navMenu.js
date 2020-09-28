@@ -48,18 +48,18 @@ const NavMenu = ({ open }) => {
       <Link key="nav/" to="/" activeClassName="active-nav-link">
         Home
       </Link>
-      <Link key="nav/about" to="/about" activeClassName="active-nav-link">
-        About Us
-      </Link>
-      <Link key="nav/dogs" to="/dogs" activeClassName="active-nav-link">
-        Our Dogs
-      </Link>
       <Link
-        key="nav/available-puppies"
-        to="/available-puppies"
+        key="nav/puppies"
+        to="/puppies"
         activeClassName="active-nav-link"
       >
-        Available Puppies
+        Puppies
+      </Link>
+      <Link key="nav/meet-our-mama" to="/meet-our-mama" activeClassName="active-nav-link">
+        Meet Our Mama
+      </Link>
+      <Link key="nav/care-and-feeding" to="/care-and-feeding" activeClassName="active-nav-link">
+        Care & Feeding
       </Link>
       <Link key="nav/contact" to="/contact" activeClassName="active-nav-link">
         Contact Us

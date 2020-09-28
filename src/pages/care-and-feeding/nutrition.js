@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-import DogImage from '../components/dogImage';
-import DogCarousel from '../components/dogCarousel';
+import Layout from '../../components/layout';
+import SEO from '../../components/seo';
+import DogImage from '../../components/dogImage';
+import DogCarousel from '../../components/dogCarousel';
 
 const AboutSection = styled.section`
   margin-bottom: 1rem;
@@ -43,7 +43,7 @@ const CallToAction = styled.div`
   }
 `;
 
-const AboutPage = ({ location }) => {
+const CareAndFeedingPage = ({ location }) => {
   const data = useStaticQuery(graphql`
     query aboutQuery {
       breeder: markdownRemark(
@@ -84,7 +84,7 @@ const AboutPage = ({ location }) => {
 
   return (
     <Layout location={location}>
-      <SEO title="About Us" />
+      <SEO title="Nutrition" />
       {/* Need to style this whole thing -- just getting content in, for now */}
       <h1>{business.frontmatter.title}</h1>
       <AboutSection>
@@ -139,4 +139,4 @@ const AboutPage = ({ location }) => {
   );
 };
 
-export default AboutPage;
+export default CareAndFeedingPage;
