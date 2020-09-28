@@ -6,14 +6,6 @@ import NavMenu from './navMenu';
 const NavWrapper = styled.div`
   position: relative;
 
-  /* nav targets NavMenu element */
-  nav {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
-  }
-
   /* button targets Burger element */
   button {
     display: none;

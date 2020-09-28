@@ -5,14 +5,11 @@ import styled from 'styled-components';
 import Img from 'gatsby-image';
 import { Spring } from 'react-spring/renderprops';
 
-import DogImage from './dogImage';
 import NavBurger from './navBurger';
 
 const HeaderWrapper = styled.header`
   margin-bottom: 2em;
   position: relative;
-  display: flex;
-  align-items: flex-end;
   background: teal;
 `;
 
@@ -34,11 +31,6 @@ const HeaderInner = styled.div`
   }
 `;
 
-const HeaderIcon = styled.div`
-  width: 2em;
-  margin-right: 1em;
-`;
-
 const HeaderBg = styled(Img)`
   &::after {
     content: '';
@@ -48,7 +40,7 @@ const HeaderBg = styled(Img)`
     right: 0;
     top: 0;
     bottom: 0;
-    background: linear-gradient(rgba(0, 64, 64, 0.05), rgba(0, 64, 64, 0.5));
+    background: linear-gradient(rgba(0, 64, 64, 0.5), rgba(0, 64, 64, 0.05));
   }
 `;
 
@@ -69,12 +61,7 @@ const Header = ({ siteTitle, location, logo, background }) => {
         <HeaderWrapper style={{ ...styles }}>
           <HeaderInner>
             <h1 style={{ margin: 0 }}>
-              <Link to="/">
-                <HeaderIcon>
-                  <DogImage file={logo} alt="Happy dog" />
-                </HeaderIcon>
-                {siteTitle}
-              </Link>
+              <Link to="/">{siteTitle}</Link>
             </h1>
             <NavBurger />
           </HeaderInner>

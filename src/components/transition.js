@@ -26,7 +26,6 @@ const Transition = ({ children, location }) => {
       ) {
         frontmatter {
           title
-          business_logo
         }
       }
       background: file(relativePath: { eq: "desert-dog-md.jpg" }) {
@@ -44,7 +43,6 @@ const Transition = ({ children, location }) => {
       <Header
         siteTitle={data.site.frontmatter.title}
         location={location}
-        logo={data.site.frontmatter.business_logo}
         background={data.background.childImageSharp.fluid}
         key="staticheader"
       />
