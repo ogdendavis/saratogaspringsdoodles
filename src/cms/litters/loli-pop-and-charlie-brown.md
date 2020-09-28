@@ -4,6 +4,7 @@ title: Loli Pop and Charlie Brown
 sire:
   sire_name: Charlie Brown
   sire_image: /img/charliebrown.webp
+  sire_in_house: false
 dam:
   dam_name: Loli Pop
   dam_in_house: true
