@@ -1,7 +1,6 @@
 ---
-title: Moon Dogs
-business_logo: /img/dog5.png
-business_photo: /img/moon-dog.jpg
+title: Saratoga Springs Doodles
+business_logo: /img/saratogaspringsdoodles.webp
+business_photo: ""
 ---
-
-We're the first and only breeder of dogs on the moon. We take pride in breeding happy, healthy, well-adjusted dogs in 0.16g.
+Copy about what SSD delivers and the unique ways in which your dogs are awesome
