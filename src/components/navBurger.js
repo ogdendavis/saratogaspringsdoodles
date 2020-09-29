@@ -98,7 +98,7 @@ const Burger = styled.button`
   }
 `;
 
-const NavBurger = () => {
+const NavBurger = ({ athome }) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -112,7 +112,7 @@ const NavBurger = () => {
         <div />
         <div />
       </Burger>
-      <NavMenu open={open} />
+      <NavMenu open={open} athome={athome} />
     </NavWrapper>
   );
 };

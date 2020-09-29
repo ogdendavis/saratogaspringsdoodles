@@ -4,14 +4,17 @@ import styled from 'styled-components';
 
 const Menu = styled.nav`
   width: 100%;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding-top: 1em;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  align-items: flex-start;
 
   a {
     text-decoration: none;
     font-weight: 700;
-    font-size: 1.25em;
     color: white;
     transition: all 0.3s ease-in-out;
     text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
@@ -39,7 +42,7 @@ const Menu = styled.nav`
 
   a.active-nav-link,
   a.active-nav-link:hover {
-    color: #987;
+    color: #48cccd;
   }
   a.active-nav-link:hover::before {
     opacity: 0;
@@ -50,44 +53,51 @@ const Menu = styled.nav`
   div.dropdownWrapper {
     position: relative;
   }
+`;
 
-  ul {
-    list-style: none;
-    margin: 0;
-    padding-top: 0.5em;
-    position: absolute;
-    overflow-x: visible;
-  }
+const NavSpacer = styled.div`
+  height: 1em;
+`;
+
+const NavList = styled.ul`
+  list-style: none;
+  margin: 0;
+  padding: 0 1em 1em;
+  position: absolute;
+  overflow-x: visible;
+  background: ${({ athome }) =>
+    athome
+      ? 'linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8))'
+      : '#333'};
 
   li {
-    font-size: 0.85em;
-    margin: 0;
+    margin: 0.5em 0;
     white-space: nowrap;
     a {
       width: fit-content;
     }
   }
 
-  ul#puppies {
+  &#puppies {
     display: ${({ hovered }) => (hovered === 'puppies' ? 'block' : 'none')};
     visibility: ${({ hovered }) =>
       hovered === 'puppies' ? 'visible' : 'hidden'};
   }
-  ul#mama {
+  &#mama {
     display: ${({ hovered }) => (hovered === 'mama' ? 'block' : 'none')};
     visibility: ${({ hovered }) => (hovered === 'mama' ? 'visible' : 'hidden')};
   }
-  ul#care {
+  &#care {
     display: ${({ hovered }) => (hovered === 'care' ? 'block' : 'none')};
     visibility: ${({ hovered }) => (hovered === 'care' ? 'visible' : 'hidden')};
   }
 `;
 
-const NavMenu = ({ open }) => {
+const NavMenu = ({ open, athome }) => {
   const [hoverItem, setHoverItem] = useState('');
 
   return (
-    <Menu className={open ? 'open' : ''} hovered={hoverItem}>
+    <Menu className={open ? 'open' : ''}>
       <Link key="nav/" to="/" activeClassName="active-nav-link" tabIndex="0">
         Home
       </Link>
@@ -110,7 +120,8 @@ const NavMenu = ({ open }) => {
         >
           Puppies
         </Link>
-        <ul id="puppies">
+        <NavSpacer />
+        <NavList id="puppies" hovered={hoverItem} athome={athome}>
           <li>
             <Link key="nav/p/index" to="/puppies" tabIndex="0">
               Upcoming Litters
@@ -144,7 +155,7 @@ const NavMenu = ({ open }) => {
               Application
             </Link>
           </li>
-        </ul>
+        </NavList>
       </div>
       <div
         className="dropdownWrapper"
@@ -165,7 +176,8 @@ const NavMenu = ({ open }) => {
         >
           Meet Our Mama
         </Link>
-        <ul id="mama">
+        <NavSpacer />
+        <NavList id="mama" hovered={hoverItem} athome={athome}>
           <li>
             <Link key="nav/mom/loli" to="/meet-our-mama" tabIndex="0">
               Loli Pop
@@ -180,7 +192,7 @@ const NavMenu = ({ open }) => {
               Genetic Testing
             </Link>
           </li>
-        </ul>
+        </NavList>
       </div>
       <div
         className="dropdownWrapper"
@@ -201,7 +213,8 @@ const NavMenu = ({ open }) => {
         >
           Care & Feeding
         </Link>
-        <ul id="care">
+        <NavSpacer />
+        <NavList id="care" hovered={hoverItem} athome={athome}>
           <li>
             <Link
               key="nav/care/nutrition"
@@ -229,7 +242,7 @@ const NavMenu = ({ open }) => {
               Enrichment
             </Link>
           </li>
-        </ul>
+        </NavList>
       </div>
       <Link
         key="nav/contact"

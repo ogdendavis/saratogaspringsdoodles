@@ -28,9 +28,9 @@ const Transition = ({ children, location }) => {
           title
         }
       }
-      background: file(relativePath: { eq: "desert-dog-md.jpg" }) {
+      background: file(relativePath: { eq: "puppy-flowers.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1600, grayscale: true) {
+          fluid(maxWidth: 1600) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }

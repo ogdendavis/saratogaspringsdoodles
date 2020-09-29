@@ -1,6 +1,5 @@
-import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import Img from 'gatsby-image';
 import { Spring } from 'react-spring/renderprops';
@@ -10,16 +9,18 @@ import NavBurger from './navBurger';
 const HeaderWrapper = styled.header`
   margin-bottom: 2em;
   position: relative;
-  background: teal;
 `;
 
 const HeaderInner = styled.div`
   margin: 0 auto;
   width: 100%;
-  max-width: 60em;
-  padding: 1.5em;
   position: relative;
   z-index: 2;
+  background: ${({ athome }) =>
+    athome
+      ? 'linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8))'
+      : '#333'};
+  transition: background 0.5s ease;
   a {
     display: flex;
     flex-flow: row wrap;
@@ -40,7 +41,6 @@ const HeaderBg = styled(Img)`
     right: 0;
     top: 0;
     bottom: 0;
-    background: linear-gradient(rgba(0, 64, 64, 0.5), rgba(0, 64, 64, 0.05));
   }
 `;
 
@@ -52,34 +52,41 @@ const Header = ({ siteTitle, location, logo, background }) => {
     fromHome = location.state.fromHome;
   }
 
+  // Get viewport height for homepage hero image
+  const [viewportHeight, setViewportHeight] = useState(0);
+  const [headerHeight, setHeaderHeight] = useState('0');
+  useEffect(() => {
+    setViewportHeight(window.innerHeight);
+    setHeaderHeight(headerRef.current.clientHeight);
+  }, []);
+
+  // Ref to calculate header height for animation
+  const headerRef = useRef(null);
+
   return (
     <Spring
-      from={{ height: fromHome ? '500px' : '175px' }}
-      to={{ height: atHome ? '500px' : '175px' }}
+      from={{
+        height: fromHome ? `${viewportHeight}px` : `${headerHeight}px`,
+      }}
+      to={{
+        height: atHome ? `${viewportHeight}px` : `${headerHeight}px`,
+      }}
     >
       {styles => (
         <HeaderWrapper style={{ ...styles }}>
-          <HeaderInner>
-            <h1 style={{ margin: 0 }}>
-              <Link to="/">{siteTitle}</Link>
-            </h1>
-            <NavBurger />
+          <HeaderInner ref={headerRef} athome={atHome}>
+            <NavBurger athome={atHome} />
           </HeaderInner>
           <HeaderBg
             fluid={background}
             objectFit="cover"
             objectPosition="50% 25%"
             alt="Dog on moon"
-            imgStyle={{
-              objectFit: 'cover',
-              objectPosition: '75% 25%',
-            }}
             style={{
               position: 'absolute',
               top: 0,
               left: 0,
               width: '100%',
-              height: '100%',
               ...styles,
             }}
           />
