@@ -121,12 +121,22 @@ const NavMenu = ({ open, athome }) => {
         <NavSpacer />
         <NavList id="puppies" hovered={hoverItem} athome={athome}>
           <li>
-            <Link key="nav/p/index" to="/puppies" tabIndex="0">
+            <Link
+              key="nav/p/index"
+              to="/puppies"
+              tabIndex="0"
+              activeClassName="active-nav-link"
+            >
               Upcoming Litters
             </Link>
           </li>
           <li>
-            <Link key="nav/p/gallery" to="/puppies/gallery" tabIndex="0">
+            <Link
+              key="nav/p/gallery"
+              to="/puppies/gallery"
+              tabIndex="0"
+              activeClassName="active-nav-link"
+            >
               Photo Gallery
             </Link>
           </li>
@@ -135,12 +145,18 @@ const NavMenu = ({ open, athome }) => {
               key="nav/p/policies"
               to="/puppies/policies-and-pricing"
               tabIndex="0"
+              activeClassName="active-nav-link"
             >
               Policies & Pricing
             </Link>
           </li>
           <li>
-            <Link key="nav/p/guardians" to="/puppies/guardians" tabIndex="0">
+            <Link
+              key="nav/p/guardians"
+              to="/puppies/guardians"
+              tabIndex="0"
+              activeClassName="active-nav-link"
+            >
               Guardian Program
             </Link>
           </li>
@@ -149,6 +165,7 @@ const NavMenu = ({ open, athome }) => {
               key="nav/p/application"
               to="/puppies/application"
               tabIndex="0"
+              activeClassName="active-nav-link"
             >
               Application
             </Link>
@@ -177,7 +194,12 @@ const NavMenu = ({ open, athome }) => {
         <NavSpacer />
         <NavList id="mama" hovered={hoverItem} athome={athome}>
           <li>
-            <Link key="nav/mom/loli" to="/meet-our-mama" tabIndex="0">
+            <Link
+              key="nav/mom/loli"
+              to="/meet-our-mama"
+              tabIndex="0"
+              activeClassName="active-nav-link"
+            >
               Loli Pop
             </Link>
           </li>
@@ -186,6 +208,7 @@ const NavMenu = ({ open, athome }) => {
               key="nav/mom/testing"
               to="/meet-our-mama/genetic-testing"
               tabIndex="0"
+              activeClassName="active-nav-link"
             >
               Genetic Testing
             </Link>
@@ -218,6 +241,7 @@ const NavMenu = ({ open, athome }) => {
               key="nav/care/nutrition"
               to="/care-and-feeding/nutrition"
               tabIndex="0"
+              activeClassName="active-nav-link"
             >
               Nutrition
             </Link>
@@ -227,6 +251,7 @@ const NavMenu = ({ open, athome }) => {
               key="nav/care/training"
               to="/care-and-feeding/training"
               tabIndex="0"
+              activeClassName="active-nav-link"
             >
               Training
             </Link>
@@ -236,6 +261,7 @@ const NavMenu = ({ open, athome }) => {
               key="nav/care/enrichment"
               to="/care-and-feeding/enrichment"
               tabIndex="0"
+              activeClassName="active-nav-link"
             >
               Enrichment
             </Link>
