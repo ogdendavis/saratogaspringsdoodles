@@ -65,10 +65,8 @@ const NavList = styled.ul`
   padding: 0 1em 1em;
   position: absolute;
   overflow-x: visible;
-  background: ${({ athome }) =>
-    athome
-      ? 'linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8))'
-      : '#333'};
+  background: ${props =>
+    props.athome ? props.theme.headFootTransparent : props.theme.headFootSolid};
 
   li {
     margin: 0.5em 0;

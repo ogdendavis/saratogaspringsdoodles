@@ -1,6 +1,6 @@
 import React from 'react';
-import Transition from './src/components/transition';
+import Theme from './src/components/theme';
 
 export const wrapPageElement = ({ element, props }) => (
-  <Transition {...props}>{element}</Transition>
+  <Theme {...props}>{element}</Theme>
 );

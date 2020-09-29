@@ -16,10 +16,8 @@ const HeaderInner = styled.div`
   width: 100%;
   position: relative;
   z-index: 2;
-  background: ${({ athome }) =>
-    athome
-      ? 'linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8))'
-      : '#333'};
+  background: ${props =>
+    props.athome ? props.theme.headFootTransparent : props.theme.headFootSolid};
   transition: background 0.5s ease;
   a {
     display: flex;

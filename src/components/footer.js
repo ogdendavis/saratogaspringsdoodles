@@ -9,7 +9,7 @@ import twit from '../images/icon-twitter-white.svg';
 const Foot = styled.footer`
   margin-top: 2em;
   padding-top: 1em;
-  background: rgb(0, 64, 64);
+  background: ${props => props.theme.headFootSolid};
   color: #f8f8f8;
 `;
 
