@@ -147,21 +147,23 @@ const LitterCard = ({ litter, dogImagePaths }) => {
           {sire} and {dam}
         </h2>
         <ul>
-          <li>
-            <b>Expected:</b> {litter.frontmatter.date}
-          </li>
-          {litter.frontmatter.count && (
+          {litter.frontmatter.date.length > 1 && (
+            <li>
+              <b>Expected:</b> {litter.frontmatter.date}
+            </li>
+          )}
+          {litter.frontmatter.count > 0 && (
             <li>
               <b>Puppy count:</b> {litter.frontmatter.count}
             </li>
           )}
-          {litter.frontmatter.size && (
+          {litter.frontmatter.size.min < litter.frontmatter.size.max && (
             <li>
               <b>Full-grown size:</b> {litter.frontmatter.size.min} to{' '}
               {litter.frontmatter.size.max} pounds
             </li>
           )}
-          {litter.frontmatter.colors && (
+          {litter.frontmatter.colors.length > 1 && (
             <li>
               <b>Possible colors: </b>
               {litter.frontmatter.colors}
