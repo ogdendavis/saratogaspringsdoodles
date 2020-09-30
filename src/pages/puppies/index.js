@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link, useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 
 import Layout from '../../components/layout';
 import SEO from '../../components/seo';
-import LitterCard from '../../components/litterCard.js';
+import PrimaryPageTemplate from '../../templates/primary';
 
 const PuppyPage = ({ location }) => {
   // Get all litter data, and image paths for all dogs
@@ -64,25 +64,21 @@ const PuppyPage = ({ location }) => {
   data.dogs.edges.forEach(({ node }) => {
     dogImagePaths[node.frontmatter.title] = node.frontmatter.image;
   });
+  // Add image paths to litters data, to better pass it to the template
+  data.litters.dogImagePaths = dogImagePaths;
+
+  const outro = `<p>We update this page frequently, so check back for information on future litters!</p>`;
 
   return (
     <Layout location={location}>
       <SEO title="Puppies and upcoming litters" />
-      <h1>Upcoming Litters</h1>
-      <div dangerouslySetInnerHTML={{ __html: data.pageIntro.html }} />
-      <p>
-        <Link to="/contact">Contact us</Link> to inquire about availability for
-        these litters
-      </p>
-      <div>
-        {data.litters.edges.map(({ node }) => (
-          <LitterCard
-            litter={node}
-            dogImagePaths={dogImagePaths}
-            key={`litter${node.frontmatter.dam.dam_name}${node.frontmatter.date}`}
-          />
-        ))}
-      </div>
+      <PrimaryPageTemplate
+        title="Upcoming Litters"
+        intro={data.pageIntro.html}
+        cardtype="litters"
+        cardinfo={data.litters}
+        outro={outro}
+      />
     </Layout>
   );
 };

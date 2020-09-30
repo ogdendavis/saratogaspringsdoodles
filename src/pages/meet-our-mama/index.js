@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import Layout from '../../components/layout';
 import SEO from '../../components/seo';
-import DogCard from '../../components/dogCard';
+import PrimaryPageTemplate from '../../templates/primary';
 
 const MamaPage = ({ location }) => {
   const data = useStaticQuery(graphql`
@@ -37,11 +37,12 @@ const MamaPage = ({ location }) => {
   return (
     <Layout location={location}>
       <SEO title="Meet Our Mama" />
-      <h1>Loli Pop</h1>
-      <div dangerouslySetInnerHTML={{ __html: data.pageIntro.html }} />
-      {data.allMarkdownRemark.edges.map(({ node }) => (
-        <DogCard dog={node} key={node.frontmatter.title} />
-      ))}
+      <PrimaryPageTemplate
+        title="Meet Our Mama"
+        intro={data.pageIntro.html}
+        cardtype="dogs"
+        cardinfo={data.allMarkdownRemark}
+      />
     </Layout>
   );
 };

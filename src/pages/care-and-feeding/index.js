@@ -2,19 +2,18 @@ import React from 'react';
 
 import Layout from '../../components/layout';
 import SEO from '../../components/seo';
+import PrimaryPageTemplate from '../../templates/primary';
 
 const ApplicationPage = ({ location }) => {
-  console.log('Temp care and feeding page');
+  console.log(location);
 
   return (
     <Layout location={location}>
       <SEO title="Care and Feeding" />
-      <h1>Care and Feeding</h1>
-      <p>
-        This page isn't specified in the outline, but probably makes sense to
-        have a landing page that links to nutrition, training, and enrichment
-        pages (and probably also directly to affiliate links?)
-      </p>
+      <PrimaryPageTemplate
+        title="Care and Feeding"
+        intro="<p>This page isn't specified in the outline, but probably makes sense tohave a landing page that links to nutrition, training, and enrichment pages (and probably also directly to affiliate links?)</p>"
+      />
     </Layout>
   );
 };

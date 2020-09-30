@@ -6,7 +6,9 @@ const DogImage = ({ file, alt = 'dogImage', style = {}, imgStyle = {} }) => {
   // style and imgStyle props are passed into Gatsby Img as the props of the same name in their docs
   const data = useStaticQuery(graphql`
     query imgQuery {
-      images: allFile(filter: { extension: { in: ["jpg", "jpeg", "png"] } }) {
+      images: allFile(
+        filter: { extension: { in: ["jpg", "jpeg", "png", "webp"] } }
+      ) {
         edges {
           node {
             relativePath
