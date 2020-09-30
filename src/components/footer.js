@@ -4,7 +4,6 @@ import { Link } from 'gatsby';
 
 import fb from '../images/icon-facebook-white.svg';
 import insta from '../images/icon-instagram-white.svg';
-import twit from '../images/icon-twitter-white.svg';
 
 const Foot = styled.footer`
   margin-top: 2em;
@@ -114,10 +113,7 @@ const SiteMap = styled.ul`
 const Social = styled.div`
   img {
     width: 60px;
-    margin: 0 1rem;
-  }
-  img:first-of-type {
-    margin-left: 0;
+    margin: 0 1em;
   }
 `;
 
@@ -296,13 +292,6 @@ const Footer = ({ company = '', contact = {} }) => {
             rel="noopener noreferrer"
           >
             <img src={insta} alt="Instagram" />
-          </a>
-          <a
-            href={contact.social.twitter}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={twit} alt="Twitter" />
           </a>
         </Social>
       </FootTop>
