@@ -12,31 +12,34 @@ const DogContainer = styled.section`
   justify-content: center;
   align-items: stretch;
   background: #fff;
-
-  @media only screen and (max-width: 963px) {
-    padding-top: 1rem;
-  }
 `;
 
 // Eventually make this a slideshow?
 const DogImageWrapper = styled.div`
-  width: 33%;
-  min-width: 300px;
-  max-height: 65vh;
+  width: 35%;
   img {
     display: block;
     border-radius: 5px;
     height: 100%;
     object-fit: cover;
   }
+
+  @media only screen and (max-width: 855px) {
+    width: auto;
+    max-height: 40vh;
+
+    img {
+      width: 100%;
+    }
+  }
 `;
 
 const DogInfo = styled.div`
-  width: 67%;
+  width: 65%;
   padding: 1rem;
 
-  @media only screen and (max-width: 963px) {
-    width: 90%;
+  @media only screen and (max-width: 855px) {
+    width: 95%;
   }
 
   h2.dogTitle {
@@ -58,7 +61,7 @@ const DogInfo = styled.div`
 
     li {
       display: inline-block;
-      margin: 0 1rem;
+      margin: 0 0.75em;
       font-style: italic;
     }
   }

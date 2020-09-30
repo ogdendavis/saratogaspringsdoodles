@@ -74,8 +74,8 @@ const PuppyPage = ({ location }) => {
       <SEO title="Puppies and upcoming litters" />
       <PrimaryPageTemplate
         title="Upcoming Litters"
+        section="puppies"
         intro={data.pageIntro.html}
-        cardtype="litters"
         cardinfo={data.litters}
         outro={outro}
       />

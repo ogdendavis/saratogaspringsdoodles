@@ -48,14 +48,13 @@ const LitterContainer = styled.section`
 `;
 
 const ParentContainer = styled.div`
-  width: 30%;
-  min-width: 250px;
+  width: 35%;
+  min-width: 280px;
 
-  caption {
-    display: block;
-    margin: auto;
-    font-size: 0.75rem;
-    font-style: italic;
+  @media only screen and (max-width: 855px) {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
   }
 `;
 
@@ -73,13 +72,24 @@ const ParentImg = styled.img`
     border-radius: 5px 5px 0 0;
     border-bottom: 1px solid #888;
   }
+
+  @media only screen and (max-width: 855px) {
+    width: 50%;
+    max-height: 100%;
+    /* 2nd image */
+    border-radius: 0 5px 5px 0;
+    &:first-child {
+      border-radius: 5px 0 0 5px;
+      border-bottom: 0;
+    }
+  }
 `;
 
 const LitterInfo = styled.div`
   box-size: border-box;
   margin: auto;
   padding: 1rem;
-  width: 70%;
+  width: 65%;
 
   ul {
     list-style: none;
@@ -88,6 +98,10 @@ const LitterInfo = styled.div`
 
   li {
     margin: 0;
+  }
+
+  @media only screen and (max-width: 855px) {
+    width: 95%;
   }
 `;
 

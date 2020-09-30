@@ -42,6 +42,7 @@ const Theme = ({ children, location }) => {
     headFootTransparent:
       'linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8))',
     headFootSolid: '#333',
+    borderRadius: '5px',
   };
 
   return (
