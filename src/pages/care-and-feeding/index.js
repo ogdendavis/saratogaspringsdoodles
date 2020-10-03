@@ -4,7 +4,7 @@ import Layout from '../../components/layout';
 import SEO from '../../components/seo';
 import PrimaryPageTemplate from '../../templates/primary';
 
-const ApplicationPage = ({ location }) => {
+const CareAndFeedingPage = ({ location }) => {
   console.log(location);
 
   return (
@@ -19,4 +19,4 @@ const ApplicationPage = ({ location }) => {
   );
 };
 
-export default ApplicationPage;
+export default CareAndFeedingPage;
