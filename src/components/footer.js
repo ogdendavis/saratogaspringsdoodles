@@ -28,7 +28,7 @@ const FootTop = styled.div`
 const Contact = styled.div`
   a {
     text-decoration: none;
-    color: orange;
+    color: ${props => props.theme.linkColorHover};
     transition: all 0.3s ease-in-out;
     position: relative;
   }
@@ -41,7 +41,7 @@ const Contact = styled.div`
     margin: 1px 0 0;
     transition: all 0.4s ease-in-out;
     opacity: 0;
-    background-color: orange;
+    background-color: ${props => props.theme.linkColorHover};
   }
   a:hover::before {
     width: 100%;
@@ -90,7 +90,7 @@ const SiteMap = styled.ul`
     position: relative;
   }
   a:hover {
-    color: orange;
+    color: ${props => props.theme.linkColorHover};
   }
   a::before {
     content: '';

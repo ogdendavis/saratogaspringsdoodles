@@ -21,6 +21,9 @@ const FormContainer = styled.form`
     width: 90%;
     margin-bottom: 0.5rem;
   }
+  .senderInfo input:last-of-type {
+    margin-bottom: 0;
+  }
 
   .message textarea {
     width: 100%;
@@ -37,13 +40,13 @@ const FormContainer = styled.form`
   input[type='submit'] {
     font-weight: 700;
     font-size: 1.1em;
-    background-color: teal;
+    background-color: ${props => props.theme.headFootSolid};
     color: white;
     padding: 0.5rem 3rem;
     transition: background-color 0.3s ease-in-out;
 
     &:hover {
-      background-color: orange;
+      background-color: ${props => props.theme.linkColorHover};
       cursor: pointer;
     }
   }
@@ -53,6 +56,9 @@ const FormContainer = styled.form`
 
     .senderInfo input {
       width: 100%;
+    }
+    .senderInfo input:last-of-type {
+      margin-bottom: 0.5rem;
     }
 
     .message textarea {

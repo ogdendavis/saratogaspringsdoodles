@@ -21,7 +21,7 @@ const Menu = styled.nav`
     position: relative;
   }
   a:hover {
-    color: orange;
+    color: ${props => props.theme.linkColorHover};
   }
   a::before {
     content: '';
@@ -32,7 +32,7 @@ const Menu = styled.nav`
     margin: 3px 0 0;
     transition: all 0.4s ease-in-out;
     opacity: 0;
-    background-color: orange;
+    background-color: ${props => props.theme.linkColorHover};
   }
   a:hover::before {
     width: 100%;
@@ -42,7 +42,7 @@ const Menu = styled.nav`
 
   a.active-nav-link,
   a.active-nav-link:hover {
-    color: #48cccd;
+    color: ${props => props.theme.linkColor};
   }
   a.active-nav-link:hover::before {
     opacity: 0;
