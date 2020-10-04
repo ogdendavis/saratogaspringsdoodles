@@ -9,6 +9,7 @@ import NavBurger from './navBurger';
 const HeaderWrapper = styled.header`
   margin-bottom: 2em;
   position: relative;
+  font-family: Dancing Script, cursive;
 `;
 
 const HeaderInner = styled.div`
@@ -18,7 +19,9 @@ const HeaderInner = styled.div`
   z-index: 2;
   background: ${props =>
     props.athome ? props.theme.headFootTransparent : props.theme.offWhite};
-  transition: background 0.5s ease;
+  border-bottom: 1px ${props => (props.athome ? 'none' : 'solid')}
+    ${props => props.theme.offBlack};
+  transition: all 0.5s ease;
   a {
     display: flex;
     flex-flow: row wrap;

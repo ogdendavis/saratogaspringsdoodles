@@ -14,7 +14,7 @@ const Menu = styled.nav`
 
   a {
     text-decoration: none;
-    font-weight: 700;
+    font-size: 1.5em;
     color: ${props => (props.athome ? 'white' : props.theme.offBlack)};
     transition: all 0.3s ease-in-out;
     text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
@@ -60,6 +60,7 @@ const NavSpacer = styled.div`
 `;
 
 const NavList = styled.ul`
+  font-size: 0.9em;
   list-style: none;
   margin: 0;
   padding: 0 1em 1em;
@@ -69,7 +70,7 @@ const NavList = styled.ul`
     props.athome ? props.theme.headFootTransparent : props.theme.offWhite};
 
   li {
-    margin: 0.5em 0;
+    margin: 1em 0.25em;
     white-space: nowrap;
     a {
       width: fit-content;

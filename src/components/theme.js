@@ -2,10 +2,49 @@
 
 import React from 'react';
 import posed, { PoseGroup } from 'react-pose';
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Header from './header';
+
+import openSansRegular from '../fonts/OpenSans-Regular.ttf';
+import openSansBold from '../fonts/OpenSans-Bold.ttf';
+import openSansItalic from '../fonts/OpenSans-Italic.ttf';
+import dancingScriptRegular from '../fonts/DancingScript-Regular.ttf';
+
+const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: Open Sans;
+    src: url(${openSansRegular}) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: Open Sans;
+    src: url(${openSansBold}) format("truetype");
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: Open Sans;
+    src: url(${openSansItalic}) format("truetype");
+    font-weight: 400;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: Dancing Script;
+    src: url(${dancingScriptRegular}) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  body {
+    font-family: Open Sans, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Dancing Script, cursive;
+  }
+`;
 
 const Theme = ({ children, location }) => {
   const RoutesContainer = posed.div({
@@ -51,6 +90,7 @@ const Theme = ({ children, location }) => {
 
   return (
     <ThemeProvider theme={themeObject}>
+      <GlobalStyle />
       <PoseGroup>
         <Header
           siteTitle={data.site.frontmatter.title}
