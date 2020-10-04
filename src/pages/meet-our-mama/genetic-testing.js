@@ -5,8 +5,6 @@ import SEO from '../../components/seo';
 import ContentPageTemplate from '../../templates/content';
 
 const GeneticTestingPage = ({ location }) => {
-  console.log('Temp genetic testing page');
-
   return (
     <Layout location={location}>
       <SEO title="Genetic Testing" />

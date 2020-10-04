@@ -68,7 +68,6 @@ const DogInfo = styled.div`
 `;
 
 const DogCard = ({ dog }) => {
-  console.log(dog);
   // Calculate age from birthday
   const now = new Date();
   const bday = new Date(dog.frontmatter.birthdate);

@@ -45,6 +45,8 @@ const Theme = ({ children, location }) => {
     headFootSolid: '#333',
     linkColor: '#48cccd',
     linkColorHover: 'orange',
+    offWhite: '#f8f8f8',
+    offBlack: 'hsla(0, 0%, 0%, 0.8)',
   };
 
   return (

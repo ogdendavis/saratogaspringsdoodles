@@ -5,8 +5,6 @@ import SEO from '../../components/seo';
 import PrimaryPageTemplate from '../../templates/primary';
 
 const CareAndFeedingPage = ({ location }) => {
-  console.log(location);
-
   return (
     <Layout location={location}>
       <SEO title="Care and Feeding" />

@@ -15,7 +15,7 @@ const Menu = styled.nav`
   a {
     text-decoration: none;
     font-weight: 700;
-    color: white;
+    color: ${props => (props.athome ? 'white' : props.theme.offBlack)};
     transition: all 0.3s ease-in-out;
     text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
     position: relative;
@@ -66,7 +66,7 @@ const NavList = styled.ul`
   position: absolute;
   overflow-x: visible;
   background: ${props =>
-    props.athome ? props.theme.headFootTransparent : props.theme.headFootSolid};
+    props.athome ? props.theme.headFootTransparent : props.theme.offWhite};
 
   li {
     margin: 0.5em 0;
@@ -95,7 +95,7 @@ const NavMenu = ({ open, athome }) => {
   const [hoverItem, setHoverItem] = useState('');
 
   return (
-    <Menu className={open ? 'open' : ''}>
+    <Menu className={open ? 'open' : ''} athome={athome}>
       <Link key="nav/" to="/" activeClassName="active-nav-link" tabIndex="0">
         Home
       </Link>

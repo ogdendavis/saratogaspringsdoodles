@@ -4,8 +4,6 @@ import Layout from '../../components/layout';
 import SEO from '../../components/seo';
 
 const GalleryPage = ({ location }) => {
-  console.log('Temp gallery page');
-
   return (
     <Layout location={location}>
       <SEO title="Puppy photo gallery" />

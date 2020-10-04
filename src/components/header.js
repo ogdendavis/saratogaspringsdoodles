@@ -17,7 +17,7 @@ const HeaderInner = styled.div`
   position: relative;
   z-index: 2;
   background: ${props =>
-    props.athome ? props.theme.headFootTransparent : props.theme.headFootSolid};
+    props.athome ? props.theme.headFootTransparent : props.theme.offWhite};
   transition: background 0.5s ease;
   a {
     display: flex;

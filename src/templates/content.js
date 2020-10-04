@@ -24,7 +24,6 @@ const ContentPageTemplate = ({
   image = null,
   content = null,
 }) => {
-  console.log('yo');
   // Pick an image to use, if none has been passed in
   const useImage = image
     ? image
@@ -35,8 +34,6 @@ const ContentPageTemplate = ({
     : section === 'care'
     ? 'puppy-in-hand'
     : 'lolipop';
-
-  console.log(content);
 
   return (
     <article>
