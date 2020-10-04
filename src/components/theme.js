@@ -86,6 +86,8 @@ const Theme = ({ children, location }) => {
     linkColorHover: 'orange',
     offWhite: '#f8f8f8',
     offBlack: 'hsla(0, 0%, 0%, 0.8)',
+    headingFont: 'Dancing Script, cursive',
+    bodyFont: 'Open Sans, sans-serif',
   };
 
   return (
