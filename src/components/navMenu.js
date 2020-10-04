@@ -26,10 +26,10 @@ const Menu = styled.nav`
   a::before {
     content: '';
     position: absolute;
-    bottom: -3px;
+    bottom: -1px;
     width: 0px;
-    height: 3px;
-    margin: 3px 0 0;
+    height: 1px;
+    margin: 1px 0 0;
     transition: all 0.4s ease-in-out;
     opacity: 0;
     background-color: ${props => props.theme.linkColorHover};
