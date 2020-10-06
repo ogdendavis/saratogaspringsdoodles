@@ -3,15 +3,10 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 
 const CardContainer = styled.div`
-  border-radius: 5px;
-  width: 300px;
-  width: 20%;
-  min-width: 300px;
+  border-radius: ${props => props.theme.borderRadius};
   margin: 1rem;
-  color: white;
-  padding: 3rem 1rem;
   text-align: center;
-  box-shadow: 0px 2px 10px rgba(0, 64, 64, 0.15);
+  box-shadow: 0px 2px 10px rgba(0, 64, 64, 0.25);
 
   a {
     color: white;
@@ -19,15 +14,35 @@ const CardContainer = styled.div`
   }
 `;
 
+const CardInnards = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+`;
+
+const CardImage = styled.img`
+  border-radius: ${props => props.theme.borderRadius} 0 0
+    ${props => props.theme.borderRadius};
+  width: 40%;
+`;
+
+const CardContent = styled.div`
+  padding: 1rem;
+  color: ${props => props.theme.offBlack};
+  width: 60%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+`;
+
 const CardHeader = styled.h2`
-  text-shadow: 0px 2px 5px rgba(34, 34, 34, 0.7);
+  font-size: 3em;
 `;
 
 const CardCopy = styled.p`
-  text-shadow: 0px 2px 3px rgba(34, 34, 34, 0.7);
   font-size: 1.2em;
   font-weight: 500;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 `;
 
 const CardButton = styled.span`
@@ -56,28 +71,25 @@ const HomeCard = ({
   to = '/',
   external = false,
 }) => {
-  const bgString =
-    'linear-gradient(rgba(0, 64, 64, 0.4),rgba(0, 64, 64, 0.4)), ' +
-    (img ? `center / cover no-repeat url(${img})` : '');
+  const innards = (
+    <CardInnards>
+      <CardImage src={img} />
+      <CardContent>
+        <CardHeader>{title}</CardHeader>
+        <CardCopy>{copy}</CardCopy>
+        <CardButton>{button}</CardButton>
+      </CardContent>
+    </CardInnards>
+  );
+
   return (
-    <CardContainer
-      style={{
-        background: bgString,
-        ...style,
-      }}
-    >
+    <CardContainer>
       {external ? (
         <a href={to} target="_blank" rel="noopener noreferrer">
-          <CardHeader>{title}</CardHeader>
-          <CardCopy>{copy}</CardCopy>
-          <CardButton>{button}</CardButton>
+          {innards}
         </a>
       ) : (
-        <Link to={to}>
-          <CardHeader>{title}</CardHeader>
-          <CardCopy>{copy}</CardCopy>
-          <CardButton>{button}</CardButton>
-        </Link>
+        <Link to={to}>{innards}</Link>
       )}
     </CardContainer>
   );

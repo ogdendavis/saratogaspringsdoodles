@@ -7,6 +7,8 @@ import SEO from '../components/seo';
 import HomeCard from '../components/homepageCard';
 
 import lolipop from '../../static/img/lolipop.webp';
+import image1 from '../../static/img/charliebrown.webp';
+import image2 from '../../static/img/puppies-blanket-2.jpg';
 
 const Intro = styled.section`
   font-size: 1.1em;
@@ -46,9 +48,23 @@ const IndexPage = ({ location }) => {
       <Cards>
         <HomeCard
           img={lolipop}
-          title="Temp Card"
-          copy="This is a placeholder -- need to redesign cards!"
-          button="Do it, then"
+          title="Something Awesome"
+          copy="This is a placeholder. We should pick a few (3-5ish) key elements to highlight on the home page, and feature them in this space."
+          button="Learn More"
+          to="/"
+        />
+        <HomeCard
+          img={image2}
+          title="Something Else Awesome"
+          copy="This is a placeholder. We should pick a few (3-5ish) key elements to highlight on the home page, and feature them in this space."
+          button="Go There"
+          to="/"
+        />
+        <HomeCard
+          img={image1}
+          title="Yet Another Awesome Thing"
+          copy="This is a placeholder. We should pick a few (3-5ish) key elements to highlight on the home page, and feature them in this space."
+          button="Clicky Clicky"
           to="/"
         />
       </Cards>
