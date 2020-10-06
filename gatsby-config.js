@@ -70,6 +70,13 @@ module.exports = {
         path: `${__dirname}/static/img`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `gallery`,
+        path: `${__dirname}/src/cms/gallery`,
+      },
+    },
     `gatsby-plugin-sitemap`,
     // Keep netlify plugin last
     `gatsby-plugin-netlify`,

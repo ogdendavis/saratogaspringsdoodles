@@ -48,7 +48,7 @@ const PrimaryPageTemplate = ({
     ))
   ) : section === 'mama' ? (
     cardinfo.edges.map(({ node }) => (
-      <DogCard dog={node} key={node.frontmatter.title} />
+      <DogCard dog={node} key={`dogcard-${node.frontmatter.title}`} />
     ))
   ) : section === 'care' ? (
     <div>
