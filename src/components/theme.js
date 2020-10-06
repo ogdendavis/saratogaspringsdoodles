@@ -9,6 +9,7 @@ import Header from './header';
 
 import openSansRegular from '../fonts/OpenSans-Regular.ttf';
 import openSansBold from '../fonts/OpenSans-Bold.ttf';
+import openSansSemiBold from '../fonts/OpenSans-SemiBold.ttf';
 import openSansItalic from '../fonts/OpenSans-Italic.ttf';
 import dancingScriptRegular from '../fonts/DancingScript-Regular.ttf';
 
@@ -23,6 +24,12 @@ const GlobalStyle = createGlobalStyle`
     font-family: Open Sans;
     src: url(${openSansBold}) format("truetype");
     font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: Open Sans;
+    src: url(${openSansSemiBold}) format("truetype");
+    font-weight: 600;
     font-style: normal;
   }
   @font-face {
