@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import DogImage from '../components/dogImage';
-import Sidebar from '../components/Sidebar';
+import Sidebar from '../components/sidebar';
 
 const Container = styled.div`
   margin-top: 1em;

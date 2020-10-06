@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import DogImage from '../components/dogImage';
 import LitterCard from '../components/litterCard';
 import DogCard from '../components/dogCard';
-import Sidebar from '../components/Sidebar';
+import Sidebar from '../components/sidebar';
 
 const ContentContainer = styled.div`
   margin-top: 1em;
