@@ -15,12 +15,7 @@ collections:
     slug: '{{slug}}'
     fields:
       - { label: 'Name', name: 'title', widget: 'string' }
-      - {
-          label: 'Image',
-          name: 'image',
-          widget: 'image',
-          media_library: { config: { multiple: true } },
-        }
+      - { label: 'Image', name: 'image', widget: 'image' }
       - { label: 'Breed', name: 'breed', widget: 'string' }
       - { label: 'Color', name: 'color', widget: 'string' }
       - {
@@ -65,7 +60,6 @@ collections:
               label: 'Photo',
               name: 'sire_image',
               widget: 'image',
-              media_library: { config: { multiple: true } },
               required: false,
             }
       - label: 'Dam'
@@ -83,7 +77,6 @@ collections:
               label: 'Photo',
               name: 'dam_image',
               widget: 'image',
-              media_library: { config: { multiple: true } },
               required: false,
             }
       - {
@@ -248,3 +241,10 @@ collections:
                   widget: 'string',
                   required: false,
                 }
+  - name: 'gallery'
+    label: 'Photo Gallery'
+    folder: 'src/cms/gallery'
+    create: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Image', name: 'image', widget: 'image' }
