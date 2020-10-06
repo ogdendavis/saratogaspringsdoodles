@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
-import dogFace from '../images/dog5.png';
+import logo from '../images/saratogaspringsdoodles.webp';
 
 const LitterContainer = styled.section`
   display: flex;
@@ -134,7 +134,7 @@ const LitterCard = ({ litter, dogImagePaths }) => {
       alt={litter.frontmatter.dam.dam_name}
     />
   ) : (
-    <ParentImg src={dogFace} alt="dog face" />
+    <ParentImg src={logo} alt="dog face" />
   );
   const sireImage = litter.frontmatter.sire.sire_image ? (
     <ParentImg
@@ -147,7 +147,7 @@ const LitterCard = ({ litter, dogImagePaths }) => {
       alt={litter.frontmatter.sire.sire_name}
     />
   ) : (
-    <ParentImg src={dogFace} alt="dog face" />
+    <ParentImg src={logo} alt="dog face" />
   );
 
   return (
