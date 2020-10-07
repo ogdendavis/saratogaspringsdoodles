@@ -1,10 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import DogImage from '../components/dogImage';
 import LitterCard from '../components/litterCard';
 import DogCard from '../components/dogCard';
 import Sidebar from '../components/sidebar';
+
+// Default images by section
+import puppiesImage from '../../static/img/puppies-blanket-1.jpg';
+import mamaImage from '../../static/img/lolipop-1.jpg';
+import careImage from '../../static/img/puppy-in-hand.jpg';
+import fallbackImage from '../../static/img/lolipop.webp';
+
+const HeroImage = styled.img`
+  max-height: 50vh;
+  width: 100%;
+  object-fit: cover;
+  border-radius: ${props => props.theme.borderRadius};
+`;
 
 const ContentContainer = styled.div`
   margin-top: 1em;
@@ -30,12 +42,12 @@ const PrimaryPageTemplate = ({
   const useImage = image
     ? image
     : section === 'puppies'
-    ? 'puppies-blanket-1'
+    ? puppiesImage
     : section === 'mama'
-    ? 'lolipop-1'
+    ? mamaImage
     : section === 'care'
-    ? 'puppy-in-hand'
-    : 'lolipop';
+    ? careImage
+    : fallbackImage;
 
   // Build cards, if card info present
   const cards = !cardinfo ? null : section === 'puppies' ? (
@@ -59,7 +71,7 @@ const PrimaryPageTemplate = ({
   return (
     <article>
       <h1>{title}</h1>
-      <DogImage file={useImage} style={{ maxHeight: '50vh' }} />
+      <HeroImage src={useImage} alt="Large image of cute dogs" />
       <ContentContainer>
         <MainContent>
           {intro && <section dangerouslySetInnerHTML={{ __html: intro }} />}

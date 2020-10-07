@@ -1,8 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import DogImage from '../components/dogImage';
 import Sidebar from '../components/sidebar';
+
+// Default images by section
+import puppiesImage from '../../static/img/puppies-blanket-1.jpg';
+import mamaImage from '../../static/img/lolipop-1.jpg';
+import careImage from '../../static/img/puppy-in-hand.jpg';
+import fallbackImage from '../../static/img/lolipop.webp';
 
 const Container = styled.div`
   margin-top: 1em;
@@ -14,6 +19,15 @@ const Container = styled.div`
 const Main = styled.div`
   width: 800px;
   max-width: 100%;
+`;
+
+const TopImage = styled.img`
+  width: 45%;
+  display: inline;
+  float: left;
+  margin-right: 1em;
+  margin-top: 0.25em;
+  border-radius: ${props => props.theme.borderRadius};
 `;
 
 const Copy = styled.div``;
@@ -28,27 +42,19 @@ const ContentPageTemplate = ({
   const useImage = image
     ? image
     : section === 'puppies'
-    ? 'puppies-blanket-1'
+    ? puppiesImage
     : section === 'mama'
-    ? 'lolipop-1'
+    ? mamaImage
     : section === 'care'
-    ? 'puppy-in-hand'
-    : 'lolipop';
+    ? careImage
+    : fallbackImage;
 
   return (
     <article>
       <h1>{title}</h1>
       <Container>
         <Main>
-          <DogImage
-            file={useImage}
-            style={{
-              width: '45%',
-              display: 'inline',
-              float: 'left',
-              marginRight: '1rem',
-            }}
-          />
+          <TopImage src={useImage} alt="Image of cute dogs" style={{}} />
           <Copy dangerouslySetInnerHTML={{ __html: content }} />
         </Main>
         <Sidebar section={section} />
