@@ -27,7 +27,10 @@ const ContentContainer = styled.div`
 
 const MainContent = styled.div`
   width: 800px;
-  max-width: 100%;
+
+  @media only screen and (max-width: 1130px) {
+    width: 100%;
+  }
 `;
 
 const PrimaryPageTemplate = ({

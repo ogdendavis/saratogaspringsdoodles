@@ -18,7 +18,10 @@ const Container = styled.div`
 
 const Main = styled.div`
   width: 800px;
-  max-width: 100%;
+
+  @media only screen and (max-width: 1130px) {
+    width: 100%;
+  }
 `;
 
 const TopImage = styled.img`
@@ -28,6 +31,11 @@ const TopImage = styled.img`
   margin-right: 1em;
   margin-top: 0.25em;
   border-radius: ${props => props.theme.borderRadius};
+
+  @media only screen and (max-width: 460px) {
+    width: 100%;
+    margin: 0 0 1em;
+  }
 `;
 
 const Copy = styled.div``;
