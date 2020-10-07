@@ -7,8 +7,8 @@ import SEO from '../components/seo';
 import HomeCard from '../components/homepageCard';
 
 import lolipop from '../../static/img/lolipop.webp';
+import andrea from '../../static/img/andrea-loli-square.png';
 import image1 from '../../static/img/charliebrown.webp';
-import image2 from '../../static/img/puppies-blanket-2.jpg';
 
 const Intro = styled.section`
   font-size: 1.1em;
@@ -47,14 +47,14 @@ const IndexPage = ({ location }) => {
       <Intro dangerouslySetInnerHTML={{ __html: data.pageIntro.html }} />
       <Cards>
         <HomeCard
-          img={lolipop}
-          title="Something Awesome"
-          copy="This is a placeholder. We should pick a few (3-5ish) key elements to highlight on the home page, and feature them in this space."
+          img={andrea}
+          title="Hi, I'm Andrea"
+          copy="I started out as a guardian home for my Mable, a standard poodle. I ended up helping whelp a litter for the breeders, and fell in love with the whole process. I have always loved dogs and am loving using my experience and knowledge of being an OB Tech at a local Hospital to breed top quality genetic health tested puppies."
           button="Learn More"
-          to="/"
+          to="/puppies"
         />
         <HomeCard
-          img={image2}
+          img={lolipop}
           title="Something Else Awesome"
           copy="This is a placeholder. We should pick a few (3-5ish) key elements to highlight on the home page, and feature them in this space."
           button="Go There"
