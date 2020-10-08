@@ -46,6 +46,7 @@ const HeaderBg = styled(Img)`
 `;
 
 const Header = ({ siteTitle, location, logo, background }) => {
+  console.log('header location', location);
   // Telling the nav links if they were clicked from the home page, for header animation
   const atHome = location.pathname === '/';
   let fromHome = true;
