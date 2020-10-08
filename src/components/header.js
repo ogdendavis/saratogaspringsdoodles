@@ -47,8 +47,14 @@ const HeaderBg = styled(Img)`
 
 const Header = ({ siteTitle, location, logo, background }) => {
   console.log('header location', location);
+
+  // Check if on homepage for header color & hero image
+  const [atHome, setAtHome] = useState(true);
+  useEffect(() => {
+    setAtHome(location.pathname === '/');
+  }, [location]);
+
   // Telling the nav links if they were clicked from the home page, for header animation
-  const atHome = location.pathname === '/';
   let fromHome = true;
   if (location.state && location.state.fromHome) {
     fromHome = location.state.fromHome;
