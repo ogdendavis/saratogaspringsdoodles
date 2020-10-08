@@ -2,7 +2,7 @@
 title: Loli Pop
 image: /img/lolipop.webp
 breed: Mini Bernedoodle
-color: brown
+color: Phantom
 birthdate: 2020-09-28T04:00:00.000Z
 gender: f
 ---
