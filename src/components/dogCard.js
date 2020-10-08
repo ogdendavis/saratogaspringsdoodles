@@ -17,10 +17,11 @@ const DogContainer = styled.section`
 // Eventually make this a slideshow?
 const DogImageWrapper = styled.div`
   width: 35%;
+  display: flex;
+
   img {
     display: block;
-    border-radius: 5px;
-    height: 100%;
+    border-radius: 5px 0 0 5px;
     object-fit: cover;
   }
 
@@ -29,7 +30,7 @@ const DogImageWrapper = styled.div`
     max-height: 40vh;
 
     img {
-      width: 100%;
+      border-radius: 5px 5px 0 0;
     }
   }
 `;
