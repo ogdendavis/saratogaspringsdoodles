@@ -100,7 +100,6 @@ const Burger = styled.button`
 
 const NavBurger = ({ athome }) => {
   const [open, setOpen] = useState(false);
-  console.log('NavBurger athome', athome);
 
   return (
     <NavWrapper

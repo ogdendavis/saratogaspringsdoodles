@@ -46,8 +46,6 @@ const HeaderBg = styled(Img)`
 `;
 
 const Header = ({ siteTitle, location, logo, background }) => {
-  console.log('header location', location);
-
   // Check if on homepage for header color & hero image
   const [atHome, setAtHome] = useState(true);
   useEffect(() => {
