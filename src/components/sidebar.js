@@ -56,7 +56,7 @@ const puppyContent = [
 const mamaContent = [
   {
     img: i2,
-    to: '/meet-our-mama/genetic-testing',
+    to: '/meet-the-dogs/genetic-testing',
     title: 'Genetic Testing',
     copy:
       'We test all of our breeding dogs for health markers to ensure happy, healthy puppies.',

@@ -185,29 +185,29 @@ const NavMenu = ({ open, athome }) => {
         }}
       >
         <Link
-          key="nav/meet-our-mama"
-          to="/meet-our-mama"
+          key="nav/meet-the-dogs"
+          to="/meet-the-dogs"
           activeClassName="active-nav-link"
           tabIndex="0"
         >
-          Meet Our Mama
+          Mamas & Papas
         </Link>
         <NavSpacer />
         <NavList id="mama" hovered={hoverItem} athome={athome}>
           <li>
             <Link
               key="nav/mom/loli"
-              to="/meet-our-mama"
+              to="/meet-the-dogs"
               tabIndex="0"
               activeClassName="active-nav-link"
             >
-              Loli Pop
+              Meet the Dogs
             </Link>
           </li>
           <li>
             <Link
               key="nav/mom/testing"
-              to="/meet-our-mama/genetic-testing"
+              to="/meet-the-dogs/genetic-testing"
               tabIndex="0"
               activeClassName="active-nav-link"
             >

@@ -35,9 +35,9 @@ const MamaPage = ({ location }) => {
 
   return (
     <Layout location={location}>
-      <SEO title="Meet Our Mama" />
+      <SEO title="Meet Our Dogs" />
       <PrimaryPageTemplate
-        title="Meet Our Mama"
+        title="Meet Our Dogs"
         section="mama"
         intro={data.pageIntro.html}
         cardinfo={data.allMarkdownRemark}

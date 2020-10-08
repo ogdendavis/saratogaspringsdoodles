@@ -108,14 +108,14 @@ const LitterInfo = styled.div`
 const LitterCard = ({ litter, dogImagePaths }) => {
   // Get link to sire / dam profile, if in-house
   const sire = litter.frontmatter.sire.sire_in_house ? (
-    <Link to={`/meet-our-mama#${litter.frontmatter.sire.sire_name}`}>
+    <Link to={`/meet-the-dogs#${litter.frontmatter.sire.sire_name}`}>
       {litter.frontmatter.sire.sire_name}
     </Link>
   ) : (
     litter.frontmatter.sire.sire_name
   );
   const dam = litter.frontmatter.dam.dam_in_house ? (
-    <Link to={`/meet-our-mama#${litter.frontmatter.dam.dam_name}`}>
+    <Link to={`/meet-the-dogs#${litter.frontmatter.dam.dam_name}`}>
       {litter.frontmatter.dam.dam_name}
     </Link>
   ) : (
