@@ -44,16 +44,13 @@ const DogInfo = styled.div`
   }
 
   h2.dogTitle {
-    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
   }
 
   ul.dogInfo {
     list-style: none;
     margin: 0 0 1rem;
-    display: flex;
-    flex-flow: row wrap;
-    padding: 0 2rem;
-    justify-content: center;
 
     @media only screen and (max-width: 400px) {
       flex-direction: column;
@@ -61,27 +58,13 @@ const DogInfo = styled.div`
     }
 
     li {
-      display: inline-block;
-      margin: 0 0.75em;
+      margin: 0;
       font-style: italic;
     }
   }
 `;
 
 const DogCard = ({ dog }) => {
-  // Calculate age from birthday
-  const now = new Date();
-  const bday = new Date(dog.frontmatter.birthdate);
-  const ms = Math.floor(now - bday);
-  // 31557600000 milliseconds in a year
-  const years = Math.floor(ms / 31557600000);
-  // 2629800000 milliseconds in a month
-  const months = Math.floor(ms / 2629800000);
-  dog.displayAge =
-    years > 0
-      ? `${years} year${years > 1 ? 's' : ''}`
-      : `${months} month${months > 1 ? 's' : ''}`;
-
   return (
     <DogContainer id={dog.frontmatter.title}>
       <DogImageWrapper>
@@ -93,7 +76,6 @@ const DogCard = ({ dog }) => {
           <li>{dog.frontmatter.breed}</li>
           <li>{dog.frontmatter.color}</li>
           <li>{dog.frontmatter.gender === 'm' ? 'Male' : 'Female'}</li>
-          <li>{dog.displayAge}</li>
         </ul>
         <div dangerouslySetInnerHTML={{ __html: dog.html }} />
       </DogInfo>

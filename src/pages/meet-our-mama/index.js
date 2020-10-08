@@ -19,7 +19,6 @@ const MamaPage = ({ location }) => {
               image
               breed
               color
-              birthdate
               gender
             }
             html
