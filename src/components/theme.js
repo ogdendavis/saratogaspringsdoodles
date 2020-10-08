@@ -74,7 +74,7 @@ const Theme = ({ children, location }) => {
           title
         }
       }
-      background: file(relativePath: { eq: "puppy-flowers.jpg" }) {
+      background: file(relativePath: { eq: "hero.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1600) {
             ...GatsbyImageSharpFluid_withWebp

@@ -33,15 +33,20 @@ const HeaderInner = styled.div`
   }
 `;
 
-const HeaderBg = styled(Img)`
-  &::after {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+const HeaderHero = styled.div``;
+
+const HeaderHeading = styled.h1`
+  color: #fff;
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 35vh;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: ${props => (props.athome ? 'block' : 'none')};
+  visibility: ${props => (props.athome ? 'visible' : 'hidden')};
+
+  @media only screen and (max-width: 820px) {
+    font-size: 3rem;
   }
 `;
 
@@ -83,19 +88,21 @@ const Header = ({ siteTitle, location, logo, background }) => {
           <HeaderInner ref={headerRef} athome={atHome}>
             <NavBurger athome={atHome} />
           </HeaderInner>
-          <HeaderBg
-            fluid={background}
-            objectFit="cover"
-            objectPosition="50% 25%"
-            alt="Dog on moon"
-            style={{
-              position: 'absolute',
-              top: 0,
-              left: 0,
-              width: '100%',
-              ...styles,
-            }}
-          />
+          <HeaderHero>
+            <HeaderHeading athome={atHome}>{siteTitle}</HeaderHeading>
+            <Img
+              fluid={background}
+              alt="A very cute puppy"
+              style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                zIndex: '-1',
+                ...styles,
+              }}
+            />
+          </HeaderHero>
         </HeaderWrapper>
       )}
     </Spring>
