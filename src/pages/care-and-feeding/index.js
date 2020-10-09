@@ -22,12 +22,26 @@ const CareAndFeedingPage = ({ location }) => {
       <SEO title="Care and Feeding" />
       <h1>Care and Feeding</h1>
       <p>
-        An intro paragraph should go here -- just a couple of sentences, only
-        taking up 2-3 lines on a laptop screen, max, when the container is at
-        full width. I'm continuing to write because I want this to take up those
-        2-3 lines, so I can see what it looks like. You know, it's best to have
-        a sense of the spacing on the screen while I'm designing the cards for
-        the sections.
+        Nutrition, training, and enrichment are all important to make sure that
+        a dog lives the longest, healthiest life possible. I use, and strongly
+        recommend,{' '}
+        <a
+          href="https://www.pawtree.com/andreasaunders"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          pawTree
+        </a>{' '}
+        and{' '}
+        <a
+          href="https://www.baxterandbella.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Baxter and Bella
+        </a>
+        . Click the links below for more information, and to get discounts on
+        some of my recommended services and products.
       </p>
       <Cards>
         <CareCard
