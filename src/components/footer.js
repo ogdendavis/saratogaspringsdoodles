@@ -23,6 +23,11 @@ const FootTop = styled.div`
   padding: 1rem;
   justify-content: space-around;
   align-items: flex-start;
+
+  @media only screen and (max-width: 600px) {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
 `;
 
 const Contact = styled.div`
@@ -108,12 +113,43 @@ const SiteMap = styled.ul`
     opacity: 1;
     left: 0;
   }
+
+  @media only screen and (max-width: 600px) {
+    display: block;
+    margin: 0 auto;
+
+    ul {
+      margin: 0 1rem;
+    }
+    li {
+      margin: 0;
+    }
+  }
+`;
+
+const FootSpacer = styled.div`
+  display: none;
+  visibility: hidden;
+
+  @media only screen and (max-width: 885px) {
+    display: block;
+    visibility: visible;
+    margin: 1rem 0;
+    width: 80vw;
+    height: 1px;
+    background: ${props => props.theme.offWhite};
+  }
 `;
 
 const Social = styled.div`
   img {
     width: 60px;
     margin: 0 1em;
+  }
+
+  @media only screen and (max-width: 1060px) {
+    width: 100%;
+    text-align: center;
   }
 `;
 
@@ -161,6 +197,7 @@ const Footer = ({ company = '', contact = {} }) => {
             </li>
           </ul>
         </Contact>
+        <FootSpacer />
         <SiteMap>
           <h3>Site Map</h3>
           <li>
@@ -277,6 +314,7 @@ const Footer = ({ company = '', contact = {} }) => {
             </Link>
           </li>
         </SiteMap>
+        <FootSpacer />
         <Social>
           <h3>Follow Us</h3>
           <a
