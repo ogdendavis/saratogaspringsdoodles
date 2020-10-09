@@ -203,6 +203,15 @@ collections:
               name: 'body',
               widget: 'markdown',
             }
+      - name: 'about_guardians'
+        label: 'Guardian Program'
+        file: 'src/cms/general/guardians.md'
+        fields:
+          - {
+              label: 'Info on Guardian Program',
+              name: 'body',
+              widget: 'markdown',
+            }
       - name: 'about_contact'
         label: 'Contact Info'
         file: 'src/cms/general/contact.md'
