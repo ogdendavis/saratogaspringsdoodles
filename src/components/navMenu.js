@@ -137,6 +137,10 @@ const NavList = styled.ul`
     position: relative;
     padding: 0;
 
+    li {
+      margin: 0.5em 0 0.5em 1em;
+    }
+
     &#puppies,
     &#mama,
     &#care {
