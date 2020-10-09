@@ -17,34 +17,6 @@ const NavWrapper = styled.div`
     top: 2rem;
     right: 1rem;
 
-    nav {
-      flex-flow: column nowrap;
-      justify-content: space-between;
-      align-items: flex-end;
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      overflow: hidden;
-      transition: all 0.5s ease-in-out;
-      transform: translateY(-100%);
-      background: rgb(0, 64, 64);
-      padding-bottom: 45vh;
-      padding-top: 5rem;
-      padding-right: 1rem;
-    }
-
-    nav.open {
-      transform: none;
-      a {
-        color: orange;
-      }
-      a.active-nav-link {
-        color: #987;
-      }
-    }
-
     button {
       display: flex;
       visibility: visible;

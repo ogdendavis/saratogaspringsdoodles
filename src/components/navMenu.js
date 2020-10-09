@@ -9,7 +9,7 @@ const Menu = styled.nav`
   padding-top: 1em;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
 
   a {
@@ -53,10 +53,51 @@ const Menu = styled.nav`
   div.dropdownWrapper {
     position: relative;
   }
+
+  @media only screen and (max-width: 820px) {
+    /* When Nav Burger is active */
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(-100%);
+    background: rgb(0, 64, 64);
+    padding-top: 3em;
+    padding-left: 6em;
+    padding-bottom: 2em;
+
+    &.open {
+      transform: none;
+      a {
+        color: orange;
+      }
+      a.active-nav-link {
+        color: #987;
+      }
+    }
+
+    & > a,
+    .dropdownWrapper > a {
+      font-size: 1.75em;
+    }
+  }
 `;
 
 const NavSpacer = styled.div`
   height: 1em;
+
+  @media only screen and (max-width: 820px) {
+    /* When Nav Burger is active */
+    height: 0;
+    display: none;
+    visibility: hidden;
+  }
 `;
 
 const NavList = styled.ul`
@@ -89,6 +130,20 @@ const NavList = styled.ul`
   &#care {
     display: ${({ hovered }) => (hovered === 'care' ? 'block' : 'none')};
     visibility: ${({ hovered }) => (hovered === 'care' ? 'visible' : 'hidden')};
+  }
+
+  @media only screen and (max-width: 820px) {
+    /* Styles for when nav burger is active */
+    position: relative;
+    padding: 0;
+
+    &#puppies,
+    &#mama,
+    &#care {
+      display: block;
+      visibility: visible;
+      background: transparent;
+    }
   }
 `;
 
