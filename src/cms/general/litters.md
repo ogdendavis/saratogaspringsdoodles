@@ -1,3 +1,5 @@
+As a breeder, I hold myself to a high standard of ethical breeding by performing [genetic testing](/meet-the-dogs/genetic-testing) on all of my breeding dogs to ensure that they have healthiest (and happiest) puppies possible.
+
 All our puppies are raised in our home. Our mamas whelp in my puppy room, which is across the hall from my bedroom, and once the puppies' eyes and ears are open, they are moved to the kitchen where they are a part of all our daily living until they go home. I start ENS and ESI (see more below) with the newborn pups on day 3, and continue that until day 16. They are also raised with Puppy Culture, and are exposed to new things daily. The vacuum and blender don't faze them. I have five kids ranging in age from 4-13 so they are very experienced with little kiddos. We spend a lot of our time giving these puppies the best start at life.
 
 It is always bittersweet on gotcha day but I look forward to watching all my puppies grow and thrive with their new furever family.
