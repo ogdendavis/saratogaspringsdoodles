@@ -194,6 +194,15 @@ collections:
               name: 'welcome_contact',
               widget: 'text',
             }
+      - name: 'about_policies'
+        label: 'Policies & Pricing'
+        file: 'src/cms/general/policies.md'
+        fields:
+          - {
+              label: 'Info on Policies & Pricing',
+              name: 'body',
+              widget: 'markdown',
+            }
       - name: 'about_contact'
         label: 'Contact Info'
         file: 'src/cms/general/contact.md'
