@@ -7,7 +7,6 @@ import SEO from '../components/seo';
 import HomeCard from '../components/homepageCard';
 
 import lolipop from '../../static/img/lolipop.webp';
-import andrea from '../../static/img/andrea-loli-square.png';
 import image1 from '../../static/img/charliebrown.webp';
 
 const Intro = styled.section`
@@ -29,6 +28,14 @@ const IndexPage = ({ location }) => {
       ) {
         html
       }
+      breeder: markdownRemark(
+        fileAbsolutePath: { regex: "//cms/general/breeder.md/" }
+      ) {
+        frontmatter {
+          breeder_photo
+        }
+        html
+      }
       fb: markdownRemark(
         fileAbsolutePath: { regex: "//cms/general/contact.md/" }
       ) {
@@ -47,9 +54,9 @@ const IndexPage = ({ location }) => {
       <Intro dangerouslySetInnerHTML={{ __html: data.pageIntro.html }} />
       <Cards>
         <HomeCard
-          img={andrea}
+          img={data.breeder.frontmatter.breeder_photo}
           title="Hi, I'm Andrea"
-          copy="I started out as a guardian home for my Mable, a standard poodle. I ended up helping whelp a litter for the breeders, and fell in love with the whole process. I have always loved dogs and am loving using my experience and knowledge of being an OB Tech at a local Hospital to breed top quality genetic health tested puppies."
+          copy={data.breeder.html}
           button="Learn More"
           to="/puppies"
         />

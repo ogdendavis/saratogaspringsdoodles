@@ -55,7 +55,7 @@ const CardHeader = styled.h2`
   font-size: 3em;
 `;
 
-const CardCopy = styled.p`
+const CardCopy = styled.div`
   font-size: 1.2em;
   font-weight: 500;
   margin-bottom: 2em;
@@ -92,7 +92,7 @@ const HomeCard = ({
       <CardImage src={img} />
       <CardContent>
         <CardHeader>{title}</CardHeader>
-        <CardCopy>{copy}</CardCopy>
+        <CardCopy dangerouslySetInnerHTML={{ __html: copy }} />
         <CardButton>{button}</CardButton>
       </CardContent>
     </CardInnards>
