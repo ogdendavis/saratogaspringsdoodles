@@ -162,6 +162,15 @@ collections:
               name: 'body',
               widget: 'markdown',
             }
+      - name: 'about_testing'
+        label: 'Genetic Testing'
+        file: 'src/cms/general/testing.md'
+        fields:
+          - {
+              label: 'Info on Genetic Testing',
+              name: 'body',
+              widget: 'markdown',
+            }
       - name: 'about_litters'
         label: 'About Your Litters'
         file: 'src/cms/general/litters.md'
