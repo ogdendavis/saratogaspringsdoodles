@@ -171,6 +171,15 @@ collections:
               name: 'body',
               widget: 'markdown',
             }
+      - name: 'about_puppy_training'
+        label: 'About ENS / Puppy culture'
+        file: 'src/cms/general/puppy-training.md'
+        fields:
+          - {
+              label: 'Info on ENS & Puppy Culture',
+              name: 'body',
+              widget: 'markdown',
+            }
       - name: 'about_welcome'
         label: 'Welcome messages'
         file: 'src/cms/general/welcome.md'
