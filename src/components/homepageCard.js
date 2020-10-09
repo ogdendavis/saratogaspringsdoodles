@@ -23,6 +23,18 @@ const CardImage = styled.img`
   border-radius: ${props => props.theme.borderRadius} 0 0
     ${props => props.theme.borderRadius};
   width: 40%;
+  object-fit: cover;
+
+  @media only screen and (max-width: 799px) {
+    border-radius: ${props => props.theme.borderRadius}
+      ${props => props.theme.borderRadius} 0 0;
+    width: 100%;
+    max-height: 25vh;
+  }
+
+  @media only screen and (max-width: 400px) {
+    max-height: 35vh;
+  }
 `;
 
 const CardContent = styled.div`
@@ -33,6 +45,10 @@ const CardContent = styled.div`
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
+
+  @media only screen and (max-width: 799px) {
+    width: 100%;
+  }
 `;
 
 const CardHeader = styled.h2`
