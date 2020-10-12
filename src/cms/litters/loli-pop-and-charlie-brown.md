@@ -1,9 +1,9 @@
 ---
 # Litters should have a unique identifying title
-title: Loli Pop and Charlie Brown
+title: Loli Pop and Groot
 sire:
-  sire_name: Charlie Brown
-  sire_image: /img/charliebrown.webp
+  sire_name: Groot
+  sire_image: /img/groot.jpg
   sire_in_house: false
 dam:
   dam_name: Loli Pop
