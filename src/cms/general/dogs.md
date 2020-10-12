@@ -1,1 +1,1 @@
-Sire and dam info goes here. Is Loli the only mama? How do you select sires?
+Our mamas and papas are genetically tested to ensure that their puppies are as healthy as possible. They're also family pets, happily living with me in my home, or with their [guardian family](/puppies/guardians).
