@@ -5,6 +5,7 @@ social:
   facebook: https://www.facebook.com/Saratogaspringsdoodles/
   instagram: https://www.instagram.com/saratogaspringsdoodles/
   twitter: ""
+  gooddog: https://www.gooddog.com/breeders/saratoga-springs-doodles-utah
 address:
   street: ""
   city: Saratoga Springs
