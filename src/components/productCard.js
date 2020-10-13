@@ -36,14 +36,11 @@ const CardInnards = styled.div`
 `;
 
 const CardImage = styled.img`
-  border-radius: ${props => props.theme.borderRadius} 0 0
-    ${props => props.theme.borderRadius};
+  border-radius: ${props => props.theme.borderRadius};
   width: 40%;
   object-fit: cover;
 
   @media only screen and (max-width: 499px) {
-    border-radius: ${props => props.theme.borderRadius}
-      ${props => props.theme.borderRadius} 0 0;
     width: 100%;
     max-height: 35vh;
   }
@@ -70,10 +67,7 @@ const CardHeader = styled.h2`
 
 const CardCopy = styled.div`
   font-weight: 500;
-
-  @media only screen and (max-width: 499px) {
-    margin: 1rem 0;
-  }
+  margin: 1rem 0;
 `;
 
 const CardButton = styled.span`

@@ -2,16 +2,27 @@ import React from 'react';
 
 import Layout from '../../components/layout';
 import SEO from '../../components/seo';
-import ContentPageTemplate from '../../templates/content';
+import CarePageTemplate from '../../templates/care';
 
 const TrainingPage = ({ location }) => {
+  const cards = [
+    {
+      title: 'Lifetime Membership',
+      copy: `Baxter and Bella offers a lifetime membership that gives you full access to their training curriculum, plus one-on-one sessions with a trainer. Remember to use the code SARATOGA for 25% off!`,
+      image:
+        'https://static.wixstatic.com/media/5919e2_cce6a32e2ad5490f95c7f9e44e34a791.jpg',
+      to: 'https://www.baxterandbella.com/learn-more',
+      button: 'Sign up',
+    },
+  ];
+
   return (
     <Layout location={location}>
       <SEO title="Training" />
-      <ContentPageTemplate
+      <CarePageTemplate
         title="Training"
-        section="care"
-        content={`<p>Training your puppy is also very important: If you are a new puppy owner or would like a refresher course, I have teamed up with <a href="https://www.baxterandbella.com/" target="_blank" rel="noopener noreferrer">Baxter and Bella</a> who have an amazing program (Use code SARATOGA to save 25% off your lifetime membership).</p><p>Dolore quisquam doloremque ea. Beatae voluptatem quis labore rerum dolores voluptatem et sint. Quis dolor ut eligendi sunt et asperiores vero ipsam. Qui sed veniam est dolor. Odit quisquam qui quis dolor quasi quaerat sunt laudantium. Facere asperiores expedita et maiores dolorem ut labore.</p><p>Minus occaecati vitae sunt. Dolor nihil fuga ut eaque repellendus accusamus. Ut earum et officiis ipsam id quam et. Rerum illo nemo cumque repellat. Ut autem commodi rerum ut aperiam exercitationem. Quasi quia odit exercitationem.</p><p>Officia eveniet doloremque dolor quos. Iure non vel vero eveniet commodi. Consequuntur aspernatur et eos magnam perferendis. Et voluptas fugiat veniam harum vitae. Explicabo nulla atque cum vitae qui illo. Ea sapiente aliquid voluptatum eum beatae a libero.</p><p>Temporibus iusto ut dignissimos et distinctio voluptatum molestiae atque. Minima quasi recusandae tempore. Ut rem ex ipsam deserunt et consequatur. Sequi sit nihil eligendi non ad. Sit nesciunt et vero itaque est architecto voluptas. Qui molestiae ex ut.</p>`}
+        intro={`<p>Training your puppy is also very important: If you are a new puppy owner or would like a refresher course, I have teamed up with <a href="https://www.baxterandbella.com/" target="_blank" rel="noopener noreferrer">Baxter and Bella</a>. Amy Jensen is the trainer behind Baxter and Bella -- she's a former teacher who has used her lesson planning and instructional skills to develop an amazing program that teaches you how to communicate with, socialize, and train your puppy.</p><p>When you sign up for a Baxter & Bella membership, be sure to use the code SARATOGA to save 25% off your lifetime membership.</p>`}
+        cards={cards}
       />
     </Layout>
   );
