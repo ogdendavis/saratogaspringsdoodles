@@ -4,6 +4,7 @@ import { Link } from 'gatsby';
 
 import fb from '../images/icon-facebook-white.svg';
 import insta from '../images/icon-instagram-white.svg';
+import gd from '../images/gooddog-badge-sm.png';
 
 const Foot = styled.footer`
   margin-top: 2em;
@@ -330,6 +331,13 @@ const Footer = ({ company = '', contact = {} }) => {
             rel="noopener noreferrer"
           >
             <img src={insta} alt="Instagram" />
+          </a>
+          <a
+            href={contact.social.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={gd} alt="Good Dog" />
           </a>
         </Social>
       </FootTop>
