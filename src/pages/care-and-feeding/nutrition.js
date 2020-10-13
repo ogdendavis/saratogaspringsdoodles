@@ -42,6 +42,7 @@ const NutritionPage = ({ location }) => {
     <Layout location={location}>
       <SEO title="Nutrition" />
       <CarePageTemplate
+        location={location}
         title="Nutrition"
         intro={`<p>Nutrition is very important to make sure a dog lives the longest, healthiest life possible. I use and strongly recommend <a href="https://www.pawtree.com/andreasaunders" target="_blank" rel="noopener noreferrer">pawTree</a> products. (Use code Intro4u to save 20% off your first order)</p><p>Your dog's food shouldn't just help them survive -- it should help them thrive! Dogs need quality nutrition to be at their best. We recommend foods that have real meat as the first ingredient; are responsibly sourced; and <b>don't</b> contain meat by-products, artificial colors or preservatives, added sugar or other sweeteners, corn, wheat, or soy.</p><p>Similarly, treats should be made from real meat or offal (animal organs), and shouldn't contain preservatives or artificial flavors.</p><p>Take a look at some of my recommended products below, or shop <a href="https://www.pawtree.com/andreasaunders" target="_blank" rel="noopener noreferrer">my store</a> to see all that pawTree has to offer.`}
         cards={cards}

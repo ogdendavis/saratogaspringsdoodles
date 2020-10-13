@@ -40,6 +40,7 @@ const PrimaryPageTemplate = ({
   intro = null,
   cardinfo = null,
   outro = null,
+  location,
 }) => {
   // Pick an image to use, if none has been passed in
   const useImage = image
@@ -81,7 +82,7 @@ const PrimaryPageTemplate = ({
           {cards && <section>{cards}</section>}
           {outro && <section dangerouslySetInnerHTML={{ __html: outro }} />}
         </MainContent>
-        <Sidebar section={section} />
+        <Sidebar section={section} location={location} />
       </ContentContainer>
     </article>
   );

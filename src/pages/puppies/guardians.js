@@ -20,6 +20,7 @@ const GuardianPage = ({ location }) => {
     <Layout location={location}>
       <SEO title="Guardian Program" />
       <ContentPageTemplate
+        location={location}
         title="Guardian Program"
         section="puppies"
         content={data.content.html}

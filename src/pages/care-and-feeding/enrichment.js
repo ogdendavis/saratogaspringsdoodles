@@ -66,6 +66,7 @@ const EnrichmentPage = ({ location }) => {
     <Layout location={location}>
       <SEO title="Enrichment" />
       <CarePageTemplate
+        location={location}
         title="Enrichment"
         intro={`<p>Most behavioral problems with puppies boil down to a lack of <a href="/care-and-feeding/training">training</a>, or boredom. Dogs, like people, need mental and physical exercise in order to be their best.</p><p>Dogs interact with the world via their mouths, so chew toys are a great way to give them something to do -- and something to eat other than your slippers. Puzzles and snuffle mats are also great ways to keep your dog mentally engaged.</p><p>Of course, your puppy is happiest when you're interacting with them. Training time is good bonding, but it's also nice to have some more relaxed, less structured, play time with your pup. Interactive toys such as ropes (for tug of war) and balls (for fetch) are wonderful tools to help you engage with your dog. Additionally, a regular grooming routine is a great way to not only keep your pup clean, but build a bond with them.</p><p>Dogs need more sleep than people do -- generally around 12 hours a day. So it's important that your dog has comfortable, safe places to nap throughout the day. This gives your dog a feeling of security, and lets them rest up so they can be their best once nap time is over.</p><p>Check out some of my recommended products for keeping your pet engaged and happy below.</p>`}
         cards={cards}

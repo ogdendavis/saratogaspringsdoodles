@@ -45,6 +45,7 @@ const ContentPageTemplate = ({
   section = null,
   image = null,
   content = null,
+  location,
 }) => {
   // Pick an image to use, if none has been passed in
   const useImage = image
@@ -65,7 +66,7 @@ const ContentPageTemplate = ({
           <TopImage src={useImage} alt="Image of cute dogs" style={{}} />
           <Copy dangerouslySetInnerHTML={{ __html: content }} />
         </Main>
-        <Sidebar section={section} />
+        <Sidebar section={section} location={location} />
       </Container>
     </article>
   );

@@ -19,6 +19,7 @@ const PoliciesPage = ({ location }) => {
     <Layout location={location}>
       <SEO title="Policies and Pricing" />
       <ContentPageTemplate
+        location={location}
         title="Policies and Pricing"
         section="puppies"
         content={data.content.html}

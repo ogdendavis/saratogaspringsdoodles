@@ -28,6 +28,7 @@ const CarePageTemplate = ({
   image = null,
   intro = null,
   cards = null,
+  location,
 }) => {
   const renderedCards = cards
     ? cards.map(c => (
@@ -50,7 +51,7 @@ const CarePageTemplate = ({
           <Intro dangerouslySetInnerHTML={{ __html: intro }} />
           {renderedCards}
         </Main>
-        <Sidebar section={'care'} />
+        <Sidebar section={'care'} location={location} />
       </Container>
     </article>
   );

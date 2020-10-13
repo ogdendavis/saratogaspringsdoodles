@@ -19,6 +19,7 @@ const GeneticTestingPage = ({ location }) => {
     <Layout location={location}>
       <SEO title="Genetic Testing" />
       <ContentPageTemplate
+        location={location}
         title="Genetic Testing"
         section="mama"
         content={data.content.html}

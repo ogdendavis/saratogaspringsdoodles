@@ -113,7 +113,7 @@ const careContent = [
   },
 ];
 
-const Sidebar = ({ section }) => {
+const Sidebar = ({ section, location }) => {
   const useContent =
     section === 'puppies'
       ? puppyContent
@@ -124,7 +124,7 @@ const Sidebar = ({ section }) => {
       : puppyContent;
 
   // Filter out the item that represents the current page
-  const path = window.location.pathname;
+  const path = location.pathname;
 
   const filteredContent = useContent.filter(i => i.to !== path);
 
