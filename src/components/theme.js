@@ -19,30 +19,35 @@ const GlobalStyle = createGlobalStyle`
     src: url(${openSansRegular}) format("truetype");
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
   }
   @font-face {
     font-family: Open Sans;
     src: url(${openSansBold}) format("truetype");
     font-weight: 700;
     font-style: normal;
+    font-display: swap;
   }
   @font-face {
     font-family: Open Sans;
     src: url(${openSansSemiBold}) format("truetype");
     font-weight: 600;
     font-style: normal;
+    font-display: swap;
   }
   @font-face {
     font-family: Open Sans;
     src: url(${openSansItalic}) format("truetype");
     font-weight: 400;
     font-style: italic;
+    font-display: swap;
   }
   @font-face {
     font-family: Dancing Script;
     src: url(${dancingScriptRegular}) format("truetype");
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
   }
 
   body {
