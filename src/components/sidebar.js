@@ -123,7 +123,13 @@ const Sidebar = ({ section }) => {
       ? careContent
       : puppyContent;
 
-  const cards = useContent.map(item => (
+  // Filter out the item that represents the current page
+  const path = window.location.pathname;
+  console.log(path);
+
+  const filteredContent = useContent.filter(i => i.to !== path);
+
+  const cards = filteredContent.map(item => (
     <SidebarCard
       to={item.to}
       img={item.img}
