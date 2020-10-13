@@ -32,7 +32,7 @@ const Layout = ({ children, location }) => {
           social {
             facebook
             instagram
-            twitter
+            gooddog
           }
           address {
             street

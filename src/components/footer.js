@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 
 import fb from '../images/icon-facebook-white.svg';
 import insta from '../images/icon-instagram-white.svg';
-import gd from '../images/gooddog-badge-sm.png';
+import gd from '../images/gooddog-ssd-badge.png';
 
 const Foot = styled.footer`
   margin-top: 2em;
@@ -24,11 +24,6 @@ const FootTop = styled.div`
   padding: 1rem;
   justify-content: space-around;
   align-items: flex-start;
-
-  @media only screen and (max-width: 600px) {
-    flex-flow: column nowrap;
-    align-items: center;
-  }
 `;
 
 const Contact = styled.div`
@@ -132,7 +127,7 @@ const FootSpacer = styled.div`
   display: none;
   visibility: hidden;
 
-  @media only screen and (max-width: 885px) {
+  @media only screen and (max-width: 1071px) {
     display: block;
     visibility: visible;
     margin: 1rem 0;
@@ -148,9 +143,10 @@ const Social = styled.div`
     margin: 0 1em;
   }
 
-  @media only screen and (max-width: 1060px) {
-    width: 100%;
-    text-align: center;
+  img.badge {
+    display: block;
+    width: 120px;
+    margin: 1em auto;
   }
 `;
 
@@ -333,11 +329,11 @@ const Footer = ({ company = '', contact = {} }) => {
             <img src={insta} alt="Instagram" />
           </a>
           <a
-            href={contact.social.instagram}
+            href={contact.social.gooddog}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={gd} alt="Good Dog" />
+            <img className="badge" src={gd} alt="Good Dog" />
           </a>
         </Social>
       </FootTop>
