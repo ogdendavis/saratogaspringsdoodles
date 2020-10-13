@@ -55,8 +55,6 @@ const GalleryPage = ({ location }) => {
     />
   ));
 
-  console.log(allImages);
-
   return (
     <Layout location={location}>
       <SEO title="Puppy photo gallery" />

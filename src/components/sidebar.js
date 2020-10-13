@@ -125,7 +125,6 @@ const Sidebar = ({ section }) => {
 
   // Filter out the item that represents the current page
   const path = window.location.pathname;
-  console.log(path);
 
   const filteredContent = useContent.filter(i => i.to !== path);
 
