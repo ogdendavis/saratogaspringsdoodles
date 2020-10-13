@@ -249,6 +249,12 @@ collections:
                   widget: 'string',
                   required: false,
                 }
+              - {
+                  label: 'Good Dog Profile',
+                  name: 'gooddog',
+                  widget: 'string',
+                  required: false,
+                }
           - label: 'Address'
             name: 'address'
             widget: 'object'
