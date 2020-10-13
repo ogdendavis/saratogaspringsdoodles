@@ -1,24 +1,38 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
 
 import fallbackImage from '../images/saratogaspringsdoodles.webp';
 
 const CardContainer = styled.div`
   border-radius: ${props => props.theme.borderRadius};
-  margin: 1rem;
+  margin: 2rem 1rem;
   text-align: center;
   box-shadow: 0px 2px 10px rgba(0, 64, 64, 0.25);
+
+  &:nth-child(odd) {
+    img.productImage {
+      order: 1;
+    }
+  }
 
   a {
     color: white;
     text-decoration: none;
+  }
+
+  @media only screen and (max-width: 499px) {
+    &:nth-child(odd) {
+      img.productImage {
+        order: 0;
+      }
+    }
   }
 `;
 
 const CardInnards = styled.div`
   display: flex;
   flex-flow: row wrap;
+  padding: 1em;
 `;
 
 const CardImage = styled.img`
@@ -27,14 +41,10 @@ const CardImage = styled.img`
   width: 40%;
   object-fit: cover;
 
-  @media only screen and (max-width: 799px) {
+  @media only screen and (max-width: 499px) {
     border-radius: ${props => props.theme.borderRadius}
       ${props => props.theme.borderRadius} 0 0;
     width: 100%;
-    max-height: 25vh;
-  }
-
-  @media only screen and (max-width: 400px) {
     max-height: 35vh;
   }
 `;
@@ -48,19 +58,22 @@ const CardContent = styled.div`
   justify-content: space-around;
   align-items: center;
 
-  @media only screen and (max-width: 799px) {
+  @media only screen and (max-width: 499px) {
     width: 100%;
   }
 `;
 
 const CardHeader = styled.h2`
-  font-size: 3em;
+  font-size: 2rem;
+  margin: 0;
 `;
 
 const CardCopy = styled.div`
-  font-size: 1.2em;
   font-weight: 500;
-  margin-bottom: 2em;
+
+  @media only screen and (max-width: 499px) {
+    margin: 1rem 0;
+  }
 `;
 
 const CardButton = styled.span`
@@ -80,36 +93,29 @@ const CardButton = styled.span`
   }
 `;
 
-const HomeCard = ({
-  img = fallbackImage,
+const ProductCard = ({
+  image,
   title = '',
   copy = '',
-  button = 'Do it!',
-  to = '/',
-  external = false,
+  button = 'Buy Now',
+  to = 'https://pawtree.com/andreasaunders/',
 }) => {
-  const innards = (
-    <CardInnards>
-      <CardImage src={img} />
-      <CardContent>
-        <CardHeader>{title}</CardHeader>
-        <CardCopy dangerouslySetInnerHTML={{ __html: copy }} />
-        <CardButton>{button}</CardButton>
-      </CardContent>
-    </CardInnards>
-  );
+  const img = image ? image : fallbackImage;
 
   return (
     <CardContainer>
-      {external ? (
-        <a href={to} target="_blank" rel="noopener noreferrer">
-          {innards}
-        </a>
-      ) : (
-        <Link to={to}>{innards}</Link>
-      )}
+      <a href={to} target="_blank" rel="noopener noreferrer">
+        <CardInnards>
+          <CardImage src={img} className="productImage" />
+          <CardContent>
+            <CardHeader>{title}</CardHeader>
+            <CardCopy dangerouslySetInnerHTML={{ __html: copy }} />
+            <CardButton>{button}</CardButton>
+          </CardContent>
+        </CardInnards>
+      </a>
     </CardContainer>
   );
 };
 
-export default HomeCard;
+export default ProductCard;
