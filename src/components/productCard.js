@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-
-import fallbackImage from '../images/saratogaspringsdoodles.webp';
+import Markdown from 'markdown-to-jsx';
+import Img from 'gatsby-image';
 
 const CardContainer = styled.div`
   border-radius: ${props => props.theme.borderRadius};
@@ -10,7 +10,7 @@ const CardContainer = styled.div`
   box-shadow: 0px 2px 10px rgba(0, 64, 64, 0.25);
 
   &:nth-child(odd) {
-    img.productImage {
+    .productImage {
       order: 1;
     }
   }
@@ -22,7 +22,7 @@ const CardContainer = styled.div`
 
   @media only screen and (max-width: 499px) {
     &:nth-child(odd) {
-      img.productImage {
+      .productImage {
         order: 0;
       }
     }
@@ -35,7 +35,7 @@ const CardInnards = styled.div`
   padding: 1em;
 `;
 
-const CardImage = styled.img`
+const CardImage = styled(Img)`
   border-radius: ${props => props.theme.borderRadius};
   width: 40%;
   object-fit: cover;
@@ -94,16 +94,16 @@ const ProductCard = ({
   button = 'Buy Now',
   to = 'https://pawtree.com/andreasaunders/',
 }) => {
-  const img = image ? image : fallbackImage;
-
   return (
     <CardContainer>
       <a href={to} target="_blank" rel="noopener noreferrer">
         <CardInnards>
-          <CardImage src={img} className="productImage" />
+          <CardImage fluid={image} className="productImage" />
           <CardContent>
             <CardHeader>{title}</CardHeader>
-            <CardCopy dangerouslySetInnerHTML={{ __html: copy }} />
+            <CardCopy>
+              <Markdown>{copy}</Markdown>
+            </CardCopy>
             <CardButton>{button}</CardButton>
           </CardContent>
         </CardInnards>

@@ -8,7 +8,7 @@ const EnrichmentPage = ({ location }) => {
   const cards = [
     {
       title: 'Benebone Wishbone',
-      copy: `A great treat for tough chewers, it has long-lasting flavor and the shape makes it easy for dogs to pick up and chew.`,
+      copy: `asdf`,
       image:
         'https://images-na.ssl-images-amazon.com/images/I/81BBbUL9dHL._AC_SL1500_.jpg',
       to:
@@ -17,7 +17,7 @@ const EnrichmentPage = ({ location }) => {
     },
     {
       title: 'Kong Chew Toy',
-      copy: `The Kong is a classic for a reason. Give your dog something productive to do (instead of chewing on things you don't want them to) -- I fill the Kong with squeeze cheese and freeze it, so it becomes a long-lasting and fun distraction for my pups.`,
+      copy: `asdf`,
       image:
         'https://images-na.ssl-images-amazon.com/images/I/719dcnCnHfL._AC_SL1500_.jpg',
       to:
@@ -26,7 +26,7 @@ const EnrichmentPage = ({ location }) => {
     },
     {
       title: 'Bully Sticks',
-      copy: `Bully sticks are another great, natural, long-lasting chew for your puppy. They make a great treat for crate time!`,
+      copy: `asdf`,
       image:
         'https://images-na.ssl-images-amazon.com/images/I/71lQCPHTLeL._AC_SL1500_.jpg',
       to:
@@ -35,7 +35,7 @@ const EnrichmentPage = ({ location }) => {
     },
     {
       title: 'Home Grooming Set',
-      copy: `Doodles need regular grooming to be their healthiest and happiest. Grooming time can also be great bonding time, especially if you start early and make it a positive experince for your pup.`,
+      copy: `asdf`,
       image:
         'https://images-na.ssl-images-amazon.com/images/I/71pGTyP%2BKpL._AC_SL1287_.jpg',
       to:
@@ -44,7 +44,7 @@ const EnrichmentPage = ({ location }) => {
     },
     {
       title: 'Comfy Crate',
-      copy: `Dogs are den animals, and while a wire crate might not look very inviting to you or me, the small, enclosed space is homey and comforting to your dog.`,
+      copy: `asdf`,
       image:
         'https://images-na.ssl-images-amazon.com/images/I/91qtQrrA28L._AC_SL1500_.jpg',
       to:
@@ -53,7 +53,7 @@ const EnrichmentPage = ({ location }) => {
     },
     {
       title: 'Calming Dog Bed',
-      copy: `In addition to stimulation, dogs need a place to feel safe and relaxed. This bed is great for helping your pooch chill out after a training session or a long walk.`,
+      copy: `asdf`,
       image:
         'https://images-na.ssl-images-amazon.com/images/I/81IIrtSFi%2BL._AC_SL1500_.jpg',
       to:
@@ -68,7 +68,7 @@ const EnrichmentPage = ({ location }) => {
       <CarePageTemplate
         location={location}
         title="Enrichment"
-        intro={`<p>Most behavioral problems with puppies boil down to a lack of <a href="/care-and-feeding/training">training</a>, or boredom. Dogs, like people, need mental and physical exercise in order to be their best.</p><p>Dogs interact with the world via their mouths, so chew toys are a great way to give them something to do -- and something to eat other than your slippers. Puzzles and snuffle mats are also great ways to keep your dog mentally engaged.</p><p>Of course, your puppy is happiest when you're interacting with them. Training time is good bonding, but it's also nice to have some more relaxed, less structured, play time with your pup. Interactive toys such as ropes (for tug of war) and balls (for fetch) are wonderful tools to help you engage with your dog. Additionally, a regular grooming routine is a great way to not only keep your pup clean, but build a bond with them.</p><p>Dogs need more sleep than people do -- generally around 12 hours a day. So it's important that your dog has comfortable, safe places to nap throughout the day. This gives your dog a feeling of security, and lets them rest up so they can be their best once nap time is over.</p><p>Check out some of my recommended products for keeping your pet engaged and happy below.</p>`}
+        intro={`asdf`}
         cards={cards}
       />
     </Layout>

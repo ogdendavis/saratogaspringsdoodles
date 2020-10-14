@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Markdown from 'markdown-to-jsx';
 
 import Sidebar from '../components/sidebar';
 import ProductCard from '../components/productCard';
@@ -28,19 +29,27 @@ const CarePageTemplate = ({
   image = null,
   intro = null,
   cards = null,
+  images = null,
   location,
 }) => {
   const renderedCards = cards
-    ? cards.map(c => (
-        <ProductCard
-          key={`pcard-${c.title}`}
-          title={c.title}
-          copy={c.copy}
-          image={c.image ? c.image : false}
-          to={c.to ? c.to : 'https://pawtree.com/andreasaunders/'}
-          button={c.button ? c.button : 'Buy Now'}
-        />
-      ))
+    ? cards.map(({ node }) => {
+        // Pull frontmatter from node
+        const c = node.frontmatter;
+        // Find appropriate photo from image array
+        const i = images.find(({ node }) => node.relativePath === c.image);
+        // Put it all together and make the card!
+        return (
+          <ProductCard
+            key={`pcard-${c.title}`}
+            title={c.title}
+            copy={c.description}
+            image={i.node.childImageSharp.fluid}
+            to={c.link}
+            button={c.button}
+          />
+        );
+      })
     : [];
 
   return (
@@ -48,7 +57,9 @@ const CarePageTemplate = ({
       <h1>{title}</h1>
       <Container>
         <Main>
-          <Intro dangerouslySetInnerHTML={{ __html: intro }} />
+          <Intro>
+            <Markdown>{intro}</Markdown>
+          </Intro>
           {renderedCards}
         </Main>
         <Sidebar section={'care'} location={location} />
