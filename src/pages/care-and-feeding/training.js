@@ -1,20 +1,49 @@
 import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 
 import Layout from '../../components/layout';
 import SEO from '../../components/seo';
 import CarePageTemplate from '../../templates/care';
 
 const TrainingPage = ({ location }) => {
-  const cards = [
-    {
-      title: 'XXXXXXXXX',
-      copy: `Baxter and Bella offers a lifetime membership that gives you full access to their training curriculum, plus one-on-one sessions with a trainer. Remember to use the code SARATOGA for 25% off!`,
-      image:
-        'https://static.wixstatic.com/media/5919e2_cce6a32e2ad5490f95c7f9e44e34a791.jpg',
-      to: 'https://www.baxterandbella.com/learn-more',
-      button: 'Sign up',
-    },
-  ];
+  const data = useStaticQuery(graphql`
+    query trainingQuery {
+      intro: markdownRemark(
+        fileAbsolutePath: { regex: "//cms/general/welcome.md/" }
+      ) {
+        frontmatter {
+          welcome_training
+        }
+      }
+      products: allMarkdownRemark(
+        filter: { frontmatter: { section: { in: "training" } } }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              title
+              image
+              description
+              link
+              button
+            }
+          }
+        }
+      }
+      images: allFile(filter: { absolutePath: { regex: "/products/img/" } }) {
+        edges {
+          node {
+            relativePath
+            childImageSharp {
+              fluid(maxWidth: 400) {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
+        }
+      }
+    }
+  `);
 
   return (
     <Layout location={location}>
@@ -22,8 +51,9 @@ const TrainingPage = ({ location }) => {
       <CarePageTemplate
         location={location}
         title="Training"
-        intro={`asdf`}
-        cards={cards}
+        intro={data.intro.frontmatter.welcome_training}
+        cards={data.products.edges}
+        images={data.images.edges}
       />
     </Layout>
   );
