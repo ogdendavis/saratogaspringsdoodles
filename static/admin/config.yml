@@ -199,6 +199,21 @@ collections:
               widget: 'markdown',
             }
           - {
+              label: 'Nutrition Intro',
+              name: 'welcome_nutrition',
+              widget: 'markdown',
+            }
+          - {
+              label: 'Training Intro',
+              name: 'welcome_training',
+              widget: 'markdown',
+            }
+          - {
+              label: 'Enrichment Intro',
+              name: 'welcome_enrichment',
+              widget: 'markdown',
+            }
+          - {
               label: 'Contact us text (1 paragraph)',
               name: 'welcome_contact',
               widget: 'text',
@@ -292,3 +307,25 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Image', name: 'image', widget: 'image' }
+  - name: 'products'
+    label: 'Products'
+    label_singular: 'Product'
+    folder: 'src/cms/products'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - {
+          label: 'Section',
+          name: 'section',
+          widget: 'select',
+          multiple: true,
+          options:
+            [
+              { label: 'Nutrition', value: 'nutrition' },
+              { label: 'Training', value: 'training' },
+              { label: 'Enrichment', value: 'enrichment' },
+            ],
+        }
+      - { label: 'Description', name: 'description', widget: 'markdown' }
+      - { label: 'Link', name: 'link', widget: 'string' }
