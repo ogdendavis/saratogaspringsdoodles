@@ -4,7 +4,7 @@ title: Loli Pop and Groot
 sire:
   sire_name: Groot
   sire_image: /img/groot.jpg
-  sire_in_house: false
+  sire_in_house: true
 dam:
   dam_name: Loli Pop
   dam_in_house: true
