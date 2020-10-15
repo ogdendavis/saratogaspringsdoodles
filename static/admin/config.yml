@@ -270,6 +270,18 @@ collections:
                   widget: 'string',
                   required: false,
                 }
+              - {
+                  label: 'Paw Print Genetics Profile',
+                  name: 'pawprint',
+                  widget: 'string',
+                  required: false,
+                }
+              - {
+                  label: 'Baxter & Bella link',
+                  name: 'baxterandbella',
+                  widget: 'string',
+                  required: false,
+                }
           - label: 'Address'
             name: 'address'
             widget: 'object'
