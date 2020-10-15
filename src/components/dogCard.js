@@ -65,8 +65,12 @@ const DogInfo = styled.div`
 `;
 
 const DogCard = ({ dog }) => {
+  const cardId = dog.frontmatter.title.includes(' ')
+    ? dog.frontmatter.title.split(' ')[0]
+    : dog.frontmatter.title;
+
   return (
-    <DogContainer id={dog.frontmatter.title}>
+    <DogContainer id={cardId}>
       <DogImageWrapper>
         <img src={dog.frontmatter.image} alt={dog.frontmatter.title} />
       </DogImageWrapper>

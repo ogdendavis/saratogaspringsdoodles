@@ -107,15 +107,23 @@ const LitterInfo = styled.div`
 
 const LitterCard = ({ litter, dogImagePaths }) => {
   // Get link to sire / dam profile, if in-house
+  // First construct the ids used in dogCard
+  const sireId = litter.frontmatter.sire.sire_name.includes(' ')
+    ? litter.frontmatter.sire.sire_name.split(' ')[0]
+    : litter.frontmatter.sire.sire_name;
+  const damId = litter.frontmatter.dam.dam_name.includes(' ')
+    ? litter.frontmatter.dam.dam_name.split(' ')[0]
+    : litter.frontmatter.dam.dam_name;
+
   const sire = litter.frontmatter.sire.sire_in_house ? (
-    <Link to={`/meet-the-dogs#${litter.frontmatter.sire.sire_name}`}>
+    <Link to={`/meet-the-dogs#${sireId}`}>
       {litter.frontmatter.sire.sire_name}
     </Link>
   ) : (
     litter.frontmatter.sire.sire_name
   );
   const dam = litter.frontmatter.dam.dam_in_house ? (
-    <Link to={`/meet-the-dogs#${litter.frontmatter.dam.dam_name}`}>
+    <Link to={`/meet-the-dogs#${damId}`}>
       {litter.frontmatter.dam.dam_name}
     </Link>
   ) : (
