@@ -27,7 +27,7 @@ Male dogs will be brought to us as needed during the breeding process. Guardians
 
 ## Other Requirements
 
-​* We ask that you allow us to make arrangements to pick up the puppy/dog throughout various stages in its life to get photos taken to display on our website/social media channels.
+​We ask that you allow us to make arrangements to pick up the puppy/dog throughout various stages in its life to get photos taken to display on our website/social media channels. Additionally:
 
 * Guardian dogs are to be kept on a healthy diet at all times, including feeding our chosen food brand.
 * Guardian families are required to take their puppy/dog to the vet for its annual vaccines and whenever else needed (aside from breeding related visits).
