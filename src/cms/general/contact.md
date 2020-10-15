@@ -6,6 +6,8 @@ social:
   instagram: https://www.instagram.com/saratogaspringsdoodles/
   twitter: ""
   gooddog: https://www.gooddog.com/breeders/saratoga-springs-doodles-utah
+  pawprint: https://www.pawprintgenetics.com/pedigrees/breeders/details/2486/
+  baxterandbella: https://www.baxterandbella.com/learn-more
 address:
   street: ""
   city: Saratoga Springs
