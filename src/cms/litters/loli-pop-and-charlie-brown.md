@@ -16,4 +16,4 @@ size:
 colors: " "
 date: 2021-04-15T14:45:50.067Z
 ---
-Charlie is a magnificent tri color, as well as both a full parti and a full phantom. Charlie is a happy and confident young man Just like his father Captain Morgan! He is very friendly and agile. He loves to greet everyone he meets with a kiss. He would be happiest playfully running around with his family all day.
+What information do we want to tell about this litter?
