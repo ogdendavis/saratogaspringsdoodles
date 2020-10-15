@@ -33,6 +33,8 @@ const Layout = ({ children, location }) => {
             facebook
             instagram
             gooddog
+            pawprint
+            baxterandbella
           }
           address {
             street

@@ -5,6 +5,8 @@ import { Link } from 'gatsby';
 import fb from '../images/icon-facebook-white.svg';
 import insta from '../images/icon-instagram-white.svg';
 import gd from '../images/gooddog-ssd-badge.png';
+import pp from '../images/pawprint.png';
+import bb from '../images/bbpartner.png';
 
 const Foot = styled.footer`
   margin-top: 2em;
@@ -142,11 +144,18 @@ const Social = styled.div`
     width: 60px;
     margin: 0 1em;
   }
+`;
 
-  img.badge {
+const FootMid = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+
+  img {
     display: block;
-    width: 120px;
-    margin: 1em auto;
+    width: 140px;
+    margin: 1em 3em;
   }
 `;
 
@@ -155,6 +164,10 @@ const FootBottom = styled.div`
   padding: 2rem 2rem 1rem;
   text-align: center;
   line-height: 1.5;
+
+  @media only screen and (max-width: 1071px) {
+    padding: 1rem;
+  }
 
   a {
     text-decoration: none;
@@ -328,15 +341,33 @@ const Footer = ({ company = '', contact = {} }) => {
           >
             <img src={insta} alt="Instagram" />
           </a>
-          <a
-            href={contact.social.gooddog}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img className="badge" src={gd} alt="Good Dog" />
-          </a>
         </Social>
       </FootTop>
+      <FootMid>
+        <FootSpacer />
+        <a
+          href={contact.social.gooddog}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={gd} alt="Good Dog" />
+        </a>
+        <a
+          href={contact.social.pawprint}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={pp} alt="Paw Print Genetics" />
+        </a>
+        <a
+          href={contact.social.baxterandbella}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={bb} alt="Good Dog" />
+        </a>
+        <FootSpacer />
+      </FootMid>
       <FootBottom>
         <div>
           Website by{' '}
