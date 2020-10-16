@@ -61,21 +61,20 @@ const ParentContainer = styled.div`
 const ParentImg = styled.img`
   display: block;
   width: 100%;
-  min-height: 40%;
-  max-height: 60%;
+  height: 50%;
   object-fit: cover;
 
   /* Border for 2nd image */
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 0 0 5px;
 
   &:first-child {
-    border-radius: 5px 5px 0 0;
+    border-radius: 5px 0 0 0;
     border-bottom: 1px solid #888;
   }
 
   @media only screen and (max-width: 855px) {
     width: 50%;
-    max-height: 100%;
+    height: 100%;
     /* 2nd image */
     border-radius: 0 5px 5px 0;
     &:first-child {
@@ -91,17 +90,35 @@ const LitterInfo = styled.div`
   padding: 1rem;
   width: 65%;
 
-  ul {
-    list-style: none;
-    margin: 0 0 2em;
-  }
-
-  li {
-    margin: 0;
+  p:last-child {
+    margin-bottom: 0;
   }
 
   @media only screen and (max-width: 855px) {
     width: 95%;
+  }
+`;
+
+const LitterFrontmatter = styled.ul`
+  list-style: none;
+  margin: 0 0 1em;
+
+  li {
+    margin: 0;
+  }
+`;
+
+const ReservationList = styled.div`
+  h3 {
+    margin: 1rem 0 0.5rem;
+  }
+
+  ol {
+    margin: 0 0 1em 1em;
+  }
+
+  li {
+    margin: 0;
   }
 `;
 
@@ -168,7 +185,7 @@ const LitterCard = ({ litter, dogImagePaths }) => {
         <h2>
           {sire} and {dam}
         </h2>
-        <ul>
+        <LitterFrontmatter>
           {litter.frontmatter.date.length > 1 && (
             <li>
               <b>Expected:</b> {litter.frontmatter.date}
@@ -191,10 +208,25 @@ const LitterCard = ({ litter, dogImagePaths }) => {
               {litter.frontmatter.colors}
             </li>
           )}
-        </ul>
+        </LitterFrontmatter>
         <div dangerouslySetInnerHTML={{ __html: litter.html }} />
+        <ReservationList>
+          <h3>Reservation List</h3>
+          <ol>
+            <li>Breeder</li>
+            <li>Breeder</li>
+            <li>G Doyle NYC</li>
+            <li>M Katz NYC</li>
+            <li>N Drecker-Waxman NYC</li>
+            <li>M Cyr CA</li>
+            <li>L Clopton NYC</li>
+            <li>Available</li>
+            <li>Available</li>
+          </ol>
+        </ReservationList>
         <p>
-          <Link to="/contact">Contact us</Link> about this litter
+          Interested in a puppy from this litter? Fill out our{' '}
+          <Link to="/puppies/application">application</Link>.
         </p>
       </LitterInfo>
     </LitterContainer>
