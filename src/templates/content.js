@@ -38,7 +38,20 @@ const TopImage = styled.img`
   }
 `;
 
-const Copy = styled.div``;
+const Copy = styled.div`
+  img {
+    width: 90%;
+    display: block;
+    margin: 2em 0;
+    border-radius: ${props => props.theme.borderRadius};
+  }
+
+  @media only screen and (max-width: 460px) {
+    img {
+      margin: 2em auto;
+    }
+  }
+`;
 
 const ContentPageTemplate = ({
   title = 'Sarasota Springs Doodles',

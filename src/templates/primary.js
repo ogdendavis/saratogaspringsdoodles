@@ -33,6 +33,21 @@ const MainContent = styled.div`
   }
 `;
 
+const Copy = styled.section`
+  img {
+    width: 90%;
+    display: block;
+    margin: 2em 0;
+    border-radius: ${props => props.theme.borderRadius};
+  }
+
+  @media only screen and (max-width: 460px) {
+    img {
+      margin: 2em auto;
+    }
+  }
+`;
+
 const PrimaryPageTemplate = ({
   title = 'Sarasota Springs Doodles',
   section = null,
@@ -78,9 +93,9 @@ const PrimaryPageTemplate = ({
       <HeroImage src={useImage} alt="Large image of cute dogs" />
       <ContentContainer>
         <MainContent>
-          {intro && <section dangerouslySetInnerHTML={{ __html: intro }} />}
+          {intro && <Copy dangerouslySetInnerHTML={{ __html: intro }} />}
           {cards && <section>{cards}</section>}
-          {outro && <section dangerouslySetInnerHTML={{ __html: outro }} />}
+          {outro && <Copy dangerouslySetInnerHTML={{ __html: outro }} />}
         </MainContent>
         <Sidebar section={section} location={location} />
       </ContentContainer>
