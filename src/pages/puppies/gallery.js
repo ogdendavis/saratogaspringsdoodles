@@ -57,7 +57,7 @@ const GalleryPage = ({ location }) => {
 
   return (
     <Layout location={location}>
-      <SEO title="Puppy photo gallery" />
+      <SEO title="Photo Gallery" />
       <h1>Photo Gallery</h1>
       <p>This will be a photo gallery of puppies</p>
       <GalleryContainer>{allImages}</GalleryContainer>

@@ -74,7 +74,7 @@ const PuppyPage = ({ location }) => {
 
   return (
     <Layout location={location}>
-      <SEO title="Puppies and upcoming litters" />
+      <SEO title="Upcoming Litters" />
       <PrimaryPageTemplate
         location={location}
         title="Upcoming Litters"
