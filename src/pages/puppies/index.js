@@ -18,7 +18,7 @@ const PuppyPage = ({ location }) => {
             frontmatter {
               title
               date(formatString: "MMMM YYYY")
-              count
+              reservation_list
               colors
               size {
                 min

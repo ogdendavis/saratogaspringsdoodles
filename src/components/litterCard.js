@@ -175,6 +175,11 @@ const LitterCard = ({ litter, dogImagePaths }) => {
     <ParentImg src={logo} alt="dog face" />
   );
 
+  // Format reservations
+  const reservations = litter.frontmatter[
+    'reservation_list'
+  ].map((item, index) => <li key={`${dam}-${sire}-${index}`}>{item}</li>);
+
   return (
     <LitterContainer>
       <ParentContainer>
@@ -212,17 +217,7 @@ const LitterCard = ({ litter, dogImagePaths }) => {
         <div dangerouslySetInnerHTML={{ __html: litter.html }} />
         <ReservationList>
           <h3>Reservation List</h3>
-          <ol>
-            <li>Breeder</li>
-            <li>Breeder</li>
-            <li>G Doyle NYC</li>
-            <li>M Katz NYC</li>
-            <li>N Drecker-Waxman NYC</li>
-            <li>M Cyr CA</li>
-            <li>L Clopton NYC</li>
-            <li>Available</li>
-            <li>Available</li>
-          </ol>
+          <ol>{reservations}</ol>
         </ReservationList>
         <p>
           Interested in a puppy from this litter? Fill out our{' '}
