@@ -23,3 +23,9 @@ I perform ENS with every puppy, handling them daily during that two-week window 
 * Greater resistance to disease
 
 I do ENS in addition to the daily love and handling each pup receives beginning the moment it is born.
+
+## Early Scent Introduction (ESI)
+
+Scent abilities are often very important for companion, service, and therapy dogs. To support development of these skills, I use Early Scent Introduction -- a training program for puppies designed to enhance their ability to identify, and react to, specific scents. Each day, I introduce a new scent to the puppy for brief intervals, and record the puppy's reaction as positive, negative, or neutral.
+
+Even for dogs who won't use scent skills in their roles as adults, ESI provides early exposure to a variety of new smells, as well as great stimulation for a puppy's growing brain.
