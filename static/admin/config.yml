@@ -81,11 +81,14 @@ collections:
             }
       - {
           label: 'Reservation List',
+          label_singular: 'Reservation',
           name: 'reservation_list',
           widget: 'list',
           required: false,
-          field: 'text',
-          label_singular: 'Add Puppy',
+          collapsed: true,
+          minimize_collapsed: true,
+          field:
+            { label: 'Reservation', name: 'reservation', widget: 'string' },
         }
       - label: 'Size Range'
         name: 'size'
