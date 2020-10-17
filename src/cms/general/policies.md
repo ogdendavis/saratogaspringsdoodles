@@ -14,7 +14,7 @@ All prices include 6.6% Utah sales tax.
 
 Standard and mini goldendoodles are priced at $3200.
 
-![A goldendoodle puppy on a couch](/img/goldendoodlepuppy.jpg)
+![A goldendoodle puppy on a white couch](/img/goldendoodlepuppy.jpg)
 
 ### Bernedoodles
 
