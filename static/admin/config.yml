@@ -80,11 +80,12 @@ collections:
               required: false,
             }
       - {
-          label: 'Count',
-          name: 'count',
-          widget: 'number',
+          label: 'Reservation List',
+          name: 'reservation_list',
+          widget: 'list',
           required: false,
-          default: 0,
+          field: 'text',
+          label_singular: 'Add Puppy',
         }
       - label: 'Size Range'
         name: 'size'
