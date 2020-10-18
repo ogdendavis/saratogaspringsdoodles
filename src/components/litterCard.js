@@ -174,21 +174,27 @@ const LitterCard = ({ litter, dogImagePaths }) => {
   ) : (
     <ParentImg hasSire={hasSire} src={logo} alt="dog face" />
   );
-  const sireImage =
-    hasSire === false ? null : litter.frontmatter.sire.sire_image ? (
-      <ParentImg
-        src={litter.frontmatter.sire.sire_image}
-        alt={litter.frontmatter.dam.dam_name}
-      />
-    ) : litter.frontmatter.sire.sire_in_house ? (
-      <ParentImg
-        sireImage={sireImage}
-        src={dogImagePaths[litter.frontmatter.sire.sire_name]}
-        alt={litter.frontmatter.sire.sire_name}
-      />
-    ) : (
-      <ParentImg sireImage={sireImage} src={logo} alt="dog face" />
-    );
+  const sireImage = !hasSire ? null : litter.frontmatter.sire.sire_image ? (
+    <ParentImg
+      hasSire={hasSire}
+      src={litter.frontmatter.sire.sire_image}
+      alt={litter.frontmatter.dam.dam_name}
+    />
+  ) : litter.frontmatter.sire.sire_in_house ? (
+    <ParentImg
+      hasSire={hasSire}
+      sireImage={sireImage}
+      src={dogImagePaths[litter.frontmatter.sire.sire_name]}
+      alt={litter.frontmatter.sire.sire_name}
+    />
+  ) : (
+    <ParentImg
+      hasSire={hasSire}
+      sireImage={sireImage}
+      src={logo}
+      alt="dog face"
+    />
+  );
 
   // Format reservations
   const reservations = litter.frontmatter['reservation_list']
