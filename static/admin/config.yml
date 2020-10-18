@@ -125,7 +125,6 @@ collections:
       - { label: 'Info', name: 'body', widget: 'markdown', required: false }
   - name: 'site_copy'
     label: 'General Info'
-    media_folder: 'img'
     files:
       - name: 'about_breeder'
         label: 'About You'
