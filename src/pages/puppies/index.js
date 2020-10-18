@@ -11,7 +11,7 @@ const PuppyPage = ({ location }) => {
     query puppiesQuery {
       litters: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/cms/litters/.*.md/" } }
-        sort: { order: ASC, fields: [frontmatter___title] }
+        sort: { order: ASC, fields: [frontmatter___date] }
       ) {
         edges {
           node {
