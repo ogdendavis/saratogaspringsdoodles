@@ -7,11 +7,7 @@ import SEO from '../components/seo';
 import HomeCard from '../components/homepageCard';
 
 import lolipop from '../../static/img/lolipop.webp';
-import image1 from '../../static/img/charliebrown.webp';
-
-const Intro = styled.section`
-  font-size: 1.1em;
-`;
+import flowerpup from '../../static/img/puppy-flowers.jpg';
 
 const Cards = styled.section`
   display: flex;
@@ -23,11 +19,6 @@ const Cards = styled.section`
 const IndexPage = ({ location }) => {
   const data = useStaticQuery(graphql`
     query homeQuery {
-      pageIntro: markdownRemark(
-        fileAbsolutePath: { regex: "//cms/general/welcome.md/" }
-      ) {
-        html
-      }
       breeder: markdownRemark(
         fileAbsolutePath: { regex: "//cms/general/breeder.md/" }
       ) {
@@ -36,22 +27,12 @@ const IndexPage = ({ location }) => {
         }
         html
       }
-      fb: markdownRemark(
-        fileAbsolutePath: { regex: "//cms/general/contact.md/" }
-      ) {
-        frontmatter {
-          social {
-            facebook
-          }
-        }
-      }
     }
   `);
 
   return (
     <Layout location={location}>
       <SEO title="Home" />
-      <Intro dangerouslySetInnerHTML={{ __html: data.pageIntro.html }} />
       <Cards>
         <HomeCard
           img={data.breeder.frontmatter.breeder_photo}
@@ -62,17 +43,17 @@ const IndexPage = ({ location }) => {
         />
         <HomeCard
           img={lolipop}
-          title="Something Else Awesome"
-          copy="This is a placeholder. We should pick a few (3-5ish) key elements to highlight on the home page, and feature them in this space."
-          button="Go There"
-          to="/"
+          title="Mamas and Papas"
+          copy="A healthy, happy mama and papa produce healthy, happy puppies. All of our sires and dams are beloved family pets, and are genetically tested to ensure they'll produce the healthiest offspring possible."
+          button="Meet the Dogs"
+          to="/meet-the-dogs"
         />
         <HomeCard
-          img={image1}
-          title="Yet Another Awesome Thing"
-          copy="This is a placeholder. We should pick a few (3-5ish) key elements to highlight on the home page, and feature them in this space."
-          button="Clicky Clicky"
-          to="/"
+          img={flowerpup}
+          title="Lifelong Health"
+          copy="I work to give your puppy the best start in life possible, but your dog's long-term health is up to you. Feeding high-quality food, teaching desired behaviors, and giving your dog outlets for mental and physical stimulation are all important elements of your new pup's lifelong health."
+          button="See Our Recommendations"
+          to="/care-and-feeding"
         />
       </Cards>
     </Layout>
