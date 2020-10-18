@@ -61,14 +61,14 @@ const ParentContainer = styled.div`
 const ParentImg = styled.img`
   display: block;
   width: 100%;
-  height: 50%;
+  height: ${props => (props.hasSire ? '50%' : '100%')};
   object-fit: cover;
 
   /* Border for 2nd image */
   border-radius: 0 0 0 5px;
 
   &:first-child {
-    border-radius: 5px 0 0 0;
+    border-radius: ${props => (props.hasSire ? '5px 0 0 0' : '5px 0 0 5px')};
     border-bottom: 1px solid #888;
   }
 
@@ -122,7 +122,12 @@ const ReservationList = styled.div`
   }
 `;
 
+const CallToAction = styled.p`
+  margin-top: 0.5rem;
+`;
+
 const LitterCard = ({ litter, dogImagePaths }) => {
+  console.log(litter);
   // Get link to sire / dam profile, if in-house
   // First construct the ids used in dogCard
   const sireId = litter.frontmatter.sire.sire_name.includes(' ')
@@ -148,37 +153,49 @@ const LitterCard = ({ litter, dogImagePaths }) => {
   );
 
   // Get path to sire / dam image: attached to litter, attached to in-house dog, or default img
+  // Check if there's a sire! Will impact image styling
+  const hasSire = !(
+    litter.frontmatter.sire['sire_image'] === null &&
+    litter.frontmatter.sire['sire_name'] === 'TBD'
+  );
+  console.log(hasSire);
   const damImage = litter.frontmatter.dam.dam_image ? (
     <ParentImg
+      hasSire={hasSire}
       src={litter.frontmatter.dam.dam_image}
       alt={litter.frontmatter.dam.dam_name}
     />
   ) : litter.frontmatter.dam.dam_in_house ? (
     <ParentImg
+      hasSire={hasSire}
       src={dogImagePaths[litter.frontmatter.dam.dam_name]}
       alt={litter.frontmatter.dam.dam_name}
     />
   ) : (
-    <ParentImg src={logo} alt="dog face" />
+    <ParentImg hasSire={hasSire} src={logo} alt="dog face" />
   );
-  const sireImage = litter.frontmatter.sire.sire_image ? (
-    <ParentImg
-      src={litter.frontmatter.sire.sire_image}
-      alt={litter.frontmatter.dam.dam_name}
-    />
-  ) : litter.frontmatter.sire.sire_in_house ? (
-    <ParentImg
-      src={dogImagePaths[litter.frontmatter.sire.sire_name]}
-      alt={litter.frontmatter.sire.sire_name}
-    />
-  ) : (
-    <ParentImg src={logo} alt="dog face" />
-  );
+  const sireImage =
+    hasSire === false ? null : litter.frontmatter.sire.sire_image ? (
+      <ParentImg
+        src={litter.frontmatter.sire.sire_image}
+        alt={litter.frontmatter.dam.dam_name}
+      />
+    ) : litter.frontmatter.sire.sire_in_house ? (
+      <ParentImg
+        sireImage={sireImage}
+        src={dogImagePaths[litter.frontmatter.sire.sire_name]}
+        alt={litter.frontmatter.sire.sire_name}
+      />
+    ) : (
+      <ParentImg sireImage={sireImage} src={logo} alt="dog face" />
+    );
 
   // Format reservations
-  const reservations = litter.frontmatter[
-    'reservation_list'
-  ].map((item, index) => <li key={`${dam}-${sire}-${index}`}>{item}</li>);
+  const reservations = litter.frontmatter['reservation_list']
+    ? litter.frontmatter['reservation_list'].map((item, index) => (
+        <li key={`${dam}-${sire}-${index}`}>{item}</li>
+      ))
+    : [];
 
   return (
     <LitterContainer>
@@ -188,7 +205,7 @@ const LitterCard = ({ litter, dogImagePaths }) => {
       </ParentContainer>
       <LitterInfo>
         <h2>
-          {sire} and {dam}
+          {dam} and {sire}
         </h2>
         <LitterFrontmatter>
           {litter.frontmatter.date.length > 1 && (
@@ -215,14 +232,16 @@ const LitterCard = ({ litter, dogImagePaths }) => {
           )}
         </LitterFrontmatter>
         <div dangerouslySetInnerHTML={{ __html: litter.html }} />
-        <ReservationList>
-          <h3>Reservation List</h3>
-          <ol>{reservations}</ol>
-        </ReservationList>
-        <p>
+        {litter.frontmatter['reservation_list'] && (
+          <ReservationList>
+            <h3>Reservation List</h3>
+            <ol>{reservations}</ol>
+          </ReservationList>
+        )}
+        <CallToAction>
           Interested in a puppy from this litter? Fill out our{' '}
           <Link to="/puppies/application">application</Link>.
-        </p>
+        </CallToAction>
       </LitterInfo>
     </LitterContainer>
   );
