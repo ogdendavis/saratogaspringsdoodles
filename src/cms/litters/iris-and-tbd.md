@@ -13,4 +13,4 @@ size:
 colors: ""
 date: 2021-04-01T04:00:00.000Z
 ---
-Expected April 2021 -- check back for more info soon!
+Check back for more info soon!
