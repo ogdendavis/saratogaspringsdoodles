@@ -2,6 +2,10 @@
 
 Deposits are $500, which is applied to the final purchase price of your puppy. Deposits are non-refundable, but may be transferred to another litter.
 
+## Health Guarantee
+
+I do lots of [genetic testing](/meet-the-dogs/genetic-testing) to make sure that your puppy is healthy and free of genetic disease. I also offer a health guarantee against hip dysplasia, sebaceous  adenitis, von Willebrand’s disease, thyroid disease, genetic eye disease, and other congenital defects.
+
 ## Spay & Neuter
 
 When you purchase a puppy from us, you agree that you will not use the dog for breeding in any way, and that you will spay or neuter your puppy between 10 months and 1 year of age.
@@ -29,6 +33,8 @@ Traditional tricolor: $4000
 ![A bernedoodle puppy in a field of flowers](/img/puppy-flowers.jpg)
 
 ## Delivery
+
+You are responsible for all transportation arrangements and costs associated with getting your new puppy home.
 
 ### Hand Delivery
 
