@@ -3,9 +3,10 @@ import styled from 'styled-components';
 
 import Layout from '../../components/layout';
 import SEO from '../../components/seo';
+import SelectList from '../../components/selectList';
 
 const FormContainer = styled.form`
-  input,
+  input:not([type='radio']):not([type='submit']),
   textarea {
     border-radius: 5px;
     padding: 0.5rem;
@@ -36,9 +37,10 @@ const FormGroup = styled.div`
 const FormRow = styled.div`
   display: flex;
   flex-flow: row nowrap;
-  justify-items: flex-start;
+  justify-content: flex-start;
 
-  input:not(:last-child) {
+  > input:not(:last-child),
+  > div:not(:last-child) {
     margin-right: 1rem;
   }
 `;
@@ -114,20 +116,134 @@ const ApplicationPage = ({ location }) => {
         <FormSection>
           <FormSectionHeading>About Your Home</FormSectionHeading>
           <FormGroup>
-            This will have info about home type and family members
+            <SelectList
+              title="Does anyone in your family have pet allergies?"
+              name="allergies"
+              options={['Severe', 'Mild', 'None']}
+              required={true}
+            />
+            <strong>Do you currently have any pets? If so, what kind?</strong>
+            <textarea name="otherpets" placeholder="Dogs, cats, etc." />
+            <strong>
+              Tell us a little bit about yourself, your home, and your family
+            </strong>
+            <textarea
+              name="homefamfreeresponse"
+              placeholder="We'd like to get to know you!"
+            />
           </FormGroup>
         </FormSection>
         <FormSection>
-          <FormSectionHeading>Your Previous Pets</FormSectionHeading>
-          <FormGroup>Info about previous pets (duh)</FormGroup>
-        </FormSection>
-        <FormSection>
           <FormSectionHeading>Plans for Your Puppy</FormSectionHeading>
-          <FormGroup>Plans for training, socialization, etc.</FormGroup>
+          <FormGroup>
+            <SelectList
+              title="I'm planning for this puppy to be a:"
+              name="purpose"
+              options={[
+                'Companion',
+                'Service Dog',
+                'Therapy Dog',
+                'Breeding Dog',
+              ]}
+            />
+            <SelectList
+              title="Are you willing and able to provide a new puppy/dog with optimal health care, nutrition, and exercise?"
+              name="healthacknowledge"
+              options={['Yes', 'No']}
+              required={true}
+            />
+            <SelectList
+              title="Are you aware that doodles have a high-maintenance coat that will require regular brushing and professional grooming every 6-8 weeks?"
+              name="brushacknowledge"
+              options={['Yes', 'No']}
+              required={true}
+            />
+            <SelectList
+              title="Are you able to budget approximately $50-$90 (depending on your cut and groomer) every 6-8 weeks for professional grooming?"
+              name="groomingacknowledge"
+              options={['Yes', 'No']}
+              required={true}
+            />
+            <SelectList
+              title="Are you willing and able to properly train and socialize a new puppy?"
+              name="socializeacknowledge"
+              options={['Yes', 'No']}
+              required={true}
+            />
+            <SelectList
+              title="Will you seek the help of a professional trainer if you are unable to train your puppy/dog yourself?"
+              name="trainacknowledge"
+              options={['Yes', 'No']}
+              required={true}
+            />
+            <SelectList
+              title="Will you contact us if the need should ever arise for you to re-home your puppy?"
+              name="rehomeacknowledge"
+              options={['Yes', 'No']}
+              required={true}
+            />
+          </FormGroup>
         </FormSection>
         <FormSection>
           <FormSectionHeading>Your Preferences</FormSectionHeading>
-          <FormGroup>Sex, color, coat, size, etc.</FormGroup>
+          <FormGroup>
+            <SelectList
+              title="I'm interested in a:"
+              name="breed"
+              options={['Bernedoodle', 'Goldendoodle', 'Either']}
+              required={true}
+            />
+          </FormGroup>
+          <FormGroup>
+            <FormRow>
+              <SelectList
+                title="Preferred Color:"
+                name="color"
+                options={[
+                  'No Preference',
+                  'Phantom Black/Brown',
+                  'Traditional Tricolor',
+                  'Traditional Golden',
+                ]}
+              />
+              <SelectList
+                title="Preferred Gender:"
+                name="gender"
+                options={['No Preference', 'Male', 'Female']}
+              />
+            </FormRow>
+          </FormGroup>
+        </FormSection>
+        <FormSection>
+          <FormSectionHeading>Price and Delivery</FormSectionHeading>
+          <FormGroup>
+            <SelectList
+              title="Will you need delivery within the U.S.?"
+              name="delivery"
+              options={[
+                'Yes, I will require a flight nanny and transportation to the airport for my puppy at additional cost',
+                'No, I plan on flying in myself and will take my puppy home in the cabin as a carry-on',
+                'No, I plan on driving to your location to pick up my puppy in person',
+                'Unsure',
+              ]}
+              required={true}
+            />
+            <SelectList
+              title="Have you read our pricing page?"
+              name="priceacknowledge"
+              options={[
+                'Yes, I am aware of the total purchase price for my new puppy',
+                'No, not yet',
+              ]}
+              required={true}
+            />
+            <SelectList
+              title="Are you aware that your $500 deposit to secure a spot on our waiting list is non-refundable and will go towards the cost of your new puppy?"
+              name="depositacknowledge"
+              options={['Yes', 'No']}
+              required={true}
+            />
+          </FormGroup>
         </FormSection>
         <Submit>
           <input type="submit" value="Submit Application" />
