@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import React, { useState, useEffect, useRef } from 'react';
 import styled from 'styled-components';
-import Img from 'gatsby-image';
 import { Spring } from 'react-spring/renderprops';
 
 import NavBurger from './navBurger';
+import Hero from './hero';
 
 const HeaderWrapper = styled.header`
   margin-bottom: 2em;
@@ -30,23 +30,6 @@ const HeaderInner = styled.div`
   h1 a {
     color: white;
     text-decoration: none;
-  }
-`;
-
-const HeaderHero = styled.div``;
-
-const HeaderHeading = styled.h1`
-  color: #fff;
-  font-size: 4rem;
-  text-align: center;
-  padding-top: 35vh;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
-  z-index: 1;
-  display: ${props => (props.athome ? 'block' : 'none')};
-  visibility: ${props => (props.athome ? 'visible' : 'hidden')};
-
-  @media only screen and (max-width: 820px) {
-    font-size: 3rem;
   }
 `;
 
@@ -88,21 +71,7 @@ const Header = ({ siteTitle, location, logo, background }) => {
           <HeaderInner ref={headerRef} athome={atHome}>
             <NavBurger athome={atHome} />
           </HeaderInner>
-          <HeaderHero>
-            <HeaderHeading athome={atHome}>{siteTitle}</HeaderHeading>
-            <Img
-              fluid={background}
-              alt="A very cute puppy"
-              style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
-                zIndex: '-1',
-                ...styles,
-              }}
-            />
-          </HeaderHero>
+          <Hero siteTitle={siteTitle} atHome={atHome} />
         </HeaderWrapper>
       )}
     </Spring>
