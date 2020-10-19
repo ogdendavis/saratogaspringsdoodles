@@ -47,19 +47,23 @@ const GalleryPage = ({ location }) => {
     }
   `);
 
-  const allImages = data.allMarkdownRemark.edges.map(({ node }) => (
-    <GalleryImage
-      src={node.frontmatter.image}
-      alt={node.frontmatter.title}
-      key={`gallery-${node.id}`}
-    />
-  ));
+  // Cheap trick to show most recent images at top -- default order that images
+  // come in from graphql is oldest first, so just reverse the array to get
+  // the most recent images first!
+  const allImages = data.allMarkdownRemark.edges
+    .map(({ node }) => (
+      <GalleryImage
+        src={node.frontmatter.image}
+        alt={node.frontmatter.title}
+        key={`gallery-${node.id}`}
+      />
+    ))
+    .reverse();
 
   return (
     <Layout location={location}>
       <SEO title="Photo Gallery" />
       <h1>Photo Gallery</h1>
-      <p>This will be a photo gallery of puppies</p>
       <GalleryContainer>{allImages}</GalleryContainer>
     </Layout>
   );
