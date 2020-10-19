@@ -9,4 +9,5 @@ gender: m
 Blue is loving, playful and having the best life with his guardian family the Olsens. He is our up and coming future stud, pending genetic and health testing.
 
 Weight: 18 lbs\
-Clearances: pending
+Clearances: GM2, NCS, PRA, VWD 1 clear, DM carrier, FIC\
+OFA Hips: pending
