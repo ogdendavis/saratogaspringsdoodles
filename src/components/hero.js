@@ -7,7 +7,7 @@ const HeroContainer = styled.div``;
 
 const HeroHeading = styled.h1`
   color: #fff;
-  font-size: 4rem;
+  font-size: 8vw;
   text-align: center;
   padding-top: 35vh;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
