@@ -35,7 +35,7 @@ const Hero = ({ siteTitle, atHome }) => {
   return (
     <HeroContainer>
       <HeroHeading atHome={atHome}>{siteTitle}</HeroHeading>
-      <HeroVideo autoPlay muted loop>
+      <HeroVideo autoPlay muted loop playsinline>
         <source src={herovid} type="video/mp4" />
       </HeroVideo>
     </HeroContainer>
