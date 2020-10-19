@@ -10,7 +10,7 @@ const HeroHeading = styled.h1`
   font-size: 8vw;
   text-align: center;
   padding-top: 35vh;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.8);
   z-index: 1;
   display: ${props => (props.atHome ? 'block' : 'none')};
   visibility: ${props => (props.atHome ? 'visible' : 'hidden')};
