@@ -127,7 +127,6 @@ const CallToAction = styled.p`
 `;
 
 const LitterCard = ({ litter, dogImagePaths }) => {
-  console.log(litter);
   // Get link to sire / dam profile, if in-house
   // First construct the ids used in dogCard
   const sireId = litter.frontmatter.sire.sire_name.includes(' ')
@@ -183,17 +182,11 @@ const LitterCard = ({ litter, dogImagePaths }) => {
   ) : litter.frontmatter.sire.sire_in_house ? (
     <ParentImg
       hasSire={hasSire}
-      sireImage={sireImage}
       src={dogImagePaths[litter.frontmatter.sire.sire_name]}
       alt={litter.frontmatter.sire.sire_name}
     />
   ) : (
-    <ParentImg
-      hasSire={hasSire}
-      sireImage={sireImage}
-      src={logo}
-      alt="dog face"
-    />
+    <ParentImg hasSire={hasSire} src={logo} alt="dog face" />
   );
 
   // Format reservations
