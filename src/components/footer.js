@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 
 import fb from '../images/icon-facebook-white.svg';
 import insta from '../images/icon-instagram-white.svg';
-import gd from '../images/gooddog-ssd-badge.png';
+import gd from '../images/gooddog-ssd-badge-color.png';
 import pp from '../images/pawprint.png';
 import bb from '../images/bbpartner.png';
 
