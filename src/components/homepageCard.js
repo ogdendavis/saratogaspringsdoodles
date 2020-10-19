@@ -58,7 +58,6 @@ const CardHeader = styled.h2`
 `;
 
 const CardCopy = styled.div`
-  font-size: 1.2em;
   font-weight: 500;
   margin-bottom: 2em;
 `;
