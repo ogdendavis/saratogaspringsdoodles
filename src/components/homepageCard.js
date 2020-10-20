@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
-
-import fallbackImage from '../images/saratogaspringsdoodles.webp';
+import Img from 'gatsby-image';
 
 const CardContainer = styled.div`
   border-radius: ${props => props.theme.borderRadius};
@@ -21,7 +20,7 @@ const CardInnards = styled.div`
   flex-flow: row wrap;
 `;
 
-const CardImage = styled.img`
+const CardImage = styled(Img)`
   border-radius: ${props => props.theme.borderRadius} 0 0
     ${props => props.theme.borderRadius};
   width: 40%;
@@ -80,7 +79,7 @@ const CardButton = styled.span`
 `;
 
 const HomeCard = ({
-  img = fallbackImage,
+  img,
   title = '',
   copy = '',
   button = 'Do it!',
@@ -89,7 +88,7 @@ const HomeCard = ({
 }) => {
   const innards = (
     <CardInnards>
-      <CardImage src={img} />
+      <CardImage fluid={img} />
       <CardContent>
         <CardHeader>{title}</CardHeader>
         <CardCopy dangerouslySetInnerHTML={{ __html: copy }} />

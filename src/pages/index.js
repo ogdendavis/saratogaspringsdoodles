@@ -6,9 +6,6 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import HomeCard from '../components/homepageCard';
 
-import lolipop from '../../static/img/lolipop.webp';
-import flowerpup from '../../static/img/puppy-flowers.jpg';
-
 const Cards = styled.section`
   display: flex;
   flex-flow: row wrap;
@@ -22,10 +19,24 @@ const IndexPage = ({ location }) => {
       breeder: markdownRemark(
         fileAbsolutePath: { regex: "//cms/general/breeder.md/" }
       ) {
-        frontmatter {
-          breeder_photo
-        }
         html
+      }
+      andrea: imageSharp(id: { eq: "3fee2d1a-a4b5-5d68-ad2d-f1d7a3091ef3" }) {
+        fluid(maxWidth: 431) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+      lolipop: imageSharp(id: { eq: "7303db22-6663-5c89-bb4d-86e337bc75cc" }) {
+        fluid(maxWidth: 431) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+      flowerpup: imageSharp(
+        id: { eq: "87c2be15-c396-5e81-b501-d64e1011daca" }
+      ) {
+        fluid(maxWidth: 431) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
       }
     }
   `);
@@ -35,21 +46,21 @@ const IndexPage = ({ location }) => {
       <SEO title="Home" />
       <Cards>
         <HomeCard
-          img={data.breeder.frontmatter.breeder_photo}
+          img={data.andrea.fluid}
           title="Hi, I'm Andrea"
           copy={data.breeder.html}
           button="Learn More"
           to="/puppies"
         />
         <HomeCard
-          img={lolipop}
+          img={data.lolipop.fluid}
           title="Mamas and Papas"
           copy="A healthy, happy mama and papa produce healthy, happy puppies. All of our sires and dams are beloved family pets, and are genetically tested to ensure they'll produce the healthiest offspring possible."
           button="Meet the Dogs"
           to="/meet-the-dogs"
         />
         <HomeCard
-          img={flowerpup}
+          img={data.flowerpup.fluid}
           title="Lifelong Health"
           copy="I work to give your puppy the best start in life possible, but your dog's long-term health is up to you. Feeding high-quality food, teaching desired behaviors, and giving your dog outlets for mental and physical stimulation are all important elements of your new pup's lifelong health."
           button="See Our Recommendations"
