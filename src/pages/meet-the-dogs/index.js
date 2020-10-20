@@ -5,6 +5,8 @@ import Layout from '../../components/layout';
 import SEO from '../../components/seo';
 import PrimaryPageTemplate from '../../templates/primary';
 
+import image from '../../../static/img/puppy-in-hand-2.jpg';
+
 const MamaPage = ({ location }) => {
   const data = useStaticQuery(graphql`
     query dogsQuery {
@@ -42,6 +44,7 @@ const MamaPage = ({ location }) => {
         section="mama"
         intro={data.pageIntro.html}
         cardinfo={data.allMarkdownRemark}
+        image={image}
       />
     </Layout>
   );
