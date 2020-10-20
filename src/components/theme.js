@@ -52,6 +52,12 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: Open Sans, sans-serif;
+    opacity: 0;
+    background-color: ${props => props.theme.offWhite};
+  }
+  body.visible {
+    transition: opacity 1s ease, background-color 1s ease;
+    opacity: 1;
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: Dancing Script, cursive;
