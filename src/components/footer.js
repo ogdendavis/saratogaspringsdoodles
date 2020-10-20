@@ -354,14 +354,14 @@ const Footer = ({ company = '', contact = {} }) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={fb} alt="Facebook" />
+            <img src={fb} alt="Facebook" width="60" height="60" />
           </a>
           <a
             href={contact.social.instagram}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={insta} alt="Instagram" />
+            <img src={insta} alt="Instagram" width="60" height="60" />
           </a>
         </Social>
       </FootTop>
