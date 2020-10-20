@@ -5,6 +5,8 @@ import Layout from '../../components/layout';
 import SEO from '../../components/seo';
 import ContentPageTemplate from '../../templates/content';
 
+import image from '../../../static/img/cuddlepups.jpg';
+
 const PoliciesPage = ({ location }) => {
   const data = useStaticQuery(graphql`
     query policiesQuery {
@@ -23,6 +25,7 @@ const PoliciesPage = ({ location }) => {
         title="Policies and Pricing"
         section="puppies"
         content={data.content.html}
+        image={image}
       />
     </Layout>
   );

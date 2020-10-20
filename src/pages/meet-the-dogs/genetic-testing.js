@@ -5,6 +5,8 @@ import Layout from '../../components/layout';
 import SEO from '../../components/seo';
 import ContentPageTemplate from '../../templates/content';
 
+import image from '../../../static/img/puppy-in-hand-1.jpg';
+
 const GeneticTestingPage = ({ location }) => {
   const data = useStaticQuery(graphql`
     query geneticTestingQuery {
@@ -23,6 +25,7 @@ const GeneticTestingPage = ({ location }) => {
         title="Genetic Testing"
         section="mama"
         content={data.content.html}
+        image={image}
       />
     </Layout>
   );
