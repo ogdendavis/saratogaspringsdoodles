@@ -1,12 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
+import { Link, graphql, useStaticQuery } from 'gatsby';
+import Img from 'gatsby-image';
 
 import fb from '../images/icon-facebook-white.svg';
 import insta from '../images/icon-instagram-white.svg';
-import gd from '../images/gooddog-ssd-badge-color.png';
-import pp from '../images/pawprint.png';
-import bb from '../images/bbpartner.png';
 
 const Foot = styled.footer`
   margin-top: 2em;
@@ -151,12 +149,10 @@ const FootMid = styled.div`
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
+`;
 
-  img {
-    display: block;
-    width: 140px;
-    margin: 1em 3em;
-  }
+const ImgContainer = styled.div`
+  margin: 1em 3em;
 `;
 
 const FootBottom = styled.div`
@@ -194,6 +190,32 @@ const FootBottom = styled.div`
 `;
 
 const Footer = ({ company = '', contact = {} }) => {
+  const data = useStaticQuery(graphql`
+    query footQuery {
+      gd: file(relativePath: { eq: "gooddog-ssd-badge-color.png" }) {
+        childImageSharp {
+          fixed(width: 140) {
+            ...GatsbyImageSharpFixed_withWebp
+          }
+        }
+      }
+      pp: file(relativePath: { eq: "pawprint.png" }) {
+        childImageSharp {
+          fixed(width: 140) {
+            ...GatsbyImageSharpFixed_withWebp
+          }
+        }
+      }
+      bb: file(relativePath: { eq: "bbpartner.png" }) {
+        childImageSharp {
+          fixed(width: 140) {
+            ...GatsbyImageSharpFixed_withWebp
+          }
+        }
+      }
+    }
+  `);
+
   return (
     <Foot>
       <FootTop>
@@ -332,40 +354,49 @@ const Footer = ({ company = '', contact = {} }) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={fb} alt="Facebook" />
+            <img src={fb} alt="Facebook" width="60" height="60" />
           </a>
           <a
             href={contact.social.instagram}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={insta} alt="Instagram" />
+            <img src={insta} alt="Instagram" width="60" height="60" />
           </a>
         </Social>
       </FootTop>
       <FootMid>
         <FootSpacer />
-        <a
-          href={contact.social.gooddog}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={gd} alt="Good Dog" />
-        </a>
-        <a
-          href={contact.social.pawprint}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={pp} alt="Paw Print Genetics" />
-        </a>
-        <a
-          href={contact.social.baxterandbella}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={bb} alt="Good Dog" />
-        </a>
+        <ImgContainer>
+          <a
+            href={contact.social.gooddog}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Img fixed={data.gd.childImageSharp.fixed} alt="Good Dog" />
+          </a>
+        </ImgContainer>
+        <ImgContainer>
+          <a
+            href={contact.social.pawprint}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Img
+              fixed={data.pp.childImageSharp.fixed}
+              alt="Paw Print Genetics"
+            />
+          </a>
+        </ImgContainer>
+        <ImgContainer>
+          <a
+            href={contact.social.baxterandbella}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Img fixed={data.bb.childImageSharp.fixed} alt="Baxter & Bella" />
+          </a>
+        </ImgContainer>
         <FootSpacer />
       </FootMid>
       <FootBottom>

@@ -157,7 +157,6 @@ const LitterCard = ({ litter, dogImagePaths }) => {
     litter.frontmatter.sire['sire_image'] === null &&
     litter.frontmatter.sire['sire_name'] === 'TBD'
   );
-  console.log(hasSire);
   const damImage = litter.frontmatter.dam.dam_image ? (
     <ParentImg
       hasSire={hasSire}
