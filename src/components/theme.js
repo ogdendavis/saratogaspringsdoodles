@@ -7,49 +7,14 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import Header from './header';
 
-import openSansRegular from '../../static/fonts/OpenSans-Regular.ttf';
-import openSansBold from '../../static/fonts/OpenSans-Bold.ttf';
-import openSansSemiBold from '../../static/fonts/OpenSans-SemiBold.ttf';
-import openSansItalic from '../../static/fonts/OpenSans-Italic.ttf';
-import dancingScriptRegular from '../../static/fonts/DancingScript-Regular.ttf';
+// Font imports via fontsource (https://github.com/fontsource/fontsource)
+import 'fontsource-open-sans/400-normal.css';
+import 'fontsource-open-sans/700-normal.css';
+import 'fontsource-open-sans/600-normal.css';
+import 'fontsource-open-sans/400-italic.css';
+import 'fontsource-dancing-script/400-normal.css';
 
 const GlobalStyle = createGlobalStyle`
-  @font-face {
-    font-family: Open Sans;
-    src: url(${openSansRegular}) format("truetype");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: Open Sans;
-    src: url(${openSansBold}) format("truetype");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: Open Sans;
-    src: url(${openSansSemiBold}) format("truetype");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: Open Sans;
-    src: url(${openSansItalic}) format("truetype");
-    font-weight: 400;
-    font-style: italic;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: Dancing Script;
-    src: url(${dancingScriptRegular}) format("truetype");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
-
   body {
     font-family: Open Sans, sans-serif;
     opacity: 0;
