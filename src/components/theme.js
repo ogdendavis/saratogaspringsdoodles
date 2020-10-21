@@ -7,11 +7,11 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import Header from './header';
 
-import openSansRegular from '../fonts/OpenSans-Regular.ttf';
-import openSansBold from '../fonts/OpenSans-Bold.ttf';
-import openSansSemiBold from '../fonts/OpenSans-SemiBold.ttf';
-import openSansItalic from '../fonts/OpenSans-Italic.ttf';
-import dancingScriptRegular from '../fonts/DancingScript-Regular.ttf';
+import openSansRegular from '../../static/fonts/OpenSans-Regular.ttf';
+import openSansBold from '../../static/fonts/OpenSans-Bold.ttf';
+import openSansSemiBold from '../../static/fonts/OpenSans-SemiBold.ttf';
+import openSansItalic from '../../static/fonts/OpenSans-Italic.ttf';
+import dancingScriptRegular from '../../static/fonts/DancingScript-Regular.ttf';
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
