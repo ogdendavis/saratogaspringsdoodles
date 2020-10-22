@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import herovid from '../images/SaratogaSpringsDoodles.mp4';
-import fallbackImage from '../images/fallbackHero.jpg';
+import fallbackImage from '../images/fallbackHero.webp';
 
 const HeroContainer = styled.div``;
 
