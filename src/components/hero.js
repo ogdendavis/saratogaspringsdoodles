@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import herovid from '../images/SarasotaSpringsDoodles.mp4';
+import herovid from '../images/SaratogaSpringsDoodles.mp4';
 
 const HeroContainer = styled.div``;
 
