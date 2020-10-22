@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import herovid from '../images/SaratogaSpringsDoodles.mp4';
+import fallbackImage from '../images/fallbackHero.jpg';
 
 const HeroContainer = styled.div``;
 
@@ -27,7 +28,7 @@ const HeroVideo = styled.video`
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: green;
+  background: url(${fallbackImage}) center/cover no-repeat;
   object-fit: cover;
 `;
 
