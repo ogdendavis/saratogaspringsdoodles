@@ -33,7 +33,7 @@ const HeaderInner = styled.div`
   }
 `;
 
-const Header = ({ siteTitle, location, logo, background }) => {
+const Header = ({ siteTitle, location, logo }) => {
   // Check if on homepage for header color & hero image
   const [atHome, setAtHome] = useState(true);
   useEffect(() => {

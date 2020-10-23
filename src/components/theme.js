@@ -50,13 +50,6 @@ const Theme = ({ children, location }) => {
           title
         }
       }
-      background: file(relativePath: { eq: "hero.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1600) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
     }
   `);
 
@@ -80,7 +73,6 @@ const Theme = ({ children, location }) => {
         <Header
           siteTitle={data.site.frontmatter.title}
           location={location}
-          background={data.background.childImageSharp.fluid}
           key="staticheader"
         />
         <RoutesContainer key={location.pathname}>{children}</RoutesContainer>
