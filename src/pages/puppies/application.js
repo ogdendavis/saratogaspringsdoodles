@@ -134,7 +134,7 @@ const ApplicationPage = ({ location }) => {
               Tell us a little bit about yourself, your home, and your family
             </strong>
             <textarea
-              name="homefamfreeresponse"
+              name="aboutyourself"
               placeholder="We'd like to get to know you!"
             />
           </FormGroup>
@@ -204,7 +204,7 @@ const ApplicationPage = ({ location }) => {
             <FormRow>
               <SelectList
                 title="Preferred Color:"
-                name="color"
+                name="prefercolor"
                 options={[
                   'No Preference',
                   'Phantom Black/Brown',
@@ -214,7 +214,7 @@ const ApplicationPage = ({ location }) => {
               />
               <SelectList
                 title="Preferred Gender:"
-                name="gender"
+                name="prefergender"
                 options={['No Preference', 'Male', 'Female']}
               />
             </FormRow>
@@ -225,7 +225,7 @@ const ApplicationPage = ({ location }) => {
           <FormGroup>
             <SelectList
               title="Will you need delivery within the U.S.?"
-              name="delivery"
+              name="needdelivery"
               options={[
                 'Yes, I will require a flight nanny and transportation to the airport for my puppy at additional cost',
                 'No, I plan on flying in myself and will take my puppy home in the cabin as a carry-on',
