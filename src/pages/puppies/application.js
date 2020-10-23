@@ -43,6 +43,15 @@ const FormRow = styled.div`
   > div:not(:last-child) {
     margin-right: 1rem;
   }
+
+  @media only screen and (max-width: 1014px) {
+    display: block;
+
+    > input:not(:last-child),
+    > div:not(:last-child) {
+      margin-right: unset;
+    }
+  }
 `;
 
 const Submit = styled.div`
