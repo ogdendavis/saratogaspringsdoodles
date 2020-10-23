@@ -53,7 +53,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: `https://hungry-archimedes-85647a.netlify.app/img/img_6135.jpg`,
+          content: `https://www.saratogaspringsdoodles.com/img/puppy-flowers.jpg`,
         },
         {
           name: `twitter:card`,

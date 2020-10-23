@@ -4,7 +4,7 @@ module.exports = {
     description: `Utah's premier breeder of genetic health tested bernedoodle and goldendoodle puppies.`,
     author: `Lucas Ogden-Davis`,
     company: `Saratoga Springs Doodles`,
-    siteUrl: `https://brave-payne-8d1469.netlify.app/`,
+    siteUrl: `https://www.saratogaspringsdoodles.com/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
