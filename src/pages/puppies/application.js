@@ -70,7 +70,12 @@ const ApplicationPage = ({ location }) => {
     <Layout location={location}>
       <SEO title="Puppy Application" />
       <h1>Puppy Application</h1>
-      <FormContainer>
+      <FormContainer
+        name="application"
+        method="POST"
+        data-netlify="true"
+        action="/application-submitted"
+      >
         <FormSection>
           <FormSectionHeading>About You</FormSectionHeading>
           <FormGroup>

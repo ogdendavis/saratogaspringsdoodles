@@ -85,7 +85,12 @@ const ContactPage = ({ location }) => {
       <SEO title="Contact Us" />
       <h1>Get In Touch</h1>
       <p>{data.pageIntro.frontmatter.welcome_contact}</p>
-      <FormContainer method="post" action="#">
+      <FormContainer
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        action="/message-sent"
+      >
         <div className="senderInfo">
           <input type="text" name="name" placeholder="Your Name *" required />
           <input
