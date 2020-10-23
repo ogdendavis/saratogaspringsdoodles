@@ -91,6 +91,7 @@ const ContactPage = ({ location }) => {
         data-netlify="true"
         action="/message-sent"
       >
+        <input type="hidden" name="form-name" value="contact" />
         <div className="senderInfo">
           <input type="text" name="name" placeholder="Your Name *" required />
           <input
