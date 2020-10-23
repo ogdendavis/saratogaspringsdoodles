@@ -76,7 +76,7 @@ const ApplicationPage = ({ location }) => {
         data-netlify="true"
         action="/application-submitted"
       >
-        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="form-name" value="application" />
         <FormSection>
           <FormSectionHeading>About You</FormSectionHeading>
           <FormGroup>
