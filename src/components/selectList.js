@@ -28,9 +28,11 @@ const SelectList = ({ title, name, options, required = false }) => {
     const req = required ? 'required' : '';
     return (
       <li key={id}>
-        <input type="radio" name={name} id={id} value={val} required={req} />
-        <Spacer />
-        <label htmlFor={id}>{o}</label>
+        <label>
+          <input type="radio" name={name} id={id} value={val} required={req} />
+          <Spacer />
+          {o}
+        </label>
       </li>
     );
   });
