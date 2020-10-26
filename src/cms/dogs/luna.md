@@ -1,6 +1,6 @@
 ---
 title: Luna
-image: /img/luna1.jpeg
+image: /img/luna2.jpeg
 breed: Multigen Mini Bernedoodle
 color: Tricolor
 birthdate: 2020-03-05T19:02:09.620Z
