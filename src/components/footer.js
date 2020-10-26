@@ -282,12 +282,12 @@ const Footer = ({ company = '', contact = {} }) => {
             </ul>
           </li>
           <li>
-            <Link key="foot/meet-our-dogs" to="/meet-our-dogs" tabIndex="0">
+            <Link key="foot/meet-the-dogs" to="/meet-the-dogs" tabIndex="0">
               Mamas & Papas
             </Link>
             <ul>
               <li>
-                <Link key="foot/mom/loli" to="/meet-our-dogs" tabIndex="0">
+                <Link key="foot/mom/loli" to="/meet-the-dogs" tabIndex="0">
                   Meet the Dogs
                 </Link>
               </li>
