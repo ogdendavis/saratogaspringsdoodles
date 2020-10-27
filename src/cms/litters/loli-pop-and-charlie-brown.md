@@ -8,7 +8,7 @@ sire:
 dam:
   dam_name: Loli Pop
   dam_in_house: true
-  dam_image: /img/lolipop.webp
+  dam_image: /img/img_2304.jpg
 reservation_list:
   - Breeder
   - Breeder
