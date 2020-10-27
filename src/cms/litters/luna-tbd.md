@@ -6,7 +6,7 @@ sire:
 dam:
   dam_name: Luna
   dam_in_house: true
-  dam_image: /img/luna1.jpeg
+  dam_image: /img/luna2.jpeg
 size:
   min: 0
   max: 0
