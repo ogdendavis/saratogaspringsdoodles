@@ -6,6 +6,8 @@ image: img/crate.jpg
 description: Dogs are den animals, and while a wire crate might not look very
   inviting to you or me, the small, enclosed space is homey and comforting to
   your dog.
-link: https://www.amazon.com/AmazonBasics-Single-Door-Folding-Metal-Crate/dp/B00QAVO29I/ref=sxts_sxwds-bia-wc-p13n2_0?cv_ct_cx=dog+crate&dchild=1&keywords=dog+crate&pd_rd_i=B00QAVO29I&pd_rd_r=113a5c33-f6ec-4ce2-aedc-df25c169efba&pd_rd_w=voMH3&pd_rd_wg=nTcfE&pf_rd_p=13bf9bc7-d68d-44c3-9d2e-647020f56802&pf_rd_r=16WQP4J1CZ27EJT6631G&psc=1&qid=1597760475&sr=1-2-791c2399-d602-4248-afbb-8a79de2d236f
+link: <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0"
+  scrolling="no" frameborder="0"
+  src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=saratogaspr04-20&marketplace=amazon&region=US&placement=B000OXAES6&asins=B000OXAES6&linkId=83fc3546d17e27a345b4209bf9b4565b&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">     </iframe>
 button: Buy on Amazon
 ---
