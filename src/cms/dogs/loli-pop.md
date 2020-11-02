@@ -1,5 +1,5 @@
 ---
-title: Loli Pop
+title: Lolli Pop
 image: /img/lolipop.webp
 breed: Mini Bernedoodle
 color: Phantom
