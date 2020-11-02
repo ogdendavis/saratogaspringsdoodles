@@ -5,6 +5,8 @@ section:
 image: img/benebone.jpg
 description: A great treat for tough chewers, it has long-lasting flavor and the
   shape makes it easy for dogs to pick up and chew.
-link: https://www.amazon.com/Benebone-Wishbone-Durable-Aggressive-Chewers/dp/B00MHZTKXY/ref=sr_1_1_sspa?crid=2TNBZG1Y2F5GO&dchild=1&keywords=benebone&qid=1597761087&s=pet-supplies&sprefix=bene%2Cpets%2C870&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExUjBNTDc5WlZGNkVXJmVuY3J5cHRlZElkPUEwMzY0NDA2MzAxNVdaOUYxU0syOCZlbmNyeXB0ZWRBZElkPUEwNjQxNjcwMjFFTU5JMU03SDFKMCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=
+link: <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0"
+  scrolling="no" frameborder="0"
+  src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=saratogaspr04-20&marketplace=amazon&region=US&placement=B07RBR1Y83&asins=B07RBR1Y83&linkId=cfc0c9314758d6a9706449f6f4c5f47f&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">     </iframe>
 button: Buy on Amazon
 ---
