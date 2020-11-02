@@ -10,15 +10,7 @@ dam:
   dam_in_house: true
   dam_image: /img/img_2304.jpg
 reservation_list:
-  - Breeder
-  - Breeder
-  - M Katz NYC
-  - N Drecker-Waxman NYC
-  - M Cyr CA
-  - L Clopton NYC
-  - D Moten TX
-  - Available
-  - Available
+  - "*Waitlist Open*"
 size:
   min: 30
   max: 40
