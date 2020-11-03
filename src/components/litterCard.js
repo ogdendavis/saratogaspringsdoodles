@@ -127,6 +127,7 @@ const CallToAction = styled.p`
 `;
 
 const LitterCard = ({ litter, dogImagePaths }) => {
+  console.log('littercard:', litter);
   // Get link to sire / dam profile, if in-house
   // First construct the ids used in dogCard
   const sireId = litter.frontmatter.sire.sire_name.includes(' ')
@@ -195,6 +196,37 @@ const LitterCard = ({ litter, dogImagePaths }) => {
       ))
     : [];
 
+  // Handle dual-sired litters
+  const isDual =
+    litter.frontmatter.dub_sire && litter.frontmatter.dub_sire.dub_sire_name
+      ? true
+      : false;
+  // If litter is dual-sired, create the (linked) name, just like sire and dam above
+  let dubSire = '';
+  if (isDual) {
+    const dubSireId = litter.frontmatter.dub_sire.dub_sire_name.includes(' ')
+      ? litter.frontmatter.dub_sire.dub_sire_name.split(' ')[0]
+      : litter.frontmatter.dub_sire.dub_sire_name;
+    dubSire = litter.frontmatter.dub_sire.dub_sire_in_house ? (
+      <Link to={`/meet-the-dogs#${dubSireId}`}>
+        {litter.frontmatter.dub_sire.dub_sire_name}
+      </Link>
+    ) : (
+      litter.frontmatter.dub_sire.dub_sire_name
+    );
+  }
+  console.log(dubSire);
+
+  const title = isDual ? (
+    <h2>
+      {dam} with {sire} and {dubSire}
+    </h2>
+  ) : (
+    <h2>
+      {dam} and {sire}
+    </h2>
+  );
+
   return (
     <LitterContainer>
       <ParentContainer>
@@ -202,9 +234,7 @@ const LitterCard = ({ litter, dogImagePaths }) => {
         {sireImage}
       </ParentContainer>
       <LitterInfo>
-        <h2>
-          {dam} and {sire}
-        </h2>
+        {title}
         <LitterFrontmatter>
           {litter.frontmatter.date.length > 1 && (
             <li>

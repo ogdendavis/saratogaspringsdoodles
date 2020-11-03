@@ -62,6 +62,33 @@ collections:
               widget: 'image',
               required: false,
             }
+      - label: 'Second Sire'
+        name: 'dub_sire'
+        widget: 'object'
+        collapsed: true
+        summary: 'Add a second sire for double-sired litters'
+        fields:
+          - {
+              label: 'Second Sire Name',
+              name: 'dub_sire_name',
+              widget: 'string',
+              required: false,
+              default: '',
+            }
+          - {
+              label: 'Second Sire in house?',
+              name: 'dub_sire_in_house',
+              widget: 'boolean',
+              required: false,
+              default: false,
+            }
+          - {
+              label: 'Second Sire Photo',
+              name: 'dub_sire_image',
+              widget: 'image',
+              required: false,
+              default: '',
+            }
       - label: 'Dam'
         name: 'dam'
         widget: 'object'

@@ -34,6 +34,11 @@ const PuppyPage = ({ location }) => {
                 sire_in_house
                 sire_image
               }
+              dub_sire {
+                dub_sire_name
+                dub_sire_in_house
+                dub_sire_image
+              }
             }
             html
           }
