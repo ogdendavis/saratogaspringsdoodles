@@ -1,6 +1,6 @@
 ---
 # Litters should have a unique identifying title
-title: Lolli Pop and Groot
+title: Loli Pop and Groot
 sire:
   sire_name: Groot
   sire_image: /img/groot.jpg
