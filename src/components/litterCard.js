@@ -145,16 +145,6 @@ const CallToAction = styled.p`
 `;
 
 const LitterCard = ({ litter, dogImagePaths }) => {
-  console.log('littercard:', litter);
-  // Temp dummy data
-  if (litter.frontmatter.dam.dam_name === 'Lolli Pop') {
-    litter.frontmatter.dub_sire = {
-      dub_sire_name: 'Cedric',
-      dub_sire_in_house: true,
-      dub_sire_image: 'img/image4.jpeg',
-    };
-  }
-
   // Check for presence of sire and dual sire -- affects text & styling
   const hasSire = !(
     litter.frontmatter.sire['sire_image'] === null &&
