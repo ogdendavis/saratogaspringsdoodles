@@ -1,6 +1,6 @@
 ---
 # Litters should have a unique identifying title
-title: Lolli Pop and TBD
+title: Loli Pop and TBD
 sire:
   sire_name: TBD
 dam:
