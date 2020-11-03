@@ -10,7 +10,7 @@ dam:
   dam_in_house: true
   dam_image: /img/img_2304.jpg
 reservation_list:
-  - "*Waitlist Open*"
+  - "*Waitlist Closed*"
   - Reserved
   - Reserved
   - Reserved
@@ -18,8 +18,8 @@ reservation_list:
   - Reserved
   - Reserved
   - Reserved
-  - Open
-  - Open
+  - Reserved
+  - Reserved
 size:
   min: 30
   max: 40
