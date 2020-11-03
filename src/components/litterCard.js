@@ -50,37 +50,55 @@ const LitterContainer = styled.section`
 const ParentContainer = styled.div`
   width: 35%;
   min-width: 280px;
+  display: flex;
+  flex-flow: column nowrap;
+  overflow: hidden;
 
   @media only screen and (max-width: 855px) {
     width: 100%;
-    display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
+    justify-content: center;
   }
 `;
 
 const ParentImg = styled.img`
-  display: block;
-  width: 100%;
-  height: ${props => (props.hasSire ? '50%' : '100%')};
   object-fit: cover;
+  object-position: 50% 20%;
+  overflow: hidden;
 
-  /* Border for 2nd image */
-  border-radius: 0 0 0 5px;
+  /* Max Height */
+  ${props =>
+    props.sireCount === 2
+      ? 'max-height: 25vh; &:first-child {max-height: 45vh;}'
+      : props.sireCount === 1
+      ? 'max-height: 40vh;'
+      : ''}
 
-  &:first-child {
-    border-radius: ${props => (props.hasSire ? '5px 0 0 0' : '5px 0 0 5px')};
-    border-bottom: 1px solid #888;
-  }
+  /* Border Radius */
+  ${props =>
+    props.sireCount === 0
+      ? 'border-radius: 5px 0 0 5px'
+      : props.sireCount === 1
+      ? 'border-radius: 5px 0 0 0; &:last-child {border-radius: 0 0 0 5px;}'
+      : '&:first-child {border-radius: 5px 0 0 0;} &:last-child {border-radius: 0 0 0 5px;}'};
 
   @media only screen and (max-width: 855px) {
-    width: 50%;
+    width: ${props =>
+      props.sireCount === 2
+        ? '33.3333%'
+        : props.sireCount === 1
+        ? '50%'
+        : '100%'};
     height: 100%;
-    /* 2nd image */
-    border-radius: 0 5px 5px 0;
-    &:first-child {
-      border-radius: 5px 0 0 5px;
-      border-bottom: 0;
-    }
+    max-height: 50vh;
+
+    /* Border Radius */
+    ${props =>
+      props.sireCount === 0
+        ? 'border-radius: 5px 5px 0 0'
+        : props.sireCount === 1
+        ? 'border-radius: 5px 0 0 0; &:last-child {border-radius: 0 5px 0 0;}'
+        : '&:first-child {border-radius: 5px 0 0 0;} &:last-child {border-radius: 0 5px 0 0;}'};
   }
 `;
 
@@ -128,6 +146,26 @@ const CallToAction = styled.p`
 
 const LitterCard = ({ litter, dogImagePaths }) => {
   console.log('littercard:', litter);
+  // Temp dummy data
+  if (litter.frontmatter.dam.dam_name === 'Lolli Pop') {
+    litter.frontmatter.dub_sire = {
+      dub_sire_name: 'Cedric',
+      dub_sire_in_house: true,
+      dub_sire_image: 'img/image4.jpeg',
+    };
+  }
+
+  // Check for presence of sire and dual sire -- affects text & styling
+  const hasSire = !(
+    litter.frontmatter.sire['sire_image'] === null &&
+    litter.frontmatter.sire['sire_name'] === 'TBD'
+  );
+  const isDual =
+    litter.frontmatter.dub_sire && litter.frontmatter.dub_sire.dub_sire_name
+      ? true
+      : false;
+  const sireCount = isDual && hasSire ? 2 : hasSire ? 1 : 0;
+
   // Get link to sire / dam profile, if in-house
   // First construct the ids used in dogCard
   const sireId = litter.frontmatter.sire.sire_name.includes(' ')
@@ -136,6 +174,11 @@ const LitterCard = ({ litter, dogImagePaths }) => {
   const damId = litter.frontmatter.dam.dam_name.includes(' ')
     ? litter.frontmatter.dam.dam_name.split(' ')[0]
     : litter.frontmatter.dam.dam_name;
+  const dubSireId = !isDual
+    ? null
+    : litter.frontmatter.dub_sire.dub_sire_name.includes(' ')
+    ? litter.frontmatter.dub_sire.dub_sire_name.split(' ')[0]
+    : litter.frontmatter.dub_sire.dub_sire_name;
 
   const sire = litter.frontmatter.sire.sire_in_house ? (
     <Link to={`/meet-the-dogs#${sireId}`}>
@@ -151,42 +194,61 @@ const LitterCard = ({ litter, dogImagePaths }) => {
   ) : (
     litter.frontmatter.dam.dam_name
   );
+  const dubSire = !isDual ? null : litter.frontmatter.dub_sire
+      .dub_sire_in_house ? (
+    <Link to={`/meet-the-dogs#${dubSireId}`}>
+      {litter.frontmatter.dub_sire.dub_sire_name}
+    </Link>
+  ) : (
+    litter.frontmatter.dub_sire.dub_sire_name
+  );
 
   // Get path to sire / dam image: attached to litter, attached to in-house dog, or default img
-  // Check if there's a sire! Will impact image styling
-  const hasSire = !(
-    litter.frontmatter.sire['sire_image'] === null &&
-    litter.frontmatter.sire['sire_name'] === 'TBD'
-  );
   const damImage = litter.frontmatter.dam.dam_image ? (
     <ParentImg
-      hasSire={hasSire}
+      sireCount={sireCount}
       src={litter.frontmatter.dam.dam_image}
       alt={litter.frontmatter.dam.dam_name}
     />
   ) : litter.frontmatter.dam.dam_in_house ? (
     <ParentImg
-      hasSire={hasSire}
+      sireCount={sireCount}
       src={dogImagePaths[litter.frontmatter.dam.dam_name]}
       alt={litter.frontmatter.dam.dam_name}
     />
   ) : (
-    <ParentImg hasSire={hasSire} src={logo} alt="dog face" />
+    <ParentImg sireCount={sireCount} src={logo} alt="dog face" />
   );
   const sireImage = !hasSire ? null : litter.frontmatter.sire.sire_image ? (
     <ParentImg
-      hasSire={hasSire}
+      sireCount={sireCount}
       src={litter.frontmatter.sire.sire_image}
-      alt={litter.frontmatter.dam.dam_name}
+      alt={litter.frontmatter.sire.sire_name}
     />
   ) : litter.frontmatter.sire.sire_in_house ? (
     <ParentImg
-      hasSire={hasSire}
+      sireCount={sireCount}
       src={dogImagePaths[litter.frontmatter.sire.sire_name]}
       alt={litter.frontmatter.sire.sire_name}
     />
   ) : (
-    <ParentImg hasSire={hasSire} src={logo} alt="dog face" />
+    <ParentImg sireCount={sireCount} src={logo} alt="dog face" />
+  );
+  const dubSireImage = !isDual ? null : litter.frontmatter.dub_sire
+      .dub_sire_image ? (
+    <ParentImg
+      sireCount={sireCount}
+      src={litter.frontmatter.dub_sire.dub_sire_image}
+      alt={litter.frontmatter.dub_sire.dub_sire_name}
+    />
+  ) : litter.frontmatter.dub_sire.dub_sire_in_house ? (
+    <ParentImg
+      sireCount={sireCount}
+      src={dogImagePaths[litter.frontmatter.dub_sire.dub_sire_name]}
+      alt={litter.frontmatter.dub_sire.dub_sire_name}
+    />
+  ) : (
+    <ParentImg sireCount={sireCount} src={logo} alt="dog face" />
   );
 
   // Format reservations
@@ -196,27 +258,7 @@ const LitterCard = ({ litter, dogImagePaths }) => {
       ))
     : [];
 
-  // Handle dual-sired litters
-  const isDual =
-    litter.frontmatter.dub_sire && litter.frontmatter.dub_sire.dub_sire_name
-      ? true
-      : false;
-  // If litter is dual-sired, create the (linked) name, just like sire and dam above
-  let dubSire = '';
-  if (isDual) {
-    const dubSireId = litter.frontmatter.dub_sire.dub_sire_name.includes(' ')
-      ? litter.frontmatter.dub_sire.dub_sire_name.split(' ')[0]
-      : litter.frontmatter.dub_sire.dub_sire_name;
-    dubSire = litter.frontmatter.dub_sire.dub_sire_in_house ? (
-      <Link to={`/meet-the-dogs#${dubSireId}`}>
-        {litter.frontmatter.dub_sire.dub_sire_name}
-      </Link>
-    ) : (
-      litter.frontmatter.dub_sire.dub_sire_name
-    );
-  }
-  console.log(dubSire);
-
+  // Title text changes if dual sire litter
   const title = isDual ? (
     <h2>
       {dam} with {sire} and {dubSire}
@@ -232,6 +274,7 @@ const LitterCard = ({ litter, dogImagePaths }) => {
       <ParentContainer>
         {damImage}
         {sireImage}
+        {isDual && dubSireImage}
       </ParentContainer>
       <LitterInfo>
         {title}
