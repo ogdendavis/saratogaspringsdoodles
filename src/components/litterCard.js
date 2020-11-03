@@ -71,8 +71,8 @@ const ParentImg = styled.img`
     props.sireCount === 2
       ? 'max-height: 25vh; &:first-child {max-height: 45vh;}'
       : props.sireCount === 1
-      ? 'max-height: 40vh;'
-      : ''}
+      ? 'max-height: 50vh;'
+      : 'min-height: 100%;'}
 
   /* Border Radius */
   ${props =>
