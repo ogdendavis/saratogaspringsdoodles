@@ -24,7 +24,7 @@ size:
   min: 30
   max: 40
 colors: " "
-date: 2021-04-15T14:45:50.067Z
+date: 2021-03-24T14:45:50.067Z
 count: 0
 ---
 This upcoming litter of Mini Multigeneration Bernedoodles is going to produce some amazing puppies, with great temperament, color, coat and genetics. They will be in the 30-40 pound weight range when full-grown.
