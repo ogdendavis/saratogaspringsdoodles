@@ -11,6 +11,6 @@ size:
   min: 0
   max: 0
 colors: ""
-date: 2021-03-25T04:00:00.000Z
+date: ""
 ---
-Check back for more info soon!
+Coming in March 2021, Check back for more info soon!
