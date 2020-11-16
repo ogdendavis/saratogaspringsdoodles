@@ -11,6 +11,6 @@ size:
   min: 0
   max: 0
 colors: ""
-date: ""
+date: 2021-06-27T06:00:00.000Z
 ---
-Coming in spring 2021. Check back for more info!
+Coming in Summer 2021. Check back for more info!
