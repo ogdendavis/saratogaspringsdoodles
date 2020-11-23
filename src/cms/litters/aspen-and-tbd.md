@@ -1,10 +1,10 @@
 ---
 # Litters should have a unique identifying title
-title: Aspen and TBD
+title: Teddy Bear and TBD
 sire:
   sire_name: TBD
 dam:
-  dam_name: Aspen
+  dam_name: Teddy Bear
   dam_in_house: true
   dam_image: /img/luna3.jpeg
 size:
