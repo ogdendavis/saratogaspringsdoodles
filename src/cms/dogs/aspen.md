@@ -1,5 +1,5 @@
 ---
-title: Aspen
+title: Teddy Bear
 image: /img/luna3.jpeg
 breed: Multigen Mini Bernedoodle
 color: Traditional Tricolor
