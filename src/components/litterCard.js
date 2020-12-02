@@ -269,11 +269,12 @@ const LitterCard = ({ litter, dogImagePaths }) => {
       <LitterInfo>
         {title}
         <LitterFrontmatter>
-          {litter.frontmatter.date.length > 1 && (
-            <li>
-              <b>Expected:</b> {litter.frontmatter.date}
-            </li>
-          )}
+          {litter.frontmatter.date.length > 1 &&
+            litter.frontmatter.date !== 'Invalid date' && (
+              <li>
+                <b>Expected:</b> {litter.frontmatter.date}
+              </li>
+            )}
           {litter.frontmatter.count > 0 && (
             <li>
               <b>Puppy count:</b> {litter.frontmatter.count}

@@ -69,14 +69,18 @@ const PrimaryPageTemplate = ({
     : fallbackImage;
 
   // Build cards, if card info present
+  let cardCount = 0;
   const cards = !cardinfo ? null : section === 'puppies' ? (
-    cardinfo.edges.map(({ node }) => (
-      <LitterCard
-        litter={node}
-        dogImagePaths={cardinfo.dogImagePaths}
-        key={`litter${node.frontmatter.dam.dam_name}${node.frontmatter.date}`}
-      />
-    ))
+    cardinfo.edges.map(({ node }) => {
+      cardCount++;
+      return (
+        <LitterCard
+          litter={node}
+          dogImagePaths={cardinfo.dogImagePaths}
+          key={`litter${cardCount}${node.frontmatter.dam.dam_name}`}
+        />
+      );
+    })
   ) : section === 'mama' ? (
     cardinfo.edges.map(({ node }) => (
       <DogCard dog={node} key={`dogcard-${node.frontmatter.title}`} />
