@@ -11,6 +11,6 @@ size:
   min: 0
   max: 0
 colors: ""
-date: ""
+date: 2021-03-09T05:00:00.000Z
 ---
 Coming in March 2021, Check back for more info soon!
