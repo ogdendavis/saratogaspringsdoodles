@@ -69,6 +69,13 @@ const PuppyPage = ({ location }) => {
     }
   `);
 
+  // Sorted litters by date end up with "Invalid date" first
+  // Move them to last by shifting the first item to the end of the array
+  // until the first item of the array has a valid date
+  while (data.litters.edges[0].node.frontmatter.date === 'Invalid date') {
+    data.litters.edges.push(data.litters.edges.shift());
+  }
+
   // Convert dogs from graphql call into more accessible dogs object to easily look up images
   const dogImagePaths = {};
   data.dogs.edges.forEach(({ node }) => {
