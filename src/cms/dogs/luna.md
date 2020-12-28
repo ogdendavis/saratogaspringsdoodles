@@ -8,6 +8,6 @@ gender: f
 ---
 Luna is from Loli Pop and Crosby, she loves to play fetch, go on car rides and let the wind blow through her hair, she also loves her naps. She lives with my sister her guardian family.
 
-Clearances: VWD1, DM, PRA & NE\
-OFA Hips: pending\
-Weight: 22 lbs.
+Clearances: VWD1, DM, PRA & NE, F/IC\
+OFA Hips: Good (preliminary) OFA CAER: Normal OFA Cardiac: Normal\
+Weight: 30 lbs.
