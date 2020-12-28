@@ -2,8 +2,8 @@
 # Litters should have a unique identifying title
 title: Luna and Blue
 sire:
-  sire_name: Blue
-  sire_image: /img/blue.jpeg
+  sire_name: TBD
+  sire_image: ""
   sire_in_house: true
 dam:
   dam_name: Luna
