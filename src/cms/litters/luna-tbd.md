@@ -13,8 +13,8 @@ reservation_list:
   - Reserved
   - Resereved
 size:
-  min: 0
-  max: 0
+  min: 30
+  max: 40
 colors: ""
 date: 2021-05-20T04:00:00.000Z
 ---
