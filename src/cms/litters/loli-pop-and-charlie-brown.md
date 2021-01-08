@@ -1,9 +1,9 @@
 ---
 # Litters should have a unique identifying title
-title: Loli Pop and TBD
+title: Loli Pop and Crosby
 sire:
-  sire_name: TBD
-  sire_image: ""
+  sire_name: Crosby
+  sire_image: /img/crosby3.jpg
   sire_in_house: true
 dam:
   dam_name: Lolli Pop
