@@ -7,6 +7,11 @@ dam:
   dam_name: Luna
   dam_in_house: true
   dam_image: /img/luna2.jpeg
+reservation_list:
+  - Reserved
+  - Reserved
+  - Reserved
+  - Resereved
 size:
   min: 0
   max: 0
