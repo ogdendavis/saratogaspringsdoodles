@@ -11,6 +11,7 @@ reservation_list:
   - Reserved
   - Reserved
   - Reserved
+  - Reserved
 size:
   min: 20
   max: 30
