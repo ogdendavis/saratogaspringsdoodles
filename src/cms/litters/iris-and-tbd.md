@@ -14,4 +14,4 @@ size:
 colors: ""
 date: 2021-03-24T06:00:00.000Z
 ---
-Coming in March 2021, This will be Iris's second litter, we are expecting some gorgeous mini Goldendoodles, with great coats, temperaments and genetics!
+Coming in March 2021, This will be Iris's second litter, We are using Utah Goldendoodle's stud Goldman Sachs for this litter, we are expecting some gorgeous mini Goldendoodles, with great coats, temperaments and genetics!
