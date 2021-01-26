@@ -28,7 +28,7 @@ Mini's (30-40 lbs)
 
 $4,000
 
-![A bernedoodle puppy in a field of flowers](/img/puppy-flowers.jpg)
+![A bernedoodle puppy in a field of flowers](/img/puppy-in-hand-1.jpg)
 
 ## Delivery
 
