@@ -10,9 +10,9 @@ dam:
   dam_in_house: true
   dam_image: /img/img_2304.jpg
 reservation_list:
+  - "**WAITLIST CLOSED**"
   - Breeder
   - Breeder
-  - Reserved
   - Reserved
   - Reserved
   - Reserved
@@ -28,4 +28,4 @@ colors: " "
 date: 2021-03-22T06:00:00.000Z
 count: 0
 ---
-This upcoming litter of Mini Multigeneration Bernedoodles is going to produce some amazing puppies, with great temperament, color, coat and genetics. They will be in the 30-40 pound weight range when full-grown. Loli's ultrasound showed lots of puppies so we are really excited. We may have a few extra spots on this litter depending on how many puppies she has!
+This upcoming litter of Mini Multigeneration Bernedoodles is going to produce some amazing puppies, with great temperament, color, coat and genetics. They will be in the 30-40 pound weight range when full-grown. Loli's ultrasound showed lots of puppies so we are really excited.
