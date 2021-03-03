@@ -22,7 +22,7 @@ Bernedoodle puppies all priced the same
 
 Mini's (30-40 lbs)
 
-$4,000
+$4,500
 
 ![A bernedoodle puppy in a field of flowers](/img/puppy-in-hand-1.jpg)
 
