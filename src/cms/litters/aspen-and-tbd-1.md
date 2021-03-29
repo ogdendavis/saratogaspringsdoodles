@@ -1,6 +1,6 @@
 ---
 # Litters should have a unique identifying title
-title: Teddy Bear and TBD
+title: Aspen (Teddy Bear) and TBD
 sire:
   sire_name: TBD
 dub_sire:
