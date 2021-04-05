@@ -1,4 +1,4 @@
 ---
-title: Orange collar boy Nashville
-image: /img/img_3147.jpg
+title: Blue Collar Boy Goodyear
+image: /img/img_3121-1-.jpg
 ---
