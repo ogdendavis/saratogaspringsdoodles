@@ -12,7 +12,6 @@ dam:
 reservation_list:
   - "**WAITLIST CLOSED**"
   - Breeder
-  - Breeder
   - Reserved
   - Reserved
   - Reserved
@@ -25,7 +24,7 @@ size:
   min: 30
   max: 40
 colors: " "
-date: 2021-03-22T06:00:00.000Z
+date: 2021-03-23T06:00:00.000Z
 count: 0
 ---
-This upcoming litter of Mini Multigeneration Bernedoodles is going to produce some amazing puppies, with great temperament, color, coat and genetics. They will be in the 30-40 pound weight range when full-grown. Loli's ultrasound showed lots of puppies so we are really excited.
+This upcoming litter of Mini Multigeneration Bernedoodles is going to produce some amazing puppies, with great temperament, color, coat and genetics. They will be in the 30-40 pound weight range when full-grown. Loli Gave birth to 9 gorgeous puppies on March 23rd, two boys and 7 girls, All puppies are reserved, you can watch them grow on My Instagram page @Saratogaspringsdoodles.
