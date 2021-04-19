@@ -1,9 +1,9 @@
 ---
 # Litters should have a unique identifying title
-title: Aspen (Teddy Bear) and Copper
+title: Aspen (Teddy Bear) and TBD
 sire:
-  sire_name: Copper
-  sire_image: /img/img_3346.jpg
+  sire_name: TBD
+  sire_image: ""
 dam:
   dam_name: Teddy Bear
   dam_in_house: true
@@ -21,4 +21,4 @@ size:
 colors: ""
 date: 2021-06-27T06:00:00.000Z
 ---
-Coming in Summer 2021. This will be Aspen's first litter! We are excited to see the beautiful puppies she and Copper will produce, they will be little guessing 15-25 pounds with amazing temperaments and personalities.
+Coming in Summer 2021. This will be Aspen's first litter! We are excited to see the beautiful puppies she will produce, they will have amazing temperaments and personalities.
