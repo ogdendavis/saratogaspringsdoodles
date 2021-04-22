@@ -24,7 +24,7 @@ const GalleryImage = styled.img`
 
   @media only screen and (max-width: 1160px) {
     width: 50%;
-    height: auto;
+    max-height: 45vh;
   }
 `;
 
