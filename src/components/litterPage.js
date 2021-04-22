@@ -6,6 +6,7 @@ import SEO from './seo';
 const LitterPage = ({ location, pageContext }) => {
   // Content passed from gatsby-node.js lives in pageContext.content
   const { content } = pageContext;
+  // This comment is to force Netlify to deploy a preview for this branch
   console.log(content);
   return (
     <Layout location={location}>
