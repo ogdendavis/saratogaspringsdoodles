@@ -66,11 +66,13 @@ exports.createPages = ({ graphql, actions }) => {
     // Now create the pages!
     litters.forEach(litter => {
       // Generate slug from title
-      const slug = litter.node.frontmatter.title
-        .toLowerCase()
-        .split(' ')
-        .join('-');
-      console.log(slug);
+      const slug = `${litter.node.frontmatter.title} ${litter.node.frontmatter.date}`
+        .toLowerCase() // convert to all lowercase
+        .replace(/[^A-Za-z0-9 ]/g, '') // strip non-word characters
+        .replace('invalid date', 'coming soon') // remove invalid date from tbd litters
+        .split(' ') // create array of words
+        .join('-'); // join words with dashes
+
       // Publish the page using the template
       createPage({
         path: `litters/${slug}`,
