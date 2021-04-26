@@ -7,7 +7,7 @@ exports.createPages = ({ graphql, actions }) => {
   // Extract createPage function (hook?) from actions object
   const { createPage } = actions;
   // Grab template that will be used to render pages
-  const litterPageTemplate = path.resolve('src/components/litterPage.js');
+  const litterPageTemplate = path.resolve('src/templates/litterPage.js');
 
   // Query to grab info needed for litter pages from graphql
   return graphql(`
