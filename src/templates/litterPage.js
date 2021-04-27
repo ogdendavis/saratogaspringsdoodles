@@ -9,15 +9,47 @@ const ParentsContainer = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  height: 50vh;
+  height: 40vh;
   min-height: 300px;
+  text-align: center;
+
+  a,
+  .parent__name {
+    color: black;
+    font-family: Dancing Script, cursive;
+    font-size: 2rem;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+  }
+  a:hover {
+    color: orange;
+  }
+  a::before {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    width: 0px;
+    height: 2px;
+    margin: 1px 0 0;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+    background-color: ${props => props.theme.linkColorHover};
+  }
+  a:hover::before {
+    width: 100%;
+    opacity: 1;
+    left: 0;
+  }
 `;
 
 const OneParent = styled.div`
   height: 100%;
+  margin: 0 2rem;
 `;
 
 const ParentImage = styled.img`
+  border-radius: ${props => props.theme.borderRadius};
   height: 90%;
 `;
 
@@ -65,7 +97,7 @@ const Parents = ({ dam, sire, dub_sire }) => {
     const styledName = inHouse ? (
       <Link to={`/meet-the-dogs#${inHouseId}`}>{name}</Link>
     ) : (
-      <span>{name}</span>
+      <span className="parent__name">{name}</span>
     );
 
     return (
