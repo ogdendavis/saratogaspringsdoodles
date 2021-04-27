@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
@@ -100,12 +100,56 @@ const PuppyPhoto = styled.img`
   margin: 0.5rem;
   object-fit: cover;
   width: 15rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+const ModalOuter = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(20, 20, 20, 0.85), rgba(20, 20, 20, 0.85));
+  z-index: 999;
+`;
+
+const ModalInner = styled.div`
+  padding: 3rem;
+`;
+
+const ModalPhoto = styled.img`
+  border-radius: ${props => props.theme.borderRadius};
+  display: block;
+  max-height: 90vh;
+  max-width: 90vw;
 `;
 
 const LitterPage = ({ location, pageContext }) => {
   // Content passed from gatsby-node.js lives in pageContext.content
   const { content } = pageContext;
-  console.log(content);
+
+  // State to control modal open/close
+  const [modalOpen, setModalOpen] = useState(false);
+
+  // State to photo currently displayed in modal
+  const [modalPhoto, setModalPhoto] = useState({ image: '', caption: '' });
+
+  // Modal closer
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+
+  // Modal opener
+  const openModal = photo => {
+    setModalPhoto({ image: photo.image, caption: photo.caption });
+    setModalOpen(true);
+  };
 
   return (
     <Layout location={location}>
@@ -126,7 +170,8 @@ const LitterPage = ({ location, pageContext }) => {
         />
         <ReservationList list={content.frontmatter.reservation_list} />
       </InfoContainer>
-      <Photos photos={content.frontmatter.photos} />
+      <Photos photos={content.frontmatter.photos} openModal={openModal} />
+      {modalOpen && <Modal closer={closeModal} photo={modalPhoto} />}
     </Layout>
   );
 };
@@ -171,13 +216,20 @@ const Parents = ({ dam, sire, dub_sire }) => {
   return <ParentsContainer>{parentsRendered}</ParentsContainer>;
 };
 
-const Photos = ({ photos }) => {
+const Photos = ({ photos, openModal }) => {
   // Early check for if photos exist, return null if not
   if (!photos || Object.keys(photos).length === 0) return null;
 
   // Generate individual images
   const pics = photos.map(p => (
-    <PuppyPhoto key={p.image} src={p.image} alt={p.caption} />
+    <PuppyPhoto
+      key={p.image}
+      src={p.image}
+      alt={p.caption}
+      onClick={() => {
+        openModal(p);
+      }}
+    />
   ));
 
   // return gallery of images
@@ -227,6 +279,16 @@ const ReservationList = ({ list }) => {
       <h3>Reservation List</h3>
       <ol>{reservations}</ol>
     </ResListContainer>
+  );
+};
+
+const Modal = ({ closer, photo }) => {
+  return (
+    <ModalOuter onClick={closer}>
+      <ModalInner>
+        <ModalPhoto src={photo.image} alt={photo.caption} />
+      </ModalInner>
+    </ModalOuter>
   );
 };
 
