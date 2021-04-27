@@ -42,6 +42,10 @@ exports.createPages = ({ graphql, actions }) => {
                 dub_sire_in_house
                 dub_sire_image
               }
+              photos {
+                image
+                caption
+              }
             }
             html
           }
