@@ -3,7 +3,7 @@
 title: Aspen (Teddy Bear) and Murphy
 sire:
   sire_name: Murphy
-  sire_image: ""
+  sire_image: /img/image0-2-.jpeg
 dam:
   dam_name: Teddy Bear
   dam_in_house: true
