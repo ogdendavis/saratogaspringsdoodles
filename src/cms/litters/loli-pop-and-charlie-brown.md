@@ -27,23 +27,23 @@ colors: ' '
 date: 2021-03-23T06:00:00.000Z
 count: 0
 photos:
-  - image: /img/loli-crosby-litter-0.jpg
+  - image: /img/loli-crosby-litter-0.jpeg
     caption: Puppy 1
-  - image: /img/loli-crosby-litter-1.jpg
+  - image: /img/loli-crosby-litter-1.jpeg
     caption: Puppy 2
-  - image: /img/loli-crosby-litter-2.jpg
+  - image: /img/loli-crosby-litter-2.jpeg
     caption: Puppy 3
-  - image: /img/loli-crosby-litter-3.jpg
+  - image: /img/loli-crosby-litter-3.jpeg
     caption: Puppy 4
-  - image: /img/loli-crosby-litter-4.jpg
+  - image: /img/loli-crosby-litter-4.jpeg
     caption: Puppy 5
-  - image: /img/loli-crosby-litter-5.jpg
+  - image: /img/loli-crosby-litter-5.jpeg
     caption: Puppy 6
-  - image: /img/loli-crosby-litter-6.jpg
+  - image: /img/loli-crosby-litter-6.jpeg
     caption: Puppy 7
-  - image: /img/loli-crosby-litter-7.jpg
+  - image: /img/loli-crosby-litter-7.jpeg
     caption: Puppy 8
-  - image: /img/loli-crosby-litter-8.jpg
+  - image: /img/loli-crosby-litter-8.jpeg
     caption: Puppy 9
 ---
 

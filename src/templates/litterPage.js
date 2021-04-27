@@ -9,8 +9,6 @@ const ParentsContainer = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  height: 40vh;
-  min-height: 300px;
   text-align: center;
 
   a,
@@ -44,18 +42,40 @@ const ParentsContainer = styled.div`
 `;
 
 const OneParent = styled.div`
-  height: 100%;
-  margin: 0 2rem;
+  margin: 0 2rem 1rem;
 `;
 
 const ParentImage = styled.img`
   border-radius: ${props => props.theme.borderRadius};
-  height: 90%;
+  height: 20rem;
+  object-fit: cover;
+  width: 15rem;
+`;
+
+const Description = styled.div`
+  margin: 1rem auto;
+  width: 100%;
+  max-width: 50rem;
+`;
+
+const PuppyGallery = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+`;
+
+const PuppyPhoto = styled.img`
+  border-radius: ${props => props.theme.borderRadius};
+  height: 20rem;
+  margin: 0.5rem;
+  object-fit: cover;
+  width: 15rem;
 `;
 
 const LitterPage = ({ location, pageContext }) => {
   // Content passed from gatsby-node.js lives in pageContext.content
   const { content } = pageContext;
+  console.log(content);
 
   return (
     <Layout location={location}>
@@ -66,7 +86,8 @@ const LitterPage = ({ location, pageContext }) => {
         sire={content.frontmatter.sire}
         dub_sire={content.frontmatter.dub_sire}
       />
-      <div dangerouslySetInnerHTML={{ __html: content.html }} />
+      <Description dangerouslySetInnerHTML={{ __html: content.html }} />
+      <Photos photos={content.frontmatter.photos} />
     </Layout>
   );
 };
@@ -101,15 +122,21 @@ const Parents = ({ dam, sire, dub_sire }) => {
     );
 
     return (
-      <OneParent>
-        <ParentImage key={`pi-${name}`} src={image} alt={name} />
+      <OneParent key={`op-${name}`}>
+        <ParentImage src={image} alt={name} />
         <div>{styledName}</div>
       </OneParent>
     );
   });
-  console.log(parents);
 
   return <ParentsContainer>{parentsRendered}</ParentsContainer>;
+};
+
+const Photos = ({ photos }) => {
+  const pics = photos.map(p => (
+    <PuppyPhoto key={p.image} src={p.image} alt={p.caption} />
+  ));
+  return <PuppyGallery>{pics}</PuppyGallery>;
 };
 
 export default LitterPage;
