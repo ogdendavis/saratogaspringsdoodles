@@ -166,7 +166,6 @@ const LitterPage = ({ location, pageContext }) => {
           expectedDate={content.frontmatter.date}
           expectedColors={content.frontmatter.colors}
           size={content.frontmatter.size}
-          count={content.frontmatter.count}
         />
         <ReservationList list={content.frontmatter.reservation_list} />
       </InfoContainer>
@@ -236,7 +235,7 @@ const Photos = ({ photos, openModal }) => {
   return <PuppyGallery>{pics}</PuppyGallery>;
 };
 
-const Stats = ({ expectedDate, expectedColors, size, count }) => {
+const Stats = ({ expectedDate, expectedColors, size }) => {
   return (
     <StatsContainer>
       {expectedDate &&
@@ -259,7 +258,6 @@ const Stats = ({ expectedDate, expectedColors, size, count }) => {
             <StatsLabel>Adult Size:</StatsLabel> {size.min} - {size.max} lbs
           </div>
         )}
-      {count && <div>Expecting {count} puppies</div>}
     </StatsContainer>
   );
 };
