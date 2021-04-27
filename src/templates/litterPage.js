@@ -52,10 +52,40 @@ const ParentImage = styled.img`
   width: 15rem;
 `;
 
-const Description = styled.div`
+const InfoContainer = styled.div`
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
   margin: 1rem auto;
-  width: 100%;
   max-width: 50rem;
+`;
+
+const Description = styled.div`
+  width: 100%;
+  margin-bottom: 1rem;
+`;
+
+const StatsContainer = styled.div`
+  text-align: center;
+`;
+
+const StatsLabel = styled.span`
+  font-weight: 700;
+`;
+
+const ResListContainer = styled.div`
+  h3 {
+    margin: 1rem 0 0.5rem;
+  }
+
+  ol {
+    margin: 0 0 1em 1em;
+  }
+
+  li {
+    margin: 0;
+  }
 `;
 
 const PuppyGallery = styled.div`
@@ -86,7 +116,16 @@ const LitterPage = ({ location, pageContext }) => {
         sire={content.frontmatter.sire}
         dub_sire={content.frontmatter.dub_sire}
       />
-      <Description dangerouslySetInnerHTML={{ __html: content.html }} />
+      <InfoContainer>
+        <Description dangerouslySetInnerHTML={{ __html: content.html }} />
+        <Stats
+          expectedDate={content.frontmatter.date}
+          expectedColors={content.frontmatter.colors}
+          size={content.frontmatter.size}
+          count={content.frontmatter.count}
+        />
+        <ReservationList list={content.frontmatter.reservation_list} />
+      </InfoContainer>
       <Photos photos={content.frontmatter.photos} />
     </Layout>
   );
@@ -133,10 +172,62 @@ const Parents = ({ dam, sire, dub_sire }) => {
 };
 
 const Photos = ({ photos }) => {
+  // Early check for if photos exist, return null if not
+  if (!photos || Object.keys(photos).length === 0) return null;
+
+  // Generate individual images
   const pics = photos.map(p => (
     <PuppyPhoto key={p.image} src={p.image} alt={p.caption} />
   ));
+
+  // return gallery of images
   return <PuppyGallery>{pics}</PuppyGallery>;
+};
+
+const Stats = ({ expectedDate, expectedColors, size, count }) => {
+  return (
+    <StatsContainer>
+      {expectedDate &&
+        expectedDate.length > 1 &&
+        expectedDate !== 'Invalid date' && (
+          <div>
+            <StatsLabel>Expected Date:</StatsLabel> {expectedDate}
+          </div>
+        )}
+      {expectedColors && expectedColors.length > 1 && (
+        <div>
+          <StatsLabel>Expected Colors:</StatsLabel> {expectedColors}
+        </div>
+      )}
+      {size &&
+        Object.hasOwnProperty.call(size, 'min') &&
+        Object.hasOwnProperty.call(size, 'max') &&
+        size.min < size.max && (
+          <div>
+            <StatsLabel>Adult Size:</StatsLabel> {size.min} - {size.max} lbs
+          </div>
+        )}
+      {count && count > 0 && <div>Expecting {count} puppies</div>}
+    </StatsContainer>
+  );
+};
+
+const ReservationList = ({ list }) => {
+  // Early check for if list exists, don't render if not
+  if (!list) return null;
+
+  // Generate li's with reservation info
+  const reservations = list.map((item, index) => (
+    <li key={`reslist-${index}`}>{item}</li>
+  ));
+
+  // Return section containing reservation list
+  return (
+    <ResListContainer>
+      <h3>Reservation List</h3>
+      <ol>{reservations}</ol>
+    </ResListContainer>
+  );
 };
 
 export default LitterPage;

@@ -23,6 +23,7 @@ exports.createPages = ({ graphql, actions }) => {
               date(formatString: "MMMM YYYY")
               reservation_list
               colors
+              count
               size {
                 min
                 max
