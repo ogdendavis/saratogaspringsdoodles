@@ -259,7 +259,7 @@ const Stats = ({ expectedDate, expectedColors, size, count }) => {
             <StatsLabel>Adult Size:</StatsLabel> {size.min} - {size.max} lbs
           </div>
         )}
-      {count && count > 0 && <div>Expecting {count} puppies</div>}
+      {count && <div>Expecting {count} puppies</div>}
     </StatsContainer>
   );
 };
