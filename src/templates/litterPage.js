@@ -108,6 +108,7 @@ const PuppyPhoto = styled.img`
 
 const ModalOuter = styled.div`
   display: flex;
+  flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -120,25 +121,64 @@ const ModalOuter = styled.div`
 `;
 
 const ModalInner = styled.div`
-  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 85vh;
+  width: 85vw;
+`;
+
+const ModalCloser = styled.div`
+  background: white;
+  border-radius: 50%;
+  color: black;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  width: 2rem;
+  height: 2rem;
 `;
 
 const ModalPhoto = styled.img`
   border-radius: ${props => props.theme.borderRadius};
   display: block;
-  max-height: 90vh;
-  max-width: 90vw;
+  object-fit: contain;
+  max-height: 100%;
+  max-width: 100%;
+`;
+
+const ModalArrows = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1rem;
+`;
+
+const ModalArrow = styled.img`
+  cursor: pointer;
+  margin: 0 3rem;
+  width: 2.5rem;
 `;
 
 const LitterPage = ({ location, pageContext }) => {
   // Content passed from gatsby-node.js lives in pageContext.content
   const { content } = pageContext;
 
+  // We're doing a lot with puppy photos, so give easy access
+  const photos = content.frontmatter.photos;
+
   // State to control modal open/close
   const [modalOpen, setModalOpen] = useState(false);
 
-  // State to photo currently displayed in modal
-  const [modalPhoto, setModalPhoto] = useState({ image: '', caption: '' });
+  // State to set index of photo in photos to display in modal
+  const [modalPhotoIndex, setModalPhotoIndex] = useState(0);
 
   // Modal closer
   const closeModal = () => {
@@ -146,8 +186,10 @@ const LitterPage = ({ location, pageContext }) => {
   };
 
   // Modal opener
-  const openModal = photo => {
-    setModalPhoto({ image: photo.image, caption: photo.caption });
+  const openModal = index => {
+    // Set index to use for photo in modal
+    setModalPhotoIndex(index);
+    // Open the modal
     setModalOpen(true);
   };
 
@@ -169,8 +211,15 @@ const LitterPage = ({ location, pageContext }) => {
         />
         <ReservationList list={content.frontmatter.reservation_list} />
       </InfoContainer>
-      <Photos photos={content.frontmatter.photos} openModal={openModal} />
-      {modalOpen && <Modal closer={closeModal} photo={modalPhoto} />}
+      <Photos photos={photos} openModal={openModal} />
+      {modalOpen && (
+        <Modal
+          closer={closeModal}
+          photos={photos}
+          index={modalPhotoIndex}
+          setIndex={setModalPhotoIndex}
+        />
+      )}
     </Layout>
   );
 };
@@ -220,13 +269,13 @@ const Photos = ({ photos, openModal }) => {
   if (!photos || Object.keys(photos).length === 0) return null;
 
   // Generate individual images
-  const pics = photos.map(p => (
+  const pics = photos.map((p, i) => (
     <PuppyPhoto
       key={p.image}
       src={p.image}
       alt={p.caption}
       onClick={() => {
-        openModal(p);
+        openModal(i);
       }}
     />
   ));
@@ -280,12 +329,49 @@ const ReservationList = ({ list }) => {
   );
 };
 
-const Modal = ({ closer, photo }) => {
+const Modal = ({ closer, photos, index, setIndex }) => {
+  // Grab photo by index
+  const photo = photos[index];
+
+  // Get number of photos
+  const numPhotos = photos.length;
+
+  // Function to go to next photo
+  const incrementIndex = () => {
+    // Either go to next photo or back to start
+    setIndex(index + 1 === numPhotos ? 0 : index + 1);
+  };
+
+  // Function to go to previous photo
+  const decrementIndex = () => {
+    // Either go to previous photo or to end
+    setIndex(index === 0 ? numPhotos - 1 : index - 1);
+  };
+
   return (
     <ModalOuter onClick={closer}>
       <ModalInner>
+        <ModalCloser onClick={closer}>&times;</ModalCloser>
         <ModalPhoto src={photo.image} alt={photo.caption} />
       </ModalInner>
+      <ModalArrows>
+        <ModalArrow
+          src="/icons/chevron-left.png"
+          alt="<"
+          onClick={e => {
+            e.stopPropagation();
+            decrementIndex();
+          }}
+        />
+        <ModalArrow
+          src="/icons/chevron-right.png"
+          alt=">"
+          onClick={e => {
+            e.stopPropagation();
+            incrementIndex();
+          }}
+        />
+      </ModalArrows>
     </ModalOuter>
   );
 };
