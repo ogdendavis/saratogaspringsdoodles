@@ -1,9 +1,9 @@
 ---
 # Litters should have a unique identifying title
-title: Aspen (Teddy Bear) and TBD
+title: Aspen (Teddy Bear) and Everest
 sire:
-  sire_name: TBD
-  sire_image: ""
+  sire_name: Everest
+  sire_image: /img/image1.jpeg
 dam:
   dam_name: Teddy Bear
   dam_in_house: true
@@ -16,9 +16,9 @@ reservation_list:
   - Reserved
   - Reserved
 size:
-  min: 20
-  max: 30
-colors: ""
-date: 2021-06-27T06:00:00.000Z
+  min: 25
+  max: 35
+colors: Black Tri, Black Phantom
+date: 2021-07-04T06:00:00.000Z
 ---
-Coming in Summer 2021. This will be Aspen's first litter! We are excited to see the beautiful puppies she will produce, they will have amazing temperaments and personalities.
+ This will be Aspen's first litter! We are excited to see the beautiful puppies she will produce, they will have amazing temperaments and personalities. Everest is a Chocolate Mini F1B Bernedoodle. He carries at/at and ky/ky, D/D. F/IC, and carries one copy of the parti gene, S/sp. He weighs 17 pounds. Everest is clear of 184 conditions that Embark tests for including: VWF,CMTP,IVDD,HEXB,ATF2-NEWS,DM.

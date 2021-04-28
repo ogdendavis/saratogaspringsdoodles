@@ -1,6 +1,6 @@
 I hold myself to a high standard of ethical breeding practices, and part of that means testing all of my breeding dogs for OFA Hips, OFA Elbows, OFA Eyes (CAER) , OFA Cardiac, OFA Patella and for Genetic Diseases. This ensures that the breeding dogs are healthy, and that the puppies they produce as the healthiest and happiest that they can be.
 
-You can see all the test results for my dogs on my [Paw Print Genetics profile](https://www.pawprintgenetics.com/pedigrees/breeders/details/2486/).
+You can see all the genetic health test results for my dogs on my [Paw Print Genetics profile](https://www.pawprintgenetics.com/pedigrees/breeders/details/2486/).
 
 Without genetic testing, there's no real way to know if your puppy is at risk for an inherited health condition. There is a general misconception that mixed-breed dogs, such as bernedoodles and goldendoodles, are inherently free of genetic disease. This may be true for disorders that are specific or endemic to a breed (such as Addison's disease in poodles), but the common genetic diseases that are seen across all breeds are seen with the same frequency in mixed breeds. A mixed-breed dog with hip arthritis has no less a case of hip dysplasia than a pure-bred dog. Conscientious breeders, whether of mixed-breed dogs or purebreds, test and label their dogs as dysplastic prior to the onset of clinical signs.
 
