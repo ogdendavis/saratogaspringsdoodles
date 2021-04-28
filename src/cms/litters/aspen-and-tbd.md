@@ -1,9 +1,9 @@
 ---
 # Litters should have a unique identifying title
-title: Aspen (Teddy Bear) and Murphy
+title: Aspen (Teddy Bear) and Everest
 sire:
-  sire_name: Murphy
-  sire_image: /img/image0-2-.jpeg
+  sire_name: Everest
+  sire_image: /img/image1.jpeg
 dam:
   dam_name: Teddy Bear
   dam_in_house: true
@@ -18,7 +18,7 @@ reservation_list:
 size:
   min: 25
   max: 35
-colors: Black Tri
+colors: Black Tri, Black Phantom
 date: 2021-07-04T06:00:00.000Z
 ---
- This will be Aspen's first litter! We are excited to see the beautiful puppies she will produce, they will have amazing temperaments and personalities. Murphy DOB 5/19/17 is an outside stud, genetic tested, OFA elbows, heart and hips all normal. ATAT, KYKY, EE, DD, n/F, n/C, N/S, Bb, CDPA, CDDY, DM, NEwS, PRA, vWD1 all clear
+ This will be Aspen's first litter! We are excited to see the beautiful puppies she will produce, they will have amazing temperaments and personalities. Everest is a Chocolate Mini F1B Bernedoodle. He carries at/at and ky/ky, D/D. F/IC, and carries one copy of the parti gene, S/sp. He weighs 17 pounds. Everest is clear of 184 conditions that Embark tests for including: VWF,CMTP,IVDD,HEXB,ATF2-NEWS,DM.
