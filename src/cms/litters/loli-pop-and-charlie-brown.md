@@ -23,28 +23,27 @@ reservation_list:
 size:
   min: 30
   max: 40
-colors: ' '
+colors: 'rainbow'
 date: 2021-03-23T06:00:00.000Z
-count: 0
 photos:
   - image: /img/loli-crosby-litter-0.jpeg
-    caption: Puppy 1
+    caption: Charlotte
   - image: /img/loli-crosby-litter-1.jpeg
-    caption: Puppy 2
+    caption: Madison
   - image: /img/loli-crosby-litter-2.jpeg
-    caption: Puppy 3
+    caption: Jersey
   - image: /img/loli-crosby-litter-3.jpeg
-    caption: Puppy 4
+    caption: Goodyear
   - image: /img/loli-crosby-litter-4.jpeg
-    caption: Puppy 5
+    caption: Phoenix
   - image: /img/loli-crosby-litter-5.jpeg
-    caption: Puppy 6
+    caption: Knoxville
   - image: /img/loli-crosby-litter-6.jpeg
-    caption: Puppy 7
+    caption: Brooklyn
   - image: /img/loli-crosby-litter-7.jpeg
-    caption: Puppy 8
+    caption: London
   - image: /img/loli-crosby-litter-8.jpeg
-    caption: Puppy 9
+    caption: Paris
 ---
 
 This upcoming litter of Mini Multigeneration Bernedoodles is going to produce some amazing puppies, with great temperament, color, coat and genetics. They will be in the 30-40 pound weight range when full-grown. Loli Gave birth to 9 gorgeous puppies on March 23rd, two boys and 7 girls, All puppies are reserved, you can watch them grow on My Instagram page @Saratogaspringsdoodles.

@@ -94,15 +94,34 @@ const PuppyGallery = styled.div`
   justify-content: center;
 `;
 
-const PuppyPhoto = styled.img`
-  border-radius: ${props => props.theme.borderRadius};
+const PuppyPhoto = styled.div`
   height: 20rem;
   margin: 0.5rem;
-  object-fit: cover;
+  position: relative;
   width: 15rem;
 
   &:hover {
     cursor: pointer;
+  }
+
+  img {
+    border-radius: ${props => props.theme.borderRadius};
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  span {
+    background: linear-gradient(rgba(20, 20, 20, 0.85), rgba(20, 20, 20, 0.85));
+    border-radius: 0 0 5px 5px;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.25rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
   }
 `;
 
@@ -121,9 +140,6 @@ const ModalOuter = styled.div`
 `;
 
 const ModalInner = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
   height: 85vh;
   width: 85vw;
@@ -146,12 +162,39 @@ const ModalCloser = styled.div`
   height: 2rem;
 `;
 
-const ModalPhoto = styled.img`
-  border-radius: ${props => props.theme.borderRadius};
-  display: block;
-  object-fit: contain;
-  max-height: 100%;
-  max-width: 100%;
+const ModalPhoto = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  img {
+    border-radius: ${props => props.theme.borderRadius};
+    display: block;
+    object-fit: contain;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  span {
+    background: linear-gradient(rgba(20, 20, 20, 0.85), rgba(20, 20, 20, 0.85));
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 auto;
+    padding: 0.5rem 1.5rem;
+  }
 `;
 
 const ModalArrows = styled.div`
@@ -272,12 +315,13 @@ const Photos = ({ photos, openModal }) => {
   const pics = photos.map((p, i) => (
     <PuppyPhoto
       key={p.image}
-      src={p.image}
-      alt={p.caption}
       onClick={() => {
         openModal(i);
       }}
-    />
+    >
+      <img src={p.image} alt={p.caption} />
+      {p.caption && <span>{p.caption}</span>}
+    </PuppyPhoto>
   ));
 
   // return gallery of images
@@ -352,7 +396,14 @@ const Modal = ({ closer, photos, index, setIndex }) => {
     <ModalOuter onClick={closer}>
       <ModalInner>
         <ModalCloser onClick={closer}>&times;</ModalCloser>
-        <ModalPhoto src={photo.image} alt={photo.caption} />
+        <ModalPhoto>
+          <img src={photo.image} alt={photo.caption} />
+          {photo.caption && (
+            <div>
+              <span>{photo.caption}</span>
+            </div>
+          )}
+        </ModalPhoto>
       </ModalInner>
       <ModalArrows>
         <ModalArrow
