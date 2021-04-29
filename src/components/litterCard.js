@@ -39,6 +39,7 @@ const ParentImg = styled.img`
   width: 12rem;
 
   @media only screen and (max-width: 768px) {
+    height: 40vh;
     width: 50%;
   }
 `;
