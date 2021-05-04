@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import herovid from '../images/bernies.mp4';
+import herovid from '../images/bernie_pups.mp4';
 import fallbackImage from '../images/fallbackHero.webp';
 
 const HeroContainer = styled.div``;
@@ -28,7 +28,7 @@ const HeroVideo = styled.video`
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: url(${fallbackImage}) center/cover no-repeat;
+  background: url(${fallbackImage}) top/cover no-repeat;
   object-fit: cover;
 `;
 
