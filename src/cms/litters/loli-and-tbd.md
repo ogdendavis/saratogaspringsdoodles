@@ -11,7 +11,7 @@ dam:
 reservation_list:
   - Breeder
   - Breeder
-  - "1."
+  - 1. Reserved
   - "2."
   - "3."
   - "4."
