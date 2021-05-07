@@ -9,11 +9,12 @@ dam:
   dam_in_house: true
   dam_image: /img/luna2.jpeg
 reservation_list:
-  - Breeder
-  - Breeder
-  - Reserved
-  - Reserved
-  - Reserved
+  - 1.Breeder
+  - 2.Breeder
+  - 3.Reserved
+  - 4.Reserved
+  - 5.Reserved
+  - "6."
 size:
   min: 30
   max: 40
