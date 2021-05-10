@@ -10,7 +10,7 @@ dam:
   dam_in_house: true
   dam_image: /img/img_2304.jpg
 reservation_list:
-  - '**WAITLIST CLOSED**'
+  - "**WAITLIST CLOSED**"
   - Breeder
   - Reserved
   - Reserved
@@ -19,11 +19,11 @@ reservation_list:
   - Reserved
   - Reserved
   - Reserved
-  - Reserved
+  - Goodyear is AVAILABLE
 size:
   min: 30
   max: 40
-colors: 'rainbow'
+colors: rainbow
 date: 2021-03-23T06:00:00.000Z
 photos:
   - image: /img/loli-crosby-litter-0.jpeg
@@ -45,5 +45,4 @@ photos:
   - image: /img/loli-crosby-litter-8.jpeg
     caption: Paris
 ---
-
-This upcoming litter of Mini Multigeneration Bernedoodles is going to produce some amazing puppies, with great temperament, color, coat and genetics. They will be in the 30-40 pound weight range when full-grown. Loli Gave birth to 9 gorgeous puppies on March 23rd, two boys and 7 girls, All puppies are reserved, you can watch them grow on My Instagram page @Saratogaspringsdoodles.
+This upcoming litter of Mini Multigeneration Bernedoodles is going to produce some amazing puppies, with great temperament, color, coat and genetics. They will be in the 30-40 pound weight range when full-grown. Loli Gave birth to 9 gorgeous puppies on March 23rd, two boys and 7 girls, you can watch them grow on My Instagram page @Saratogaspringsdoodles. Goodyear is available
