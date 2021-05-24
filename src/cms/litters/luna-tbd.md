@@ -14,7 +14,7 @@ reservation_list:
   - 3.Reserved
   - 4.Reserved
   - 5.Reserved
-  - "6."
+  - 6.Reserved
 size:
   min: 30
   max: 40
