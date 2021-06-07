@@ -1,6 +1,6 @@
 ---
 title: Blue
-image: /img/blue.jpeg
+image: /img/img_3899.jpg
 breed: Multigen Mini Bernedoodle
 color: Traditional Tricolor
 birthdate: 2020-06-27T18:06:55.505Z
@@ -11,3 +11,5 @@ Blue is loving, playful and having the best life with his guardian family the Ol
 Weight: 18 lbs\
 Clearances: GM2, NCS, PRA, VWD 1 clear, DM carrier, FIC\
 OFA Hips: pending
+
+Stud Service: Pending health testing results
