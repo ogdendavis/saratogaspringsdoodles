@@ -8,6 +8,8 @@ gender: m
 ---
 Miles is such a sweet boy, he lives with his guardian family and is such a playful sweet boy.
 
+Weight: 24 pounds
+
 OFA Eye: Normal
 
 Penn Hip: Pending
