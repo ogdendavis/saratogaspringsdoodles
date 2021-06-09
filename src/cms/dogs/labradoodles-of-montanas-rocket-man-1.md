@@ -8,6 +8,8 @@ gender: m
 ---
 Rocket is a gorgeous, playful, full of energy boy. He loves people and is super sweet. He is clear of all diseases tested from Paw Print Genetics. He is atat, kyky, Ee, FF, SS, CU/CUc
 
+Weight: 15 pounds
+
  OFA eye exam:  Normal
 
 Penn Hip: Pending
