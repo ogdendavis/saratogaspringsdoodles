@@ -11,4 +11,4 @@ Aspen comes to us from Kansas, she loves playing outside and being with her peop
 GM2, NCS, PRA, VWD 1 clear, DM carrier\
 OFA eye clear\
 OFA cardiac clear\
-Weight: 20 pounds
+Weight: 25 pounds
