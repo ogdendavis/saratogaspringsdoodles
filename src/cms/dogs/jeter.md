@@ -8,7 +8,7 @@ gender: m
 ---
 Jeter is the sweetest boy, loves to go on adventures with his guardian family. He is clear from all diseases run through Embark. He is Ee, bb, kbkb, ata, spsp, FF
 
-
+weight: 25 pounds
 
 OFA Eye: Normal
 
