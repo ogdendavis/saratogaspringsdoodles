@@ -10,10 +10,10 @@ Jeter is the sweetest boy, loves to go on adventures with his guardian family. H
 
 weight: 25 pounds
 
-OFA Eye: Normal
+OFA Eye CAER: Normal
 
 Penn Hip: Pending
 
-OFA Preliminary: Pending
+OFA Elbow Preliminary: Negative
 
 Stud Service: Pending all health testing results
