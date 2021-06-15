@@ -10,10 +10,10 @@ Rocket is a gorgeous, playful, full of energy boy. He loves people and is super 
 
 Weight: 15 pounds
 
- OFA eye exam:  Normal
+ OFA eye CAER:  Normal
 
 Penn Hip: Pending
 
-OFA: Preliminary Pending
+OFA Elbow Preliminary: Negative
 
 Stud Service: Pending all his health testing
