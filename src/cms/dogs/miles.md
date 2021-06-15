@@ -10,8 +10,8 @@ Miles is such a sweet boy, he lives with his guardian family and is such a playf
 
 Weight: 24 pounds
 
-OFA Eye: Normal
+OFA CAER Eye: Normal
 
 Penn Hip: Pending
 
-OFA Preliminary: Pending
+OFA Elbow Preliminary: Negative
