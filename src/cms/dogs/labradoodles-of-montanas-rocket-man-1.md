@@ -12,7 +12,7 @@ Weight: 15 pounds
 
  OFA eye CAER:  Normal
 
-Penn Hip: Pending
+Penn Hip: .45
 
 OFA Elbow Preliminary: Negative
 
