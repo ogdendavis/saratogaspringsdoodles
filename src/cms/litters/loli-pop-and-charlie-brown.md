@@ -19,7 +19,7 @@ reservation_list:
   - Reserved
   - Reserved
   - Reserved
-  - Goodyear is AVAILABLE
+  - "Goodyear "
 size:
   min: 30
   max: 40
