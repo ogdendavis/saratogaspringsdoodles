@@ -74,6 +74,7 @@ exports.createPages = ({ graphql, actions }) => {
         .toLowerCase() // convert to all lowercase
         .replace(/[^A-Za-z0-9 ]/g, '') // strip non-word characters
         .replace('invalid date', 'coming soon') // remove invalid date from tbd litters
+        .replace(/ +(?= )/g, '') // Strip out multiple spaces
         .split(' ') // create array of words
         .join('-'); // join words with dashes
 
