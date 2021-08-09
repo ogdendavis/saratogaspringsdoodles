@@ -13,16 +13,16 @@ reservation_list:
   - Breeder
   - 1. Reserved
   - 2. Reserved
-  - '3.'
-  - '4.'
-  - '5.'
-  - '6.'
-  - '7.'
+  - "3."
+  - "4."
+  - "5."
+  - "6."
+  - "7."
 size:
   min: 35
   max: 45
-colors: ''
-date: 2021-09-22T06:00:00.000Z
+colors: ""
+date: 2021-10-09T06:00:00.000Z
 ---
 
 Coming in fall 2021. This will be Loli Pops retirement litter.
