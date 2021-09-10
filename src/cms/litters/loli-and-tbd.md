@@ -24,5 +24,4 @@ size:
 colors: ""
 date: 2021-10-09T06:00:00.000Z
 ---
-
-Coming in fall 2021. This will be Loli Pops retirement litter.
+Coming in fall 2021. This will be Loli Pops retirement litter. We are very excited for this pairing, Loli has had great puppies and is a great mama to them. We are a little sad that this will be her last litter but are excited to have her living with us in our home :)
