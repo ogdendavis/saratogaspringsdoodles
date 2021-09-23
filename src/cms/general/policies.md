@@ -18,9 +18,9 @@ All prices include 7.15% Utah sales tax.
 
 ### Bernedoodles
 
-Bernedoodle puppies all priced the same
+Bernedoodle puppies 
 
-Mini's (30-40 lbs)
+Mini's (35-45 lbs.)
 
 $3,500-4,500
 
