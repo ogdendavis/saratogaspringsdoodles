@@ -11,17 +11,15 @@ dam:
 reservation_list:
   - Breeder
   - Breeder
-  - 1. Reserved
-  - 2. Reserved
-  - "3."
-  - "4."
+  - 3. Reserved
+  - 4. Reserved
   - "5."
   - "6."
   - "7."
 size:
   min: 35
   max: 45
-colors: ""
+colors: Black tri and black phantom
 date: 2021-10-09T06:00:00.000Z
 ---
-Coming in fall 2021. This will be Loli Pops retirement litter. We are very excited for this pairing, Loli has had great puppies and is a great mama to them. We are a little sad that this will be her last litter but are excited to have her living with us in our home :)
+Puppies born October 13, 2 boys and 5 girls! Loli has had great puppies and is a great mama to them. We are a little sad that this will be her last litter but are excited to have her living with us in our home :)
