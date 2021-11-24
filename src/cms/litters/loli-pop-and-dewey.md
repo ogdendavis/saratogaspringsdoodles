@@ -10,7 +10,7 @@ dam:
   dam_image: /img/img_2304.jpg
 reservation_list:
   - Breeder
-  - Breeder
+  - "2."
   - 3. Reserved
   - 4. Reserved
   - "5."
