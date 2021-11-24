@@ -22,6 +22,20 @@ size:
 colors: Black tri and black phantom
 date: 2021-11-09T01:10:14.284Z
 photos:
+  - image: /img/8df3ad4e-0ee8-46c2-be90-702033cf387a.jpeg
+    caption: Yellow girl Shania
+  - image: /img/44904161-cfa7-4b10-9421-1de0836f5165.jpeg
+    caption: Purple girl
+  - image: /img/72f7ae74-f2eb-400a-89b2-7f235068b3d9.jpeg
+    caption: Blue boy Garth Brooks
+  - image: /img/0d134dc6-81f3-4979-a5c9-b09dd20d8cd8.jpeg
+    caption: Gray boy Tim Mcgraw
+  - image: /img/55af49d8-7084-4b6d-9911-27b87d08c064.jpeg
+    caption: Pink girl Shania
+  - image: /img/52bbf922-6fd1-4916-9357-578a263063b2.jpeg
+    caption: White girl Reba
+  - image: /img/6881ce8e-57f8-4ae4-9d17-4258550c2983.jpeg
+    caption: Dolly Black girl
   - image: /img/faac9ae1-765b-4725-bcbd-8f3adfd12e58.jpeg
   - image: /img/c46ca636-d8a4-4af5-a6f3-bf11e0c7c4be.jpeg
   - image: /img/a8bbcc82-f7b9-46ec-a540-5c67ed916b86.jpeg
