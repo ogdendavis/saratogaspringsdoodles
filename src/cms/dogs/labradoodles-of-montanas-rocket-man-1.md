@@ -16,4 +16,4 @@ Penn Hip: .45
 
 OFA Elbow Preliminary: Negative
 
-Stud Service: Pending all his health testing
+Stud Service: $3200
