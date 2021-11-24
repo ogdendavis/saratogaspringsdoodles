@@ -1,6 +1,6 @@
 ---
 title: Labradoodles of Montana's Rocket Man
-image: /img/img_3014.jpg
+image: /img/3cb5c738-4794-41bb-851d-f3caca6985ca.jpeg
 breed: Australian Labradoodle
 color: Black/Tan
 birthdate: 2020-11-10T01:07:06.882Z
