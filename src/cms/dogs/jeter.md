@@ -1,5 +1,5 @@
 ---
-title: Jeter
+title: Eden Valley Manor's Jeter
 image: /img/img_3906.jpg
 breed: Australian Labradoodle
 color: Chocolate Parti
