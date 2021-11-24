@@ -1,5 +1,5 @@
 ---
-title: Miles
+title: Serenity Doodles Miles
 image: /img/img_3896.jpg
 breed: Australian Labradoodle
 color: Red
