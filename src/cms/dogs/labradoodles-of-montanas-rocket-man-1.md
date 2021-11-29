@@ -16,4 +16,4 @@ Penn Hip: .45
 
 OFA Elbow Preliminary: Negative
 
-Stud Service: $3200
+Stud Service: $3200 TCI at South Mountain or shipping semen also available
