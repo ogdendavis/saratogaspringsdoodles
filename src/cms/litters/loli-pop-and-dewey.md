@@ -41,4 +41,4 @@ photos:
   - image: /img/blue-boy.jpg
   - image: /img/black-girl.jpg
 ---
-Puppies born October 13, 2 boys and 5 girls! Loli has had great puppies and is a great mama to them. Puppy pick day is November 24th and go home day is December 8th. We are a little sad that this will be her last litter but are excited to have her living with us in our home :)
+Puppies born October 13, 2 boys and 5 girls! Loli has had great puppies and is a great mama to them. Puppy pick day is November 24th and go home day is December 8th. We are a little sad that this will be her last litter but are excited to have her living with us in our home :) I Have two boys and two girls available.
