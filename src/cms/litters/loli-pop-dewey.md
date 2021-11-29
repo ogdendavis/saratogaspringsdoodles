@@ -9,9 +9,8 @@ dam:
   dam_in_house: true
   dam_image: /img/img_2304.jpg
 reservation_list:
-  - Breeder
-  - "1."
-  - 2. Reserved
+  - 1. Breeder
+  - 2.  Reserved
   - 3. Reserved
   - "4."
   - "5."
