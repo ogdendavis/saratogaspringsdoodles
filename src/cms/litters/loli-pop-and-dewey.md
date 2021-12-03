@@ -23,6 +23,13 @@ size:
 colors: Black tri and black phantom
 date: 2021-11-09T01:10:14.284Z
 photos:
+  - image: /img/848a7c3d-7e5b-436c-aae9-c87131df39da.jpeg
+  - image: /img/9244da9b-832c-43f2-9e45-77d9bc8d0afc.jpeg
+  - image: /img/6d636890-c87c-4d0e-8380-529ddfe40703.jpeg
+  - image: /img/70aa739c-94cb-4be5-b912-7d0ea0828021.jpeg
+  - image: /img/715771d9-f239-465f-94fa-a5dfc9ee4936.jpeg
+  - image: /img/1416109b-f993-49c5-a1e7-eba26a7f60d9.jpeg
+  - image: /img/af5bad23-7c2d-4a24-9c60-71c89b38c486.jpeg
   - image: /img/faac9ae1-765b-4725-bcbd-8f3adfd12e58.jpeg
   - image: /img/c46ca636-d8a4-4af5-a6f3-bf11e0c7c4be.jpeg
   - image: /img/a8bbcc82-f7b9-46ec-a540-5c67ed916b86.jpeg
