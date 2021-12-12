@@ -23,6 +23,8 @@ size:
 colors: Black tri and black phantom
 date: 2021-11-09T01:10:14.284Z
 photos:
+  - image: /img/94ad2e57-013a-4586-8078-70d5eb1262c1.jpeg
+  - image: /img/e25191ff-f4cb-46d0-bc31-71480c94c3ba.jpeg
   - image: /img/848a7c3d-7e5b-436c-aae9-c87131df39da.jpeg
   - image: /img/9244da9b-832c-43f2-9e45-77d9bc8d0afc.jpeg
   - image: /img/6d636890-c87c-4d0e-8380-529ddfe40703.jpeg
@@ -48,4 +50,4 @@ photos:
   - image: /img/blue-boy.jpg
   - image: /img/black-girl.jpg
 ---
-Puppies born October 13, 2 boys and 5 girls! Loli has had great puppies and is a great mama to them. Puppy pick day is November 24th and go home day is December 8th. We are a little sad that this will be her last litter but are excited to have her living with us in our home :) I Have two boys and two girls available.
+Puppies born October 13, 2 boys and 5 girls! Loli has had great puppies and is a great mama to them. Puppy pick day is November 24th and go home day is December 8th. We are a little sad that this will be her last litter but are excited to have her living with us in our home :) I Have one boy blue boy and one girl pink girl available.
