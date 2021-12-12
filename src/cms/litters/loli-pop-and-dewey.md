@@ -13,10 +13,10 @@ reservation_list:
   - "1."
   - 2. Reserved
   - 3. Reserved
-  - "4."
-  - "5."
-  - "6."
-  - "7."
+  - 4. Reserved
+  - 5. Reserved
+  - "6. Available "
+  - 7. Available
 size:
   min: 35
   max: 45
