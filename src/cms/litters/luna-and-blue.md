@@ -20,7 +20,7 @@ reservation_list:
   - "8."
 size:
   min: 25
-  max: 34
+  max: 35
 colors: ""
 date: 2021-12-28T07:00:00.000Z
 ---
