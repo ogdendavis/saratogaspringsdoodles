@@ -34,7 +34,7 @@ photos:
     caption: Purple girl
   - image: /img/8c1447be-7db3-4ad1-aab7-9d432d435dd5.jpeg
     caption: Pink girl
-  - image: /img/68fd3450-f67d-45b3-a140-4bacfc167649.jpeg
   - image: /img/f7e3aa4d-9078-47d6-85ce-58be64947648.jpeg
+    caption: Gray Boy
 ---
-Born December 28th, e have three girls and four boys all healthy and strong. We are expecting our first litter of Australian Bernedoodles, these puppies will have amazing coats, personalities and temperaments. Puppy pick is at six weeks and go home Day is February 22. I have spots available in this litter so fill out an application and I’ll be in touch.
+Born December 28th, we have three girls and four boys all healthy and strong. We are expecting our first litter of Australian Bernedoodles, these puppies will have amazing coats, personalities and temperaments. Puppy pick is at six weeks and go home Day is February 22. I have spots available in this litter so fill out an application and I’ll be in touch.
