@@ -23,5 +23,18 @@ size:
   max: 35
 colors: ""
 date: 2021-12-28T07:00:00.000Z
+photos:
+  - image: /img/4ce36541-ba7a-41a5-be5c-061d9a6d73c8.jpeg
+    caption: Yellow boy
+  - image: /img/cdfe2224-28fe-4711-94de-f66d2137687a.jpeg
+    caption: Black boy
+  - image: /img/cf1a4dac-d370-48c5-a266-3f3dd197ae16.jpeg
+    caption: White girl
+  - image: /img/c1e47f63-f2cf-46a0-ac30-bcf1a62ad356.jpeg
+    caption: Purple girl
+  - image: /img/8c1447be-7db3-4ad1-aab7-9d432d435dd5.jpeg
+    caption: Pink girl
+  - image: /img/68fd3450-f67d-45b3-a140-4bacfc167649.jpeg
+  - image: /img/f7e3aa4d-9078-47d6-85ce-58be64947648.jpeg
 ---
-Coming in winter 2021. We are expecting our first litter of Australian Bernedoodles, these puppies will have amazing coats, personalities and temperaments. Stay tuned and waitlist is open!!
+Born December 28th, e have three girls and four boys all healthy and strong. We are expecting our first litter of Australian Bernedoodles, these puppies will have amazing coats, personalities and temperaments. Puppy pick is at six weeks and go home Day is February 22. I have spots available in this litter so fill out an application and I’ll be in touch.
