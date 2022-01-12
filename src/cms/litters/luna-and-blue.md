@@ -23,6 +23,8 @@ size:
 colors: ""
 date: 2021-12-28T07:00:00.000Z
 photos:
+  - caption: Blue boy
+    image: /img/08368a2b-095c-4a97-95ce-6454a7e89333.jpeg
   - image: /img/6055f477-8dc1-44c5-bf7a-07994f048852.jpeg
     caption: Yellow boy
   - image: /img/e2426515-4bfa-4ed9-a9ff-311d4fd467f8.jpeg
