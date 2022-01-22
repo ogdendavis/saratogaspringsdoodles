@@ -23,6 +23,13 @@ size:
 colors: ""
 date: 2021-12-28T07:00:00.000Z
 photos:
+  - image: /img/8c0e89f7-45db-4a86-a84b-718703353715.jpeg
+  - image: /img/6850a47d-a83f-4937-80c8-acb3e2895890.jpeg
+  - image: /img/7144463f-8ec9-4e50-8870-e396d90e7f17.jpeg
+  - image: /img/940aa40d-2c92-448b-a3e6-cb204dbc9021.jpeg
+  - image: /img/194b40da-a44e-47bb-9be3-a5f776970f44.jpeg
+  - image: /img/4ce9c5bd-537e-4c88-a29d-cc5b1f016f01.jpeg
+  - image: /img/6c7da95f-8ef9-48ba-936b-864a25c8a46a.jpeg
   - caption: Blue boy
     image: /img/08368a2b-095c-4a97-95ce-6454a7e89333.jpeg
   - image: /img/6055f477-8dc1-44c5-bf7a-07994f048852.jpeg
