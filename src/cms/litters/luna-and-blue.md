@@ -2,9 +2,9 @@
 # Litters should have a unique identifying title
 title: Luna and Rocket Man
 sire:
-  sire_name: Rocket Man 1
+  sire_name: Rocket Man
   sire_image: /img/3cb5c738-4794-41bb-851d-f3caca6985ca.jpeg
-  sire_in_house: true
+  sire_in_house: false
 dam:
   dam_name: Luna
   dam_in_house: true
