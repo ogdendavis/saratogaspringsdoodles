@@ -1,6 +1,6 @@
 ---
 # Litters should have a unique identifying title
-title: This is a dummy litter to make sure all fields exist in GraphQL
+title: dummy-wfuPUAm78nErs7FP-WaG9kNpBk6eBt1pZ
 sire:
   sire_name: Crosby
   sire_image: /img/crosby3.jpg

@@ -71,16 +71,22 @@ const PrimaryPageTemplate = ({
   // Build cards, if card info present
   let cardCount = 0;
   const cards = !cardinfo ? null : section === 'puppies' ? (
-    cardinfo.edges.map(({ node }) => {
-      cardCount++;
-      return (
-        <LitterCard
-          litter={node}
-          dogImagePaths={cardinfo.dogImagePaths}
-          key={`litter${cardCount}${node.frontmatter.dam.dam_name}`}
-        />
-      );
-    })
+    cardinfo.edges
+      // Total hack -- don't render a litter card for our dummy field persistence litter
+      .filter(
+        ({ node }) =>
+          node.frontmatter.title !== 'dummy-wfuPUAm78nErs7FP-WaG9kNpBk6eBt1pZ'
+      )
+      .map(({ node }) => {
+        cardCount++;
+        return (
+          <LitterCard
+            litter={node}
+            dogImagePaths={cardinfo.dogImagePaths}
+            key={`litter${cardCount}${node.frontmatter.dam.dam_name}`}
+          />
+        );
+      })
   ) : section === 'mama' ? (
     cardinfo.edges.map(({ node }) => (
       <DogCard dog={node} key={`dogcard-${node.frontmatter.title}`} />
