@@ -25,4 +25,4 @@ size:
 colors: Black Tri
 date: 2022-07-01T02:47:45.968Z
 ---
-We are excited for this repeat pairing between Luna and Dewey, They had some gorgeous puppies with great coats, temperaments, personalities! Both parents are fully health tested!
+We are excited for this repeat pairing between Luna and Dewey, They had some gorgeous puppies with great coats, temperaments and personalities! Both parents are fully health tested!
