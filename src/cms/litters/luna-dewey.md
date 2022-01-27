@@ -3,6 +3,7 @@
 title: Luna & Dewey
 sire:
   sire_name: Dewey
+  sire_image: /img/dewey.jpg
 dub_sire:
   dub_sire_name: ""
   dub_sire_in_house: false
