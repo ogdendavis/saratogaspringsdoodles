@@ -16,4 +16,4 @@ Penn Hip: .34
 
 OFA Elbow Preliminary: Negative
 
-Stud service: Available for stud service contract for more information
+Stud service: Available for stud service contact me for more information
