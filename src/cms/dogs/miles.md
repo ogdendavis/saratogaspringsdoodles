@@ -15,3 +15,5 @@ OFA CAER Eye: Normal
 Penn Hip: .34
 
 OFA Elbow Preliminary: Negative
+
+Stud service: Available for stud service contract for more information
