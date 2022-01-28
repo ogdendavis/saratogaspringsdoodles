@@ -1,4 +1,4 @@
-All our pups are raised with an enormous amount of love and care: They're whelped in the puppy room across the hall from my bedroom and are moved to the kitchen once their eyes and ears are open. They're part of my family's every day life, and become accustomed to vacuuming, mopping, dishwashers, TV’s, music, lawnmowers outside, dogs, cats, and adults and children of all ages and sizes.
+All our pups are raised with an enormous amount of love and care: They're whelped in the puppy room across the hall from my bedroom and are moved to the kitchen once their eyes and ears are open. They're part of my family's every day life, and become accustomed to vacuuming, mopping, dishwashers, TV’s, music, lawnmowers outside, dogs and adults and children of all ages and sizes.
 
 I use Early Neurological Stimulation (ENS) and Puppy Culture’s Puppy Enrichment Activities with my puppies, giving them the very best start in life before they go to their furever homes.
 
