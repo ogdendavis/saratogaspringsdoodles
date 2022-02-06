@@ -11,7 +11,7 @@ dam:
   dam_image: /img/luna1.jpeg
 reservation_list:
   - 1. Breeder
-  - 2. Breeder
+  - 2. Reserved
   - 3. Reserved
   - "4. Reserved "
   - "5."
