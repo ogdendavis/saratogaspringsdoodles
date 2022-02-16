@@ -10,11 +10,11 @@ dam:
   dam_in_house: true
   dam_image: /img/luna1.jpeg
 reservation_list:
-  - 1. Breeder
+  - "1. Reserved "
   - 2. Reserved
   - 3. Reserved
   - "4. Reserved "
-  - 5. Reserved
+  - "5. "
   - "6."
   - "7."
 size:
@@ -23,6 +23,20 @@ size:
 colors: ""
 date: 2022-01-24T19:25:48.021Z
 photos:
+  - image: /img/6e9c113b-6db2-438a-91a6-88c9c87a2aa0.jpeg
+    caption: "AC Slater "
+  - image: /img/f52f7c69-af02-448a-ae64-6466ae64c587.jpeg
+    caption: "Mr. Belding "
+  - image: /img/29e17e84-a998-4779-821d-a71ad8d98dfb.jpeg
+    caption: Lisa
+  - image: /img/84a1ed05-07bc-49ed-8e31-56c19c7919f3.jpeg
+    caption: Jessie
+  - image: /img/c27c6fe1-fd9a-4856-9fde-58ca205f5d8a.jpeg
+    caption: Kelly
+  - image: /img/ad1278dd-7b52-4f15-9e05-e5d461305c1c.jpeg
+    caption: "Screech "
+  - image: /img/41a9357c-14ac-4852-8a3e-1c36fd853c1f.jpeg
+    caption: Zach
   - image: /img/6850a47d-a83f-4937-80c8-acb3e2895890.jpeg
   - image: /img/8c0e89f7-45db-4a86-a84b-718703353715.jpeg
   - image: /img/7144463f-8ec9-4e50-8870-e396d90e7f17.jpeg
@@ -45,4 +59,4 @@ photos:
   - image: /img/0340e68c-dc8d-4155-a8be-45dcbb3000fd.jpeg
     caption: Gray Boy
 ---
-Born December 28th, we have three girls and four boys all healthy and strong. This is our first litter of Australian Bernedoodles, these puppies will have amazing coats, personalities and temperaments. Puppy pick is at six weeks and go home Day is February 22. I have two boys available, Gray boy (Zach) and Black boy (AC Slater).
+Born December 28th, we have three girls and four boys all healthy and strong. This is our first litter of Australian Bernedoodles, these puppies will have amazing coats, personalities and temperaments. Puppy pick is at six weeks and go home Day is February 22. I have two boys available, Gray boy (Zach) and Black boy (AC Slater). One girl available Kelly
