@@ -1,6 +1,6 @@
 ---
 # Litters should have a unique identifying title
-title: Mini Multigen Bernedoodle
+title: Aspen and Winston Mini Multigen Bernedoodles
 sire:
   sire_name: Winston
   sire_image: /img/6fd2ebdd-089c-4e86-b5a1-2d16db0d334b.jpeg
