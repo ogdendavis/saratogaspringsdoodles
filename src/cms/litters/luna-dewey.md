@@ -1,9 +1,9 @@
 ---
 # Litters should have a unique identifying title
-title: Luna & Dewey
+title: Luna & Milo
 sire:
-  sire_name: Dewey
-  sire_image: /img/dewey.jpg
+  sire_name: Milo
+  sire_image: /img/7f560e89-47be-4b6f-a051-0d629878fb38.jpeg
 dub_sire:
   dub_sire_name: ""
   dub_sire_in_house: false
@@ -25,4 +25,4 @@ size:
 colors: Black Tri
 date: 2022-07-01T02:47:45.968Z
 ---
-We are excited for this repeat pairing between Luna and Dewey, They had some gorgeous puppies with great coats, temperaments and personalities! Both parents are fully health tested!
+We are excited for this pairing between Luna and Milo. They will have puppies with great coats, temperaments and personalities! Both parents are fully health tested! Puppies will be very well socialized. They will come vet checked, microchipped and will have had their first set of vaccines. Fill out an application if your interested in one of these puppies.
