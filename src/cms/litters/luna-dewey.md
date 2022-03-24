@@ -1,9 +1,9 @@
 ---
 # Litters should have a unique identifying title
-title: Luna & Milo
+title: "Luna & Stanley "
 sire:
-  sire_name: Milo
-  sire_image: /img/7f560e89-47be-4b6f-a051-0d629878fb38.jpeg
+  sire_name: "Stanley "
+  sire_image: /img/c9bdd305-39ca-414d-9460-5095f61c85c5.jpeg
 dub_sire:
   dub_sire_name: ""
   dub_sire_in_house: false
@@ -25,4 +25,4 @@ size:
 colors: Black Tri
 date: 2022-07-01T02:47:45.968Z
 ---
-We are excited for this pairing between Luna and Milo. They will have puppies with great coats, temperaments and personalities! Both parents are fully health tested! Puppies will be very well socialized. They will come vet checked, microchipped and will have had their first set of vaccines. Fill out an application if your interested in one of these puppies.
+We are excited for this pairing between Luna and Stanley. They will have puppies with great coats, temperaments and personalities! Both parents are fully health tested! Puppies will be very well socialized. They will come vet checked, microchipped and will have had their first set of vaccines. Fill out an application if your interested in one of these puppies.
