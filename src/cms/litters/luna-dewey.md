@@ -20,8 +20,8 @@ reservation_list:
   - "6."
   - "7."
 size:
-  min: 35
-  max: 45
+  min: 30
+  max: 40
 colors: Black Tri
 date: 2022-07-01T02:47:45.968Z
 ---
