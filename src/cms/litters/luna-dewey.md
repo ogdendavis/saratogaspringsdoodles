@@ -1,8 +1,8 @@
 ---
 # Litters should have a unique identifying title
-title: Luna & TBD
+title: Luna & Milo
 sire:
-  sire_name: TBD
+  sire_name: Milo from Cottonwood Creek Doodles
   sire_image: ""
 dub_sire:
   dub_sire_name: ""
@@ -25,4 +25,4 @@ size:
 colors: Black Tri
 date: 2022-07-01T02:47:45.968Z
 ---
-We are excited for this pairing between Luna and TBD. They will have puppies with great coats, temperaments and personalities! Both parents are fully health tested! Puppies will be very well socialized. They will come vet checked, microchipped and will have had their first set of vaccines. Fill out an application if your interested in one of these puppies.
+We are excited for this pairing between Luna and Milo. They will have puppies with great coats, temperaments and personalities! Both parents are fully health tested! Puppies will be very well socialized. They will come vet checked, microchipped and will have had their first set of vaccines. Fill out an application if your interested in one of these puppies.
