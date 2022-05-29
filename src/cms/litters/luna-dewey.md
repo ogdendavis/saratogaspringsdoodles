@@ -25,4 +25,4 @@ size:
 colors: Black Tri
 date: 2022-06-21T06:00:00.000Z
 ---
-We are excited for this pairing between Luna and Milo. Milo \*OFA hips, VWD, DM (clear) & PRA (carrier)\*They will have puppies with great coats, temperaments and personalities! Both parents are fully health tested! Puppies will be very well socialized. They will come vet checked, microchipped and will have had their first set of vaccines. Fill out an application if your interested in one of these puppies.
+We are excited for this pairing between Luna and Milo. Luna has been confirmed pregnant. They will have puppies with great coats, temperaments and personalities! Both parents are fully health tested! Puppies will be very well socialized. They will come vet checked, microchipped and will have had their first set of vaccines. Fill out an application if your interested in one of these puppies.
