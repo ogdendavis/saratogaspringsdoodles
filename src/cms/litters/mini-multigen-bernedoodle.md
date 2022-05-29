@@ -18,4 +18,4 @@ size:
 colors: ""
 date: 2022-06-26T06:00:00.000Z
 ---
-We are excited for this pairing for mini Multigen bernedoodles. Aspen has successfully been bred and we hope to confirm pregnancy the end of May. These puppies will be small and have great personalities just like their parents. I have availability in this litter so fill out an application.
+We are excited for this pairing for mini Multigen bernedoodles. Aspen has been confirmed pregnant. These puppies will be small and have great personalities just like their parents. I have availability in this litter so fill out an application.
