@@ -1,6 +1,6 @@
 ---
 title: Kobe
-image: /img/01037fa6-60e9-4000-bbbe-44eb927a9188.jpeg
+image: /img/92739ef1-3fc4-473d-a23c-47df816c4353.jpeg
 breed: Mini Multigen Bernedoodle
 color: Black Tri
 birthdate: 2022-04-02T23:33:58.664Z
