@@ -6,4 +6,4 @@ color: Merle tri
 birthdate: 2022-01-26T08:03:21.118Z
 gender: f
 ---
-Miss Willa is a hopeful future mama for our program pending passing all her health testing. She is super sweet and confident and playful. She lives with Dolly and the Anderson’s.
+Miss Willa is a future mama for our program she has passed all her health testing. She is super sweet and confident and playful. She lives with Dolly and the Anderson’s.
