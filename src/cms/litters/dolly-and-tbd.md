@@ -1,8 +1,9 @@
 ---
 # Litters should have a unique identifying title
-title: Dolly and TBD
+title: Dolly and Kobe(hopefully)
 sire:
-  sire_name: TBD
+  sire_name: Kobe
+  sire_image: /img/50cb4251-d094-4385-aa6b-76f60986e443.jpeg
 dub_sire:
   dub_sire_name: ""
   dub_sire_in_house: false
