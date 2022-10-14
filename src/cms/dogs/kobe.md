@@ -14,6 +14,6 @@ G﻿enetic clear of everything (including both types of DM) except one copy of P
 
 C﻿arries: BB, FF, KYKY, ATAT, Ssp, Ee, cdcd, 
 
-P﻿ennHip: 0.49
+P﻿ennHip: R DI= 0.48 L DI= 0.49
 
 O﻿FA: Eyes clear, elbows negative
