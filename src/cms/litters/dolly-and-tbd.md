@@ -25,3 +25,9 @@ colors: ""
 date: 2023-02-21T00:28:26.251Z
 ---
 We are getting super excited for Miss Dolly's first litter. She has such a sweet calm intuitive personality. She is great with kids of all ages and other dogs. She loves playing with her sister and future mamma for us Willa. She should come into heat in December 2022 and have puppies in February with a go home date of April (if mother nature stays on course)
+
+
+
+
+
+\*All plans are tentative until breeding's have taken place & been confirmed.
