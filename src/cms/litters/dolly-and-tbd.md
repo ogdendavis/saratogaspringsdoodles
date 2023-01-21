@@ -10,7 +10,7 @@ dub_sire:
   dub_sire_image: ""
 dam:
   dam_name: Dolly
-  dam_image: /img/0e865329-94de-4eac-ad46-95b5ea4e67c6.jpeg
+  dam_image: /img/image-2-.jpeg
 reservation_list:
   - 1. Breeder
   - 2. Breeder
