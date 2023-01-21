@@ -24,6 +24,6 @@ size:
 colors: ""
 date: 2023-03-20T06:00:00.000Z
 ---
-We are getting super excited for Miss Dolly's first litter. She has such a sweet calm intuitive personality. She is great with kids of all ages and other dogs. She loves playing with her sister and future mamma for us Willa. She was bred late January and if everything goes as planned she will have puppies around March 20th with go home date around May 20th
+We are getting super excited for Miss Dolly's first litter. She has such a sweet calm intuitive personality. She is great with kids of all ages and other dogs. She loves playing with her sister and future mamma for us Willa. She was bred late January and if everything goes as planned she will have puppies around March 20th with go home date around May 20th. We are thankful to our friends at Cottonwood Creek Doodles for allowing us to use Freddy.
 
 \*All plans are tentative until breeding's have taken place & been confirmed.
