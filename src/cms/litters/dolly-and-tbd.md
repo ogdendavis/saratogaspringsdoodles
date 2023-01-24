@@ -16,7 +16,7 @@ reservation_list:
   - 2. Breeder
   - 3. Reserved
   - 4. Reserved
-  - "5."
+  - 5. Reserved
   - "6."
 size:
   min: 25
