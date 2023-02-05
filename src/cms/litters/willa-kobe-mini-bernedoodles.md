@@ -15,6 +15,6 @@ size:
   min: 25
   max: 35
 colors: ""
-date: 2023-02-05T01:59:26.458Z
+date: 2023-06-21T00:59:26.458Z
 ---
 This will be Willa's first litter of Mini Bernedoodles. They will have amazing personalities like both their parents as well as soft wavy coats.
