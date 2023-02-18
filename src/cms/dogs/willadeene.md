@@ -7,3 +7,17 @@ birthdate: 2022-01-26T08:03:21.118Z
 gender: f
 ---
 Miss Willa is a future mama for our program she has passed all her health testing. She is super sweet and confident and playful. She lives with Dolly and the Anderson’s.
+
+G﻿enetic clear of everything including CDDY and IVDD<http://embk.me/willadeene?utm_campaign=cns_ref_dog_pub_profile&utm_medium=other&utm_source=embark>
+
+C﻿arries: Bb, FF, KYKY, ATAT, SS, EE
+
+P﻿ennHip: R DI= 0.43 L DI= 0.39
+
+O﻿FA: Eyes clear 
+
+OFA Elbows Preliminary: Negative
+
+W﻿eight: 35 Pounds
+
+D﻿OB: 1/26/22
