@@ -8,7 +8,9 @@ gender: f
 ---
 Miss Willa is a future mama for our program she has passed all her health testing. She is super sweet and confident and playful. She lives with Dolly and the Anderson’s.
 
-G﻿enetic clear of everything including CDDY and IVDD<http://embk.me/willadeene?utm_campaign=cns_ref_dog_pub_profile&utm_medium=other&utm_source=embark>
+<http://embk.me/willadeene?utm_campaign=cns_ref_dog_pub_profile&utm_medium=other&utm_source=embark>
+
+G﻿enetic clear of everything including CDDY and IVDD
 
 C﻿arries: Bb, FF, KYKY, ATAT, SS, EE
 
