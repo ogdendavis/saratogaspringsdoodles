@@ -3,7 +3,7 @@
 title: Willa & Kobe Mini Bernedoodles
 sire:
   sire_name: Kobe
-  sire_image: /img/19ecf995-4938-4d3e-baf4-62416beb9577.jpeg
+  sire_image: /img/kobe-04022023.jpg
 dub_sire:
   dub_sire_name: ""
   dub_sire_in_house: false
@@ -11,6 +11,11 @@ dub_sire:
 dam:
   dam_name: Willa
   dam_image: /img/1ba23e0e-e896-4b13-a1b9-83821148ba6b.jpeg
+reservation_list:
+  - 1.Breeder
+  - "2."
+  - "3."
+  - "4."
 size:
   min: 25
   max: 35
