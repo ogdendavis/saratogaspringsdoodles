@@ -12,12 +12,8 @@ dam:
   dam_name: Dolly
   dam_image: /img/image-2-.jpeg
 reservation_list:
-  - 1. Breeder
-  - 2. Breeder
-  - 3. Reserved
-  - 4. Reserved
-  - 5. Reserved
-  - "6."
+  - 1. Reserved
+  - 2. Reserved
 size:
   min: 25
   max: 35
@@ -26,4 +22,4 @@ date: 2023-03-20T06:00:00.000Z
 ---
 We are getting super excited for Miss Dolly's first litter. She has such a sweet calm intuitive personality. She is great with kids of all ages and other dogs. She loves playing with her sister and future mamma for us Willa. She was bred late January and if everything goes as planned she will have puppies around March 20th with go home date around May 20th. We are thankful to our friends at Cottonwood Creek Doodles for allowing us to use Freddy.
 
-\*All plans are tentative until breeding's have taken place & been confirmed.
+Dolly gave birth to two puppies on March 24th. A little boy and a little girl. Both these puppies are reserved
