@@ -13,13 +13,15 @@ dam:
   dam_image: /img/1ba23e0e-e896-4b13-a1b9-83821148ba6b.jpeg
 reservation_list:
   - 1.Breeder
-  - "2."
+  - 2.Breeder
   - "3."
   - "4."
+  - "5."
+  - "6."
 size:
   min: 25
   max: 35
 colors: ""
-date: 2023-06-21T00:59:26.458Z
+date: 2023-06-26T00:59:26.458Z
 ---
-This will be Willa's first litter of Mini Bernedoodles. They will have amazing personalities like both their parents as well as soft wavy coats.
+This will be Willa's first litter of Mini Bernedoodles. They will have amazing personalities like both their parents as well as soft wavy coats. Pregnancy confirmed! So excited for this pairing, these puppies will be stunning.
