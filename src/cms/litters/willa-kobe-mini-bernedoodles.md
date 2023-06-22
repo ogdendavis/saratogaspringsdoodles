@@ -18,10 +18,15 @@ reservation_list:
   - "4."
   - "5."
   - "6."
+  - "7."
+  - "8."
+  - "9."
 size:
   min: 25
-  max: 35
+  max: 45
 colors: ""
-date: 2023-06-26T00:59:26.458Z
+date: 2023-06-22T00:59:26.458Z
 ---
-This will be Willa's first litter of Mini Bernedoodles. They will have amazing personalities like both their parents as well as soft wavy coats. Pregnancy confirmed! So excited for this pairing, these puppies will be stunning.
+This will be Willa's first litter of Mini Bernedoodles. They will have amazing personalities like both their parents as well as soft wavy coats. So excited for this pairing, these puppies will be stunning.
+
+Willa had 9 puppies on Wednesday June 21st, 3 girls and 6 boys, gorgeous coloring, some Merle's and Black tri
