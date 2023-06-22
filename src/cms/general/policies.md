@@ -20,11 +20,19 @@ All prices include 7.15% Utah sales tax.
 
 Bernedoodle puppies 
 
-Mini's (35-45 lbs.)
+Mini's (30-45 lbs.)
 
-$3,500
+$3,000
 
-![A bernedoodle puppy in a field of flowers](/img/puppy-in-hand-1.jpg)
+![A bernedoodle puppy in a field of flowers](/img/b9b98651-95b7-492d-a531-76639dbd66a8.jpeg)
+
+## Australian Labradoodles
+
+M﻿ini Australian Labradoodles (ALD)
+
+M﻿ini/Medium 30-45
+
+$3000
 
 ## Delivery
 
