@@ -12,9 +12,9 @@ dam:
   dam_name: Willa
   dam_image: /img/1ba23e0e-e896-4b13-a1b9-83821148ba6b.jpeg
 reservation_list:
-  - "1."
-  - "2."
-  - "3."
+  - 1. Reserved
+  - 2. Reserved
+  - 3. Reserved
   - "4."
   - "5."
   - "6."
