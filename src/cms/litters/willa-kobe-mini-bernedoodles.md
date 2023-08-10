@@ -12,10 +12,10 @@ dam:
   dam_name: Willa
   dam_image: /img/1ba23e0e-e896-4b13-a1b9-83821148ba6b.jpeg
 reservation_list:
-  - 1. Reserved
-  - 2. Reserved
-  - 3. Reserved
-  - "4."
+  - 1. Reserved- Rooster
+  - 2. Reserved- Hangman
+  - 3. Reserved- Penny
+  - 4. Reserved- Phoenix
   - "5."
   - "6."
   - "7."
