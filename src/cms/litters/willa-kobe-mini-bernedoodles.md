@@ -16,11 +16,11 @@ reservation_list:
   - 2. Reserved- Hangman
   - 3. Reserved- Penny
   - 4. Reserved- Phoenix
-  - "5."
-  - "6."
-  - "7."
-  - "8."
-  - "9."
+  - 5. Reserved- Amelia
+  - 6. Reserved- Goose
+  - 7. Reserved- Iceman
+  - 8. Maverick
+  - 9. Bob
 size:
   min: 25
   max: 32
