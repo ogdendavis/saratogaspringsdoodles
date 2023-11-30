@@ -1,0 +1,26 @@
+---
+# Litters should have a unique identifying title
+title: Mini Bernedoodles
+sire:
+  sire_name: Kobe
+  sire_image: /img/as-16.jpg
+dub_sire:
+  dub_sire_name: ""
+  dub_sire_in_house: false
+  dub_sire_image: ""
+dam:
+  dam_name: Willa
+reservation_list:
+  - 1. Reserved
+  - 2. Reserved
+  - "3."
+  - "4."
+  - "5."
+  - "6."
+size:
+  min: 25
+  max: 35
+colors: ""
+date: 2024-06-02T01:56:32.432Z
+---
+W﻿e are excited to do a repeat litter with these two, They had such amazing puppies last time. Willa should come into heat in the end of April and have puppies early July. If you want to get on this list fill out an application.
