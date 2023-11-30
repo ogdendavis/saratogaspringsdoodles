@@ -1,6 +1,6 @@
 ---
 # Litters should have a unique identifying title
-title: Mini Bernedoodles
+title: Dolly and Kobe Mini Bernedoodles
 sire:
   sire_name: Kobe
   sire_image: /img/as-16.jpg
@@ -10,6 +10,7 @@ dub_sire:
   dub_sire_image: ""
 dam:
   dam_name: Dolly
+  dam_image: /img/img_2532.jpeg
 reservation_list:
   - 1. Reserved
   - "2."
