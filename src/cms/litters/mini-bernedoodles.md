@@ -22,6 +22,6 @@ size:
   min: 25
   max: 35
 colors: ""
-date: 2024-06-02T01:56:32.432Z
+date: 2024-07-01T06:00:00.000Z
 ---
 W﻿e are excited to do a repeat litter with these two, They had such amazing puppies last time. Willa should come into heat in the end of April and have puppies early July. If you want to get on this list fill out an application.
