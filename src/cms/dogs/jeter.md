@@ -1,6 +1,6 @@
 ---
 title: Jeter
-image: /img/710e1354-162f-45d4-aa05-ae47d3274bf6.jpeg
+image: /img/img_6027.jpeg
 breed: Australian Labradoodle
 color: Chocolate Parti
 birthdate: 2024-05-03T03:15:31.267Z
