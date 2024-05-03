@@ -1,6 +1,6 @@
 ---
 title: Skye
-image: /img/img_9674.jpg
+image: /img/img_6933.jpeg
 breed: Mini Bernedoodle
 color: Black Tri
 birthdate: 2022-12-27T07:00:00.000Z
