@@ -24,7 +24,7 @@ Mini's (30-45 lbs.)
 
 $3,000
 
-![A bernedoodle puppy in a field of flowers](/img/b9b98651-95b7-492d-a531-76639dbd66a8.jpeg)
+![A bernedoodle puppy in a field of flowers](/img/e228feb0-993d-409c-99d5-809cea2d9f43.jpeg)
 
 ## Australian Labradoodles
 
