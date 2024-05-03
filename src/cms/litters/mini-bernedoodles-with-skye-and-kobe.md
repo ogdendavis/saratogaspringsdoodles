@@ -11,6 +11,13 @@ dub_sire:
 dam:
   dam_name: Skye
   dam_image: /img/img_6925.jpeg
+reservation_list:
+  - 1. Reserved
+  - 2. Reserved
+  - "3."
+  - "4."
+  - "5."
+  - "6."
 size:
   min: 20
   max: 25
