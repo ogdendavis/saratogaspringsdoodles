@@ -13,7 +13,7 @@ dam:
   dam_image: /img/img_2544.jpeg
 reservation_list:
   - 1. Reserved
-  - 2. Reserved
+  - "2. "
   - "3."
   - "4."
   - "5."
@@ -22,6 +22,6 @@ size:
   min: 25
   max: 35
 colors: ""
-date: 2024-07-01T06:00:00.000Z
+date: 2025-01-01T07:00:00.000Z
 ---
 W﻿e are excited to do a repeat litter with these two, They had such amazing puppies last time. Willa should come into heat in the end of April and have puppies early July. If you want to get on this list fill out an application.
