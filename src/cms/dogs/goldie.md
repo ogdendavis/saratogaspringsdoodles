@@ -1,6 +1,6 @@
 ---
 title: Goldie
-image: /img/0fd15005-b19e-4959-ba11-05baf8a136be.jpeg
+image: /img/e228feb0-993d-409c-99d5-809cea2d9f43.jpeg
 breed: Australian Labradoodle
 color: Red
 birthdate: 2021-06-26T06:00:00.000Z
