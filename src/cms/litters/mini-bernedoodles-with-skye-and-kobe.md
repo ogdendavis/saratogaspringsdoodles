@@ -12,8 +12,8 @@ dam:
   dam_name: Skye
   dam_image: /img/img_6925.jpeg
 reservation_list:
-  - 1. Reserved
-  - 2. Reserved
+  - 1. Breeder pick
+  - 2. C Sherman
   - "3."
   - "4."
   - "5."
