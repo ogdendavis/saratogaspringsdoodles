@@ -12,8 +12,8 @@ dam:
   dam_name: Willa
   dam_image: /img/img_2544.jpeg
 reservation_list:
-  - 1. Reserved
-  - "2. "
+  - 1. Breeder
+  - 2. S Anderson
   - "3."
   - "4."
   - "5."
