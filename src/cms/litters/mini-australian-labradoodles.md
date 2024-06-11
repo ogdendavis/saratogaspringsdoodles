@@ -21,6 +21,6 @@ size:
   min: 18
   max: 25
 colors: Red
-date: 2024-07-30T03:22:11.264Z
+date: 2024-08-01T03:22:11.264Z
 ---
-This will be a repeat pairing with these two, they had the sweetest red puppies last summer. They have a sweet calm temperament and love their people fiercely.
+This will be a repeat pairing with these two, they had the sweetest red puppies last summer. They have a sweet calm temperament and love their people fiercely. Goldie and Miles have been bred and we should confirm pregnancy July 1st
