@@ -22,6 +22,6 @@ size:
   min: 20
   max: 25
 colors: Traditional tri, parti tri
-date: 2024-07-23T01:11:44.912Z
+date: 2024-08-11T01:11:44.912Z
 ---
-This will be Skye’s first litter! She is the sweetest little lady and goes with her mama to her dance studio almost everyday. She has a very sweet and calm personality. Kobe is also a tiny boy that has the sweetest smile. Can’t wait to see these puppies.
+This will be Skye’s first litter! She is the sweetest little lady and goes with her mama to her dance studio almost everyday. She has a very sweet and calm personality. Kobe is also a tiny boy that has the sweetest smile. Can’t wait to see these puppies. Skye and Kobe have honeymooned and we should confirm pregnancy July 11th
