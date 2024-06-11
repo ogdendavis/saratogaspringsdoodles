@@ -22,6 +22,6 @@ size:
   min: 25
   max: 35
 colors: ""
-date: 2025-01-01T07:00:00.000Z
+date: 2024-07-11T06:00:00.000Z
 ---
-W﻿e are excited to do a repeat litter with these two, They had such amazing puppies last time. Willa should come into heat in the end of April and have puppies early July. If you want to get on this list fill out an application.
+W﻿e are excited to do a repeat litter with these two, They had such amazing puppies last time. Willa and Kobe have honeymooned and we will confirm pregnancy June 15! Fill out an application if you want to get on this reservation list.
