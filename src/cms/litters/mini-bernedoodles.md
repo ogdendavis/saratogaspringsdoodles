@@ -14,7 +14,7 @@ dam:
 reservation_list:
   - 1. Breeder
   - 2. S Anderson
-  - "3."
+  - 3. T Lucidon
   - "4."
   - "5."
   - "6."
