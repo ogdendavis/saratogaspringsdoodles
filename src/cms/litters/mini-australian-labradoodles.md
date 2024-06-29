@@ -12,7 +12,7 @@ dam:
   dam_name: Goldie
   dam_image: /img/e228feb0-993d-409c-99d5-809cea2d9f43.jpeg
 reservation_list:
-  - "1."
+  - 1. S Flynn
   - "2."
   - "3."
   - "4"
