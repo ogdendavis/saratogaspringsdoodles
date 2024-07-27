@@ -17,10 +17,14 @@ reservation_list:
   - "3."
   - "4"
   - "5."
+  - "6."
+  - "7."
+  - "8."
+  - "9."
 size:
   min: 18
   max: 25
 colors: Red
 date: 2024-08-01T03:22:11.264Z
 ---
-This will be a repeat pairing with these two, they had the sweetest red puppies last summer. They have a sweet calm temperament and love their people fiercely. Goldie and Miles have been bred and we should confirm pregnancy July 1st
+This will be a repeat pairing with these two, they had the sweetest red puppies last summer. They have a sweet calm temperament and love their people fiercely. Goldie and Miles have been bred and are due July 31st! Fill out an application if you are interested in getting on this list.
