@@ -1,6 +1,6 @@
 ---
 # Litters should have a unique identifying title
-title: Mini Australian Labradoodles
+title: Mini Australian Labradoodles Goldie and MIles
 sire:
   sire_name: Miles
   sire_image: /img/img_4192_jpg.jpeg
@@ -27,4 +27,4 @@ size:
 colors: Red
 date: 2024-08-01T03:22:11.264Z
 ---
-This will be a repeat pairing with these two, they had the sweetest red puppies last summer. They have a sweet calm temperament and love their people fiercely. Goldie and Miles have been bred and are due July 31st! Fill out an application if you are interested in getting on this list.
+This will be a repeat pairing with these two, they had the sweetest red puppies last summer. They have a sweet calm temperament and love their people fiercely. Puppies born July 26, 3 girls and 6 boys.  Fill out an application if you are interested in getting on this list.
