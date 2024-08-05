@@ -27,4 +27,4 @@ size:
 colors: Red
 date: 2024-08-01T03:22:11.264Z
 ---
-This will be a repeat pairing with these two, they had the sweetest red puppies last summer. They have a sweet calm temperament and love their people fiercely. Puppies born July 26, 3 girls and 6 boys.  Fill out an application if you are interested in getting on this list.
+This will be a repeat pairing with these two, they had the sweetest red puppies last summer. They have a sweet calm temperament and love their people fiercely. Puppies born July 26, 3 girls and 6 boys. They go home September 26th. Fill out an application if you are interested in getting on this list.
