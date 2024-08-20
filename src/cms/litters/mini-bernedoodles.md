@@ -12,8 +12,8 @@ dam:
   dam_name: Willa
   dam_image: /img/img_2544.jpeg
 reservation_list:
-  - 1. Lucidon Family
-  - 2. Caratozzolo Family
+  - 1. Lucidon Family- Kevin
+  - 2. Caratozzolo Family- Dave
   - "3. "
   - "4."
   - "5."
