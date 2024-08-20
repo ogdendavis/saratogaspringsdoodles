@@ -26,5 +26,15 @@ size:
   max: 25
 colors: Red
 date: 2024-08-01T03:22:11.264Z
+photos:
+  - image: /img/90f27fb2-83c6-484d-b488-59edac0e671d.jpeg
+  - image: /img/68fc67dc-db6e-45a0-96d6-167ef4ff631b.jpeg
+  - image: /img/72be9dc8-baff-41e8-a82b-ab961b54294c.jpeg
+  - image: /img/a33e3718-c02d-4002-98ac-ec7ca40006c7.jpeg
+  - image: /img/5d110190-cbb1-4832-a51e-805473e343ff.jpeg
+  - image: /img/a7fd299b-71fd-46d0-a6b9-0dd54652f528.jpeg
+  - image: /img/22bb214b-b5c9-4fd2-b090-9e4f6ef74bdd.jpeg
+  - image: /img/9a92cb5e-2cb4-465f-baa1-3ca4ccbd7b93.jpeg
+  - image: /img/5b7f7055-d073-4d96-a5c3-0911c747a0b7.jpeg
 ---
 This will be a repeat pairing with these two, they had the sweetest red puppies last summer. They have a sweet calm temperament and love their people fiercely. Puppies born July 26, 3 girls and 6 boys. They go home September 26th. Fill out an application if you are interested in getting on this list.
