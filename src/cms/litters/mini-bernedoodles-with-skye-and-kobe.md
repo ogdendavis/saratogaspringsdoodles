@@ -18,10 +18,16 @@ reservation_list:
   - "4."
   - "5."
   - "6."
+  - "7."
+  - "8."
+  - "9."
+  - "10."
+  - "11."
 size:
   min: 20
   max: 25
 colors: Traditional tri, parti tri
 date: 2024-08-11T01:11:44.912Z
+photos: []
 ---
 This will be Skye’s first litter! She is the sweetest little lady and goes with her mama to her dance studio almost everyday. She has a very sweet and calm personality. Kobe is also a tiny boy that has the sweetest smile. Can’t wait to see these puppies. Skye and Kobe have honeymooned and is due August 10th!
