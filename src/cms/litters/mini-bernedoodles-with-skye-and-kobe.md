@@ -10,7 +10,7 @@ dub_sire:
   dub_sire_image: ""
 dam:
   dam_name: Skye
-  dam_image: /img/img_6925.jpeg
+  dam_image: /img/img_3689.jpeg
 reservation_list:
   - 1. Breeder pick
   - 2. C Sherman
