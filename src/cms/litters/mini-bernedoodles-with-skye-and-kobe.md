@@ -28,6 +28,28 @@ size:
   max: 25
 colors: Traditional tri, parti tri
 date: 2024-08-11T01:11:44.912Z
-photos: []
+photos:
+  - image: /img/chase.jpg
+    caption: Chase
+  - caption: Roxi
+    image: /img/roxie.jpg
+  - caption: Ella
+    image: /img/ella.jpg
+  - caption: Ryder
+    image: /img/ryder.jpg
+  - caption: Rocky
+    image: /img/rocky.jpg
+  - caption: Liberty
+    image: /img/liberty.jpg
+  - caption: Rubble
+    image: /img/rubble.jpg
+  - caption: Sweetie
+    image: /img/sweetie.jpg
+  - caption: Marshall
+    image: /img/marshall.jpg
+  - image: /img/chickaleta.jpg
+    caption: Chickaletta
+  - caption: Everest
+    image: /img/everest.jpg
 ---
-This will be Skye’s first litter! She is the sweetest little lady and goes with her mama to her dance studio almost everyday. She has a very sweet and calm personality. Kobe is also a tiny boy that has the sweetest smile. Can’t wait to see these puppies. Skye and Kobe have honeymooned and is due August 10th!
+This will be Skye’s first litter! She is the sweetest little lady and goes with her mama to her dance studio almost everyday. She has a very sweet and calm personality. Kobe is also a tiny boy that has the sweetest smile. Can’t wait to see these puppies. Skye and Kobe had 11 Puppies on August 6th, 7 girls and 4 boys. They will go home October 1st. We have named them after Paw Patrol.
