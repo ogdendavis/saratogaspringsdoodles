@@ -13,9 +13,9 @@ dam:
   dam_image: /img/img_3689.jpeg
 reservation_list:
   - 1. Breeder pick
-  - 2. C Sherman
-  - 3. S Anderson
-  - "4."
+  - 2. Breeder pick
+  - 3. C Sherman
+  - 4. S Anderson
   - "5."
   - "6."
   - "7."
