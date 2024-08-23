@@ -12,17 +12,17 @@ dam:
   dam_name: Skye
   dam_image: /img/img_3689.jpeg
 reservation_list:
-  - 1. Breeder pick
-  - 2. C Sherman
-  - 3. S Anderson
-  - "4."
-  - "5."
-  - "6."
-  - "7."
-  - "8."
-  - "9."
-  - "10."
-  - "11."
+  - " Breeder pick"
+  - " -C Sherman"
+  - " -S Anderson"
+  - "-"
+  - "-"
+  - "-"
+  - "-"
+  - "-"
+  - "-"
+  - "-"
+  - "-"
 size:
   min: 20
   max: 25
