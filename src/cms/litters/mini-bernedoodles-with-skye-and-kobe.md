@@ -3,7 +3,7 @@
 title: Mini Bernedoodles with Skye and Kobe
 sire:
   sire_name: Kobe
-  sire_image: /img/img_1827.jpeg
+  sire_image: /img/img_1818.jpeg
 dub_sire:
   dub_sire_name: ""
   dub_sire_in_house: false
