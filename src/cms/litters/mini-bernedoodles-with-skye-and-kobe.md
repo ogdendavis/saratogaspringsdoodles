@@ -29,6 +29,28 @@ size:
 colors: Traditional tri, parti tri
 date: 2024-08-11T01:11:44.912Z
 photos:
+  - image: /img/223-img_1600.jpg
+    caption: Everest
+  - image: /img/233-img_1638.jpg
+    caption: Liberty
+  - image: /img/197-img_1497.jpg
+    caption: Marshall
+  - image: /img/240-img_1675.jpg
+    caption: Ryder
+  - image: /img/220-img_1589.jpg
+    caption: Ella
+  - image: /img/229-img_1626.jpg
+    caption: Sweetie
+  - image: /img/238-img_1657.jpg
+    caption: Rocky
+  - image: /img/207-img_1546.jpg
+    caption: Chickaletta
+  - image: /img/215-img_1565.jpg
+    caption: Roxi
+  - image: /img/204-img_1534.jpg
+    caption: Rubble
+  - image: /img/202-img_1524.jpg
+    caption: Chase
   - image: /img/chase.jpg
     caption: Chase
   - caption: Roxi
