@@ -29,24 +29,24 @@ colors: ""
 date: 2024-07-11T06:00:00.000Z
 photos:
   - caption: Edith
-    image: /img/img_3603.jpeg
+    image: /img/2-img_0373.jpg
   - caption: Lucy
-    image: /img/img_3606.jpeg
+    image: /img/19-img_0433.jpg
   - caption: Gru
-    image: /img/img_3608.jpeg
+    image: /img/32-img_0512.jpg
   - caption: Kevin
-    image: /img/img_3611.jpeg
+    image: /img/63-img_0668.jpg
   - caption: Vector
-    image: /img/img_3616.jpeg
-  - image: /img/img_3628.jpeg
-    caption: Margo
+    image: /img/70-img_0730.jpg
+  - caption: Margo
+    image: /img/92-img_0851.jpg
   - caption: Dave
-    image: /img/img_3620.jpeg
+    image: /img/113-img_0989.jpg
   - caption: Agnes
-    image: /img/img_3623.jpeg
+    image: /img/144-img_1172.jpg
   - caption: Stuart
-    image: /img/img_3634.jpeg
-  - caption: Bob
-    image: /img/img_3644.jpeg
+    image: /img/173-img_1347.jpg
+  - image: /img/193-img_1481.jpg
+    caption: Bob
 ---
 We are excited to do a repeat litter with these two, They had such amazing puppies last time.. Puppies arrived safely on July 12th, 6 boys and 4 girls. Go home date is September 6th! Fill out an application to get on this reservation list.
