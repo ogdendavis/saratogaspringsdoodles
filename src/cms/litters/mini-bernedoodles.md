@@ -15,7 +15,7 @@ reservation_list:
   - 1. Lucidon Family- Kevin
   - 2. Caratozzolo Family- Dave
   - 3. A Topham- Gru
-  - 4. Reserved-Agnes
+  - 4. Nock Family-Agnes
   - "5."
   - "6."
   - "7."
