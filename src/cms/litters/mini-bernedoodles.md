@@ -17,7 +17,7 @@ reservation_list:
   - 3. A Topham- Gru
   - 4. Nock Family-Agnes
   - 5. Margo- Chase family
-  - "6."
+  - 6. Edith- Honeybee Lane doodles
   - "7."
   - "8."
   - "9."
