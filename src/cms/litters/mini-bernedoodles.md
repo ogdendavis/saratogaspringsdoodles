@@ -15,11 +15,11 @@ reservation_list:
   - 1. Lucidon Family- Kevin
   - 2. Caratozzolo Family- Dave
   - 3. A Topham- Gru
-  - 4. Nock Family-Agnes
-  - 5. Margo- Chase family
-  - 6. Edith- Honeybee Lane doodles
-  - "7."
-  - "8."
+  - 4. Lucidon Family-Agnes
+  - 5.Chase Family- Margo
+  - 6. Honeybee Lane doodles- Edith
+  - 7. Merritt Family- Lucy
+  - 8. McGee Family- Stuart
   - "9."
   - "10."
 size:
