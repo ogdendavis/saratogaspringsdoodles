@@ -12,8 +12,8 @@ dam:
   dam_name: Goldie
   dam_image: /img/e228feb0-993d-409c-99d5-809cea2d9f43.jpeg
 reservation_list:
-  - 1. Breeder-Bluey
-  - 2. S Flynn- Chilli
+  - 1.Flynn Family- Chilli
+  - "2. "
   - "3."
   - "4"
   - "5."
@@ -27,6 +27,24 @@ size:
 colors: Red
 date: 2024-08-01T03:22:11.264Z
 photos:
+  - caption: Lucky
+    image: /img/img_3408.jpg
+  - caption: Bluey
+    image: /img/img_3476.jpg
+  - caption: Stripe
+    image: /img/img_3594.jpg
+  - caption: Snickers
+    image: /img/img_3662.jpg
+  - image: /img/img_3806.jpg
+    caption: Buddy
+  - image: /img/img_3858.jpg
+    caption: Digger
+  - image: /img/img_3892.jpg
+    caption: Bingo
+  - image: /img/img_4032.jpg
+    caption: Chili
+  - image: /img/img_4163.jpg
+    caption: Bandit
   - image: /img/90f27fb2-83c6-484d-b488-59edac0e671d.jpeg
   - image: /img/68fc67dc-db6e-45a0-96d6-167ef4ff631b.jpeg
   - image: /img/72be9dc8-baff-41e8-a82b-ab961b54294c.jpeg
