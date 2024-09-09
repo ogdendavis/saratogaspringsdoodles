@@ -12,10 +12,10 @@ dam:
   dam_name: Skye
   dam_image: /img/img_3689.jpeg
 reservation_list:
-  - 1. Breeder pick
-  - 2. Breeder pick
-  - 3. C Sherman
-  - 4. S Anderson
+  - 1. C Sherman- Chickaletta
+  - 2. S Anderson-
+  - "3. "
+  - "4. "
   - "5."
   - "6."
   - "7."
