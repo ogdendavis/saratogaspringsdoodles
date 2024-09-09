@@ -13,7 +13,7 @@ dam:
   dam_image: /img/img_3689.jpeg
 reservation_list:
   - 1. C Sherman- Chickaletta
-  - 2. S Anderson- Ryder
+  - 2. S Anderson-
   - "3. "
   - "4. "
   - "5."
@@ -29,6 +29,28 @@ size:
 colors: Traditional tri, parti tri
 date: 2024-08-11T01:11:44.912Z
 photos:
+  - image: /img/img_3281.jpg
+    caption: Everest
+  - image: /img/img_3194.jpg
+    caption: Chickaletta- RESERVED
+  - image: /img/img_3157.jpg
+    caption: Marshall
+  - image: /img/img_3121.jpg
+    caption: Sweetie
+  - image: /img/img_3001.jpg
+    caption: Rubble
+  - image: /img/img_2884.jpg
+    caption: Liberty
+  - image: /img/img_2858.jpg
+    caption: Rocky
+  - image: /img/img_2761.jpg
+    caption: Ryder
+  - image: /img/img_2746.jpg
+    caption: Ella
+  - caption: Roxi
+    image: /img/img_2692.jpg
+  - caption: Chase
+    image: /img/img_2621.jpg
   - image: /img/223-img_1600.jpg
     caption: Everest
   - image: /img/233-img_1638.jpg
@@ -74,4 +96,4 @@ photos:
   - caption: Everest
     image: /img/everest.jpg
 ---
-This will be Skye’s first litter! She is the sweetest little lady and goes with her mama to her dance studio almost everyday. She has a very sweet and calm personality. Kobe is also a tiny boy that has the sweetest smile. Can’t wait to see these puppies. Skye and Kobe had 11 Puppies on August 6th, 7 girls and 4 boys. They will go home October 1st. We have named them after Paw Patrol.
+This will be Skye’s first litter! She is the sweetest little lady and goes with her mama to her dance studio almost everyday. She has a very sweet and calm personality. Kobe is also a tiny boy that has the sweetest smile. Can’t wait to see these puppies. Skye and Kobe had 11 Puppies on August 6th, 7 girls and 4 boys. They will go home October 1st. We have named them after Paw Patrol. They turn 5 weeks old this week and their sweet personalities are starting to show.
