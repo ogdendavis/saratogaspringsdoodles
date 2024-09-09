@@ -28,6 +28,10 @@ size:
 colors: ""
 date: 2024-07-11T06:00:00.000Z
 photos:
+  - caption: Vector
+    image: /img/img_4289.jpg
+  - caption: Bob
+    image: /img/img_4334.jpg
   - caption: Edith
     image: /img/2-img_0373.jpg
   - caption: Lucy
@@ -49,4 +53,4 @@ photos:
   - image: /img/193-img_1481.jpg
     caption: Bob
 ---
-We are excited to do a repeat litter with these two, They had such amazing puppies last time.. Puppies arrived safely on July 12th, 6 boys and 4 girls. Go home date is September 6th! Fill out an application to get on this reservation list.
+We are excited to do a repeat litter with these two, They had such amazing puppies last time.. Puppies arrived safely on July 12th, 6 boys and 4 girls. I have 2 sweet boys ready to go home now. Bob and and Vector. Fill out an application if interested.
