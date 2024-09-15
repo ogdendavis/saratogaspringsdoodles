@@ -13,7 +13,7 @@ dam:
   dam_image: /img/img_3689.jpeg
 reservation_list:
   - 1. C Sherman- Chickaletta
-  - 2. S Anderson-
+  - 2. S Anderson-Marshall
   - "3. "
   - "4. "
   - "5."
