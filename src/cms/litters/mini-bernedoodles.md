@@ -20,8 +20,8 @@ reservation_list:
   - 6. Honeybee Lane doodles- Edith
   - 7. Merritt Family- Lucy
   - 8. McGee Family- Stuart
-  - "9."
-  - "10."
+  - 9. Burbano- Vector
+  - 10. McNeish family-Bob
 size:
   min: 25
   max: 35
