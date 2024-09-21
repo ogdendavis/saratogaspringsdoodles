@@ -14,7 +14,7 @@ dam:
 reservation_list:
   - 1. C Sherman- Chickaletta
   - 2. S Anderson-Marshall
-  - "3. "
+  - 3. Royaume des Galopins- Everest
   - "4. "
   - "5."
   - "6."
