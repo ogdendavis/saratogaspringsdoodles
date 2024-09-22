@@ -30,15 +30,15 @@ colors: Traditional tri, parti tri
 date: 2024-08-11T01:11:44.912Z
 photos:
   - image: /img/img_3281.jpg
-    caption: Everest
+    caption: Everest- RESERVED
   - image: /img/img_3194.jpg
     caption: Chickaletta- RESERVED
   - image: /img/img_3157.jpg
-    caption: Marshall
+    caption: Marshall- RESERVED
   - image: /img/img_3121.jpg
     caption: Sweetie
   - image: /img/img_3001.jpg
-    caption: Rubble
+    caption: Rubble- RESERVED
   - image: /img/img_2884.jpg
     caption: Liberty
   - image: /img/img_2858.jpg
