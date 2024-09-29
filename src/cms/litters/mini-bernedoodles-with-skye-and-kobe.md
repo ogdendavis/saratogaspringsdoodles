@@ -15,10 +15,10 @@ reservation_list:
   - 1. C Sherman- Chickaletta
   - 2. S Anderson-Marshall
   - 3. Royaume des Galopins- Everest
-  - "4. "
-  - "5."
-  - "6."
-  - "7."
+  - 4. Royaume des Galopins-Ella
+  - 5. A Absher- Chase
+  - 6. Liberty
+  - 7. Roxi
   - "8."
   - "9."
   - "10."
@@ -38,25 +38,25 @@ photos:
   - image: /img/img_3121.jpg
     caption: Sweetie
   - image: /img/img_3001.jpg
-    caption: Rubble- RESERVED
+    caption: "Rubble- "
   - image: /img/img_2884.jpg
-    caption: Liberty
+    caption: Liberty-RESERVED
   - image: /img/img_2858.jpg
     caption: Rocky
   - image: /img/img_2761.jpg
     caption: Ryder
   - image: /img/img_2746.jpg
-    caption: Ella
-  - caption: Roxi
+    caption: Ella- RESERVED
+  - caption: Roxi-RESERVED
     image: /img/img_2692.jpg
-  - caption: Chase
+  - caption: Chase-RESERVED
     image: /img/img_2621.jpg
   - image: /img/223-img_1600.jpg
     caption: Everest
   - image: /img/233-img_1638.jpg
     caption: Liberty
   - image: /img/197-img_1497.jpg
-    caption: Marshall
+    caption: Marsh
   - image: /img/240-img_1675.jpg
     caption: Ryder
   - image: /img/220-img_1589.jpg
