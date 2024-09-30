@@ -17,8 +17,8 @@ reservation_list:
   - 3. Royaume des Galopins- Everest
   - 4. Royaume des Galopins-Ella
   - 5. A Absher- Chase
-  - 6. Liberty
-  - 7. Roxi
+  - 6. Nielson family-Roxi
+  - "7. "
   - "8."
   - "9."
   - "10."
