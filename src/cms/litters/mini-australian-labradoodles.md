@@ -15,7 +15,7 @@ reservation_list:
   - 1.Flynn Family- Chilli
   - 2. Bluey
   - 3. Bandit
-  - "4"
+  - 4 Diger
   - "5."
   - "6."
   - "7."
