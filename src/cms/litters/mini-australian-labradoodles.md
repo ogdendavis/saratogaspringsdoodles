@@ -27,6 +27,16 @@ size:
 colors: Red
 date: 2024-08-01T03:22:11.264Z
 photos:
+  - caption: Bingo
+    image: /img/img_9049.jpg
+  - caption: Buddy
+    image: /img/img_8911.jpg
+  - caption: Snickers
+    image: /img/img_8853.jpg
+  - caption: Stripe
+    image: /img/img_8796.jpg
+  - caption: Lucky
+    image: /img/img_8645.jpg
   - caption: Lucky
     image: /img/img_3408.jpg
   - caption: Bluey
