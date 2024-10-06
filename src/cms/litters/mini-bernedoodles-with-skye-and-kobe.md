@@ -29,6 +29,14 @@ size:
 colors: Traditional tri, parti tri
 date: 2024-08-11T01:11:44.912Z
 photos:
+  - caption: Rocky
+    image: /img/img_9470.jpg
+  - caption: Rubble
+    image: /img/img_9636.jpg
+  - caption: Sweetie
+    image: /img/img_9688.jpg
+  - caption: Everest
+    image: /img/img_9828.jpg
   - image: /img/img_3281.jpg
     caption: Everest- RESERVED
   - image: /img/img_3194.jpg
