@@ -14,11 +14,11 @@ dam:
 reservation_list:
   - 1. C Sherman- Chickaletta
   - 2. S Anderson-Marshall
-  - 3. Royaume des Galopins- Everest
+  - 3. Royaume des Galopins- Liberty
   - 4. Royaume des Galopins-Ella
   - 5. A Absher- Chase
   - 6. Nielson family-Roxi
-  - "7. "
+  - 7. Ryder
   - "8."
   - "9."
   - "10."
