@@ -16,7 +16,7 @@ reservation_list:
   - 2. Bluey
   - 3. Bandit
   - 4 Diger
-  - "5."
+  - 5. Bingo
   - "6."
   - "7."
   - "8."
