@@ -19,7 +19,7 @@ reservation_list:
   - 5. A Absher- Chase
   - 6. Nielson family-Roxi
   - 7. Ryder
-  - "8."
+  - 8. Rubble
   - "9."
   - "10."
   - "11."
