@@ -17,7 +17,7 @@ reservation_list:
   - 3. Bandit
   - 4. Diger
   - 5. Bingo
-  - "6."
+  - 6. Buddy
   - "7."
   - "8."
   - "9."
