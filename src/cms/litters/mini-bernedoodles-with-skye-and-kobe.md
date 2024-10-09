@@ -20,7 +20,7 @@ reservation_list:
   - 6. Nielson family-Roxi
   - 7. Ryder
   - 8. Rubble
-  - "9."
+  - 9. Rocky
   - "10."
   - "11."
 size:
