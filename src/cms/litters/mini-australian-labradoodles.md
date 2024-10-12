@@ -18,7 +18,7 @@ reservation_list:
   - 4. Diger
   - 5. Bingo
   - 6. Buddy
-  - "7."
+  - 7. Lucky
   - "8."
   - "9."
 size:
