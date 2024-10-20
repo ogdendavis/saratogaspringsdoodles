@@ -19,7 +19,7 @@ reservation_list:
   - 5. Bingo
   - 6. Buddy
   - 7. Lucky
-  - "8."
+  - 8. Stripe
   - "9."
 size:
   min: 18
