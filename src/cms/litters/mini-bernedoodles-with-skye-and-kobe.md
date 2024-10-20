@@ -21,8 +21,8 @@ reservation_list:
   - 7. Ryder
   - 8. Rubble
   - 9. Rocky
-  - "10."
-  - "11."
+  - 10. Everest
+  - 11. Sweetie
 size:
   min: 20
   max: 25
