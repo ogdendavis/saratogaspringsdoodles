@@ -20,7 +20,7 @@ reservation_list:
   - 6. Buddy
   - 7. Lucky
   - 8. Stripe
-  - "9."
+  - 9. Snickers
 size:
   min: 18
   max: 25
