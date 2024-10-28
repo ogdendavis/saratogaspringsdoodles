@@ -10,7 +10,7 @@ dub_sire:
   dub_sire_image: ""
 dam:
   dam_name: Willa
-  dam_image: /img/1532c0d3-fdbb-422f-9eff-788df98da3c2.jpeg
+  dam_image: /img/img_2369.jpeg
 reservation_list:
   - 1. Breeder
   - 2. Breeder
