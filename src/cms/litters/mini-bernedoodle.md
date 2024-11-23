@@ -22,6 +22,6 @@ size:
   min: 20
   max: 25
 colors: Black Tri and Red/White
-date: 2025-03-12T23:35:03.238Z
+date: 2025-02-11T00:35:03.238Z
 ---
 This will be a repeat Litter between Skye and Kobe, she had the cutest litter in 2024, our Paw Patrol litter.
