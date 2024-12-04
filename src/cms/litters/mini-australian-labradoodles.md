@@ -3,14 +3,14 @@
 title: Mini Australian Labradoodles
 sire:
   sire_name: Miles
-  sire_image: /img/img_3896.jpg
+  sire_image: /img/img_4192.jpeg
 dub_sire:
   dub_sire_name: ""
   dub_sire_in_house: false
   dub_sire_image: ""
 dam:
   dam_name: Goldie
-  dam_image: /img/0fd15005-b19e-4959-ba11-05baf8a136be.jpeg
+  dam_image: /img/img_8269.jpeg
 reservation_list:
   - 1. Breeder
   - "2."
