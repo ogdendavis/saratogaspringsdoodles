@@ -1,4 +1,4 @@
 ---
-title: Luna with decorative gourds
-image: /img/luna2.jpeg
+title: Mama Skye
+image: /img/img_9674.jpg
 ---
