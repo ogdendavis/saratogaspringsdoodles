@@ -1,4 +1,4 @@
 ---
-title: Puppies on a blanket
-image: /img/puppies-blanket-2.jpg
+title: Sweetie
+image: /img/img_9688.jpg
 ---
