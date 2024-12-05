@@ -1,4 +1,4 @@
 ---
-title: A puppy on a soft blanket outside
-image: /img/puppy-blanket.jpg
+title: Rubble
+image: /img/205-img_1536.jpg
 ---
