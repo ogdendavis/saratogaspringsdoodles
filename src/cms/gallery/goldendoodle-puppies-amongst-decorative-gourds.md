@@ -1,4 +1,4 @@
 ---
-title: Goldendoodle puppies amongst decorative gourds
-image: /img/goldendoodlepups.jpg
+title: Lucky
+image: /img/img_8653.jpg
 ---
