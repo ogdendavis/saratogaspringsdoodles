@@ -1,4 +1,4 @@
 ---
-title: Luna at rest
+title: Luna
 image: /img/luna1.jpeg
 ---
