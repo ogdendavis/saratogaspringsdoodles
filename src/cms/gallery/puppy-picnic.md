@@ -1,4 +1,4 @@
 ---
-title: Puppy picnic
-image: /img/puppies-blanket.jpg
+title: Kristoff
+image: /img/img_9963.jpeg
 ---
