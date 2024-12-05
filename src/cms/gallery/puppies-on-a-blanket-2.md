@@ -1,4 +1,4 @@
 ---
-title: Puppies on a blanket
-image: /img/puppies-blanket-3.jpg
+title: Rooster
+image: /img/image_50456833.jpg
 ---
