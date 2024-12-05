@@ -1,4 +1,4 @@
 ---
-title: Goldendoodle puppies being very cute
-image: /img/goldendoodlepups4.jpg
+title: Chili
+image: /img/img_4004.jpg
 ---
