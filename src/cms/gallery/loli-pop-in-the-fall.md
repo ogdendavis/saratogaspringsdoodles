@@ -1,4 +1,4 @@
 ---
-title: Loli Pop in the fall
-image: /img/img_2304.jpg
+title: Bandit
+image: /img/img_4115.jpg
 ---
