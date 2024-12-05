@@ -1,4 +1,4 @@
 ---
-title: A lounging goldendoodle puppy
-image: /img/goldendoodlepups3.jpg
+title: Daisy
+image: /img/144-img_1172.jpg
 ---
