@@ -1,4 +1,4 @@
 ---
-title: Aspen and Goldie
-image: /img/img_4914.jpg
+title: Bob
+image: /img/162-img_1282.jpg
 ---
