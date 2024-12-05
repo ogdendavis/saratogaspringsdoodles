@@ -1,4 +1,4 @@
 ---
-title: A puppy who fits in the palm of your hand
-image: /img/puppy-in-hand-2.jpg
+title: Ryder
+image: /img/240-img_1675.jpg
 ---
