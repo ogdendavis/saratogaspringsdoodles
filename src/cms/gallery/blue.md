@@ -1,4 +1,4 @@
 ---
-title: Blue
-image: /img/blue.jpeg
+title: Bluey
+image: /img/img_8767.jpg
 ---
