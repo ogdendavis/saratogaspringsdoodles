@@ -1,4 +1,4 @@
 ---
-title: A puppy amongst wildflowers
+title: Baby Luna
 image: /img/puppy-flowers.jpg
 ---
