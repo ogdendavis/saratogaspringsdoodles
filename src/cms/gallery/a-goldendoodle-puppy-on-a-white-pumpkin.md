@@ -1,4 +1,4 @@
 ---
-title: A goldendoodle puppy on a white pumpkin
-image: /img/goldendoodlepups1.jpg
+title: Margo
+image: /img/92-img_0851.jpg
 ---
