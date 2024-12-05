@@ -1,4 +1,4 @@
 ---
-title: Puppies on a blanket
-image: /img/puppies-blanket-1.jpg
+title: Olaf
+image: /img/img_2224.jpeg
 ---
