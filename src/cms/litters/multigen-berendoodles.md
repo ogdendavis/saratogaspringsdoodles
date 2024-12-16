@@ -14,7 +14,7 @@ dam:
 reservation_list:
   - 1. Breeder
   - 2. Breeder
-  - 3. Krudy family
+  - 3. Scharf Family
   - "4."
   - "5."
   - "6."
