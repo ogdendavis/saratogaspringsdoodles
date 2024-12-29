@@ -42,3 +42,5 @@ OFA HIPS GOOD
 COMPLETELY CLEAR
 
 30LBS
+
+P﻿uppies will be 30-40 pounds. We have confirmed pregnancy and puppies are due mid January with go home mid March. Fill out an application if you are interested in one of these sweet puppies.
