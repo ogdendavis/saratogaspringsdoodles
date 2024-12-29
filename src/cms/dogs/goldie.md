@@ -14,7 +14,7 @@ O﻿FA Elbows Preliminary: Good
 
 O﻿FA CAER: Normal
 
-W﻿eight: 19 lbs
+W﻿eight: 18 lbs
 
 D﻿OB: 6/26/21
 
