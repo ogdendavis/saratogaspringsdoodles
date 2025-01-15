@@ -22,6 +22,6 @@ size:
   min: 18
   max: 25
 colors: Red, Red/White Parti
-date: 2025-02-10T05:08:08.189Z
+date: 2025-02-12T05:08:08.189Z
 ---
-We are excited for Goldie and Miles to have their third litter together. They have the sweetest puppies with amazing temperaments, coats and personalities.
+We are excited for Goldie and Miles to have their third litter together. They have the sweetest puppies with amazing temperaments, coats and personalities. Goldie has been confirmed pregnant :)
