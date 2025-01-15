@@ -19,11 +19,9 @@ reservation_list:
   - "5."
   - "6."
   - "7."
-  - "8."
-  - "9."
 size:
   min: 30
-  max: 37
+  max: 35
 colors: Black tri, Merle Tri in both Black and Chocolate, Chocolate Tri
 date: 2025-01-17T16:30:18.117Z
 ---
@@ -43,4 +41,4 @@ COMPLETELY CLEAR
 
 30LBS
 
-P﻿uppies will be 30-40 pounds. We have confirmed pregnancy and puppies are due mid January with go home mid March. Fill out an application if you are interested in one of these sweet puppies.
+P﻿uppies will be 30-40 pounds. Puppies were born January 14, 2025 and will go home March 11, 2025, we  If you are interested in adding one of these sweet puppies to your family fill out an application. We got 3 girls and 4 boys!
