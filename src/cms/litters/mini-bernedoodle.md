@@ -18,6 +18,9 @@ reservation_list:
   - "4."
   - "5."
   - "6."
+  - "7."
+  - "8."
+  - "9."
 size:
   min: 20
   max: 25
