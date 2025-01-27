@@ -6,7 +6,7 @@ color: Chocolate Parti
 birthdate: 2024-05-03T03:15:31.267Z
 gender: m
 ---
-C﻿arries: EE bb kbkb ATA spsp FF
+C﻿arries: Ee bb kbkb ATA spsp FF CT
 
 O﻿FA Elbow Preliminary: Negative
 
