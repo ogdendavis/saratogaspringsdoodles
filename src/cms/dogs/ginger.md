@@ -6,7 +6,7 @@ color: Red (hidden phantom, Roan Carrier)
 birthdate: 2021-06-07T06:00:00.000Z
 gender: f
 ---
-C﻿arries: ATAT BB KYKT EE Ssp FF Rr
+C﻿arries: atat, kyky, bb, ee, FF, Ssp, sd/sd. Rr, Cu/CUc
 
 P﻿enHip Right: .28 Left .27
 
