@@ -2,7 +2,8 @@
 # Litters should have a unique identifying title
 title: Australian Labradoodles
 sire:
-  sire_name: TBD
+  sire_name: Jeter
+  sire_image: /img/img_3906.jpg
 dub_sire:
   dub_sire_name: ""
   dub_sire_in_house: false
