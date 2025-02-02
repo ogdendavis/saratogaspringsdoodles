@@ -24,6 +24,21 @@ size:
   max: 35
 colors: Black tri, Merle Tri in both Black and Chocolate, Chocolate Tri
 date: 2025-01-17T16:30:18.117Z
+photos:
+  - image: /img/img_5834.jpg
+    caption: Mickey
+  - image: /img/img_5690.jpg
+    caption: Donald
+  - image: /img/img_5777.jpg
+    caption: Pete
+  - image: /img/img_5962.jpg
+    caption: Goofy
+  - image: /img/img_5610.jpg
+    caption: Minnie
+  - image: /img/img_5928.jpg
+    caption: Daisy
+  - image: /img/img_5665.jpg
+    caption: Clarabelle
 ---
 We are excited for this pairing, we are excited to get some chocolate tri puppies in our program. Bear has amazing genetics:
 
