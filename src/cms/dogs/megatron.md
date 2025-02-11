@@ -6,4 +6,6 @@ color: "Chocolate tri roam "
 birthdate: 2024-11-03T23:50:21.131Z
 gender: m
 ---
-So excited for the future with this gorgeous boy!
+So excited for the future with this gorgeous boy! Pending passing his genetic testing.
+
+E﻿e, bb, Rr, awat, kyky, SS, FF, -/-
