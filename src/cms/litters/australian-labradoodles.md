@@ -14,7 +14,7 @@ dam:
 reservation_list:
   - 1. Reserved- Jennifer
   - 2. Reserved
-  - 3.Reserved
+  - 3. Reserved
   - "4."
   - "5."
   - "6."
@@ -26,4 +26,4 @@ size:
 colors: ""
 date: 2025-04-16T15:35:31.763Z
 ---
-W﻿e are excited for Gingers next litter next Spring. We may use an outside stud or Jeter again who gave us the gorgeous rainbow litter of reds, caramel, chocolate and roan!
+We are excited for Gingers next litter of reds, caramel, chocolate and roan! She and Jeter have honeymooned and if everything goes as planned their puppies will arrive the beginning of April!
