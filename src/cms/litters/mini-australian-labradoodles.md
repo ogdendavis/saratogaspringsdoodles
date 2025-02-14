@@ -12,16 +12,15 @@ dam:
   dam_name: Goldie
   dam_image: /img/img_8269.jpeg
 reservation_list:
-  - 1. Breeder
+  - "1. "
   - "2."
   - "3."
   - "4."
   - "5."
-  - "6."
 size:
   min: 18
   max: 25
 colors: Red, Red/White Parti
 date: 2025-02-12T05:08:08.189Z
 ---
-We are excited for Goldie and Miles to have their third litter together. They have the sweetest puppies with amazing temperaments, coats and personalities. Goldie has been confirmed pregnant :)
+We are excited for Goldie and Miles to have their third litter together. They have the sweetest puppies with amazing temperaments, coats and personalities. Puppies have arrived February 10th, 3 girls and 2 boys. Go home day April 7th.
