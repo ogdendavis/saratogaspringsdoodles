@@ -13,7 +13,7 @@ dam:
   dam_image: /img/img_3688.jpeg
 reservation_list:
   - 1. Breeder
-  - 2. Breeder
+  - 2. Raymond family- Sally
   - "3."
   - "4."
   - "5."
@@ -40,7 +40,7 @@ photos:
   - image: /img/img_6374.jpg
     caption: Woodstock
   - image: /img/img_6308.jpg
-    caption: Sally
+    caption: Sally- Reserved
   - image: /img/img_6343.jpg
     caption: Linus
   - image: /img/img_6270.jpg
