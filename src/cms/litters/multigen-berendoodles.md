@@ -12,10 +12,10 @@ dam:
   dam_name: Willa
   dam_image: /img/img_2369.jpeg
 reservation_list:
-  - 1. Breeder
-  - 2. Breeder
-  - 3. Scharf Family
-  - 4.Abdelsayed Family
+  - 1. Breeder- Daisy
+  - 2. Scharf Family- Minnie
+  - 3. Abdelsayed Family
+  - "4."
   - "5."
   - "6."
   - "7."
@@ -34,7 +34,7 @@ photos:
   - image: /img/img_5962.jpg
     caption: Goofy
   - image: /img/img_5610.jpg
-    caption: Minnie
+    caption: Minnie- Reserved
   - image: /img/img_5928.jpg
     caption: Daisy
   - image: /img/img_5665.jpg
