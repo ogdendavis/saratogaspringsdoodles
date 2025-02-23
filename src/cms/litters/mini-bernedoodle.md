@@ -31,7 +31,7 @@ photos:
     caption: Charlie
   - image: /img/img_5396.png
     caption: Marcie
-  - image: /img/img_6540.jpg
+  - image: /img/img_5395.jpeg
     caption: Snoopy
   - image: /img/img_6463.jpg
     caption: Lucy
