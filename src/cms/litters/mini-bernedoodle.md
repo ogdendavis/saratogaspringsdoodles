@@ -27,7 +27,7 @@ size:
 colors: Black Tri and Red/White
 date: 2025-01-29T00:35:03.238Z
 photos:
-  - image: /img/img_6657.jpg
+  - image: /img/img_5397.png
     caption: Charlie
   - image: /img/img_6574.jpg
     caption: Marcie
