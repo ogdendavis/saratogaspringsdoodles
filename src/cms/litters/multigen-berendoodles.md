@@ -37,7 +37,7 @@ photos:
     caption: Minnie- Reserved
   - image: /img/img_5405.png
     caption: Daisy
-  - image: /img/img_5665.jpg
+  - image: /img/img_5408.png
     caption: Clarabelle
 ---
 We are excited for this pairing, we are excited to get some chocolate tri puppies in our program. Bear has amazing genetics:
