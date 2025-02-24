@@ -25,9 +25,9 @@ size:
 colors: Black tri, Merle Tri in both Black and Chocolate, Chocolate Tri
 date: 2025-01-17T16:30:18.117Z
 photos:
-  - image: /img/img_5834.jpg
+  - image: /img/img_5404.png
     caption: Mickey
-  - image: /img/img_5690.jpg
+  - image: /img/img_5410.png
     caption: Donald
   - image: /img/img_5777.jpg
     caption: Pete
