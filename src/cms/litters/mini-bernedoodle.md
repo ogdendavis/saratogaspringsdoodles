@@ -41,7 +41,7 @@ photos:
     caption: Woodstock
   - image: /img/img_6308.jpg
     caption: Sally- Reserved
-  - image: /img/img_6343.jpg
+  - image: /img/img_5391.png
     caption: Linus
   - image: /img/img_6270.jpg
     caption: Violet
