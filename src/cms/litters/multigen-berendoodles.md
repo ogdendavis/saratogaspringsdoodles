@@ -29,9 +29,9 @@ photos:
     caption: Mickey
   - image: /img/img_5410.png
     caption: Donald
-  - image: /img/img_5777.jpg
+  - image: /img/img_5403.png
     caption: Pete
-  - image: /img/img_5962.jpg
+  - image: /img/img_5418.jpeg
     caption: Goofy
   - image: /img/img_5610.jpg
     caption: Minnie- Reserved
