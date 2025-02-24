@@ -35,7 +35,7 @@ photos:
     caption: Goofy
   - image: /img/img_5610.jpg
     caption: Minnie- Reserved
-  - image: /img/img_5928.jpg
+  - image: /img/img_5405.png
     caption: Daisy
   - image: /img/img_5665.jpg
     caption: Clarabelle
