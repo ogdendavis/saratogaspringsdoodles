@@ -33,7 +33,7 @@ photos:
     caption: Pete
   - image: /img/img_5418.jpeg
     caption: Goofy
-  - image: /img/img_5610.jpg
+  - image: /img/img_5407.jpeg
     caption: Minnie- Reserved
   - image: /img/img_5405.png
     caption: Daisy
