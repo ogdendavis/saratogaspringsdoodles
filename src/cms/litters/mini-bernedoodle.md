@@ -33,11 +33,11 @@ photos:
     caption: Marcie
   - image: /img/img_5395.jpeg
     caption: Snoopy
-  - image: /img/img_6463.jpg
+  - image: /img/img_5394.png
     caption: Lucy
   - image: /img/img_6413.jpg
     caption: Patty
-  - image: /img/img_6374.jpg
+  - image: /img/img_5392.png
     caption: Woodstock
   - image: /img/img_6308.jpg
     caption: Sally- Reserved
