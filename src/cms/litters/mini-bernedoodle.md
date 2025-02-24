@@ -43,7 +43,7 @@ photos:
     caption: Sally- Reserved
   - image: /img/img_5391.png
     caption: Linus
-  - image: /img/img_6270.jpg
+  - image: /img/img_5389.jpeg
     caption: Violet
 ---
 This will be a repeat Litter between Skye and Kobe, she had the cutest litter in 2024, our Paw Patrol litter. Puppies were born on January 23 2024. She had 4 boys and 5 girls. Go home day March 11. Fill out an application if your interested in bringing home one of these sweet puppies
