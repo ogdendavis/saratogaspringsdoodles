@@ -36,7 +36,7 @@ photos:
   - image: /img/img_5407.jpeg
     caption: Minnie- Reserved
   - image: /img/img_5405.png
-    caption: Daisy
+    caption: Daisy-Reserved
   - image: /img/img_5408.png
     caption: Clarabelle
 ---
