@@ -10,7 +10,7 @@ dub_sire:
   dub_sire_image: ""
 dam:
   dam_name: Skye
-  dam_image: /img/img_3688.jpeg
+  dam_image: /img/img_5399.jpeg
 reservation_list:
   - 1. Breeder
   - 2. Raymond family- Sally
@@ -35,11 +35,11 @@ photos:
     caption: Snoopy
   - image: /img/img_5394.png
     caption: Lucy
-  - image: /img/img_6413.jpg
+  - image: /img/img_5393.png
     caption: Patty
   - image: /img/img_5392.png
     caption: Woodstock
-  - image: /img/img_6308.jpg
+  - image: /img/img_5390.png
     caption: Sally- Reserved
   - image: /img/img_5391.png
     caption: Linus
