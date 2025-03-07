@@ -12,10 +12,10 @@ dam:
   dam_name: Skye
   dam_image: /img/img_5399.jpeg
 reservation_list:
-  - 1. Breeder
-  - 2. Raymond family- Sally
-  - "3."
-  - "4."
+  - 1. Lizzy Smith- Violet
+  - 2.Lizzy Smith- Patty
+  - 3.  Raymond family- Sally
+  - 4. Mizrahi Family- Snoopy
   - "5."
   - "6."
   - "7."
@@ -32,11 +32,11 @@ photos:
   - image: /img/img_5396.png
     caption: Marcie
   - image: /img/img_5395.jpeg
-    caption: Snoopy
+    caption: Snoopy- Reserved
   - image: /img/img_5394.png
     caption: Lucy
   - image: /img/img_5393.png
-    caption: Patty
+    caption: Patty- Reserved
   - image: /img/img_5392.png
     caption: Woodstock
   - image: /img/img_5390.png
