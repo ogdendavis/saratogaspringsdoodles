@@ -27,17 +27,17 @@ date: 2025-01-17T16:30:18.117Z
 photos:
   - image: /img/img_5404.png
     caption: Mickey
-  - image: /img/img_5410.png
+  - image: /img/img_9476.jpg
     caption: Donald
-  - image: /img/img_5403.png
+  - image: /img/img_9548.jpg
     caption: Pete
-  - image: /img/img_5418.jpeg
+  - image: /img/img_9658.jpg
     caption: Goofy
-  - image: /img/img_5407.jpeg
+  - image: /img/img_9388.jpg
     caption: Minnie- Reserved
-  - image: /img/img_5405.png
+  - image: /img/img_9651.jpg
     caption: Daisy-Reserved
-  - image: /img/img_5408.png
+  - image: /img/img_9414.jpg
     caption: Clarabelle
 ---
 We are excited for this pairing, we are excited to get some chocolate tri puppies in our program. Bear has amazing genetics:
