@@ -24,14 +24,14 @@ colors: Red, Red/White Parti
 date: 2025-02-12T05:08:08.189Z
 photos:
   - caption: Yogi
-    image: /img/img_5411.png
+    image: /img/img_8637.jpg
   - caption: "Fozzie "
-    image: /img/img_5412.png
+    image: /img/img_8675.jpg
   - caption: Cindy
-    image: /img/img_5413.png
+    image: /img/img_8745.jpg
   - caption: Winnie
-    image: /img/img_5414.png
+    image: /img/img_8777.jpg
   - caption: Trixie
-    image: /img/img_5415.png
+    image: /img/img_8809.jpg
 ---
 We are excited for Goldie and Miles to have their third litter together. They have the sweetest puppies with amazing temperaments, coats and personalities. Puppies have arrived February 10th, 3 girls and 2 boys. Go home day April 7th.
