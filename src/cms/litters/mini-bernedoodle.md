@@ -27,23 +27,23 @@ size:
 colors: Black Tri and Red/White
 date: 2025-01-29T00:35:03.238Z
 photos:
-  - image: /img/img_5397.png
+  - image: /img/img_9302.jpg
     caption: Charlie
-  - image: /img/img_5396.png
+  - image: /img/img_9273.jpg
     caption: Marcie
-  - image: /img/img_5395.jpeg
+  - image: /img/img_9183.jpg
     caption: Snoopy- Reserved
-  - image: /img/img_5394.png
+  - image: /img/img_9129.jpg
     caption: Lucy
-  - image: /img/img_5393.png
+  - image: /img/img_9110.jpg
     caption: Patty- Reserved
-  - image: /img/img_5392.png
+  - image: /img/img_9071.jpg
     caption: Woodstock
-  - image: /img/img_5390.png
+  - image: /img/img_8945.jpg
     caption: Sally- Reserved
-  - image: /img/img_5391.png
+  - image: /img/img_8994.jpg
     caption: Linus
-  - image: /img/img_5389.jpeg
+  - image: /img/img_8912.jpg
     caption: "Violet-Reserved "
 ---
 This will be a repeat Litter between Skye and Kobe, she had the cutest litter in 2024, our Paw Patrol litter. Puppies were born on January 23 2024. She had 4 boys and 5 girls. Go home day March 11. Fill out an application if your interested in bringing home one of these sweet puppies
