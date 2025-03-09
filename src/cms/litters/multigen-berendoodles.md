@@ -32,7 +32,7 @@ photos:
   - image: /img/img_9548.jpg
     caption: Pete
   - image: /img/img_9658.jpg
-    caption: Goofy
+    caption: Goofy- Reserved
   - image: /img/img_9388.jpg
     caption: Minnie- Reserved
   - image: /img/img_9651.jpg
