@@ -12,13 +12,13 @@ dam:
   dam_name: Willa
   dam_image: /img/img_2369.jpeg
 reservation_list:
-  - 1. Breeder- Daisy
-  - 2. Scharf Family- Minnie
-  - 3. Abdelsayed Family- Goofy
-  - "4."
-  - "5."
-  - "6."
-  - "7."
+  - Breeder- Clarabelle
+  - " Scharf Family- Minnie"
+  - " Abdelsayed Family- Goofy"
+  - Available
+  - Available
+  - Available
+  - Available
 size:
   min: 30
   max: 35
@@ -36,9 +36,9 @@ photos:
   - image: /img/img_9388.jpg
     caption: Minnie- Reserved
   - image: /img/img_9651.jpg
-    caption: Daisy-Reserved
+    caption: Daisy
   - image: /img/img_9414.jpg
-    caption: Clarabelle
+    caption: Clarabelle- Reserved
 ---
 We are excited for this pairing, we are excited to get some chocolate tri puppies in our program. Bear has amazing genetics:
 
