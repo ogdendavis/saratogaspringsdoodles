@@ -15,7 +15,7 @@ reservation_list:
   - Breeder- Clarabelle
   - " Scharf Family- Minnie"
   - " Abdelsayed Family- Goofy"
-  - Available
+  - Shapira Family- Donald
   - Available
   - Available
   - Available
@@ -28,7 +28,7 @@ photos:
   - image: /img/img_5404.png
     caption: Mickey
   - image: /img/img_9476.jpg
-    caption: Donald
+    caption: Donald- Reserved
   - image: /img/img_9548.jpg
     caption: Pete
   - image: /img/img_9658.jpg
