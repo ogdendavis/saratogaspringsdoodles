@@ -12,15 +12,15 @@ dam:
   dam_name: Skye
   dam_image: /img/img_5399.jpeg
 reservation_list:
-  - 1. Lizzy Smith- Violet
-  - 2.Lizzy Smith- Patty
-  - 3.  Raymond family- Sally
-  - 4. Mizrahi Family- Snoopy
-  - "5."
-  - "6."
-  - "7."
-  - "8."
-  - "9."
+  - " Lizzy Smith- Violet"
+  - Lizzy Smith- Patty
+  - " Raymond family- Sally"
+  - " Mizrahi Family- Snoopy"
+  - Available
+  - Available
+  - Available
+  - Available
+  - Available
 size:
   min: 20
   max: 25
