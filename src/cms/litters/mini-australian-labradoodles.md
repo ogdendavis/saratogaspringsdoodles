@@ -12,7 +12,7 @@ dam:
   dam_name: Goldie
   dam_image: /img/img_8269.jpeg
 reservation_list:
-  - "1. "
+  - Breeder Pick
   - "2."
   - "3."
   - "4."
