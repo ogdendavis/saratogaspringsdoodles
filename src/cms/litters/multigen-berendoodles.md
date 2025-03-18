@@ -12,7 +12,6 @@ dam:
   dam_name: Willa
   dam_image: /img/img_2369.jpeg
 reservation_list:
-  - Breeder- Clarabelle
   - " Scharf Family- Minnie"
   - " Abdelsayed Family- Goofy"
   - Shapira Family- Donald
