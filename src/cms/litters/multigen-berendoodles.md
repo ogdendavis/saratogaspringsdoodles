@@ -15,7 +15,7 @@ reservation_list:
   - " Scharf Family- Minnie"
   - " Abdelsayed Family- Goofy"
   - Shapira Family- Donald
-  - Available
+  - Cherchio Family- Mickey
   - Available
   - Available
 size:
@@ -25,7 +25,7 @@ colors: Black tri, Merle Tri in both Black and Chocolate, Chocolate Tri
 date: 2025-01-17T16:30:18.117Z
 photos:
   - image: /img/img_5404.png
-    caption: Mickey
+    caption: Mickey- Reserved
   - image: /img/img_9476.jpg
     caption: Donald- Reserved
   - image: /img/img_9548.jpg
