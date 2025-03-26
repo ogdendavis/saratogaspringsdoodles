@@ -34,7 +34,7 @@ photos:
   - image: /img/img_9183.jpg
     caption: Snoopy- Reserved
   - image: /img/img_9129.jpg
-    caption: Lucy
+    caption: Lucy- Reserved
   - image: /img/img_9110.jpg
     caption: Patty- Reserved
   - image: /img/img_9071.jpg
