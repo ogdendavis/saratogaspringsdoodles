@@ -16,8 +16,8 @@ reservation_list:
   - Lizzy Smith- Patty
   - " Raymond family- Sally"
   - " Mizrahi Family- Snoopy"
-  - Available
-  - Available
+  - Sturm family- Lucy
+  - Christensen Family- Marcie
   - Available
   - Available
   - Available
@@ -30,7 +30,7 @@ photos:
   - image: /img/img_9302.jpg
     caption: Charlie
   - image: /img/img_9273.jpg
-    caption: Marcie
+    caption: Marcie- Reserved
   - image: /img/img_9183.jpg
     caption: Snoopy- Reserved
   - image: /img/img_9129.jpg
