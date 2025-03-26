@@ -16,6 +16,7 @@ reservation_list:
   - " Abdelsayed Family- Goofy"
   - Shapira Family- Donald
   - Cherchio Family- Mickey
+  - Abdelsayed Family- Clarabelle
   - Available
   - Available
 size:
