@@ -17,7 +17,7 @@ reservation_list:
   - Shapira Family- Donald
   - Cherchio Family- Mickey
   - Abdelsayed Family- Clarabelle
-  - Available
+  - Greene Family- Pete
   - Available
 size:
   min: 30
@@ -30,7 +30,7 @@ photos:
   - image: /img/img_9476.jpg
     caption: Donald- Reserved
   - image: /img/img_9548.jpg
-    caption: Pete
+    caption: Pete- Reserved
   - image: /img/img_9658.jpg
     caption: Goofy- Reserved
   - image: /img/img_9388.jpg
