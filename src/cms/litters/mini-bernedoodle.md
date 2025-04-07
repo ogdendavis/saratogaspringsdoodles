@@ -18,7 +18,7 @@ reservation_list:
   - " Mizrahi Family- Snoopy"
   - Sturm family- Lucy
   - Christensen Family- Marcie
-  - Available
+  - Carson Family- Woodstock
   - Available
   - Available
 size:
@@ -38,7 +38,7 @@ photos:
   - image: /img/img_9110.jpg
     caption: Patty- Reserved
   - image: /img/img_9071.jpg
-    caption: Woodstock
+    caption: Woodstock- Reserved
   - image: /img/img_8945.jpg
     caption: Sally- Reserved
   - image: /img/img_8994.jpg
