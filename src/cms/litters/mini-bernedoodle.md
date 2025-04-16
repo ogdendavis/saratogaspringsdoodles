@@ -19,8 +19,8 @@ reservation_list:
   - Sturm family- Lucy
   - Christensen Family- Marcie
   - Carson Family- Woodstock
-  - Available
-  - Available
+  - Levy family- Linus
+  - Levy family- Charlie
 size:
   min: 20
   max: 25
@@ -28,7 +28,7 @@ colors: Black Tri and Red/White
 date: 2025-01-29T00:35:03.238Z
 photos:
   - image: /img/img_9302.jpg
-    caption: Charlie
+    caption: Charlie- Reserved
   - image: /img/img_9273.jpg
     caption: Marcie- Reserved
   - image: /img/img_9183.jpg
@@ -42,7 +42,7 @@ photos:
   - image: /img/img_8945.jpg
     caption: Sally- Reserved
   - image: /img/img_8994.jpg
-    caption: Linus
+    caption: Linus- Reserved
   - image: /img/img_8912.jpg
     caption: "Violet-Reserved "
 ---
