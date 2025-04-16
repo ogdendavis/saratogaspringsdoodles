@@ -1,6 +1,6 @@
 ---
 # Litters should have a unique identifying title
-title: Mini Multigen Bernedoodles
+title: Mini Multigen Bernedoodles Summer 2025
 sire:
   sire_name: Bear- Its A Puppy Thing
   sire_image: /img/bear.jpg
@@ -10,6 +10,7 @@ dub_sire:
   dub_sire_image: ""
 dam:
   dam_name: Skye
+  dam_image: /img/img_5399.jpeg
 reservation_list:
   - Reserved
   - Reserved
