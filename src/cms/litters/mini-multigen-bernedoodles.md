@@ -12,10 +12,10 @@ dam:
   dam_name: Skye
   dam_image: /img/img_5399.jpeg
 reservation_list:
-  - Reserved
-  - Reserved
+  - Breeder
+  - Breeder
   - Kawasaki Family
-  - Available
+  - Dvir Family
   - Available
   - Available
   - Available
