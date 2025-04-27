@@ -23,11 +23,11 @@ size:
 colors: Red, Red/White Parti
 date: 2025-02-12T05:08:08.189Z
 photos:
-  - caption: Yogi
+  - caption: Yogi- Reserved
     image: /img/img_6038.png
-  - caption: "Fozzie "
+  - caption: Fozzie- Reserved
     image: /img/img_6040.png
-  - caption: Cindy
+  - caption: Cindy- Reserved
     image: /img/img_6049.png
   - caption: Winnie
     image: /img/img_6052.png
