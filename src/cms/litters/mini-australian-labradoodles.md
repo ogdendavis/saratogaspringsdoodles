@@ -23,6 +23,8 @@ size:
 colors: Red, Red/White Parti
 date: 2025-02-12T05:08:08.189Z
 photos:
+  - image: /img/img_6174.png
+    caption: Winnie
   - caption: Trixie
     image: /img/img_6067.png
 ---
