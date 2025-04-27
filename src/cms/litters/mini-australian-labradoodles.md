@@ -23,10 +23,6 @@ size:
 colors: Red, Red/White Parti
 date: 2025-02-12T05:08:08.189Z
 photos:
-  - caption: Yogi- Reserved
-    image: /img/img_6038.png
-  - caption: Fozzie- Reserved
-    image: /img/img_6040.png
   - caption: Trixie
     image: /img/img_6067.png
 ---
