@@ -12,9 +12,9 @@ dam:
   dam_name: Goldie
   dam_image: /img/img_8269.jpeg
 reservation_list:
-  - "1."
-  - "2."
-  - "3."
+  - 1. Huemer Family- Fozzie
+  - 2.Roberts Family- Cindy
+  - 3.Tidwell Family- Yogi
   - "4."
   - "5."
 size:
