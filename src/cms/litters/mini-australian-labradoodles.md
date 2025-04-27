@@ -27,10 +27,6 @@ photos:
     image: /img/img_6038.png
   - caption: Fozzie- Reserved
     image: /img/img_6040.png
-  - caption: Cindy- Reserved
-    image: /img/img_6174.png
-  - caption: Winnie
-    image: /img/img_6052.png
   - caption: Trixie
     image: /img/img_6067.png
 ---
