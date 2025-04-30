@@ -2,7 +2,7 @@
 # Litters should have a unique identifying title
 title: Mini Multigen Bernedoodles Summer 2025
 sire:
-  sire_name: Milo
+  sire_name: Milo- Jamaha Bernedoodles
   sire_image: /img/att.fyqpr7ig_uk1amhaspzkgx3ogznrnkgg2yxwrhgc7nw.jpeg
 dub_sire:
   dub_sire_name: ""
@@ -26,3 +26,4 @@ size:
 colors: Black Tri
 date: 2025-07-16T03:57:04.733Z
 ---
+S﻿o excited for this pairing. Skye has the sweetest puppies with the best temperaments.
