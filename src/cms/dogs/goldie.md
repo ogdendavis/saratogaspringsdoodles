@@ -6,6 +6,8 @@ color: Red
 birthdate: 2021-06-26T06:00:00.000Z
 gender: f
 ---
+***Retired 2025***
+
 C﻿arries Ata Bb ee FF KBKB Ssp
 
 P﻿ennHip: .41 Right .31 Left
