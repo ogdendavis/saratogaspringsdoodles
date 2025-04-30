@@ -26,4 +26,4 @@ size:
 colors: Black Tri
 date: 2025-07-16T03:57:04.733Z
 ---
-S﻿o excited for this pairing. Skye has the sweetest puppies with the best temperaments.
+So excited for this pairing. Skye has the sweetest puppies with the best temperaments.
