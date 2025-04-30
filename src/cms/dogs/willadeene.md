@@ -6,7 +6,9 @@ color: Merle tri
 birthdate: 2022-01-26T08:03:21.118Z
 gender: f
 ---
-Miss Willa is a future mama for our program she has passed all her health testing. She is super sweet and confident and playful. She lives with Dolly and the Anderson’s.
+***Retired 2025***
+
+Miss Willa, she is super sweet and confident and playful. She lives with Dolly and the Anderson’s.
 
 <http://embk.me/willadeene?utm_campaign=cns_ref_dog_pub_profile&utm_medium=other&utm_source=embark>
 
