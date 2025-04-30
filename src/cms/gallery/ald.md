@@ -1,4 +1,4 @@
 ---
-title: ALD
-image: /img/img_5931.jpg
+title: Mini Bernedoodle
+image: /img/img_1148.jpg
 ---
