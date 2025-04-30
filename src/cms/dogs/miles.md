@@ -6,6 +6,8 @@ color: Red
 birthdate: 2020-12-06T07:00:00.000Z
 gender: m
 ---
+***Retired 2025***
+
 C﻿arries: Bb ee FF KBKB CuCus Ssp
 
 O﻿FA eye CAER: Normal
