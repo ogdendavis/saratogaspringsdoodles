@@ -15,7 +15,7 @@ reservation_list:
   - 1. Huemer Family- Fozzie
   - 2.Roberts Family- Cindy
   - 3.Tidwell Family- Yogi
-  - "4."
+  - 4. Dean family-Trixie
   - "5."
 size:
   min: 18
