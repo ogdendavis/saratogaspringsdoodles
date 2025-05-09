@@ -16,8 +16,8 @@ reservation_list:
   - Breeder
   - Kawasaki Family
   - Dvir Family
-  - Bunker Family
   - Bjorklund Family
+  - Available
   - Available
   - Available
 size:
