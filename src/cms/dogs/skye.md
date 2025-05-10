@@ -14,10 +14,10 @@ Genetic clear of everything including both types of DM, PRA, VWD
 
 Carries: atat, kyky, cd/cd, Ee, BB, I/I, F/IC, -/- curl, n/n parti
 
-P﻿ennHip: Pending
+OFA Hips: Good
 
 O﻿FA Eyes: Clear
 
-O﻿FA Elbows: Pending
+O﻿FA Elbows: Negative
 
 D﻿OB: 12/27/22
