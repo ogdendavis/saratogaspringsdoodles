@@ -12,9 +12,9 @@ dam:
   dam_name: Ginger
   dam_image: /img/0fd15005-b19e-4959-ba11-05baf8a136be.jpeg
 reservation_list:
-  - 1. Reserved- Jennifer
-  - 2. Reserved
-  - 3. Reserved
+  - 1. Pepper- Jennifer
+  - "2. "
+  - "3. "
   - "4."
   - "5."
   - "6."
