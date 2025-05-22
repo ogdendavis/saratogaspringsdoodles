@@ -13,7 +13,7 @@ dam:
   dam_image: /img/0fd15005-b19e-4959-ba11-05baf8a136be.jpeg
 reservation_list:
   - 1. Pepper- Jennifer
-  - "2. "
+  - 2. Paprika-Faddis Family
   - "3. "
   - "4."
   - "5."
@@ -28,7 +28,7 @@ date: 2025-04-16T15:35:31.763Z
 photos:
   - caption: Sage
     image: /img/img_7466.jpg
-  - caption: Paprika
+  - caption: "Paprika- Reserved "
     image: /img/img_7265.jpg
   - caption: Oregano
     image: /img/img_7371.jpg
