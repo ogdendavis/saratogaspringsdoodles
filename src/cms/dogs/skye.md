@@ -8,7 +8,7 @@ gender: f
 ---
 S﻿kye is a gorgeous sweet little girl. She lives with an amazing guardian family the Bunkers and goes to the dance studio where her mom works all the time. I am excited to pair her with my boy Kobe in 2024
 
-Weight: 22
+Weight: 28
 
 Genetic clear of everything including both types of DM, PRA, VWD
 
