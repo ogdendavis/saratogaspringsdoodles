@@ -17,7 +17,7 @@ reservation_list:
   - Kawasaki Family
   - Dvir Family
   - Bjorklund Family
-  - Available
+  - Healy family
   - Available
   - Available
 size:
