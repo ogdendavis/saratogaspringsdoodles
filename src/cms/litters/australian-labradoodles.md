@@ -14,7 +14,7 @@ dam:
 reservation_list:
   - 1. Pepper- Jennifer
   - 2. Paprika-Faddis Family
-  - "3. "
+  - 3. Johansen family- Curry
   - "4."
   - "5."
   - "6."
@@ -34,7 +34,7 @@ photos:
     image: /img/img_7371.jpg
   - caption: Basil
     image: /img/img_7318.jpg
-  - caption: Curry
+  - caption: "Curry-Reserved "
     image: /img/img_7227.jpg
   - caption: Fennel
     image: /img/img_7159.jpg
