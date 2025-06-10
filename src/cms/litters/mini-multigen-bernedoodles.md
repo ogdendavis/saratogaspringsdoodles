@@ -26,7 +26,7 @@ size:
 colors: Black Tri
 date: 2025-07-16T03:57:04.733Z
 ---
-So excited for this pairing. Skye has the sweetest puppies with the best temperaments.
+So excited for this pairing. Skye has the sweetest puppies with the best temperaments. Skye has been bred and we will confirm pregnancy the end of June and puppies will be born end of July and come home end of September. If you are interesed in getting on her waitlist send in an application.
 
 M﻿ilo:
 
