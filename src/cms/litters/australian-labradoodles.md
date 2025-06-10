@@ -12,14 +12,14 @@ dam:
   dam_name: Ginger
   dam_image: /img/0fd15005-b19e-4959-ba11-05baf8a136be.jpeg
 reservation_list:
-  - 1. Pepper- Jennifer
-  - 2. Paprika-Faddis Family
-  - 3. Johansen family- Curry
-  - "4."
-  - "5."
-  - "6."
-  - "7."
-  - "8."
+  - " Pepper- Jennifer"
+  - " Paprika-Faddis Family"
+  - " Johansen family- Curry"
+  - Available
+  - Available
+  - Available
+  - Available
+  - Available
 size:
   min: 30
   max: 40
