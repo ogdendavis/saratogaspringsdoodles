@@ -27,20 +27,14 @@ colors: ""
 date: 2025-04-16T15:35:31.763Z
 photos:
   - caption: Sage
-    image: /img/img_7466.jpg
-  - caption: "Paprika- Reserved "
-    image: /img/img_7265.jpg
+    image: /img/img_6681.jpeg
   - caption: Oregano
-    image: /img/img_7371.jpg
+    image: /img/img_6666.jpeg
   - caption: Basil
-    image: /img/img_7318.jpg
-  - caption: "Curry-Reserved "
-    image: /img/img_7227.jpg
+    image: /img/img_6665.jpeg
   - caption: Fennel
-    image: /img/img_7159.jpg
+    image: /img/img_6667.jpeg
   - caption: Bay
-    image: /img/img_7053.jpg
-  - caption: Pepper
-    image: /img/img_6959.jpg
+    image: /img/img_6671.jpeg
 ---
 Puppies Born April 6th 2025, go home June 2nd. 3 girls and 5 boys. Eyes have opened and they have started toddling around
