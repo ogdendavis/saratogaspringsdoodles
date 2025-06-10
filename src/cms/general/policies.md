@@ -8,7 +8,7 @@ I do lots of [genetic testing](/meet-the-dogs/genetic-testing) to make sure that
 
 ## Spay & Neuter
 
-When you purchase a puppy from us, you agree that you will not use the dog for breeding in any way, and that you will spay or neuter your puppy between 10 months and 1 year of age.
+When you purchase a puppy from us, you agree that you will not use the dog for breeding in any way, and that you will spay or neuter your puppy between 6-9 months of age
 
 ## Pricing
 
