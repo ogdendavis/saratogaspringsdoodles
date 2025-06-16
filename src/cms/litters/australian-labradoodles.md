@@ -15,7 +15,7 @@ reservation_list:
   - " Pepper- Jennifer"
   - " Paprika-Faddis Family"
   - " Johansen family- Curry"
-  - Available
+  - Roy family- Bay
   - Available
   - Available
   - Available
@@ -34,7 +34,5 @@ photos:
     image: /img/img_6665.jpeg
   - caption: Fennel
     image: /img/img_6667.jpeg
-  - caption: Bay
-    image: /img/img_6671.jpeg
 ---
 Puppies Born April 6th 2025, go home June 2nd. 3 girls and 5 boys. Eyes have opened and they have started toddling around
