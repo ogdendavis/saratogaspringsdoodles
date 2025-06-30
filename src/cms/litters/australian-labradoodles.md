@@ -32,7 +32,5 @@ photos:
     image: /img/img_6666.jpeg
   - caption: Basil
     image: /img/img_6665.jpeg
-  - caption: Fennel
-    image: /img/img_6667.jpeg
 ---
 Puppies Born April 6th 2025, go home June 2nd. 3 girls and 5 boys. Eyes have opened and they have started toddling around
