@@ -16,7 +16,7 @@ reservation_list:
   - " Paprika-Faddis Family"
   - " Johansen family- Curry"
   - Roy family- Bay
-  - Available
+  - Hansen family-Fennel
   - Available
   - Available
   - Available
