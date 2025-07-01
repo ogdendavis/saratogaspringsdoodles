@@ -1,6 +1,6 @@
 ---
 # Litters should have a unique identifying title
-title: Mini Multigen Bernedoodles Summer 2025
+title: Mini Multigen Bernedoodles Spring 2026
 sire:
   sire_name: Milo- Jamaha Bernedoodles
   sire_image: /img/att.fyqpr7ig_uk1amhaspzkgx3ogznrnkgg2yxwrhgc7nw.jpeg
@@ -24,9 +24,9 @@ size:
   min: 20
   max: 30
 colors: Black Tri
-date: 2025-07-16T03:57:04.733Z
+date: 2026-02-02T04:57:04.733Z
 ---
-So excited for this pairing. Skye has the sweetest puppies with the best temperaments. Skye has been bred and we will confirm pregnancy the end of June and puppies will be born end of July and come home end of September. If you are interested in getting on her waitlist send in an application.
+So excited for this pairing. Skye has the sweetest puppies with the best temperaments. Skye and Milo will be bred late January beginning of February 2026. If interested in this litter fill out an application.
 
 M﻿ilo:
 
