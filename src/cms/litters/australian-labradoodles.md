@@ -17,7 +17,7 @@ reservation_list:
   - " Johansen family- Curry"
   - Roy family- Bay
   - Hansen family-Fennel
-  - Available
+  - Owens Family- Sage
   - Available
   - Available
 size:
