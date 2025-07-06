@@ -14,10 +14,10 @@ dam:
 reservation_list:
   - " Pepper- Jennifer"
   - " Paprika-Faddis Family"
-  - " Johansen family- Curry"
-  - Roy family- Bay
-  - Hansen family-Fennel
-  - Owens Family- Sage
+  - Curry- Johansen Family
+  - Bay- Roy Family
+  - Sage-Owens Family
+  - Available
   - Available
   - Available
 size:
