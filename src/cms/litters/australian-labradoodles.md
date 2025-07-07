@@ -21,8 +21,8 @@ reservation_list:
   - Available
   - Available
 size:
-  min: 30
-  max: 40
+  min: 25
+  max: 35
 colors: ""
 date: 2025-04-16T15:35:31.763Z
 photos:
@@ -33,4 +33,4 @@ photos:
   - caption: Basil
     image: /img/img_6665.jpeg
 ---
-Puppies Born April 6th 2025, go home June 2nd. 3 girls and 5 boys. Eyes have opened and they have started toddling around
+Puppies born April 6, 2025. I have three sweet boys looking for homes. They have been raised with my kids and dogs. They come from parents with amazing temperaments. They are sleeping all night in crates and doing great at potty training. They have had three sets of shots and ready to come home and bond and continue training.
