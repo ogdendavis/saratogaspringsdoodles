@@ -1,6 +1,6 @@
 ## Deposits
 
-Deposits are $500, which is applied to the final purchase price of your puppy. Deposits are non-refundable, but may be transferred to another litter. Deposits can be made by Zelle, Venmo, Good Dog.
+Deposits are $500, which is applied to the final purchase price of your puppy. Deposits are non-refundable, but may be transferred to another litter. Deposits can be made by Zelle, Venmo, Good Dog. Deposits cannot be refunded for any reason, including missed heats, failed pregnancy, and puppy of choice getting chosen before the buyer completes payment.
 
 ## Health Guarantee
 
