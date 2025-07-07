@@ -22,7 +22,7 @@ Bernedoodle puppies
 
 Mini's (30-45 lbs.)
 
-$3,000
+$3,500
 
 ![A bernedoodle puppy in a field of flowers](/img/e228feb0-993d-409c-99d5-809cea2d9f43.jpeg)
 
@@ -32,7 +32,7 @@ M﻿ini Australian Labradoodles (ALD)
 
 M﻿ini/Medium 30-45
 
-$3000
+$3200
 
 ## Delivery
 
