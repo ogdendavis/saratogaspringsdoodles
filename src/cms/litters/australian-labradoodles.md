@@ -26,6 +26,8 @@ size:
 colors: ""
 date: 2025-04-16T15:35:31.763Z
 photos:
+  - caption: "Fennel "
+    image: /img/img_6935.jpeg
   - caption: Oregano
     image: /img/img_6666.jpeg
   - caption: Basil
