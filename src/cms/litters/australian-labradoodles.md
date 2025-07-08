@@ -31,4 +31,4 @@ photos:
   - caption: Basil
     image: /img/img_6665.jpeg
 ---
-Puppies born April 6, 2025. I have three sweet boys looking for homes. They have been raised with my kids and dogs. They come from parents with amazing temperaments. They are sleeping all night in crates and doing great at potty training. They have had three sets of shots and ready to come home and bond and continue training.
+Puppies born April 6, 2025. I have two sweet boys looking for homes. They have been raised with my kids and dogs. They come from parents with amazing temperaments. They are sleeping all night in crates and doing great at potty training. They have had three sets of shots and ready to come home and bond and continue training.o
