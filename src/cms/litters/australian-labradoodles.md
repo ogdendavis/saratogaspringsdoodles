@@ -17,7 +17,7 @@ reservation_list:
   - Curry- Johansen Family
   - Bay- Roy Family
   - Sage-Owens Family
-  - Available
+  - Lance Family- Oregano
   - Available
   - Available
 size:
@@ -28,8 +28,6 @@ date: 2025-04-16T15:35:31.763Z
 photos:
   - caption: "Fennel "
     image: /img/img_6935.jpeg
-  - caption: Oregano
-    image: /img/img_6666.jpeg
   - caption: Basil
     image: /img/img_6665.jpeg
 ---
