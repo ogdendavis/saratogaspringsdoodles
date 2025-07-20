@@ -17,7 +17,7 @@ reservation_list:
   - Curry- Johansen Family
   - Bay- Roy Family
   - Sage-Owens Family
-  - "Available "
+  - Cheesbough Family- Basil
   - Available
   - Available
 size:
