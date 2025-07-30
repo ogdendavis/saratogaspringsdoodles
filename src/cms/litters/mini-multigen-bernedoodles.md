@@ -14,10 +14,10 @@ dam:
 reservation_list:
   - Breeder
   - Breeder
-  - Kawasaki Family
   - Dvir Family
-  - Bjorklund Family
-  - Healy family
+  - Available
+  - Available
+  - Available
   - Available
   - Available
 size:
