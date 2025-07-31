@@ -18,7 +18,7 @@ reservation_list:
   - Bay- Roy Family
   - Sage-Owens Family
   - Cheesbough Family- Basil
-  - Available
+  - Rose family- Oregano
   - Available
 size:
   min: 25
