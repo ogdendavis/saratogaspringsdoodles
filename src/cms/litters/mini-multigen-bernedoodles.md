@@ -14,7 +14,7 @@ dam:
 reservation_list:
   - Breeder
   - Breeder
-  - Dvir Family
+  - Available
   - Available
   - Available
   - Available
