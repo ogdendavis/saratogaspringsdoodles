@@ -6,8 +6,6 @@ color: Black Tri
 birthdate: 2022-04-02T23:33:58.664Z
 gender: m
 ---
-<https://www.pawprintgenetics.com/pedigrees/dogs/details/25008/>
-
 Mr. Kobe is a sweet playful little guy. We are so thankful to our friends at Cottonwood Creek Doodles for this amazing boy. He lives right by us in his guardian home with our friends the Remington's. He has the sweetest personality and he gets so excited when he first meets you that he smiles at you in excitement. He has so much love for people. He has the best temperament that he passes along to his puppies.
 
 W﻿eight: 20 pounds
