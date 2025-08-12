@@ -30,7 +30,7 @@ $3,500
 
 M﻿ini Australian Labradoodles (ALD)
 
-M﻿ini/Medium 30-45
+M﻿ini/Medium 35-45
 
 $3200
 
