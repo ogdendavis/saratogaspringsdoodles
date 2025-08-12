@@ -6,13 +6,13 @@ color: Black Tri
 birthdate: 2022-12-27T07:00:00.000Z
 gender: f
 ---
-S﻿kye is a gorgeous sweet little girl. She lives with an amazing guardian family the Bunkers and goes to the dance studio where her mom works all the time. I am excited to pair her with my boy Kobe in 2024
+S﻿kye is a gorgeous sweet little girl. She lives with an amazing guardian family the Bunkers and goes to the dance studio where her mom works all the time. She has the sweetest puppies with the best temperaments and coats!
 
 Weight: 28
 
 Genetic clear of everything including both types of DM, PRA, VWD
 
-Carries: atat, kyky, cd/cd, Ee, BB, I/I, F/IC, -/- curl, n/n parti
+Carries: atat, kyky, cd/cd, Ee, BB, I/I, F/IC, -/- curl, SS
 
 OFA Hips: Good
 
